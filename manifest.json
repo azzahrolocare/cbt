@@ -1,12 +1,12 @@
 {
   "name": "CBT SMP Islam Az-Zahro",
   "short_name": "CBT Azzahro",
-  "description": "Aplikasi Ujian Digital CBT SMP Islam Az-Zahro",
-  "start_url": "./login.html",
-  "display": "standalone",
+  "display": "fullscreen", 
   "background_color": "#0CA458",
   "theme_color": "#0CA458",
   "orientation": "portrait",
+  "start_url": "./login.html"
+  "description": "Aplikasi Ujian Digital CBT SMP Islam Az-Zahro",
   "scope": "./",
   "icons": [
     {
