@@ -13,7 +13,7 @@
   },
   {
     "id": 3,
-    "pertanyaan": "Perhatikan gambar berikut!<br><img src='https://i.ibb.co.com/zV6Yrqsz/bindo3.png'><br>Bagian surat diatas dinamakan....",
+    "pertanyaan": "Perhatikan gambar berikut!<br><img src='https://i.ibb.co.com/zV6Yrqsz/bindo3.png' width="100%"><br>Bagian surat diatas dinamakan....",
     "pilihan": ["Kop surat", "Perihal", "Lampiran", "Salam pembuka"],
     "jawaban": 0
   },
