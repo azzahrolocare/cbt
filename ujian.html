@@ -206,7 +206,7 @@
         const userData = JSON.parse(sessionStorage.getItem('userCBT'));
         if (!userData) {
             alert("Silakan login terlebih dahulu!");
-            window.location.href = 'index.html';
+            window.location.href = 'login.html';
             return;
         }
         // Tampilkan di halaman validasi
@@ -410,8 +410,8 @@ document.addEventListener('fullscreenchange', () => {
     localStorage.removeItem('drafJawaban');
     // Menghapus sesi user saat ini
     sessionStorage.removeItem('userCBT');
-    // Arahkan ke file login Anda (ganti 'index.html' dengan nama file login Anda)
-    window.location.href = 'index.html'; 
+    // Arahkan ke file login Anda (ganti 'login.html' dengan nama file login Anda)
+    window.location.href = 'login.html'; 
 }
 </script>
 </body>
