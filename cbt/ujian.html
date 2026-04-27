@@ -102,7 +102,7 @@
             <div class="data-label">Kelas</div>
             <div id="val-kelas" class="data-value">-</div>
             <div class="data-label">Mata Pelajaran</div>
-            <div class="data-value">INFORMATIKA</div>
+            <div id="val-mapel" class="data-value">INFORMATIKA</div>
         </div>
         <button class="btn-start" onclick="mulaiUjianSekarang()"> MULAI MENGERJAKAN</button>
         <p onclick="history.back()" style="margin-top:15px; color:#d32f2f; font-size:12px; cursor:pointer; font-weight:bold;">Terdapat kesalahan? Kembali</p>
@@ -143,7 +143,7 @@
     <div class="nav-right-area">
         <div class="subject-area">
             <div style="font-size:10px; opacity:0.8;">MATA PELAJARAN</div>
-            <div style="font-weight:800; font-size:14px; letter-spacing:1px;">INFORMATIKA</div>
+            <div id="display-mapel" style="font-weight:800; font-size:14px; letter-spacing:1px;">INFORMATIKA</div>
             <div style="font-size:10px; opacity:0.8;">GURU: RAHMATTULLAH</div>
         </div>
         <button id="btn-menu-nomor" onclick="toggleMenuNomor()" title="Daftar Nomor">
@@ -209,6 +209,11 @@
         // Tampilkan di halaman validasi
         document.getElementById('val-nama').innerText = userData.nama.toUpperCase();
         document.getElementById('val-kelas').innerText = "KELAS " + userData.kelas;
+        // PENGGANTIAN NAMA MAPEL DINAMIS
+        if(userData.mapel) {
+            document.getElementById('val-mapel').innerText = userData.mapel;
+            document.getElementById('display-mapel').innerText = userData.mapel;
+        }
 
         // Siapkan data header (tapi masih disembunyikan)
         document.getElementById('user-name').innerText = userData.nama.toUpperCase();
@@ -247,10 +252,12 @@ document.addEventListener('fullscreenchange', () => {
     
     async function muatSoal() { 
         try { 
-            const res = await fetch('soal.json'); 
+            const userData = JSON.parse(sessionStorage.getItem('userCBT'));
+            // MENGAMBIL FILE BERDASARKAN SELEKSI DI LOGIN
+            const res = await fetch(userData.fileSoal || 'https://azzahrolocare.github.io/login/cbt/mapel/soal.json'); 
             dataSoal = await res.json(); 
             renderUjian(); 
-        } catch (e) { alert("Gagal memuat file soal.json"); } 
+        } catch (e) { alert("Gagal memuat file soal"); } 
     }
 
     function renderUjian() {
@@ -365,7 +372,8 @@ document.addEventListener('fullscreenchange', () => {
         });
 
         try {
-            const finalURL = `${SCRIPT_URL}?nama=${encodeURIComponent(userData.nama)}&kelas=${userData.kelas}&mapel=INFORMATIKA&benar=${benar}&salah=${dataSoal.length - benar}&jawabanUser=${encodeURIComponent(detailJawaban.join(", "))}`;
+            // MENGGUNAKAN MAPEL DINAMIS UNTUK URL PENGIRIMAN
+            const finalURL = `${SCRIPT_URL}?nama=${encodeURIComponent(userData.nama)}&kelas=${userData.kelas}&mapel=${encodeURIComponent(userData.mapel)}&benar=${benar}&salah=${dataSoal.length - benar}&jawabanUser=${encodeURIComponent(detailJawaban.join(", "))}`;
             await fetch(finalURL, { mode: 'no-cors' });
 
             document.getElementById('modalConfirm').style.display = 'none';
