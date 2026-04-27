@@ -72,6 +72,16 @@
                 </select>
             </div>
         </div>
+        
+        <div class="input-group">
+            <div class="field-container">
+                <span class="field-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></span>
+                <select id="mapel">
+                    <option value="" disabled selected hidden>PILIH MATA PELAJARAN</option>
+                </select>
+            </div>
+        </div>
+
         <div class="input-group">
             <div class="field-container">
                 <span class="field-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span>
@@ -98,6 +108,22 @@
         }
     }
 
+    // LOGIKA LOAD MATA PELAJARAN DARI JSON
+    async function loadMapel() {
+        try {
+            const res = await fetch('mata-pelajaran.json');
+            const data = await res.json();
+            const selectMapel = document.getElementById('mapel');
+            data.forEach(m => {
+                let opt = document.createElement('option');
+                opt.value = m.file;
+                opt.textContent = m.nama;
+                selectMapel.appendChild(opt);
+            });
+        } catch (e) { console.log("Gagal memuat mata-pelajaran.json"); }
+    }
+    window.addEventListener('DOMContentLoaded', loadMapel);
+
     function showNotif(msg) { document.getElementById('modalMessage').innerText = msg; document.getElementById('customModal').style.display = 'flex'; }
     function closeModal() { document.getElementById('customModal').style.display = 'none'; }
     
@@ -106,11 +132,14 @@
         const namaInput = document.getElementById('nama');
         const tokenInputElem = document.getElementById('tokenInput');
         const kelas = document.getElementById('kelas').value;
+        const mapelSelect = document.getElementById('mapel');
+        const mapelFile = mapelSelect.value;
+        const mapelNama = mapelSelect.options[mapelSelect.selectedIndex] ? mapelSelect.options[mapelSelect.selectedIndex].text : "";
 
         const nama = namaInput.value.trim().toUpperCase();
         const tokenInput = tokenInputElem.value.trim();
 
-        if(!nama || !kelas || !tokenInput) return showNotif("Lengkapi data login!");
+        if(!nama || !kelas || !tokenInput || !mapelFile) return showNotif("Lengkapi data login!");
         
         btn.disabled = true; 
         btn.innerHTML = 'MEMVALIDASI DATA<span class="dots"></span>';
@@ -138,7 +167,14 @@
             }
             
             sessionStorage.setItem('Screen1.Has Permission', 'true');
-            sessionStorage.setItem('userCBT', JSON.stringify({ nama, kelas, isAuth: true }));
+            // MODIFIKASI PENYIMPANAN DATA MAPEL
+            sessionStorage.setItem('userCBT', JSON.stringify({ 
+                nama, 
+                kelas, 
+                mapel: mapelNama, 
+                fileSoal: mapelFile, 
+                isAuth: true 
+            }));
 
             namaInput.value = "";
             tokenInputElem.value = "";
