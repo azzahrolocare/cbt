@@ -1,0 +1,332 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Hasil dari -25 x ( 8 + (-9)) : ( 2 - 7) adalah . . .",
+    "pilihan": [
+      "-5",
+      "-3",
+      "2",
+      "5"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Hasil dari 0,74 - (-0,3) + 0,25 adalah . . .",
+    "pilihan": [
+      "1,25",
+      "1,28",
+      "1,29",
+      "1,30"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Perhatikan gambar berikut <img src='https://i.ibb.co.com/NnN976fc/mtk3.png' class='img-post'> <br> Besar dari ∠ KLM adalah . . .",
+    "pilihan": [
+      "150",
+      "300",
+      "420",
+      "600"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Bruto dari 6 kantong gula pasir adalah 180 kg dan taranya sebesar 1,5%. Netto dari masing- masing kantong adalah… kg",
+    "pilihan": [
+      "29,85",
+      "29,75",
+      "29,55",
+      "29,45"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Perhatikan gambar berikut! <img src='https://i.ibb.co.com/MD310nmQ/mtk5.png' class='img-post'> <br> Luas daerah yang diarsir adalah …",
+    "pilihan": [
+      "60 cm2",
+      "120 cm2",
+      "150 cm2",
+      "170 cm2"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Perhatikan gambar di bawah ini! <img src='https://i.ibb.co.com/Q5xLxdX/mtk6.png' class='img-post'> <br> Luas dan keliling dari bangun tersebut adalah…",
+    "pilihan": [
+      "120 cm2  dan 60 cm",
+      "160 cm2  dan 40 cm",
+      "200 cm2  dan 100 cm",
+      "320 cm2  dan 200 cm"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Suatu kolam renang berbentuk persegi panjang memiliki lebar 7 kurangnya dari panjangnya dan keliling 86 m. Ukuran panjang dan lebar kolam renang berturut- turut adalah…",
+    "pilihan": [
+      "25 meter dan 18 meter",
+      "25 meter dan 20 meter",
+      "27 meter dan 25 meter",
+      "27 meter dan 18 meter"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Himpunan Penyelesaian dari  2x – 3  ≤ 21 + 4x, dengan x bilangan bulat adalah…",
+    "pilihan": [
+      "{-12, -11, -10, -9…}",
+      "{-9, -8, -7, -6…}",
+      "{….-15, -14, -13, -12}",
+      "{…..-12, -11, -10, -9}"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Hasil dari  22 x 24 adalah…",
+    "pilihan": [
+      "2",
+      "8",
+      "16",
+      "64"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Hasil perkalian dari (2x – 5 ) (x + 3) adalah....",
+    "pilihan": [
+      "2x² +5x + 15",
+      "x² – 5 x – 15",
+      "2x² + x – 15",
+      "x² + 5x – 15"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Pak guru membuat segitiga dengan panjang sisi (x + 12) cm, (2x – 2) cm, dan (3x – 3) cm. Jika keliling segitiga itu 31 cm, maka panjang sisi terpanjang segitiga adalah ….",
+    "pilihan": [
+      "18 cm",
+      "16 cm",
+      "9 cm",
+      "6 cm"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Perhatikan gambar berikut ! <img src='https://i.ibb.co.com/5xtSS7Db/mtk12.png' class='img-post'> <br> Gradien Garis pada gambar adalah …",
+    "pilihan": [
+      "-2",
+      "-1",
+      "1",
+      "2"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Perhatikan tabel berikut ini! <img src='https://i.ibb.co.com/Lh2Pwhkc/mtk13.png' class='img-post'> <br> Berdasarkan tabel diatas nilai dari f(4) adalah…",
+    "pilihan": [
+      "17",
+      "15",
+      "14",
+      "12"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Pada suatu sore hari, seorang anak bernama Tumin bermain di sebuah taman yang berbentuk persegi panjang. Taman tersebut memiliki panjang 12 meter dan lebar 5 meter. Tumin ingin berjalan dari satu sudut taman menuju sudut lainnya yang berseberangan secara lurus (melintasi taman, bukan mengikuti sisi-sisinya). Ia penasaran berapa jarak terpendek yang harus ditempuh jika berjalan secara diagonal dari titik awal ke titik tujuan tersebut. Jika Tumin berjalan lurus melintasi taman dari satu sudut ke sudut yang berlawanan, maka jarak yang ditempuh Tumin adalah…",
+    "pilihan": [
+      "12 meter",
+      "13 meter",
+      "15 meter",
+      "17 meter"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Data nilai ulangan matematika murid kelas VIIIA sebagai berikut : <img src='https://i.ibb.co.com/K8wDkjF/mtk15.png' class='img-post'> <br> Rata - rata nilai ulangan matematika murid kelas VIIIA adalah…",
+    "pilihan": [
+      "71",
+      "72",
+      "73",
+      "74"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 16,
+    "pertanyaan": "Harga 2 buah jeruk dan 5 buah jambu adalah Rp. 15.500,-. harga 5 buah jeruk dan 3 buah jambu Rp. 24.500,-. Uang kembalian yang Celine peroleh jika ia membayar Rp. 40.000,- untuk 7 buah jeruk dan 4 buah jambu adalah …",
+    "pilihan": [
+      "Rp. 8.000",
+      "Rp. 7.000",
+      "Rp. 6.000",
+      "Rp. 5.000"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Penyelesaian dari sistem persamaan 3x + 5y = -9 dan 5x + 7y = -19 adalah x dan y. Nilai 4x + 3y adalah …",
+    "pilihan": [
+      "-41",
+      "-36",
+      "-23",
+      "-12"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Himpunan penyelesaian dari 7x-15≤3x+13 dengan x ϵ bilangan asli adalah …",
+    "pilihan": [
+      "{1, 2, 3, 4, 5, 6, 7}",
+      "{7, 8, 9, 10, 11, 12, 13}",
+      "{7, 8, 9, 10, 11, 12, 13, 14, 15}",
+      "{13, 14, 15, 16, 17}"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Nilai x yang memenuhi 32(x-1)≥12(1-x) adalah …",
+    "pilihan": [
+      "x≥-1",
+      "x≥1",
+      "x≤-1",
+      "x≤1"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Sebuah titik dicerminkan terhadap sumbu x menghasilkan bayangan (5, -7). koordinat titik mula-mula adalah …",
+    "pilihan": [
+      "( 5, 7 )",
+      "( -5, 7 )",
+      "( -5, -7 )",
+      "( 7, -5 )"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 21,
+    "pertanyaan": "Komponen translasi dari titik (6, 3) ke titik (-1, 5) adalah …",
+    "pilihan": [
+      "( 5, 2 )",
+      "( 5, -2 )",
+      "( -7, 2 )",
+      "( -7, -2 )"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 22,
+    "pertanyaan": "Peluang seorang ibu melahirkan seorang anak laki-laki adalah 0,75. Jika di suatu kota terdapat 400 orang ibu hamil, banyaknya kelahiran bayi perempuan adalah …",
+    "pilihan": [
+      "300 anak",
+      "200 anak",
+      "150 anak",
+      "100 anak"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 23,
+    "pertanyaan": "Sebuah kantong berisi 18 buah kelereng berwarna merah, 12 buah berwarna biru, dan 15 buah berwarna kuning. Jika dari kantong tersebut diambil sebuah kelereng secara acak, peluang terambil kelereng berwarna biru atau kuning adalah …",
+    "pilihan": [
+      "13",
+      "415",
+      "23",
+      "35"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 24,
+    "pertanyaan": "sebuah prisma segitiga alas berbentuk segitiga dengan panjang sisi 6 cm, berapakah jumlah seluruh rusuk prisma tersebut ?",
+    "pilihan": [
+      "Luas alas = 40 cm²",
+      "Volume prisma = 480 cm³",
+      "Volume prisma = 240 cm³",
+      "Volume prisma = luas alas × tinggi prisma"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 25,
+    "pertanyaan": "Sebuah prisma segitiga memiliki alas berbentuk segitiga siku-siku dengan panjang sisi siku-sikunya 6 cm dan 8 cm. Tinggi prisma 10 cm. Tentukan luas permukaan prisma!",
+    "pilihan": [
+      "268 cm²",
+      "288 cm²",
+      "298 cm²",
+      "388 cm²"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 26,
+    "pertanyaan": "Perhatikan gambar di bawah ini! <img src='https://i.ibb.co.com/TB4vw2WS/mtk26.png' class='img-post'> <br> Luas seluruh permukaan bangun tersebut adalah …",
+    "pilihan": [
+      "902 cm²",
+      "807 cm²",
+      "625 cm²",
+      "605 cm²"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 27,
+    "pertanyaan": "Luas permukaan kerucut dengan diameter 10 cm dan tinggi 12 cm adalah …",
+    "pilihan": [
+      "85 π cm²",
+      "90 π cm²",
+      "220 π cm²",
+      "230 π cm²"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 28,
+    "pertanyaan": "Sebuah pohon yang berada di depan gedung mempunyai tinggi 8m. Pada saat yang sama bayangan gedung berimpit dengan bayangan pohon seperti tampak pada gambar di bawah <img src='https://i.ibb.co.com/N21M0TfC/mtk28.jpg' class='img-post'> <br> Tinggi gedung yang sesuai ukuran tersebut adalah....",
+    "pilihan": [
+      "5,30 M",
+      "6,25 M",
+      "10.00 M",
+      "12,00 M"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 29,
+    "pertanyaan": "perhatikan gambar berikut ! <img src='https://i.ibb.co.com/gZZrZ8Tw/mtk29.png' class='img-post'> <br> panjang BC adalah……",
+    "pilihan": [
+      "√16 cm",
+      "√48 cm",
+      "√64 cm",
+      "√192 cm"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 30,
+    "pertanyaan": "Pada gambar berikut, segitiga PQR dan segtiga TSU adalah segitiga kongruen, besar ∠ R = ∠ U dan ∠ Q = ∠ S. manakah pasangan sisi yang sama panjang? <img src='https://i.ibb.co.com/LLYwMvC/mtk30.jpg' class='img-post'> <br>",
+    "pilihan": [
+      "PR = SU",
+      "QR = TU",
+      "PQ = SU",
+      "PQ = ST"
+    ],
+    "jawaban": 2
+  }
+]
