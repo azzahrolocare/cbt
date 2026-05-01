@@ -64,6 +64,9 @@
             background: #0CA458; color: white; width: 100%; border: none; 
             padding: 14px; border-radius: 10px; font-weight: 800; cursor: pointer; 
             transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; font-size: 14px;
+            display: flex; align-items: center;    /* Mengetengahkan secara vertikal */
+            justify-content: center; /* Mengetengahkan secara horizontal */
+            gap: 8px;               /* Memberi jarak antara ikon dan teks */
         }
         .btn-start:hover { background: #098a4a; transform: translateY(-2px); }
 
@@ -215,7 +218,8 @@
             <p style="color:#666; font-size:14px; margin-top:20px;">"Ujian telah selesai! Terima kasih telah mengikuti ujian online."</p>
         </div>
         <button class="btn-start" style="padding:12px; max-width:320px; margin-top:15px;" onclick="kembaliKeLogin()">
-            <span class="material-icons-round">logout</span> KEMBALI KE LOGIN
+            <span class="material-icons-round">logout</span> 
+            <span>KEMBALI KE HALAMAN LOGIN</span>
         </button>
     </div>
 </div>
