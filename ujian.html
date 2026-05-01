@@ -18,8 +18,6 @@
             user-select: none;
         }
 
-        .img-post { max-width: 100%; height: auto; display: block; /* Menghilangkan spasi kosong di bawah gambar */}
-
         /* --- HALAMAN VALIDASI DATA (MUNCUL PERTAMA) --- */
         #halaman-validasi {
             position: fixed;
@@ -146,8 +144,6 @@
         <div class="subject-area">
             <div style="font-size:10px; opacity:0.8;">MATA PELAJARAN</div>
             <div id="display-mapel" style="font-weight:800; font-size:14px; letter-spacing:1px;">INFORMATIKA</div>
-            <script>//Disembunyikan <div style="font-size:10px; opacity:0.8;">GURU: RAHMATTULLAH</div>
-                //Hapus tag script jika ingin ditampilkan</script>
         </div>
         <button id="btn-menu-nomor" onclick="toggleMenuNomor()" title="Daftar Nomor">
             <span class="material-icons-round">grid_view</span>
@@ -206,7 +202,7 @@
         const userData = JSON.parse(sessionStorage.getItem('userCBT'));
         if (!userData) {
             alert("Silakan login terlebih dahulu!");
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
             return;
         }
         // Tampilkan di halaman validasi
@@ -410,8 +406,8 @@ document.addEventListener('fullscreenchange', () => {
     localStorage.removeItem('drafJawaban');
     // Menghapus sesi user saat ini
     sessionStorage.removeItem('userCBT');
-    // Arahkan ke file login Anda (ganti 'login.html' dengan nama file login Anda)
-    window.location.href = 'login.html'; 
+    // Arahkan ke file login Anda (ganti 'index.html' dengan nama file login Anda)
+    window.location.href = 'index.html'; 
 }
 </script>
 </body>
