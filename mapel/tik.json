@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Apakah yang dimaksud dengan Artificial Intelligence (AI)…. ",
+    "pilihan": [
+      "Teknologi yang memungkinkan mesin meniru kecerdasan manusia.",
+      "System menual untuk pengambilan keputusan",
+      "Teknologi penyimpanan data",
+      "Jaringan computer pribadi"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Contoh penerapan Ai dalam bidang Pendidikan adalah….",
+    "pilihan": [
+      "Buku teks digital",
+      "Asisten belajar virtual yang memberikan penjelasan otomatis.",
+      "Kalkulator untuk perhitungan cepat",
+      "Mesin cetak otomatis"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Apa fungsi utama dari perangkat IoT…..",
+    "pilihan": [
+      "Menghubungkan perangkat untuk berbagi data melalui internet.",
+      "Menyimpan data local secara manual",
+      "Mengontrol perangkat keras tanpa jaringan internet",
+      "Membuat system operasi computer"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Apa Langkah pertama dalam berpikir komputasional ….",
+    "pilihan": [
+      "Abstraksi",
+      "Dekomposisi.",
+      "Algoritma",
+      "Implementasi"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Gambar di samping merupakan perangkat keras jenis….. <img src='https://upload.wikimedia.org/wikipedia/commons/2/22/3-Tasten-Maus_Microsoft.jpg' class='img-post'> <br>",
+    "pilihan": [
+      "Mouse",
+      "Printer",
+      "CPU",
+      "Monitor"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Fitur Yang sebaiknya digunakan untuk menebalkan menembalkan dan memperbesar teks di Microsoft Word adalah…",
+    "pilihan": [
+      "Italic",
+      "Bold dan Font Size",
+      "Underline",
+      "Save As"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Dalam sebuah komputer, terdapat bagian yang bertugas mengolah semua data dan instruksi. Tanpa bagian ini, komputer tidak dapat bekerja dengan baik. Bagian tersebut adalah…",
+    "pilihan": [
+      "RAM",
+      "Harddisk",
+      "CPU",
+      "Monitor"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Budi menyalakan komputer dan melihat tampilan awal Windows. Guru menjelaskan bahwa Windows berfungsi mengatur kerja seluruh perangkat komputer. Berdasarkan penjelasan tersebut, Windows termasuk…",
+    "pilihan": [
+      "Hardware",
+      "Software sistem operasi",
+      "Brainware",
+      "File"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Rina menyimpan tugasnya dalam bentuk dokumen di komputer. Dokumen tersebut disebut…",
+    "pilihan": [
+      "Folder",
+      "File",
+      "Program",
+      "Jaringan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Dani memiliki banyak file tugas dan ingin mengelompokkannya agar rapi. Ia menggunakan fitur khusus untuk menyimpan beberapa file dalam satu tempat. Fitur tersebut disebut…",
+    "pilihan": [
+      "Drive",
+      "Folder",
+      "CPU",
+      "RAM"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Saat mendengarkan musik dari komputer, suara keluar melalui perangkat tertentu. Perangkat tersebut termasuk…",
+    "pilihan": [
+      "Input",
+      "Output",
+      "Proses",
+      "Penyimpanan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Seorang siswa mencetak tugas menggunakan printer. Printer termasuk jenis perangkat…",
+    "pilihan": [
+      "Input",
+      "Output",
+      "Proses",
+      "Jaringan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Dalam penggunaan komputer, manusia memiliki peran penting sebagai pengendali dan pengguna. Dalam istilah informatika, manusia disebut…",
+    "pilihan": [
+      "Software",
+      "Hardware",
+      "Brainware",
+      "Program"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Rudi menyimpan data di harddisk agar tidak hilang. Harddisk termasuk perangkat…",
+    "pilihan": [
+      "Input",
+      "Output",
+      "Penyimpanan",
+      "Proses"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Seorang siswa diminta membuat langkah-langkah membuat mie instan secara terurut dan logis. Dalam informatika, langkah-langkah tersebut disebut…",
+    "pilihan": [
+      "Program",
+      "Algoritma",
+      "Data",
+      "Sistem"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 16,
+    "pertanyaan": "Untuk mempermudah memahami algoritma, siswa menggambarkannya dalam bentuk diagram dengan simbol-simbol tertentu. Diagram tersebut disebut…",
+    "pilihan": [
+      "Grafik",
+      "Flowchart",
+      "Tabel",
+      "Diagram batang"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Dalam flowchart, simbol oval biasanya digunakan untuk menunjukkan…",
+    "pilihan": [
+      "Proses",
+      "Keputusan",
+      "Mulai atau selesai",
+      "Input"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Saat membuat flowchart, Dika menggunakan simbol belah ketupat untuk menunjukkan kondisi “ya atau tidak”. Simbol tersebut berarti…",
+    "pilihan": [
+      "Proses",
+      "Input",
+      "Keputusan",
+      "Output"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Internet memungkinkan kita mengakses berbagai informasi dari seluruh dunia. Internet merupakan…",
+    "pilihan": [
+      "perangkat keras",
+      "jaringan komputer global",
+      "aplikasi",
+      "file"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Jaringan komputer di dalam satu sekolah disebut…",
+    "pilihan": [
+      "WAN",
+      "LAN",
+      "Internet",
+      "MAN"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 21,
+    "pertanyaan": "Untuk membuka website, kita menggunakan aplikasi seperti Google Chrome. Aplikasi tersebut disebut…",
+    "pilihan": [
+      "Sistem operasi",
+      "Browser",
+      "Database",
+      "Server"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 22,
+    "pertanyaan": "Ikon gambar apakah ini…. <img src='https://img.antaranews.com/cache/1200x800/2020/10/07/IMG_6611.jpg.webp' class='img-post'> <br>",
+    "pilihan": [
+      "Whatssap",
+      "Facebook",
+      "Spreadsheet",
+      "E-mail"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 23,
+    "pertanyaan": "Email adalah singkatan dari …",
+    "pilihan": [
+      "Elektrik mail",
+      "Extra mail",
+      "Elektronik mail",
+      "Efektiv mail"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 24,
+    "pertanyaan": "Mengirimkan email langsung ke sebuah alamat tertentu biasa disebut …",
+    "pilihan": [
+      "Blin Carbon Copy",
+      "Carbon Copy",
+      "Point to Point.",
+      "Discussion List"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 25,
+    "pertanyaan": "Dalam menyelesaikan suatu masalah di bidang informatika, diperlukan langkah-langkah yang logis, terstruktur, dan sistematis agar solusi dapat dicapai dengan efektif. Istilah yang tepat untuk konsep tersebut adalah …",
+    "pilihan": [
+      "Program",
+      "Langkah-langkah sistematis",
+      "Hardware",
+      "Software"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 26,
+    "pertanyaan": "Seorang programmer ingin menggambarkan urutan langkah-langkah penyelesaian masalah dalam bentuk diagram agar mudah dipahami. Diagram tersebut dikenal dengan istilah …",
+    "pilihan": [
+      "Diagram alur",
+      "Program",
+      "Data",
+      "Hardware"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 27,
+    "pertanyaan": "Pada sebuah diagram alur (flowchart), terdapat simbol berbentuk oval yang biasanya digunakan pada bagian awal dan akhir proses. Simbol tersebut memiliki arti …",
+    "pilihan": [
+      "Proses",
+      "Input",
+      "Start/End",
+      "Keputusan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 28,
+    "pertanyaan": "Dalam flowchart, simbol berbentuk persegi panjang digunakan untuk menunjukkan suatu langkah kerja atau aktivitas yang dilakukan dalam proses. Simbol tersebut berarti …",
+    "pilihan": [
+      "Input",
+      "Proses",
+      "Output",
+      "Keputusan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 29,
+    "pertanyaan": "Ketika sebuah flowchart menunjukkan adanya percabangan berdasarkan suatu kondisi tertentu, simbol yang digunakan adalah bentuk belah ketupat. Simbol ini berarti …",
+    "pilihan": [
+      "Proses",
+      "Input",
+      "Output",
+      "Keputusan"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 30,
+    "pertanyaan": "Untuk membuat aplikasi atau program komputer, seseorang harus menggunakan bahasa khusus yang dapat dipahami oleh komputer. Fungsi dari bahasa pemrograman adalah …",
+    "pilihan": [
+      "Menggambar",
+      "Membuat program",
+      "Mengetik",
+      "Mencetak"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 31,
+    "pertanyaan": "Seorang siswa belajar membuat program sederhana menggunakan bahasa pemrograman populer yang sering digunakan saat ini. Contoh bahasa tersebut adalah …",
+    "pilihan": [
+      "Python",
+      "Word",
+      "Excel",
+      "Paint"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 32,
+    "pertanyaan": "Dalam pemrograman, diperlukan tempat untuk menyimpan nilai yang dapat berubah selama program berjalan. Tempat penyimpanan tersebut disebut …",
+    "pilihan": [
+      "Nilai tetap",
+      "Tempat menyimpan data",
+      "Program",
+      "Hardware"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 33,
+    "pertanyaan": "Dalam penulisan program, tipe data digunakan untuk menentukan jenis data yang disimpan. Tipe data yang digunakan untuk menyimpan bilangan bulat adalah …",
+    "pilihan": [
+      "String",
+      "Integer",
+      "Boolean",
+      "Char"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 34,
+    "pertanyaan": "Dalam sebuah program, terdapat struktur yang memungkinkan komputer memilih satu aksi dari beberapa pilihan berdasarkan kondisi tertentu. Struktur ini disebut …",
+    "pilihan": [
+      "Looping",
+      "Selection",
+      "Input",
+      "Output"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 35,
+    "pertanyaan": "Selain percabangan, dalam pemrograman juga dikenal struktur yang memungkinkan suatu perintah dijalankan berulang kali selama kondisi tertentu terpenuhi. Struktur tersebut disebut …",
+    "pilihan": [
+      "Selection",
+      "Looping",
+      "Input",
+      "Output"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 36,
+    "pertanyaan": "Langkah yang paling tepat untuk melindungi data pribadi di media social adalah….",
+    "pilihan": [
+      "Membagikan lokasi terkini setiap saaat",
+      "Menggunakan kata sandi yang sama untuk semua akun",
+      "Mengatur privasi akun menjadi private dan tidak membagikan NIK",
+      "Meneririma permitaan pertemanan dari orang asing"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 37,
+    "pertanyaan": "Dalam logika pemrograman, operator AND digunakan untuk menggabungkan dua kondisi. Hasilnya akan benar jika …",
+    "pilihan": [
+      "Salah satu benar",
+      "Semua benar",
+      "Semua salah",
+      "Tidak ada"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 38,
+    "pertanyaan": "Saat membuat program, sering terjadi kesalahan (error) yang harus diperbaiki agar program berjalan dengan baik. Proses memperbaiki kesalahan ini disebut …",
+    "pilihan": [
+      "Membuat program",
+      "Memperbaiki kesalahan program",
+      "Menjalankan program",
+      "Menghapus program"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 39,
+    "pertanyaan": "Sebelum program dapat dijalankan, kode program harus diterjemahkan ke dalam bahasa mesin. Proses ini dilakukan oleh …",
+    "pilihan": [
+      "Mengedit",
+      "Menerjemahkan program",
+      "Menghapus",
+      "Menyimpan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 40,
+    "pertanyaan": "Berbeda dengan compiler, ada penerjemah yang langsung menjalankan baris per baris kode program tanpa harus dikompilasi terlebih dahulu. Penerjemah ini disebut …",
+    "pilihan": [
+      "Penerjemah langsung",
+      "Penyimpan data",
+      "Editor",
+      "Hardware"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 41,
+    "pertanyaan": "Untuk memudahkan programmer dalam menulis, mengedit, dan menjalankan program, digunakan sebuah lingkungan kerja terpadu. Lingkungan ini disebut …",
+    "pilihan": [
+      "Lingkungan pemrograman",
+      "Hardware",
+      "Sistem operasi",
+      "Jaringan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 42,
+    "pertanyaan": "Salah satu contoh aplikasi yang sering digunakan sebagai lingkungan pengembangan program adalah …",
+    "pilihan": [
+      "VS Code",
+      "Word",
+      "Excel",
+      "Paint"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 43,
+    "pertanyaan": "Dalam pengolahan data, terdapat kumpulan data yang disusun secara sistematis agar mudah diakses, dikelola, dan diperbarui. Kumpulan tersebut disebut …",
+    "pilihan": [
+      "Kumpulan data",
+      "Program",
+      "Hardware",
+      "Jaringan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 44,
+    "pertanyaan": "Untuk mengelola dan memanipulasi data dalam basis data, digunakan bahasa khusus yang disebut SQL. Fungsi SQL adalah …",
+    "pilihan": [
+      "Menggambar",
+      "Mengelola database",
+      "Mengetik",
+      "Bermain"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 45,
+    "pertanyaan": "Dalam sebuah database, data disusun dalam bentuk tabel yang terdiri dari …",
+    "pilihan": [
+      "Baris dan kolom",
+      "File dan folder",
+      "Program",
+      "Hardware"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 46,
+    "pertanyaan": "Dalam tabel database, diperlukan suatu atribut yang menjadi penanda unik setiap data agar tidak terjadi duplikasi. Atribut tersebut disebut …",
+    "pilihan": [
+      "Kunci utama",
+      "Data biasa",
+      "Program",
+      "Hardware"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 47,
+    "pertanyaan": "Dalam dunia teknologi informasi, upaya untuk melindungi data dari akses yang tidak sah disebut …",
+    "pilihan": [
+      "Security",
+      "Safety",
+      "Program",
+      "Sistem"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 48,
+    "pertanyaan": "Untuk menghindari kehilangan data akibat kerusakan atau kesalahan, dilakukan proses penyalinan data sebagai cadangan. Proses ini disebut …",
+    "pilihan": [
+      "Menghapus data",
+      "Menyalin data cadangan",
+      "Mengedit data",
+      "Mengirim data"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 49,
+    "pertanyaan": "Salah satu ancaman dalam penggunaan komputer adalah adanya program yang dapat merusak sistem dan mencuri data pengguna. Program tersebut dikenal sebagai …",
+    "pilihan": [
+      "Program berbahaya",
+      "Hardware",
+      "Data",
+      "Jaringan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 50,
+    "pertanyaan": "Berikut yang bukan ciri algoritma adalah …",
+    "pilihan": [
+      "Memiliki langkah-langkah terbatas",
+      "Tidak jelas urutannya",
+      "Memiliki input dan output",
+      "Efektif"
+    ],
+    "jawaban": 1
+  }
+]
