@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Berikut ini yang merupakan peran seorang anak dalam keluarga adalah...",
+    "pilihan": [
+      "Mencari nafkah",
+      "Membayar tagihan listrik",
+      "Belajar dengan giat",
+      "Memasak makanan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Secara geografis, Indonesia berada di antara dua benua dan dua samudra. Berikut ini pengaruh letak geografis tersebut terhadap kehidupan masyarakat Indonesia adalah...",
+    "pilihan": [
+      "Indonesia memiliki iklim yang sangat dingin",
+      "Indonesia memiliki sedikit keanekaragaman hayati",
+      "Indonesia menjadi jalur perdagangan internasional",
+      "Indonesia sering mengalami bencana alam gempa bumi"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Nilai dan norma berperan penting dalam kehidupan bermasyarakat. Berikut yang bukan merupakan peran nilai dan norma adalah...",
+    "pilihan": [
+      "Mengatur perilaku masyarakat agar tertib dan harmonis",
+      "Menciptakan kehidupan masyarakat yang aman dan damai",
+      "Menjadi pedoman bagi masyarakat dalam berperilaku",
+      "Membatasi kreativitas dan inovasi masyarakat dalam berkembang"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Di era digital ini, akses internet menjadi kebutuhan yang semakin penting, bahkan bagi pelajar di daerah terpencil. Namun, tidak semua orang memiliki kemampuan finansial yang sama untuk memenuhi kebutuhan ini. Faktor yang paling memengaruhi perbedaan pemenuhan kebutuhan tersebut adalah...",
+    "pilihan": [
+      "Perkembangan teknologi",
+      "Kondisi alam",
+      "Tingkat pendidikan",
+      "Pendapatan"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Berikut ini yang merupakan syarat terjadinya interaksi sosial adalah...",
+    "pilihan": [
+      "Kontak sosial dan komunikasi",
+      "Perbedaan pendapat",
+      "Perbedaan suku dan agama",
+      "Perbedaan tingkat pendidikan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Perhatikan pernyataan berikut!<br>1. Menggunakan kendaraan bermotor<br>2. Membakar sampah<br>3. Menanam pohon<br>4. Menggunakan pupuk organik<br>Pernyataan di atas yang merupakan kegiatan yang dapat mencemari udara ditunjukkan oleh nomor...",
+    "pilihan": [
+      "1 dan 2",
+      "1 dan 3",
+      "2 dan 3",
+      "2 dan 4"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Berikut ini yang bukan merupakan manfaat dari penggunaan pupuk organik adalah...",
+    "pilihan": [
+      "Meningkatkan kesuburan tanah",
+      "Mengurangi pencemaran tanah",
+      "Meningkatkan hasil panen",
+      "Mempercepat proses pengolahan tanah"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Di daerah perkotaan, teknologi berkembang pesat, sementara di daerah pedesaan perkembangan teknologi berjalan lambat. Analisis yang tepat tentang ketimpangan perkembangan iptek ini dapat terhadap kelangkaan adalah...",
+    "pilihan": [
+      "Perkembangan iptek yang tidak merata menyebabkan kesenjangan ekonomi antara daerah perkotaan dan pedesaan, sehingga menyebabkan kelangkaan lapangan pekerjaan di daerah pedesaan",
+      "Perkembangan iptek yang tidak merata menyebabkan masyarakat di daerah pedesaan sulit mengakses informasi dan teknologi baru, sehingga menyebabkan kelangkaan sumber daya manusia yang terampil",
+      "Perkembangan iptek yang tidak merata menyebabkan harga barang dan jasa di daerah perkotaan lebih mahal dibandingkan di daerah pedesaan, sehingga menyebabkan kelangkaan barang dan jasa di daerah perkotaan",
+      "Perkembangan iptek yang tidak merata tidak berpengaruh terhadap kelangkaan, karena kelangkaan lebih disebabkan oleh faktor alam."
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Berikut ini yang bukan merupakan penyebab perubahan potensi sumber daya alam adalah...",
+    "pilihan": [
+      "Pertumbuhan penduduk",
+      "Perkembangan teknologi",
+      "Bencana alam atau kerusakan lingkungan",
+      "Pendidikan"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Seorang pengrajin kayu membuat meja dan kursi dari kayu jati. Kayu jati yang digunakan dalam proses produksi tersebut termasuk faktor produksi...",
+    "pilihan": [
+      "Alam",
+      "Modal",
+      "Tenaga kerja",
+      "Kewirausahaan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Perhatikan tabel berikut! <img src='https://i.ibb.co.com/DfKfZ6C2/IPS11.jpg' class='img-post'> <br> Pasangan jenis distribusi dan contoh yang tepat ditunjukkan oleh...",
+    "pilihan": [
+      "1-A, 2-B, 3-C",
+      "1-B, 2-A, 3-C",
+      "1-C, 2-A, 3-B",
+      "1-A, 2-C, 3-B"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Berikut ini yang merupakan pernyataan benar tentang hubungan selera seseorang/masyarakat terhadap permintaan suatu barang adalah...",
+    "pilihan": [
+      "Selera masyarakat tidak berpengaruh terhadap permintaan suatu barang, karena permintaan lebih dipengaruhi oleh harga",
+      "Selera masyarakat berpengaruh terhadap permintaan suatu barang. Jika masyarakat menyukai suatu barang, maka permintaan akan meningkat.",
+      "Selera masyarakat berpengaruh terhadap permintaan suatu barang. Jika masyarakat tidak menyukai suatu barang, maka permintaan akan meningkat.",
+      "Selera masyarakat hanya berpengaruh terhadap permintaan barang-barang mewah."
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Berikut ini yang bukan merupakan pengaruh isolasi geografis terhadap keragaman budaya adalah...",
+    "pilihan": [
+      "Melestarikan budaya asli",
+      "Mempercepat perubahan budaya",
+      "Menimbulkan perbedaan bahasa",
+      "Menciptakan keunikan budaya"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Sebuah desa wisata mengalami lonjakan kunjungan wisatawan yang signifikan dalam beberapa tahun terakhir. Meskipun memberikan dampak positif terhadap perekonomian desa, pembangunan pariwisata yang tidak terkendali juga berpotensi menyebabkan...",
+    "pilihan": [
+      "Peningkatan kesadaran masyarakat tentang pentingnya pelestarian budaya lokal",
+      "Terjadinya kerusakan lingkungan akibat pembangunan infrastruktur pariwisata",
+      "Meningkatnya pendapatan masyarakat desa secara merata",
+      "Terciptanya lapangan pekerjaan baru di sektor pariwisata"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Ibu Ani rajin mengikuti seminar tentang literasi keuangan. Ia juga sering membaca buku dan artikel tentang pengelolaan keuangan keluarga. Dampak positif yang mungkin dirasakan keluarga Ibu Ani adalah...",
+    "pilihan": [
+      "Ibu Ani akan menjadi lebih boros dalam menggunakan uang",
+      "Keluarga Ibu Ani akan lebih mudah terjebak dalam investasi bodong",
+      "Ibu Ani akan mampu membuat perencanaan keuangan keluarga yang lebih baik",
+      "Keluarga Ibu Ani akan kesulitan dalam memenuhi kebutuhan sehari-hari."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 16,
+    "pertanyaan": "Letak geografis Indonesia yang strategis memudahkan interaksi dengan bangsa lain. Salah satu dampak positif dari interaksi tersebut adalah...",
+    "pilihan": [
+      "Masuknya budaya asing yang negatif",
+      "Terjadinya penjajahan oleh bangsa asing",
+      "Terjadinya pertukaran ilmu pengetahuan dan teknologi",
+      "Hilangnya budaya asli Indonesia"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Wilayah laut Indonesia sangat luas dengan potensi sumber daya hayati yang melimpah. Berikut ini cara pemanfaatkan potensi kemaritiman Indonesia secara optimal adalah...",
+    "pilihan": [
+      "Melakukan penangkapan ikan secara berlebihan",
+      "Membuang limbah industri ke laut",
+      "Mengembangkan industri perikanan dan pariwisata bahari yang berkelanjutan",
+      "Mengabaikan konservasi terumbu karang"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Pendidikan memiliki peran penting dalam meningkatkan kualitas sumber daya manusia. Dibawah ini upaya yang harus dilakukan pemerintah untuk meningkatkan kualitas pendidikan di Indonesia adalah...",
+    "pilihan": [
+      "Menutup sekolah-sekolah di daerah terpencil",
+      "Mengurangi jumlah guru dan tenaga kependidikan",
+      "Membangun sekolah-sekolah baru dan menyediakan beasiswa bagi siswa berprestasi",
+      "Mencegah anak-anak dari keluarga miskin untuk bersekolah"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Agama mengajarkan umatnya untuk menjaga kelestarian alam. Berikut ini merupakan prinsip agama yang dapat diterapkan dalam pemanfaatan sumber daya alam adalah...",
+    "pilihan": [
+      "Mengeksploitasi sumber daya alam sebanyak-banyaknya untuk kepentingan pribadi",
+      "Menggunakan sumber daya alam secara bijak dan bertanggung jawab",
+      "Mengabaikan dampak negatif dari pemanfaatan sumber daya alam",
+      "Mencegah penggunaan teknologi dalam pengelolaan sumber daya alam"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Berikut ini interaksi masyarakat Indonesia dengan pedagang asing pada awal Masehi yang memengaruhi perkembangan budaya di Indonesia adalah...",
+    "pilihan": [
+      "Tidak ada pengaruh yang signifikan karena masyarakat Indonesia telah memiliki budaya yang maju",
+      "Terjadi akulturasi budaya, seperti masuknya agama Hindu-Buddha dan seni bangunan candi",
+      "Masyarakat Indonesia cenderung menolak budaya asing dan mempertahankan budaya asli",
+      "Interaksi tersebut menyebabkan konflik berkepanjangan antara masyarakat Indonesia dengan pedagang asing."
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 21,
+    "pertanyaan": "Berikut ini yang bukan merupakan manfaat perdagangan antar daerah/antarpulau adalah...",
+    "pilihan": [
+      "Menyediakan alternatif alat pemuas kebutuhan konsumen",
+      "Meningkatkan produktivitas produsen",
+      "Memperluas kesempatan kerja bagi masyarakat",
+      "Menurunkan kesejahteraan masyarakat"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 22,
+    "pertanyaan": "Organisasi politik dapat menjadi saluran mobilitas sosial bagi masyarakat. Berikut ini peran organisasi politik yang dapat memfasilitasi mobilitas sosial adalah...",
+    "pilihan": [
+      "Dengan membatasi akses masyarakat terhadap pendidikan",
+      "Dengan menciptakan sistem kasta yang kaku",
+      "Dengan memberikan kesempatan kepada masyarakat untuk menduduki jabatan politik",
+      "Dengan menghambat perkembangan ekonomi masyarakat"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 23,
+    "pertanyaan": "Wayang kulit merupakan salah satu kesenian tradisional Indonesia yang populer. Dalam perkembangannya, wayang kulit juga digunakan sebagai media dakwah oleh para wali. Hal ini menunjukkan bahwa...",
+    "pilihan": [
+      "Para wali menolak seluruh budaya lokal dan menggantinya dengan budaya Islam",
+      "Kebudayaan lokal dapat dipadukan dengan nilai-nilai Islam untuk menyebarkan agama Islam",
+      "Wayang kulit merupakan kesenian yang berasal dari kebudayaan Islam",
+      "Penyebaran agama Islam di Indonesia dilakukan dengan cara menguasai kerajaan-kerajaan Hindu-Buddha"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 24,
+    "pertanyaan": "Berikut ini yang bukan merupakan faktor pendorong kedatangan pertama kali bangsa Barat ke Indonesia adalah...",
+    "pilihan": [
+      "Kekayaan alam (rempah-rempah) yang dimiliki Indonesia",
+      "Motivasi 3G (Gold, Glory, Gospel)",
+      "Revolusi industri",
+      "Daya tarik wisata yang dimiliki Indonesia"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 25,
+    "pertanyaan": "Organisasi pergerakan nasional yang pertama kali didirikan dan menjadi tonggak atau pelopor bagi organisasi lainnya adalah...",
+    "pilihan": [
+      "Budi Utomo",
+      "Sarekat Islam",
+      "Indische Partij",
+      "Partai Nasional Indonesia"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 26,
+    "pertanyaan": "Seorang ibu rumah tangga membutuhkan dana mendesak untuk keperluan keluarga. Ia memiliki perhiasan emas yang dapat dijadikan jaminan. Jenis lembaga keuangan bukan bank yang dapat membantu ibu rumah tangga tersebut adalah...",
+    "pilihan": [
+      "Perusahaan pembiayaan",
+      "Koperasi simpan pinjam",
+      "Perusahaan asuransi",
+      "Perusahaan umum pegadaian"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 27,
+    "pertanyaan": "Di sebuah kelas, terdapat dua siswa yang memiliki pendapat yang sangat berbeda mengenai cara menyelesaikan tugas kelompok. Siswa A ingin membagi tugas secara merata, sedangkan siswa B ingin mengerjakan semua tugas sendiri agar lebih cepat selesai. Perbedaan pendapat ini kemudian menimbulkan perdebatan yang cukup sengit. Faktor penyebab konflik yang paling dominan dalam situasi tersebut adalah...",
+    "pilihan": [
+      "Perbedaan latar belakang kebudayaan",
+      "Perbedaan kepentingan",
+      "Perbedaan individu dalam cara berpikir dan bertindak",
+      "Perubahan nilai-nilai yang cepat"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 28,
+    "pertanyaan": "Bentuk diplomasi yang dilakukan pemerintah Indonesia pada awal kemerdekaan untuk mendapatkan bantuan ekonomi dari India adalah...",
+    "pilihan": [
+      "Mengirimkan pasukan Garuda",
+      "Mengirimkan bantuan beras",
+      "Mengirimkan delegasi kesenian",
+      "Mengirimkan duta besar."
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 29,
+    "pertanyaan": "Indonesia tidak dapat memproduksi sendiri semua jenis buah-buahan yang dibutuhkan masyarakatnya, seperti apel, anggur, dan kurma. Faktor pendorong perdagangan internasional yang relevan dengan situasi tersebut adalah...",
+    "pilihan": [
+      "Perbedaan selera konsumen",
+      "Perbedaan harga barang",
+      "Pemenuhan kebutuhan nasional",
+      "Perbedaan mata uang"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 30,
+    "pertanyaan": "Di sebuah desa terpencil, akses terhadap fasilitas kesehatan sangat terbatas. Banyak ibu hamil yang tidak mendapatkan perawatan memadai, sehingga angka kematian bayi dan ibu melahirkan cukup tinggi. Selain itu, kesadaran masyarakat tentang pentingnya keluarga berencana masih rendah. Faktor yang paling dominan memengaruhi tingginya angka kematian di desa tersebut adalah...",
+    "pilihan": [
+      "Kurangnya lapangan pekerjaan",
+      "Tingkat pendidikan yang rendah",
+      "Keterbatasan akses fasilitas kesehatan",
+      "Bencana alam yang sering terjadi"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 31,
+    "pertanyaan": "Faktor internal yang dapat menyebabkan perubahan sosial adalah...",
+    "pilihan": [
+      "Bencana alam",
+      "Perang",
+      "Perkembangan jumlah penduduk",
+      "Pengaruh budaya asing"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 32,
+    "pertanyaan": "Perubahan sosial yang dilakukan dengan sengaja dan memiliki tujuan tertentu disebut...",
+    "pilihan": [
+      "Perubahan yang direncanakan",
+      "Perubahan yang tidak direncanakan",
+      "Perubahan evolusi",
+      "Perubahan revolusi"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 33,
+    "pertanyaan": "Perhatikan pernyataan berikut:<br>1. Munculnya berbagai jenis pakaian dengan model terbaru<br>2. Peningkatan kualitas pendidikan melalui teknologi<br>3. Berkembangnya industri hiburan dengan berbagai platform digital<br>4. Meningkatnya penggunaan kendaraan pribadi<br>Pernyataan yang menunjukkan dampak positif modernisasi adalah...",
+    "pilihan": [
+      "1 dan 2",
+      "1 dan 3",
+      "2 dan 3",
+      "3 dan 4"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 34,
+    "pertanyaan": "Dahulu, masyarakat Indonesia mendapatkan hiburan dari pertunjukan tradisional seperti wayang dan ludruk. Sekarang, masyarakat dapat menikmati berbagai jenis hiburan modern seperti film, konser musik, dan permainan daring. Kondisi ini menunjukkan bahwa modernisasi telah memengaruhi...",
+    "pilihan": [
+      "Sistem pemerintahan",
+      "Dunia hiburan",
+      "Sistem kepercayaan",
+      "Sistem kekerabatan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 35,
+    "pertanyaan": "Dahulu, informasi hanya dapat diperoleh dari buku dan media cetak. Sekarang, informasi dapat diakses dengan mudah dan cepat dari berbagai sumber di seluruh dunia melalui internet. Perubahan ini menunjukkan pengaruh globalisasi dalam aspek...",
+    "pilihan": [
+      "Ekonomi",
+      "Politik dan hukum",
+      "Ilmu pengetahuan dan teknologi",
+      "Kebudayaan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 36,
+    "pertanyaan": "Dahulu, masyarakat Indonesia hanya mengenal produk-produk lokal. Sekarang, masyarakat dapat dengan mudah menemukan dan membeli produk-produk dari berbagai negara di dunia. Namun, di sisi lain, produk-produk lokal kesulitan bersaing dan kurang diminati. Analisis dampak positif dan negatif globalisasi dalam aspek ekonomi pada ilustrasi tersebut adalah...",
+    "pilihan": [
+      "Positif: Meningkatnya pilihan produk; Negatif: Menurunnya minat terhadap produk lokal",
+      "Positif: Meningkatnya minat terhadap produk lokal; Negatif: Menurunnya pilihan produk",
+      "Positif: Meningkatnya produksi lokal; Negatif: Menurunnya produksi asing",
+      "Positif: Meningkatnya ekspor produk; Negatif: Meningkatnya impor produk"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 37,
+    "pertanyaan": "Dahulu, masyarakat Indonesia mendapatkan hiburan dari pertunjukan tradisional seperti wayang dan ludruk. Sekarang, masyarakat dapat dengan mudah menemukan dan menikmati berbagai jenis hiburan modern seperti film, konser musik, dan permainan daring. Namun, beberapa kelompok masyarakat tetap berusaha untuk melestarikan dan mengembangkan pertunjukan tradisional. Analisis dampak positif dan negatif modernisasi dan globalisasi terhadap pelestarian kearifan lokal dalam bidang hiburan pada ilustrasi tersebut adalah...",
+    "pilihan": [
+      "Positif: Meningkatnya pilihan hiburan; Negatif: Menurunnya minat terhadap hiburan tradisional",
+      "Positif: Meningkatnya minat terhadap hiburan tradisional; Negatif: Menurunnya pilihan hiburan",
+      "Positif: Meningkatnya produksi hiburan tradisional; Negatif: Menurunnya produksi hiburan modern",
+      "Positif: Meningkatnya ekspor hiburan; Negatif: Meningkatnya impor hiburan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 38,
+    "pertanyaan": "Berdasarkan bahan pembuatannya, uang yang terbuat dari emas, perak, atau perunggu disebut uang....",
+    "pilihan": [
+      "Kertas",
+      "Logam",
+      "Plastik",
+      "Elektronik"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 39,
+    "pertanyaan": "Sebuah bank yang fokus melayani masyarakat kecil dan menengah di wilayah pedesaan, dengan memberikan kredit dan simpanan dalam jumlah kecil. Bank yang dimaksud dalam ilustrasi tersebut adalah...",
+    "pilihan": [
+      "Bank Umum",
+      "Bank Perkreditan Rakyat",
+      "Bank Sentral",
+      "Bank Devisa"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 40,
+    "pertanyaan": "Seorang siswa melihat temannya memposting komentar negatif tentang siswa lain di media sosial. Siswa tersebut kemudian mengingatkan temannya untuk menghapus komentar tersebut dan menghormati perasaan orang lain. Tindakan siswa tersebut mencerminkan prinsip interaksi yang tepat di dunia digital, yaitu...",
+    "pilihan": [
+      "Educate",
+      "Protect",
+      "Respect",
+      "Inform"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 41,
+    "pertanyaan": "Seorang konsumen ingin membeli sebuah buku yang sulit ditemukan di toko buku konvensional. Konsumen tersebut kemudian mencari buku tersebut di berbagai platform e-commerce dan akhirnya menemukan buku yang diinginkan. Analisis keuntungan e-commerce yang paling tepat dari ilustrasi tersebut adalah...",
+    "pilihan": [
+      "Mempermudah belanja kapan pun dan di mana pun",
+      "Memiliki produk dan layanan yang bervariasi",
+      "Memiliki harga yang bersaing",
+      "Memperpendek jalur distribusi"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 42,
+    "pertanyaan": "Seorang siswa mendapatkan uang saku setiap minggu. Siswa tersebut kemudian mencatat semua pengeluaran dan pemasukan uang sakunya. Siswa tersebut juga membuat rencana untuk menabung sebagian uang sakunya untuk membeli barang yang diinginkan. Analisis cakupan kemampuan literasi finansial yang paling tepat dari ilustrasi tersebut adalah...",
+    "pilihan": [
+      "Memiliki pemahaman tentang transaksi ekonomi dan beragam jenis praktiknya",
+      "Mengenali pemasukan (earning) dan mengelola pengeluaran (spending)",
+      "Merancang tabungan (saving) dan merancang alokasi berbagi (sharing)",
+      "Mengenali pemasukan (earning), mengelola pengeluaran (spending), dan merancang tabungan (saving)"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 43,
+    "pertanyaan": "Rencana Pembangunan Lima Tahun (Repelita) pertama kali dilaksanakan pada masa...",
+    "pilihan": [
+      "Orde Lama",
+      "Orde Baru",
+      "Reformasi",
+      "Demokrasi Liberal"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 44,
+    "pertanyaan": "Perhatikan pernyataan berikut:<br>1. Meningkatnya angka harapan hidup<br>2. Meningkatnya tingkat pengangguran<br>3. Meningkatnya tingkat pendidikan<br>4. Meningkatnya tingkat kemiskinan<br>Pernyataan yang menunjukkan peningkatan kualitas kehidupan adalah...",
+    "pilihan": [
+      "1 dan 2",
+      "1 dan 3",
+      "2 dan 4",
+      "3 dan 4"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 45,
+    "pertanyaan": "Perhatikan pernyataan berikut:<br>1. Indonesia memiliki potensi sumber daya manusia yang besar<br>2. Indonesia memiliki keanekaragaman budaya yang kaya<br>3. Indonesia memiliki tingkat kemiskinan yang tinggi<br>4. Indonesia memiliki infrastruktur yang belum memadai<br>Pernyataan yang menunjukkan potensi Indonesia untuk menjadi negara maju adalah...",
+    "pilihan": [
+      "1 dan 2",
+      "1 dan 3",
+      "2 dan 4",
+      "3 dan 4"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 46,
+    "pertanyaan": "Perhatikan pernyataan berikut:<br>1. Masyarakat memiliki akses yang mudah terhadap layanan kesehatan dan pendidikan berkualitas<br>2. Industri manufaktur dan jasa berkembang pesat dengan teknologi canggih<br>3. Tingkat pengangguran dan kemiskinan rendah<br>4. Ketergantungan pada sektor pertanian masih tinggi<br>Pernyataan yang menunjukkan karakteristik negara maju adalah...",
+    "pilihan": [
+      "1, 2, dan 3",
+      "1, 2, dan 4",
+      "1, 3, dan 4",
+      "2, 3, dan 4"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 47,
+    "pertanyaan": "Benua Asia dan Eropa memiliki batas wilayah yang unik. Batas wilayah yang memisahkan Benua Asia dan Eropa secara geografis adalah...",
+    "pilihan": [
+      "Pegunungan Himalaya",
+      "Pegunungan Ural",
+      "Laut Tengah",
+      "Selat Bering"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 48,
+    "pertanyaan": "ASEAN merupakan contoh kerja sama internasional yang melibatkan negara-negara di kawasan Asia Tenggara. Kerja sama ini bertujuan untuk meningkatkan stabilitas dan kemajuan di kawasan tersebut. Bentuk kerja sama internasional yang dimaksud dalam data tersebut adalah...",
+    "pilihan": [
+      "Kerja sama bilateral",
+      "Kerja sama multilateral",
+      "Kerja sama regional",
+      "Kerja sama antarbenua"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 49,
+    "pertanyaan": "Sebuah negara berhasil menurunkan angka kematian ibu dan bayi, meningkatkan akses terhadap layanan kesehatan, dan mempromosikan gaya hidup sehat di masyarakatnya. Tujuan pembangunan berkelanjutan yang paling tepat dicapai dalam data tersebut adalah...",
+    "pilihan": [
+      "Tanpa kemiskinan",
+      "Tanpa kelaparan",
+      "Kehidupan sehat dan sejahtera",
+      "Pendidikan berkualitas"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 50,
+    "pertanyaan": "Sebuah komunitas berhasil mengembangkan sistem pertanian yang berkelanjutan dan meningkatkan produksi pangan, sehingga masyarakat tidak perlu khawatir soal kebutuhan pangan. Namun, komunitas tersebut masih menghadapi masalah kemiskinan dan diskriminasi terhadap perempuan dalam pengambilan keputusan. Analisis tujuan pembangunan berkelanjutan yang telah dicapai dan yang masih menjadi tantangan dalam ilustrasi tersebut adalah...",
+    "pilihan": [
+      "Tanpa kemiskinan tercapai, kesetaraan gender tantangan",
+      "Tanpa kelaparan tercapai, tanpa kemiskinan dan kesetaraan gender tantangan",
+      "Kesetaraan gender tercapai, tanpa kelaparan tantangan",
+      "Pendidikan berkualitas tercapai, tanpa kemiskinan tantangan"
+    ],
+    "jawaban": 1
+  }
+]
