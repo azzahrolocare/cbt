@@ -20,11 +20,10 @@
 
         .img-post { max-width: 100%; height: auto; display: block; }
 
-        /* --- HALAMAN VALIDASI DATA (LATAR BELAKANG DUA WARNA) --- */
+        /* --- HALAMAN VALIDASI DATA (VERSI MODERN RAMPING) --- */
         #halaman-validasi {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            /* Latar belakang: Hijau 45% ke atas, Abu-abu sisanya ke bawah */
             background: linear-gradient(#0CA458 45%, #f0f2f5 45%);
             display: flex;
             flex-direction: column;
@@ -41,26 +40,34 @@
 
         .validasi-box {
             background: white;
-            padding: 35px 30px;
+            padding: 25px 20px;
             border-radius: 15px;
-            width: 90%;
-            max-width: 400px;
+            width: 85%;
+            max-width: 340px; 
             text-align: center;
             box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            box-sizing: border-box;
         }
 
         .data-display {
             text-align: left;
             background: #f8f9fa;
-            padding: 15px;
+            padding: 12px;
             border-radius: 12px;
-            margin: 20px 0;
+            margin: 15px 0;
             border: 1px solid #eee;
         }
-        .data-label { font-size: 11px; color: #888; font-weight: bold; text-transform: uppercase; }
-        .data-value { font-size: 18px; color: #0CA458; font-weight: 800; margin-bottom: 10px; }
+        .data-label { font-size: 10px; color: #888; font-weight: bold; text-transform: uppercase; }
+        .data-value { font-size: 16px; color: #0CA458; font-weight: 800; margin-bottom: 8px; line-height: 1.2; }
         
-        /* --- CSS UJIAN TETAP --- */
+        .btn-start { 
+            background: #0CA458; color: white; width: 100%; border: none; 
+            padding: 14px; border-radius: 10px; font-weight: 800; cursor: pointer; 
+            transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; font-size: 14px;
+        }
+        .btn-start:hover { background: #098a4a; transform: translateY(-2px); }
+
+        /* --- CSS INTERFACE UJIAN ORIGINAL --- */
         .header-ujian { background: #0CA458; color: white; padding: 0 15px; position: fixed; top: 0; width: 100%; height: 70px; display: none; justify-content: space-between; align-items: center; z-index: 100; box-sizing: border-box; box-shadow: 0 3px 12px rgba(0,0,0,0.2); }
         .identity-area { display: flex; align-items: center; gap: 10px; }
         .avatar-circle { width: 40px; height: 40px; background: #ffffff33; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #ffffff66; }
@@ -86,8 +93,6 @@
         .btn { padding: 12px 18px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; font-size: 12px; display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; }
         .btn-back { background: #eceff1; color: #455a64; }
         .btn-next { background: #3EC381; color: white; }
-        .btn-start { background: #0CA458; color: white; width: 100%; border: none; padding: 15px; border-radius: 10px; font-weight: 800; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
-        .btn-start:hover { background: #0d124a; transform: translateY(-2px); }
         .btn-finish { background: #0CA458; color: white; }
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 2000; backdrop-filter: blur(4px); }
         .modal-box { background: white; padding: 30px; border-radius: 20px; width: 85%; max-width: 400px; text-align: center; }
@@ -103,18 +108,16 @@
 </head>
 <body>
 
+<!-- HALAMAN VALIDASI DATA (VERSI BARU) -->
 <div id="halaman-validasi">
-    <!-- Konten Header di bagian Hijau -->
     <div class="header-validasi-content">
-        <span class="material-icons-round" style="font-size: 60px;">fact_check</span>
-        <h1 style="margin: 0; font-size: 26px; letter-spacing: 2px; font-weight: 900;">KONFIRMASI</h1>
-        <p style="margin: 0; font-size: 14px; opacity: 0.8;">CBT Azzahro Application</p>
+        <span class="material-icons-round" style="font-size: 50px;">fact_check</span>
+        <h1 style="margin: 0; font-size: 22px; letter-spacing: 2px; font-weight: 900;">KONFIRMASI</h1>
+        <p style="margin: 0; font-size: 12px; opacity: 0.8;">CBT Azzahro Application</p>
     </div>
 
-    <!-- Kotak Putih Validasi -->
     <div class="validasi-box">
-        <h2 style="margin-top: 0; color: #0CA458; font-size: 22px; font-weight: 800;">DATA PESERTA</h2>
-        <p style="color: #666; font-size: 13px; margin-bottom: 20px;">Silakan periksa data Anda sebelum mulai.</p>
+        <h2 style="margin-top: 0; color: #0CA458; font-size: 18px; font-weight: 800;">DATA PESERTA</h2>
         
         <div class="data-display">
             <div class="data-label">Nama Peserta</div>
@@ -122,20 +125,20 @@
             <div class="data-label">Kelas</div>
             <div id="val-kelas" class="data-value">-</div>
             <div class="data-label">Mata Pelajaran</div>
-            <div id="val-mapel" class="data-value">INFORMATIKA</div>
+            <div id="val-mapel" class="data-value">-</div>
         </div>
         
-        <button class="btn-start" onclick="mulaiUjianSekarang()"> MULAI MENGERJAKAN</button>
+        <button class="btn-start" onclick="mulaiUjianSekarang()">MULAI MENGERJAKAN</button>
         
-        <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee;">
-            <p onclick="history.back()" style="color:#d32f2f; font-size:12px; cursor:pointer; font-weight:bold; margin:0;">
-                Terdapat kesalahan? <span style="text-decoration:underline;">Kembali</span>
+        <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee;">
+            <p onclick="history.back()" style="color:#d32f2f; font-size:11px; cursor:pointer; font-weight:bold; margin:0;">
+                Data Salah? <span style="text-decoration:underline;">Kembali ke Login</span>
             </p>
         </div>
     </div>
 </div>
 
-<!-- SISA KODE (MODAL, HEADER, CONTAINER, SCRIPT) TETAP SAMA SEPERTI SEBELUMNYA -->
+<!-- MODAL PERINGATAN -->
 <div id="modalPeringatan" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #d32f2f;">
         <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">report_problem</span></div>
@@ -146,6 +149,7 @@
     </div>
 </div>
 
+<!-- MODAL KONFIRMASI KIRIM -->
 <div id="modalConfirm" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #f9a825;">
         <div style="color:#f9a825;"><span class="material-icons-round" style="font-size:60px;">info_outline</span></div>
@@ -159,6 +163,7 @@
     </div>
 </div>
 
+<!-- INTERFACE UJIAN -->
 <div class="header-ujian">
     <div class="identity-area">
         <div class="avatar-circle" id="user-initial">-</div>
@@ -195,6 +200,7 @@
         </div>
     </div>
 
+    <!-- HASIL AKHIR -->
     <div id="hasil-akhir">
         <span class="material-icons-round" style="font-size:80px; color:#2e7d32;">check_circle</span>
         <h2 style="margin: 15px 0;">UJIAN SELESAI</h2>
@@ -208,8 +214,8 @@
             </div>
             <p style="color:#666; font-size:14px; margin-top:20px;">"Ujian telah selesai! Terima kasih telah mengikuti ujian online."</p>
         </div>
-        <button class="btn btn-finish" style="padding:8px; max-width:320px; margin-top:15px;" onclick="kembaliKeLogin()">
-            <span class="material-icons-round">logout</span> KEMBALI KE HALAMAN LOGIN
+        <button class="btn-start" style="padding:12px; max-width:320px; margin-top:15px;" onclick="kembaliKeLogin()">
+            <span class="material-icons-round">logout</span> KEMBALI KE LOGIN
         </button>
     </div>
 </div>
@@ -233,10 +239,12 @@
         }
         document.getElementById('val-nama').innerText = userData.nama.toUpperCase();
         document.getElementById('val-kelas').innerText = "KELAS " + userData.kelas;
+        
         if(userData.mapel) {
             document.getElementById('val-mapel').innerText = userData.mapel;
             document.getElementById('display-mapel').innerText = userData.mapel;
         }
+
         document.getElementById('user-name').innerText = userData.nama.toUpperCase();
         document.getElementById('display-kelas').innerText = "KELAS " + userData.kelas;
         document.getElementById('user-initial').innerText = userData.nama[0].toUpperCase();
@@ -365,6 +373,12 @@
             btn.className = ''; 
             btn.style.background = '#0CA458';
             btn.style.cursor = 'pointer';
+            btn.style.color = 'white';
+            btn.style.padding = '15px';
+            btn.style.borderRadius = '10px';
+            btn.style.fontWeight = 'bold';
+            btn.style.border = 'none';
+            btn.style.flex = '1';
             btn.onclick = kirimJawaban;
             document.getElementById('timer-box').innerText = "SIAP!";
         }
@@ -405,7 +419,7 @@
     window.addEventListener('click', function(e) {
         const menuNomor = document.getElementById('menu-nomor');
         const btnMenu = document.getElementById('btn-menu-nomor');
-        if (menuNomor.classList.contains('show')) {
+        if (menuNomor && menuNomor.classList.contains('show')) {
             if (!btnMenu.contains(e.target) && !menuNomor.contains(e.target)) {
                 menuNomor.classList.remove('show');
             }
