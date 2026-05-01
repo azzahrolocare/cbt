@@ -1,7 +1,7 @@
 {
-  "name": "CBT SMP Azzahro",
-  "short_name": "CBTAzzahro",
-  "description": "Aplikasi Ujian Online SMP Azzahro",
+  "name": "CBT SMP & SMK Azzahro",
+  "short_name": "CBT Az-Zahro",
+  "description": "Aplikasi Ujian Online SMP & SMK Azzahro",
   "start_url": "login.html",
   "display": "standalone",
   "background_color": "#0CA458",
