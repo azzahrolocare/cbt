@@ -105,7 +105,7 @@
                 <input type="text" id="tokenInput" placeholder="TOKEN UJIAN" autocomplete="off" autocorrect="off">
             </div>
         </div>
-        <button class="btn-login" id="btnLogin" onclick="validasiLogin()">MASUK SEKARANG</button>
+        <button class="btn-login" id="btnLogin" onclick="validasiLogin()">MASUK</button>
     </div>
     <div class="login-footer">&copy; 2026 SMP & SMK Az-Zahro - CBT Application System</div>
 </div>
@@ -168,9 +168,10 @@
         const tokenInput = tokenInputElem.value.trim();
 
         if(!nama || !kelas || !tokenInput || !mapelFile) return showNotif("Lengkapi data login!");
-        
+
+        //Tombol masuk warna biru tua
         btn.disabled = true; 
-        btn.innerHTML = 'MEMVALIDASI DATA<span class="dots"></span>';
+        btn.innerHTML = 'MASUK<span class="dots"></span>';
         
         try {
             const resToken = await fetch(`${SCRIPT_URL}?action=getToken&t=${new Date().getTime()}`);
@@ -178,7 +179,7 @@
             
             if(tokenInput !== dataToken.token_aktif) {
                 btn.disabled = false; 
-                btn.innerHTML = 'MASUK SEKARANG';
+                btn.innerHTML = 'MASUK';
                 tokenInputElem.value = "";
                 return showNotif("Token Salah! Gunakan token terbaru dari pengawas.");
             }
@@ -188,7 +189,7 @@
             
             if (status === "SUDAH_ADA") {
                 btn.disabled = false; 
-                btn.innerHTML = 'MASUK SEKARANG';
+                btn.innerHTML = 'MASUK';
                 namaInput.value = "";
                 tokenInputElem.value = "";
                 return showNotif("Nama tersebut sudah mengerjakan ujian!");
@@ -210,7 +211,7 @@
 
         } catch (e) { 
             btn.disabled = false; 
-            btn.innerHTML = 'MASUK SEKARANG'; 
+            btn.innerHTML = 'MASUK'; 
             showNotif("Gagal koneksi database. Periksa internet Anda."); 
         }
     }
