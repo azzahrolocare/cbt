@@ -87,7 +87,7 @@
         .container { 
             display: none; 
             max-width: 800px; 
-            margin: 90px auto 20px; 
+            margin: 90px auto 100px; /* Jarak bawah ditambah agar tidak tertutup nav */
             background: white; 
             border-radius: 12px; 
             box-shadow: 0 5px 20px rgba(0,0,0,0.1); 
@@ -110,7 +110,24 @@
         .kotak-nomor.sudah { background: #0CA458 !important; color: white !important; }
         .kotak-nomor.aktif { border: 3px solid #f9a825; transform: scale(1.1); }
         .kotak-belum { width: 35px; height: 35px; background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
-        .btn-group { display: flex; justify-content: space-between; margin-top: 30px; gap: 10px; }
+        
+        /* NAVIGASI BAWAH BARU */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            display: none; /* Muncul saat ujian */
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            box-shadow: 0 -3px 15px rgba(0,0,0,0.1);
+            z-index: 110;
+            gap: 15px;
+        }
+
         .btn { padding: 12px 18px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; font-size: 12px; display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; }
         .btn-back { background: #eceff1; color: #455a64; }
         .btn-next { background: #3EC381; color: white; }
@@ -167,7 +184,7 @@
     </div>
 </div>
 
-<!-- MODAL PERINGATAN FULLSCREEN (BARU) -->
+<!-- MODAL PERINGATAN FULLSCREEN -->
 <div id="modalPaksaFullscreen" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #d32f2f;">
         <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">fullscreen_exit</span></div>
@@ -218,14 +235,9 @@
     <div class="nomor-navigasi" id="navigasiNomor"></div>
 </div>
 
-<div class="container" id="zoom-target">
+<div class="container" id="white-paper">
     <div id="konten-ujian">
         <div id="konten-soal">Memuat soal...</div>
-        <div class="btn-group">
-            <button class="btn btn-back" onclick="navigasi(-1)"><span class="material-icons-round">arrow_back</span> KEMBALI</button>
-            <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">LANJUT <span class="material-icons-round">arrow_forward</span></button>
-            <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <span class="material-icons-round">task_alt</span></button>
-        </div>
     </div>
 
     <!-- HASIL AKHIR -->
@@ -249,7 +261,15 @@
     </div>
 </div>
 
-<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">
+<!-- NAVIGASI BAWAH (STATIS) -->
+<div class="bottom-nav" id="navigation-bar">
+    <button class="btn btn-back" onclick="navigasi(-1)"><span class="material-icons-round">arrow_back</span> KEMBALI</button>
+    <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">LANJUT <span class="material-icons-round">arrow_forward</span></button>
+    <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <span class="material-icons-round">task_alt</span></button>
+</div>
+
+<!-- TOMBOL ZOOM FLOATING (VISUAL) -->
+<div style="position: fixed; bottom: 85px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">
     <button onclick="zoomAction(0.1)" style="width: 50px; height: 50px; border-radius: 50%; border: none; background: #0CA458; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;">+</button>
     <button onclick="zoomAction(-0.1)" style="width: 50px; height: 50px; border-radius: 50%; border: none; background: #d32f2f; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;">-</button>
 </div>
@@ -290,10 +310,10 @@
         document.getElementById('halaman-validasi').style.display = 'none';
         document.querySelector('.header-ujian').style.display = 'flex';
         document.querySelector('.container').style.display = 'block';
+        document.getElementById('navigation-bar').style.display = 'flex';
         muatSoal();
     }
 
-    // FUNGSI REQUEST FULLSCREEN
     function requestFullscreen() {
         let elem = document.documentElement;
         if (elem.requestFullscreen) {
@@ -305,7 +325,6 @@
         }
     }
 
-    // DETEKSI PERUBAHAN LAYAR PENUH
     document.addEventListener('fullscreenchange', () => {
         const sedangUjian = document.querySelector('.header-ujian').style.display === 'flex';
         const sudahSelesai = document.getElementById('hasil-akhir').style.display === 'flex';
@@ -315,7 +334,6 @@
         }
     });
 
-    // KEMBALI KE FULLSCREEN SAAT KLIK OKE
     function kembaliKeFullscreen() {
         requestFullscreen();
         document.getElementById('modalPaksaFullscreen').style.display = 'none';
@@ -346,6 +364,19 @@
         });
         document.getElementById('konten-soal').innerHTML = html; 
         renderNav();
+    }
+
+    // FUNGSI ZOOM
+    function zoomAction(delta) {
+        currentZoom += delta;
+        if (currentZoom < 0.5) currentZoom = 0.5;
+        if (currentZoom > 2.0) currentZoom = 2.0;
+        applyZoom();
+    }
+
+    function applyZoom() {
+        const paper = document.getElementById('white-paper');
+        paper.style.transform = `scale(${currentZoom})`;
     }
 
     function toggleMenuNomor() { document.getElementById('menu-nomor').classList.toggle('show'); }
@@ -453,6 +484,7 @@
 
             document.getElementById('modalConfirm').style.display = 'none';
             document.getElementById('konten-ujian').style.display = 'none';
+            document.getElementById('navigation-bar').style.display = 'none';
             document.getElementById('btn-menu-nomor').style.display = 'none'; 
             document.getElementById('hasil-akhir').style.display = 'flex';
             document.getElementById('benar-tampil').innerText = benar;
@@ -483,31 +515,21 @@
         window.location.href = 'login.html'; 
     }
 
-    // FUNGSI ZOOM ACTION
-    function zoomAction(delta) {
-        currentZoom += delta;
-        // Batasi zoom minimal 0.5 dan maksimal 2.0
-        if (currentZoom < 0.5) currentZoom = 0.5;
-        if (currentZoom > 2.0) currentZoom = 2.0;
-        
-        const target = document.getElementById('zoom-target');
-        target.style.transform = `scale(${currentZoom})`;
-        
-        // Sesuaikan margin bawah agar konten tidak terpotong saat di-zoom besar
-        if (currentZoom > 1) {
-            target.style.marginBottom = (currentZoom * 50) + "px";
-        } else {
-            target.style.marginBottom = "20px";
-        }
-    }
-
-    // FITUR NAVIGASI REMOTE IFP + ZOOM KEYBOARD
+    // KEYBOARD LISTENER (ZOOM & NAVIGATION)
     document.addEventListener('keydown', function(event) {
         const sedangUjian = document.querySelector('.container').style.display === 'block' && 
                             document.getElementById('hasil-akhir').style.display !== 'flex';
 
         if (sedangUjian) {
             switch(event.key) {
+                case "+":
+                case "=":
+                    zoomAction(0.1);
+                    break;
+                case "-":
+                case "_":
+                    zoomAction(-0.1);
+                    break;
                 case "ArrowLeft":
                     navigasi(-1);
                     break;
@@ -525,18 +547,9 @@
                         navigasi(1);
                     }
                     break;
-                case "+":
-                case "=":
-                    zoomAction(0.1);
-                    break;
-                case "-":
-                case "_":
-                    zoomAction(-0.1);
-                    break;
             }
         }
     });
-
 </script>
 </body>
 </html>
