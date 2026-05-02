@@ -83,7 +83,7 @@
         .menu-nomor-content { display: none; position: fixed; top: 75px; right: 15px; background: white; width: 280px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); padding: 20px; z-index: 1000; max-height: 70vh; overflow-y: auto; border: 1px solid #ddd; }
         .menu-nomor-content.show { display: block; animation: fadeIn 0.2s; }
         
-        /* CONTAINER SOAL (Kertas Putih) */
+        /* Modifikasi Container untuk Zoom */
         .container { 
             display: none; 
             max-width: 800px; 
@@ -95,7 +95,7 @@
             box-sizing: border-box; 
             width: 95%; 
             min-height: 400px; 
-            transform-origin: top center; /* Penting untuk zoom */
+            transform-origin: top center;
             transition: transform 0.2s ease-out;
         }
 
@@ -110,21 +110,11 @@
         .kotak-nomor.sudah { background: #0CA458 !important; color: white !important; }
         .kotak-nomor.aktif { border: 3px solid #f9a825; transform: scale(1.1); }
         .kotak-belum { width: 35px; height: 35px; background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
-        
-        /* Navigasi di Luar Kertas Soal */
-        .navigation-wrapper {
-            max-width: 800px;
-            margin: 0 auto 50px;
-            width: 95%;
-            display: none; /* muncul bersama container */
-        }
-        
-        .btn-group { display: flex; justify-content: space-between; margin-top: 15px; gap: 10px; }
-        .btn { padding: 15px 18px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; font-size: 14px; display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .btn-back { background: #ffffff; color: #455a64; border: 1px solid #ddd; }
+        .btn-group { display: flex; justify-content: space-between; margin-top: 30px; gap: 10px; }
+        .btn { padding: 12px 18px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; font-size: 12px; display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; }
+        .btn-back { background: #eceff1; color: #455a64; }
         .btn-next { background: #3EC381; color: white; }
         .btn-finish { background: #0CA458; color: white; }
-
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 2000; backdrop-filter: blur(4px); }
         .modal-box { background: white; padding: 30px; border-radius: 20px; width: 85%; max-width: 400px; text-align: center; }
         .btn-lock { background: #ccc !important; cursor: not-allowed !important; opacity: 0.7; color: #666 !important; }
@@ -135,35 +125,6 @@
         .soal-card.active { display: block; animation: slideIn 0.3s; }
         @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .pilihan-label { display: flex; align-items: center; background: #fff; padding: 14px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 10px; cursor: pointer; }
-        
-        /* Floating Zoom Controls */
-        .zoom-controls {
-            position: fixed; 
-            bottom: 25px; 
-            right: 20px; 
-            z-index: 9999; 
-            display: flex; 
-            flex-direction: column; 
-            gap: 12px;
-        }
-        .btn-zoom {
-            width: 55px; 
-            height: 55px; 
-            border-radius: 50%; 
-            border: none; 
-            color: white; 
-            font-size: 28px; 
-            font-weight: bold; 
-            box-shadow: 0 6px 15px rgba(0,0,0,0.3); 
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: 0.2s;
-        }
-        .btn-zoom:active { transform: scale(0.9); }
-        .bg-plus { background: #0CA458; }
-        .bg-minus { background: #d32f2f; }
     </style>
 </head>
 <body>
@@ -206,7 +167,7 @@
     </div>
 </div>
 
-<!-- MODAL PERINGATAN FULLSCREEN -->
+<!-- MODAL PERINGATAN FULLSCREEN (BARU) -->
 <div id="modalPaksaFullscreen" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #d32f2f;">
         <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">fullscreen_exit</span></div>
@@ -257,13 +218,17 @@
     <div class="nomor-navigasi" id="navigasiNomor"></div>
 </div>
 
-<!-- CONTAINER KERTAS SOAL -->
-<div class="container" id="examContainer">
-    <div id="konten-ujian-wrapper">
+<div class="container" id="zoom-target">
+    <div id="konten-ujian">
         <div id="konten-soal">Memuat soal...</div>
+        <div class="btn-group">
+            <button class="btn btn-back" onclick="navigasi(-1)"><span class="material-icons-round">arrow_back</span> KEMBALI</button>
+            <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">LANJUT <span class="material-icons-round">arrow_forward</span></button>
+            <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <span class="material-icons-round">task_alt</span></button>
+        </div>
     </div>
 
-    <!-- HASIL AKHIR (Tetap di dalam container) -->
+    <!-- HASIL AKHIR -->
     <div id="hasil-akhir">
         <span class="material-icons-round" style="font-size:80px; color:#2e7d32;">check_circle</span>
         <h2 style="margin: 15px 0;">UJIAN SELESAI</h2>
@@ -284,27 +249,11 @@
     </div>
 </div>
 
-<!-- NAVIGASI DI LUAR KERTAS SOAL -->
-<div class="navigation-wrapper" id="navWrapper">
-    <div class="btn-group">
-        <button class="btn btn-back" onclick="navigasi(-1)">
-            <span class="material-icons-round">arrow_back</span> KEMBALI
-        </button>
-        <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">
-            LANJUT <span class="material-icons-round">arrow_forward</span>
-        </button>
-        <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">
-            SELESAI <span class="material-icons-round">task_alt</span>
-        </button>
-    </div>
+<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">
+    <button onclick="zoomAction(0.1)" style="width: 50px; height: 50px; border-radius: 50%; border: none; background: #0CA458; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;">+</button>
+    <button onclick="zoomAction(-0.1)" style="width: 50px; height: 50px; border-radius: 50%; border: none; background: #d32f2f; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;">-</button>
 </div>
-
-<!-- TOMBOL ZOOM (FLOATING) -->
-<div class="zoom-controls">
-    <button onclick="zoomAction(0.1)" class="btn-zoom bg-plus" title="Perbesar">+</button>
-    <button onclick="zoomAction(-0.1)" class="btn-zoom bg-minus" title="Perkecil">-</button>
-</div>
-
+    
 <script>
     let dataSoal = []; 
     let jawabanUser = JSON.parse(localStorage.getItem('drafJawaban')) || {}; 
@@ -336,26 +285,15 @@
         document.getElementById('user-initial').innerText = userData.nama[0].toUpperCase();
     };
 
-    // FUNGSI ZOOM
-    function zoomAction(delta) {
-        currentZoom += delta;
-        // Batas zoom minimal 0.5x dan maksimal 2.0x
-        if (currentZoom < 0.5) currentZoom = 0.5;
-        if (currentZoom > 2.0) currentZoom = 2.0;
-        
-        const container = document.getElementById('examContainer');
-        container.style.transform = `scale(${currentZoom})`;
-    }
-
     function mulaiUjianSekarang() {
         requestFullscreen();
         document.getElementById('halaman-validasi').style.display = 'none';
         document.querySelector('.header-ujian').style.display = 'flex';
-        document.getElementById('examContainer').style.display = 'block';
-        document.getElementById('navWrapper').style.display = 'block';
+        document.querySelector('.container').style.display = 'block';
         muatSoal();
     }
 
+    // FUNGSI REQUEST FULLSCREEN
     function requestFullscreen() {
         let elem = document.documentElement;
         if (elem.requestFullscreen) {
@@ -367,6 +305,7 @@
         }
     }
 
+    // DETEKSI PERUBAHAN LAYAR PENUH
     document.addEventListener('fullscreenchange', () => {
         const sedangUjian = document.querySelector('.header-ujian').style.display === 'flex';
         const sudahSelesai = document.getElementById('hasil-akhir').style.display === 'flex';
@@ -376,6 +315,7 @@
         }
     });
 
+    // KEMBALI KE FULLSCREEN SAAT KLIK OKE
     function kembaliKeFullscreen() {
         requestFullscreen();
         document.getElementById('modalPaksaFullscreen').style.display = 'none';
@@ -512,8 +452,7 @@
             await fetch(finalURL, { mode: 'no-cors' });
 
             document.getElementById('modalConfirm').style.display = 'none';
-            document.getElementById('konten-ujian-wrapper').style.display = 'none';
-            document.getElementById('navWrapper').style.display = 'none';
+            document.getElementById('konten-ujian').style.display = 'none';
             document.getElementById('btn-menu-nomor').style.display = 'none'; 
             document.getElementById('hasil-akhir').style.display = 'flex';
             document.getElementById('benar-tampil').innerText = benar;
@@ -544,8 +483,27 @@
         window.location.href = 'login.html'; 
     }
 
+    // FUNGSI ZOOM ACTION
+    function zoomAction(delta) {
+        currentZoom += delta;
+        // Batasi zoom minimal 0.5 dan maksimal 2.0
+        if (currentZoom < 0.5) currentZoom = 0.5;
+        if (currentZoom > 2.0) currentZoom = 2.0;
+        
+        const target = document.getElementById('zoom-target');
+        target.style.transform = `scale(${currentZoom})`;
+        
+        // Sesuaikan margin bawah agar konten tidak terpotong saat di-zoom besar
+        if (currentZoom > 1) {
+            target.style.marginBottom = (currentZoom * 50) + "px";
+        } else {
+            target.style.marginBottom = "20px";
+        }
+    }
+
+    // FITUR NAVIGASI REMOTE IFP + ZOOM KEYBOARD
     document.addEventListener('keydown', function(event) {
-        const sedangUjian = document.getElementById('examContainer').style.display === 'block' && 
+        const sedangUjian = document.querySelector('.container').style.display === 'block' && 
                             document.getElementById('hasil-akhir').style.display !== 'flex';
 
         if (sedangUjian) {
@@ -554,6 +512,12 @@
                     navigasi(-1);
                     break;
                 case "ArrowRight":
+                    if (indexSekarang === dataSoal.length - 1) {
+                        cekKelengkapan();
+                    } else {
+                        navigasi(1);
+                    }
+                    break;
                 case "Enter":
                     if (indexSekarang === dataSoal.length - 1) {
                         cekKelengkapan();
@@ -561,9 +525,18 @@
                         navigasi(1);
                     }
                     break;
+                case "+":
+                case "=":
+                    zoomAction(0.1);
+                    break;
+                case "-":
+                case "_":
+                    zoomAction(-0.1);
+                    break;
             }
         }
     });
+
 </script>
 </body>
 </html>
