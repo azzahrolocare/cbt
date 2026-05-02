@@ -25,17 +25,17 @@
         .field-container:focus-within { border-color: #3EC381; }
         .field-icon { width: 45px; display: flex; justify-content: center; color: #0CA458; opacity: 0.7; }
         input, select { border: none; outline: none; width: 100%; padding: 14px 10px 14px 0; font-size: 15px; background: transparent; }
-        .btn-login { background: #0CA458; color: white; width: 100%; border: none; padding: 15px; border-radius: 10px; font-weight: 800; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+        .btn-login { background: #0CA458; color: white; width: 100%; border: none; padding: 15px; border-radius: 10px; font-weight: 800; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; min-height: 50px; }
         .btn-login:hover { background: #0d124a; transform: translateY(-2px); }
         
-        /* Modifikasi Efek Loading: Hanya Titik yang Berjalan */
-        .dots::after { content: ''; animation: loadingDots 1.5s infinite; }
-        @keyframes loadingDots {
-            0% { content: ''; }
-            25% { content: '.'; }
-            50% { content: '..'; }
-            75% { content: '...'; }
-            100% { content: ''; }
+        /* Modifikasi Efek Loading Dot */
+        .dots::after { content: ''; animation: loading-dots 1.5s infinite; }
+        @keyframes loading-dots { 
+            0% { content: ''; } 
+            25% { content: '.'; } 
+            50% { content: '..'; } 
+            75% { content: '...'; } 
+            100% { content: ''; } 
         }
 
         .login-footer { background-color: #f8f9fa; padding: 20px; text-align: center; font-size: 11px; color: #999; border-top: 1px solid #eee; }
@@ -99,13 +99,21 @@
                 <input type="text" id="tokenInput" placeholder="TOKEN UJIAN" autocomplete="off" autocorrect="off">
             </div>
         </div>
-        <button class="btn-login" id="btnLogin" onclick="validasiLogin()">MASUK</button>
+        <button class="btn-login" id="btnLogin" onclick="validasiLogin()">MASUK SEKARANG</button>
     </div>
     <div class="login-footer">&copy; 2026 SMP & SMK Az-Zahro - CBT Application System</div>
 </div>
 <script>
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
     
+    // Pemicu Enter untuk Tombol Masuk
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            validasiLogin();
+        }
+    });
+
     // Fungsi Fullscreen
     function toggleFullScreen() {
         if (!document.fullscreenElement) {
@@ -118,13 +126,6 @@
             }
         }
     }
-
-    // Pemicu tombol Masuk menggunakan Enter
-    document.addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') {
-            validasiLogin();
-        }
-    });
 
     // LOGIKA LOAD MATA PELAJARAN DARI JSON
     async function loadMapel() {
@@ -147,6 +148,9 @@
     
     async function validasiLogin() {
         const btn = document.getElementById('btnLogin');
+        // Jika tombol sedang loading, jangan jalankan fungsi lagi
+        if(btn.disabled) return;
+
         const namaInput = document.getElementById('nama');
         const tokenInputElem = document.getElementById('tokenInput');
         const kelas = document.getElementById('kelas').value;
@@ -160,7 +164,6 @@
         if(!nama || !kelas || !tokenInput || !mapelFile) return showNotif("Lengkapi data login!");
         
         btn.disabled = true; 
-        // Mengubah innerHTML agar teks tetap diam, hanya span dots yang menjalankan animasi
         btn.innerHTML = 'MEMVALIDASI DATA<span class="dots"></span>';
         
         try {
@@ -169,7 +172,7 @@
             
             if(tokenInput !== dataToken.token_aktif) {
                 btn.disabled = false; 
-                btn.innerHTML = 'MASUK';
+                btn.innerHTML = 'MASUK SEKARANG';
                 tokenInputElem.value = "";
                 return showNotif("Token Salah! Gunakan token terbaru dari pengawas.");
             }
@@ -179,7 +182,7 @@
             
             if (status === "SUDAH_ADA") {
                 btn.disabled = false; 
-                btn.innerHTML = 'MASUK';
+                btn.innerHTML = 'MASUK SEKARANG';
                 namaInput.value = "";
                 tokenInputElem.value = "";
                 return showNotif("Nama tersebut sudah mengerjakan ujian!");
@@ -202,7 +205,7 @@
 
         } catch (e) { 
             btn.disabled = false; 
-            btn.innerHTML = 'MASUK'; 
+            btn.innerHTML = 'MASUK SEKARANG'; 
             showNotif("Gagal koneksi database. Periksa internet Anda."); 
         }
     }
