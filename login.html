@@ -28,8 +28,14 @@
         .btn-login { background: #0CA458; color: white; width: 100%; border: none; padding: 15px; border-radius: 10px; font-weight: 800; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; min-height: 50px; }
         .btn-login:hover { background: #0d124a; transform: translateY(-2px); }
         
-        /* Modifikasi Efek Loading Dot */
-        .dots::after { content: ''; animation: loading-dots 1.5s infinite; }
+        /* EFEK LOADING DOT: Kalimat diam, titik bergerak ke depan */
+        .dots::after { 
+            content: ''; 
+            display: inline-block;
+            width: 20px;
+            text-align: left;
+            animation: loading-dots 1.5s infinite; 
+        }
         @keyframes loading-dots { 
             0% { content: ''; } 
             25% { content: '.'; } 
@@ -148,7 +154,7 @@
     
     async function validasiLogin() {
         const btn = document.getElementById('btnLogin');
-        // Jika tombol sedang loading, jangan jalankan fungsi lagi
+        // Proteksi agar tidak double klik saat proses
         if(btn.disabled) return;
 
         const namaInput = document.getElementById('nama');
@@ -189,7 +195,6 @@
             }
             
             sessionStorage.setItem('Screen1.Has Permission', 'true');
-            // MODIFIKASI PENYIMPANAN DATA MAPEL
             sessionStorage.setItem('userCBT', JSON.stringify({ 
                 nama, 
                 kelas, 
@@ -211,8 +216,7 @@
     }
 </script>
     
-    <script>
-  // Mendaftarkan Service Worker agar aplikasi bisa diinstal
+<script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
       navigator.serviceWorker.register('./sw.js')
@@ -225,18 +229,16 @@
     });
   }
 
-  // Opsional: Mencegah tombol back agar siswa tidak keluar dari ujian tanpa sengaja
   window.history.pushState(null, null, window.location.href);
   window.onpopstate = function () {
     window.history.go(1);
   };
         
-        window.addEventListener('click', () => {
-    // Sekali klik di mana saja pada layar login akan memicu Fullscreen
+  window.addEventListener('click', () => {
     if (!document.fullscreenElement) {
         document.documentElement.requestFullscreen().catch(e => console.log(e));
     }
-}, { once: true }); // Hanya berjalan satu kali klik pertama
+  }, { once: true });
 </script>
 </body>
 </html>
