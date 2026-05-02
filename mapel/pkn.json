@@ -1,551 +1,551 @@
 [
   {
     "id": 1,
-    "pertanyaan": "Pembentukan BPUPKI (Badan Penyelidik Usaha Persiapan Kemerdekaan Indonesia) direalisasikan oleh Jepang pada tanggal …..",
+    "pertanyaan": "Dalam sidang BPUPKI pertama, seorang tokoh menyampaikan gagasan tentang lima dasar negara yang salah satunya adalah 'Peri Kebangsaan'. Berdasarkan narasi sejarah, siapakah tokoh yang mengusulkan hal tersebut pada tanggal 29 Mei 1945?",
     "pilihan": [
-      "29 Mei 1945",
-      "1 Juni 1945",
-      "1 Maret 1945",
-      "18 Agustus 1945"
-    ],
-    "jawaban": 0
-  },
-  {
-    "id": 2,
-    "pertanyaan": "Tokoh-tokoh pendiri negara yang mengusulkan rumusan dasar negara, kecuali …..",
-    "pilihan": [
-      "Moh. Yamin",
-      "Mr. soepomo",
+      "Drs. Mohammad Hatta",
       "Ir. Soekarno",
-      "Moh. Hatta"
+      "Prof. Dr. Soepomo",
+      "Mr. Mohammad Yamin"
     ],
     "jawaban": 3
   },
   {
-    "id": 3,
-    "pertanyaan": "Perhatikan rumusan pancasila berikut!\n1. Ketuhanan Yang maha Esa\n2. Kebangsaan Persatuan Indonesia\n3. Rasa Kemanusiaan yang adil dan beradab\n4. Kerakyatan yang dipimpin oleh Kebijaksanaan dalam pwermusyawaratan / Perwakilan\n5. Keadilan sosial bagi seluruh rakyat Indonesia\nRumusan Pancasila tersebut di atas adalah pendapat dari …..",
+    "id": 2,
+    "pertanyaan": "Andi melihat seorang nenek kesulitan menyeberang jalan yang ramai. Meskipun Andi sedang terburu-buru pergi ke sekolah, ia memutuskan untuk berhenti sejenak dan membantu nenek tersebut. Tindakan Andi merupakan perwujudan dari norma...",
     "pilihan": [
-      "Moh. Yamin",
-      "Mr. Soepomo",
-      "Ir. Soekarno",
-      "Moh. Hatta"
+      "Norma Hukum",
+      "Norma Agama",
+      "Norma Kesusilaan",
+      "Norma Kesopanan"
     ],
-    "jawaban": 0
+    "jawaban": 2
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Setiap hari Senin, siswa SMP Merdeka melaksanakan upacara bendera dengan khidmat. Kegiatan ini merupakan salah satu upaya untuk memupuk rasa nasionalisme dan menjaga keutuhan...",
+    "pilihan": [
+      "Negara Serikat",
+      "Otonomi Daerah",
+      "Wilayah Perairan",
+      "Negara Kesatuan"
+    ],
+    "jawaban": 3
   },
   {
     "id": 4,
-    "pertanyaan": "Panitia Sembilan dalam sidangnya menghasilkan kesepakatan / persetujuan tentang …..",
+    "pertanyaan": "Di desa tempat tinggal Budi, warga rutin melakukan kerja bakti membersihkan selokan setiap hari Minggu pagi. Prinsip gotong royong ini menunjukkan bahwa bangsa Indonesia mengutamakan...",
     "pilihan": [
-      "Undang-Undang Dasar",
-      "dasar negara",
-      "sumpah pemuda",
-      "undang-undang"
+      "Kepentingan pribadi",
+      "Kebersamaan dan kekeluargaan",
+      "Persaingan antarwarga",
+      "Keuntungan finansial"
     ],
     "jawaban": 1
   },
   {
     "id": 5,
-    "pertanyaan": "Peraturan mengenai tingkah laku manusia dalam pergaulan masyarakat dan dibuat oleh badan badan resmi negara serta bersifat memaksa disebut …..",
+    "pertanyaan": "Pada tanggal 18 Agustus 1945, terjadi perubahan penting pada sila pertama Piagam Jakarta dari 'Ketuhanan dengan kewajiban menjalankan syariat Islam bagi pemeluk-pemeluknya' menjadi 'Ketuhanan Yang Maha Esa'. Apa alasan utama para tokoh bangsa menyepakati perubahan tersebut?",
     "pilihan": [
-      "norma hukum",
-      "norma kesusilaan",
-      "norma agama",
-      "norma kesopanan"
+      "Karena usulan dari pihak sekutu",
+      "Agar Indonesia menjadi negara sekuler",
+      "Menjaga persatuan dan kesatuan bangsa di tengah keberagaman",
+      "Untuk mempersingkat teks agar mudah diingat"
     ],
-    "jawaban": 0
+    "jawaban": 2
   },
   {
     "id": 6,
-    "pertanyaan": "Fungsi norma dalam masyarakat antara lain kecuali …..",
+    "pertanyaan": "Saat sedang berkendara, Ayah Budi berhenti ketika lampu lalu lintas berwarna merah meskipun jalanan sedang sepi. Tindakan Ayah Budi tersebut merupakan ketaatan terhadap...",
     "pilihan": [
-      "pedoman dalam bertingkah laku",
-      "menjaga kerukunan anggota masyarakat",
-      "Sistem pengendalian sosial",
-      "sebagai sumber hukum"
+      "Norma Hukum",
+      "Norma Adat",
+      "Norma Kesopanan",
+      "Norma Kesusilaan"
     ],
-    "jawaban": 3
+    "jawaban": 0
   },
   {
     "id": 7,
-    "pertanyaan": "Sidang BPUPKI dengan agenda 'Pembahasan Rancangan Undang Undang Dasar' terjadi pada tanggal ...",
+    "pertanyaan": "Indonesia dikenal sebagai negara kepulauan (Archipelagic State). Hal ini ditegaskan dalam UUD 1945 Pasal 25A. Apa makna dari karakteristik wilayah Indonesia tersebut?",
     "pilihan": [
-      "15 Juli 1945",
-      "17 Juli 1945",
-      "16 Juli 1945",
-      "14 Juli 1945"
+      "Lautan adalah pemisah antar pulau di Indonesia",
+      "Hanya wilayah daratan yang diakui secara internasional",
+      "Wilayah daratan dan perairan yang menyatu dalam satu kesatuan NKRI",
+      "Wilayah Indonesia hanya terdiri dari pulau-pulau besar"
     ],
-    "jawaban": 0
+    "jawaban": 2
   },
   {
     "id": 8,
-    "pertanyaan": "Berikut ini adalah hasil dari sidang PPKI tanggal 18 Agustus 1945, kecuali ...",
+    "pertanyaan": "Gotong royong di Indonesia terbagi menjadi dua jenis, yakni kerja bakti dan tolong-menolong. Manakah contoh yang termasuk dalam gotong royong tolong-menolong?",
     "pilihan": [
-      "Membentuk Komite Nasional Indonesia Pusat (KNIP)",
-      "Membentuk Dewan Pertimbangan Agung",
-      "Menetapkan Ir. Soekarno dan Moh. Hatta sebagai Presiden dan Wakil Presiden",
-      "Mengesahkan UUD 1945"
+      "Bersama-sama membersihkan selokan desa",
+      "Mengecat balai desa menjelang 17 Agustus",
+      "Membangun jembatan rusak secara swadaya",
+      "Membantu tetangga yang sedang mengadakan hajatan pernikahan"
     ],
-    "jawaban": 1
+    "jawaban": 3
   },
   {
     "id": 9,
-    "pertanyaan": "Salah satu contoh sikap yang mencerminkan cinta NKRI yaitu .....",
+    "pertanyaan": "Sebagai hukum dasar tertinggi, UUD NRI Tahun 1945 berfungsi sebagai 'alat kontrol'. Manakah situasi di bawah ini yang paling tepat menggambarkan fungsi tersebut?",
     "pilihan": [
-      "Memilih teman hanya dari yang satu daerah saja",
-      "Mengejek budaya daerah lain",
-      "Berkelahi dengan teman beda suku",
-      "Berteman dengan orang dari daerah manapun"
+      "Presiden membuat peraturan pemerintah untuk melaksanakan undang-undang yang sudah ada.",
+      "Polisi memberikan surat tilang kepada pengendara yang tidak menggunakan helm di jalan raya.",
+      "Mahkamah Konstitusi membatalkan pasal dalam sebuah Undang-Undang karena bertentangan dengan isi UUD 1945.",
+      "Siswa-siswi SMP berdiskusi mengenai isi pasal-pasal dalam Pembukaan UUD 1945."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Indonesia terletak di antara dua benua dan dua samudra. Secara politik, posisi silang ini menuntut bangsa Indonesia untuk menerapkan prinsip politik luar negeri yang...",
+    "pilihan": [
+      "Bebas dan Aktif",
+      "Defensif dan Tertutup",
+      "Netral Pasif",
+      "Terbuka dan Kompetitif"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Dalam sejarah perubahan sila pertama Piagam Jakarta, tokoh yang datang menyampaikan aspirasi dari wilayah Indonesia Timur kepada Moh. Hatta adalah seorang perwira angkatan laut Jepang bernama Maeda. Mengapa aspirasi tersebut sangat dipertimbangkan oleh para pendiri bangsa?",
+    "pilihan": [
+      "Demi mewujudkan integrasi nasional dan mencegah wilayah Timur memisahkan diri.",
+      "Agar Indonesia mendapatkan pengakuan internasional lebih cepat.",
+      "Karena tuntutan tersebut didukung penuh oleh pihak penjajah.",
+      "Karena adanya ancaman perang saudara jika tuntutan tersebut ditolak."
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Ketika terjadi konflik antarwarga mengenai batas lahan di sebuah desa, cara penyelesaian yang paling sesuai dengan sila keempat Pancasila adalah...",
+    "pilihan": [
+      "Menyerahkan sepenuhnya kepada pihak yang memiliki kekuatan fisik lebih besar.",
+      "Membiarkan konflik tersebut sampai salah satu pihak mengalah sendiri.",
+      "Melakukan demonstrasi di depan kantor kepala desa.",
+      "Melakukan musyawarah untuk mencapai mufakat dengan ditengahi oleh tokoh masyarakat."
     ],
     "jawaban": 3
   },
   {
-    "id": 10,
-    "pertanyaan": "Semboyan Bhinneka Tunggal Ika diambil dari kata yang ditulis oleh Mpu Tantular dalam buku....",
+    "id": 13,
+    "pertanyaan": "Sejarah mencatat bahwa UUD NRI Tahun 1945 telah mengalami empat kali amandemen (perubahan) antara tahun 1999-2002. Apa tujuan utama dilakukannya amandemen tersebut dalam konteks demokrasi?",
     "pilihan": [
-      "Negara kertagama",
-      "Sutasoma",
-      "Pararaton",
-      "Arjunawiwaha"
+      "Menghapus peran MPR sebagai lembaga negara",
+      "Menyempurnakan aturan dasar mengenai tatanan negara agar lebih demokratis dan membatasi kekuasaan presiden",
+      "Mengganti bentuk negara kesatuan menjadi negara federal",
+      "Memperpanjang masa jabatan presiden agar pembangunan berkelanjutan"
     ],
     "jawaban": 1
   },
   {
-    "id": 11,
-    "pertanyaan": "Di sebuah desa terdapat warga dari berbagai suku dan agama. Saat akan mengadakan kegiatan kerja bakti, terjadi perbedaan pendapat mengenai waktu pelaksanaan karena sebagian warga sedang menjalankan ibadah. Sikap yang paling tepat untuk menjaga kerukunan adalah",
-    "pilihan": [
-      "Menentukan waktu berdasarkan suara terbanyak",
-      "Membatalkan kegiatan tersebut",
-      "Mengadakan musyawarah untuk menentukan waktu bersama",
-      "Melaksanakan kegiatan tanpa melibatkan semua warga"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 12,
-    "pertanyaan": "Masyarakat Indonesia memiliki beraneka ragam budaya, seperti pakaian adat, rumah adat, senjata tradisional, tarian dan lagu-lagu daerah. Dampak positif dari keanekaragaman budaya adalah....",
-    "pilihan": [
-      "Keberagaman akan menjadi penyebab konflik sosial",
-      "Mewajibkan kepada masyarakat mempelajari budaya",
-      "Keanekaragaman budaya menjadi aset pariwisata",
-      "Menunjukkan banyaknya suku bangsa dan budaya nasional"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 13,
-    "pertanyaan": "Toleransi antar-umat beragama dimaknai sebagai …..",
-    "pilihan": [
-      "Kesiapan menerima adanya perbedaan, bersedia hidup bersama dimasyarakat dan memberikan kesempatan orang lain untuk dapat beribadah dengan baik",
-      "Kesiapan menerima pendaapat yang sama dan untuk bersedia hidup memberikan kesempatan orang lain untuk tinggal bersama dengan baik",
-      "Kesediaan untuk hidup bersama dalam sebuah keluarga dan bersedia memberikan tempatnya untuk jadi tempat ibadah agama yang berbeda",
-      "Kesediaan untuk menerima adanya perbedaan dan memberikan tempat tinggalnya untuk jadi tempat ibadah agama lain yang berbeda dengan baik"
-    ],
-    "jawaban": 0
-  },
-  {
     "id": 14,
-    "pertanyaan": "Di bawah ini yang termasuk ke dalam faktor pendorong bentuk kerja sama, kecuali....",
+    "pertanyaan": "Dalam hierarki peraturan perundang-undangan menurut UU No. 12 Tahun 2011, posisi Peraturan Daerah (Perda) berada di bawah Undang-Undang. Jika sebuah Perda Kabupaten melarang kebebasan beragama yang sudah dijamin oleh UUD 1945, maka...",
     "pilihan": [
-      "Menghindari adanya persaingan bebas",
-      "Adanya tantangan untuk bekerja sama",
-      "Sebuah bentuk pekerjaan yang memerlukan tenaga bersama",
-      "Memperoleh keuntungan sepihak"
+      "Perda tersebut tetap berlaku selama didukung oleh warga setempat",
+      "UUD 1945 harus diubah untuk menyesuaikan dengan aspirasi daerah tersebut",
+      "Perda tersebut batal demi hukum atau harus dicabut karena bertentangan dengan UUD 1945",
+      "Presiden harus membuat UU baru agar Perda tersebut menjadi sah"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Pancasila mengandung nilai-nilai yang bersifat universal dan objektif. Apa maksud dari pernyataan bahwa Pancasila bersifat 'Objektif'?",
+    "pilihan": [
+      "Nilai-nilai Pancasila hanya berlaku bagi orang Indonesia saja",
+      "Pancasila bersifat objektif karena diciptakan oleh BPUPKI",
+      "Nilai Pancasila berubah-ubah mengikuti perkembangan zaman",
+      "Nilai-nilai Pancasila terkandung dalam Pembukaan UUD 1945 yang bersifat tetap dan kuat"
     ],
     "jawaban": 3
   },
   {
-    "id": 15,
-    "pertanyaan": "Contoh kerja sama di dalam berbagai kehidupan di dalam masyarakat, kecuali...",
+    "id": 16,
+    "pertanyaan": "Seorang hakim sedang menangani kasus sengketa lahan yang sangat rumit. Dalam mengambil keputusan, hakim tersebut tidak hanya melihat undang-undang tertulis, tetapi juga mempertimbangkan nilai-nilai keadilan dan ketuhanan yang hidup di masyarakat. Hal ini menunjukkan kedudukan Pancasila sebagai...",
     "pilihan": [
-      "gotong royong membersihkan lingkungan",
-      "bekerja sama membangun jembatan rusak",
-      "bekerja sama dalam menebang pohon secara liar",
-      "menanam pohon bersama"
+      "Simbol Kedaulatan",
+      "Alat Pemersatu Bangsa",
+      "Sumber dari segala sumber hukum negara",
+      "Perjanjian Luhur"
     ],
     "jawaban": 2
-  },
-  {
-    "id": 16,
-    "pertanyaan": "Pengakuan dan keyakinan bangsa Indonesia terhadap adanya Tuhan Yang Maha Esa sebagai pencipta alam semesta merupakan salah satu nilai inti yang terkandung pada sila...",
-    "pilihan": [
-      "Pertama",
-      "Kedua",
-      "Ketiga",
-      "Keempat"
-    ],
-    "jawaban": 0
   },
   {
     "id": 17,
-    "pertanyaan": "Perhatikan nilai-nilai berikut ini,\n(1) Mampu menempatkan persatuan, kesatuan, serta kepentingan dan keselamatan bangsa dan negara sebagai kepentingan Bersama di atas kepentingan pribadi dan golongan\n(2) Sanggup dan rela berkorban untuk kepentingan negara dan bangsa\n(3) Mengembangkan rasa cinta kepada tanah air dan bangsa\n(4) Mengembangkan rasa kebanggaan berkebangsaan dan bertanah air Indonesia\n(5) Memelihara ketertiban dunia yang berdasarkan kemerdekaan, perdamaian abadi, dan keadilan sosial\n(6) Mengembangkan persatuan dan kesatuan Indonesia atas dasar Bhineka Tunggal Ika\nNilai-nilai yang disebutkan diatas merupakan pengamalan Pancasila terutama sila...",
+    "pertanyaan": "Indonesia menganut sistem kedaulatan rakyat yang dilaksanakan menurut Undang-Undang Dasar. Salah satu ciri utama kedaulatan rakyat dalam sistem demokrasi di Indonesia adalah...",
     "pilihan": [
-      "Pertama",
-      "Kedua",
-      "Ketiga",
-      "Keempat"
+      "Hanya kelompok tertentu yang boleh memberikan pendapat",
+      "Penunjukan kepala daerah dilakukan langsung oleh pemerintah pusat",
+      "Presiden memiliki kekuasaan mutlak atas seluruh lembaga negara",
+      "Pemilihan umum yang dilakukan secara berkala dan rahasia"
     ],
-    "jawaban": 2
+    "jawaban": 3
   },
   {
     "id": 18,
-    "pertanyaan": "Pemerintahan dari rakyat, oleh rakyat dan untuk rakyat dengan mengutamakan musyawarah dalam pengambilan kebijakan publik merupakan pencerminan dari nilai...",
+    "pertanyaan": "Dalam hierarki peraturan perundang-undangan di Indonesia, posisi 'Peraturan Presiden' berada di bawah...",
     "pilihan": [
-      "Ketuhanan Yang Maha Esa",
-      "Kemanusiaan yang Adil dan Beradab",
-      "Persatuan Indonesia",
-      "Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawatan/perwakilan"
+      "Instruksi Menteri",
+      "Peraturan Pemerintah",
+      "Peraturan Daerah Provinsi",
+      "Undang-Undang atau Peraturan Pemerintah Pengganti Undang-Undang"
     ],
     "jawaban": 3
   },
   {
     "id": 19,
-    "pertanyaan": "Penerapan hukum di Indonesia saat ini sudah berjalan sesuai dengan aturan yang berlaku, hanya saja dalam pelaksanaannya masih banyak masyarakat yang tidak sadar akan hukum yang berlaku, dengan cara makin hakim sendiri dan tidak sesuai dengan aturan hukum yang berlaku di Indonesia. Contoh kasus berikut yang menunjukkan sikap main hakim sendiri di masyarakat adalah...",
+    "pertanyaan": "Organisasi Budi Utomo yang didirikan pada 20 Mei 1908 dianggap sebagai pelopor kebangkitan nasional. Perbedaan utama perjuangan sebelum dan sesudah tahun 1908 adalah...",
     "pilihan": [
-      "Maling ayam ditangkap pihak kepolisian Jakarta Utara",
-      "Begal sepeda di daerah tanah abang digebukin masa hingga tewas",
-      "Para pejabat yang melakukan korupsi diadili oleh KPK",
-      "Pengedar narkoba di Bojong Bekasi terlibat kejar-kejaran dengan pihak kepolisian setelah kepergok mengedarkan narkobanya di kawasan tersebut"
+      "Perjuangan bersifat nasional dan menggunakan jalur diplomasi organisasi",
+      "Penggunaan senjata tradisional yang lebih canggih",
+      "Bekerja sama sepenuhnya dengan penjajah Belanda",
+      "Perjuangan menjadi lebih bergantung pada pemimpin kharismatik"
     ],
-    "jawaban": 1
+    "jawaban": 0
   },
   {
     "id": 20,
-    "pertanyaan": "Dalam kedudukannya sebagai sumber hukum yang tertinggi, setiap peraturan perundang-undangan di bawah Undang-Undang Dasar Negara Kesatuan Republik Indonesia Tahun 1945 harus berlandaskan dan bersumberkan pada UUD NRI Tahun 1945. Dengan demikian UUD NRI Tahun 1945 mempunyai fungsi sebagai...",
+    "pertanyaan": "Seorang warga negara merasa bahwa hak konstitusionalnya dirugikan oleh berlakunya sebuah Undang-Undang. Lembaga negara yang berwenang menguji apakah Undang-Undang tersebut bertentangan dengan UUD 1945 atau tidak adalah...",
     "pilihan": [
-      "Pemersatu bangsa Indonesia",
-      "Teladan bagi semua warga negara",
-      "Alat pengukur dan pengecek",
-      "Alat kontrol dan pengecek"
+      "Mahkamah Konstitusi",
+      "Dewan Perwakilan Rakyat",
+      "Mahkamah Agung",
+      "Komisi Yudisial"
     ],
-    "jawaban": 3
+    "jawaban": 0
   },
   {
     "id": 21,
-    "pertanyaan": "Urutan peraturan perundang-undangan di Indonesia yang benar sesuai dengan pasal 7 UU Nomor 12 Tahun 2011 adalah...",
+    "pertanyaan": "UUD NRI Tahun 1945 memiliki sifat sebagai 'Hukum Dasar Tertulis'. Apa konsekuensi dari kedudukan tersebut dalam sistem hukum Indonesia?",
     "pilihan": [
-      "(1)-(3)-(2)-(5)-(4)-(6)-(7)",
-      "(1)-(2)-(3)-(5)-(4)-(6)-(7)",
-      "(1)-(3)-(2)-(4)-(5)-(6)-(7)",
-      "(1)-(3)-(2)-(5)-(4)-(7)-(6)"
+      "UUD 1945 menjadi sumber hukum bagi seluruh peraturan perundang-undangan di bawahnya",
+      "UUD 1945 tidak memiliki sanksi bagi pelanggarnya",
+      "UUD 1945 hanya berlaku untuk lembaga negara",
+      "UUD 1945 boleh diubah oleh Presiden kapan saja"
     ],
     "jawaban": 0
   },
   {
     "id": 22,
-    "pertanyaan": "Pada pembentukan peraturan perundang-undangan yang ditegaskan dalam pasal 5, terdapat asas-asas pembentukannya. Adapun salah satunya adalah asas kejelasan tujuan yang memiliki arti...",
+    "pertanyaan": "Dalam sidang Kongres Pemuda II, para pemuda mengikrarkan 'Satu Tanah Air, Satu Bangsa, dan Satu Bahasa'. Nilai utama yang ingin ditonjolkan dari ikrar 'Satu Bahasa' adalah...",
     "pilihan": [
-      "Setiap jenis peraturan perundang-undangan harus dibuat oleh lembaga negara atau pejabat pembentuk peraturan perundang-undangan yang berwenang",
-      "Setiap pembentukan peraturan perundang-undangan harus mempunyai tujuan yang jelas yang hendak dicapai",
-      "Pada pembentukan peraturan perundang-undangan, pembuat harus benar-benar memperhatikan materi muatan yang tepat sesuai dengan jenis hierarki peraturan perundang-undangan",
-      "Setiap pembentukan peraturan perundang-undangan harus memperhitungkan efektifitas peraturan perundang-undangan tersebut dalam masyarakat, baik secara filosofis, sosiologis, maupun yuridis"
+      "Mewajibkan warga asing belajar bahasa Indonesia",
+      "Menghapus penggunaan bahasa daerah di Indonesia",
+      "Menunjukkan bahwa bahasa Indonesia adalah bahasa tertua",
+      "Menjadikan bahasa Indonesia sebagai sarana komunikasi pemersatu bangsa"
     ],
-    "jawaban": 1
+    "jawaban": 3
   },
   {
     "id": 23,
-    "pertanyaan": "Peran tokoh Kebangkitan Nasional sangat penting bagi perjuangan kemerdekaan Indonesia karena ...",
+    "pertanyaan": "Dalam sistem ketatanegaraan Indonesia, Presiden memiliki kekuasaan untuk memberikan 'Grasi' dan 'Rehabilitasi'. Namun, untuk menjaga prinsip keadilan, Presiden wajib memperhatikan pertimbangan dari lembaga...",
     "pilihan": [
-      "Menggantikan peran para pejuang daerah",
-      "Menjadi awal tumbuhnya rasa persatuan bangsa",
-      "Mengakhiri penjajahan secara langsung",
-      "Membentuk pemerintahan kolonial baru"
+      "Mahkamah Konstitusi",
+      "Mahkamah Agung",
+      "Dewan Perwakilan Rakyat",
+      "Kejaksaan Agung"
     ],
     "jawaban": 1
   },
   {
     "id": 24,
-    "pertanyaan": "Makna peristiwa Kebangkitan Nasional bagi Indonesia adalah...",
+    "pertanyaan": "Sebuah daerah ingin membuat peraturan mengenai pajak parkir di wilayahnya. Menurut tata urutan peraturan perundang-undangan, jenis peraturan yang paling tepat dibuat oleh DPRD bersama Kepala Daerah tersebut adalah...",
     "pilihan": [
-      "Kebangkitan nasional di segala bidang dan seluruh aspek kehidupan yang mendukung kemajuan kesejahteraan bangsa.",
-      "Kebangkitan negara Indonesia menjadi pembangkit kesadaran nasional dan awal perjuangan meraih kemerdekaan.",
-      "Kebangkitan bangsa-bangsa yang terjajah dan menyebabkan penderitaan yang berkepanjangan sehingga meraih kemerdekaan",
-      "Kebangkitan nasional bangsa Indonesia yang merupakan cita-cita yang sudah diidamkan sejak lama oleh bangsa terjajah"
+      "Peraturan Pemerintah",
+      "Peraturan Presiden",
+      "Peraturan Daerah",
+      "Undang-Undang"
     ],
-    "jawaban": 1
+    "jawaban": 2
   },
   {
     "id": 25,
-    "pertanyaan": "Perhatikan nama-nama tokoh berikut ini!\n(1) Wahidin Sudirohusodo\n(2) Sutomo\n(3) Suwardi Suryaningrat\n(4) Cipto Mangunkusumo\nNama tokoh perintis Kebangkitan Nasional dalam Perjuangan kemerdekaan Republik Indonesia terdapat pada nomor...",
+    "pertanyaan": "Indonesia menggunakan sistem pemerintahan Presidensial. Salah satu ciri utama sistem ini yang membedakannya dengan sistem Parlementer dalam hal pertanggungjawaban adalah...",
     "pilihan": [
-      "(1)-(2)-(3)",
-      "(1)-(3)-(4)",
-      "(2)-(3)-(4)",
-      "(1)-(2)-(4)"
+      "Parlemen memiliki kekuasaan untuk membubarkan kabinet kapan saja",
+      "Kepala negara dan kepala pemerintahan dipegang oleh dua orang yang berbeda",
+      "Menteri bertanggung jawab langsung kepada parlemen (DPR)",
+      "Presiden tidak bertanggung jawab kepada parlemen dan tidak dapat dijatuhkan oleh parlemen karena alasan politik"
     ],
     "jawaban": 3
   },
   {
     "id": 26,
-    "pertanyaan": "Peristiwa Sumpah Pemuda merupakan suatu pengakuan dari pemuda-pemudi Indonesia yang mengikrarkan...",
+    "pertanyaan": "Di tengah arus globalisasi, budaya populer asing sangat mudah masuk ke Indonesia. Jika dikaitkan dengan nilai Sumpah Pemuda, sikap yang paling menunjukkan 'Cinta Tanah Air' di era modern adalah...",
     "pilihan": [
-      "Satu tanah air, satu bangsa dan satu bahasa",
-      "Satu nenek moyang, satu suku dan satu bahasa",
-      "Satu tujuan, satu bangsa dan satu bahasa",
-      "Satu keyakinan, satu bangsa dan satu bahasa"
+      "Mengembangkan potensi budaya lokal agar mampu bersaing dan dikenal di kancah internasional",
+      "Hanya menggunakan bahasa asing agar dianggap sebagai warga dunia yang maju",
+      "Menghapus pelajaran sejarah karena dianggap tidak relevan dengan masa depan",
+      "Melarang total masuknya semua produk dan budaya dari luar negeri"
     ],
     "jawaban": 0
   },
   {
     "id": 27,
-    "pertanyaan": "Di bawah ini adalah pernyataan yang benar berkaitan dengan peristiwa Sumpah Pemuda, kecuali...",
+    "pertanyaan": "Dalam situasi kegentingan yang memaksa, Presiden berhak mengeluarkan Peraturan Pemerintah Pengganti Undang-Undang (Perppu). Namun, kedaulatan rakyat tetap terjaga karena Perppu tersebut harus mendapatkan persetujuan dari...",
     "pilihan": [
-      "Lagu kebangsaan Indonesia pertama kali diperdengarkan",
-      "Isi sumpah pemuda berisikan ikrar pemuda yaitu satu tanah air, satu bangsa dan satu bahasa",
-      "Peristiwa sumpah pemuda merupakan langkah terakhir untuk mewujudkan kemerdekaan Indonesia",
-      "Lagu Indonesia Raya dipublikasikan pertama kali pada tahun 1928 di Sin Po"
+      "Dewan Perwakilan Rakyat",
+      "Majelis Permusyawaratan Rakyat",
+      "Badan Pemeriksa Keuangan",
+      "Mahkamah Konstitusi"
     ],
-    "jawaban": 2
+    "jawaban": 0
   },
   {
     "id": 28,
-    "pertanyaan": "Berikut ini yang tidak termasuk makna yang terkandung dalam Sumpah Pemuda 1928, yaitu...",
+    "pertanyaan": "Komisi Yudisial (KY) merupakan lembaga mandiri yang dibentuk untuk mendukung kekuasaan kehakiman. Fungsi utama KY dalam menjaga kedaulatan hukum di Indonesia adalah...",
     "pilihan": [
-      "Menunjukkan tekad kuat untuk Bersatu sebagai bangsa Indonesia",
-      "Mencegah berkembangnya nasionalisme sempit yang menganggap kebudayaan daerahnya lebih unggul",
-      "Semakin menumbuhkan semangat perjuangan bangsa Indonesia untuk mencapai kemerdekaan Indonesia",
-      "Puncak perjuangan pada masa pergerakan nasional Indonesia"
+      "Membatalkan putusan hakim yang dianggap tidak adil",
+      "Mengusulkan pengangkatan hakim agung dan menjaga kehormatan hakim",
+      "Menangkap hakim yang melakukan tindak pidana korupsi",
+      "Ikut serta memutus perkara pidana yang berat"
     ],
-    "jawaban": 3
+    "jawaban": 1
   },
   {
     "id": 29,
-    "pertanyaan": "Upaya strategis yang seharusnya ditempuh oleh peserta didik dalam mempersiapkan diri sebagai generasi penerus yang berperan aktif dalam proses pembangunan nasional Indonesia adalah....",
+    "pertanyaan": "Sebuah Peraturan Daerah (Perda) Kabupaten ditemukan bertentangan dengan Undang-Undang Lingkungan Hidup yang lebih tinggi. Berdasarkan prinsip hierarki hukum, lembaga yang berwenang membatalkan Perda tersebut melalui mekanisme uji materi adalah...",
     "pilihan": [
-      "Mengutamakan etos kerja sejak usia dini",
-      "Menetapkan visi dan aspirasi pribadi setinggi mungkin",
-      "Mengembangkan disiplin belajar secara berkelanjutan",
-      "Menyesuaikan diri secara pasif terhadap perubahan zaman"
+      "Gubernur sebagai wakil pemerintah pusat",
+      "Mahkamah Konstitusi",
+      "Kementerian Dalam Negeri",
+      "Mahkamah Agung"
     ],
-    "jawaban": 2
+    "jawaban": 3
   },
   {
     "id": 30,
-    "pertanyaan": "Agar bangsa Indonesia dapat tumbuh menjadi bangsa yang besar dan terhormat, maka bangsa Indonesia harus memiliki...",
+    "pertanyaan": "Pemerintah pusat menerapkan kebijakan 'Satu Peta' (One Map Policy) untuk menyinkronkan data lahan nasional guna menghindari konflik agraria. Tindakan ini mencerminkan fungsi Pancasila sebagai 'Pandangan Hidup Bangsa' karena...",
     "pilihan": [
-      "Nilai-nilai kebangsaan",
-      "Semangat kebangsaan",
-      "Komitmen kebangsaan yang tinggi",
-      "Semua jawaban benar"
+      "Mengedepankan keteraturan dan kepastian hukum demi keadilan bagi seluruh rakyat",
+      "Memberikan kekuasaan penuh kepada perusahaan besar atas tanah negara",
+      "Menghapus hak-hak masyarakat adat demi pembangunan infrastruktur",
+      "Hanya bertujuan untuk menarik investasi asing sebanyak-banyaknya"
     ],
-    "jawaban": 3
+    "jawaban": 0
   },
   {
     "id": 31,
-    "pertanyaan": "Tokoh yang memprakarsai gerakan Darul Islam/Tentara Islam Indonesia (Dl/TII) sebagai bentuk perlawanan terhadap Pemerintah Republik Indonesia pada masa awal kemerdekaan adalah....",
+    "pertanyaan": "Di sebuah desa, warga sedang berdiskusi untuk memperbaiki jalan yang rusak. Pak Budi mengusulkan agar biaya ditanggung bersama secara proporsional, sementara Pak Andi mengusulkan mencari bantuan dari pemerintah pusat terlebih dahulu agar anggaran desa bisa digunakan untuk pendidikan. Dalam konteks Pancasila sebagai dasar negara dan pandangan hidup, sikap manakah yang mencerminkan nilai kerakyatan dan keadilan sosial?",
     "pilihan": [
-      "Muso",
-      "Cristian Robert Staaven Soumokil",
-      "Sjarifuddin Prawiranegara",
-      "Sekarmaji Marijan Kartosuwiryo"
+      "Mengutamakan musyawarah untuk mencapai mufakat dalam mengambil keputusan.",
+      "Menghargai perbedaan pendapat antara Pak Budi dan Pak Andi sebagai bentuk demokrasi.",
+      "Memaksakan pendapat Pak Budi karena ia adalah orang terkaya di desa tersebut.",
+      "Mengabaikan usulan Pak Andi karena dianggap terlalu rumit prosedurnya."
     ],
-    "jawaban": 3
+    "jawaban": 0
   },
   {
     "id": 32,
-    "pertanyaan": "Dari tabel pemberontakan (1.RMS, 2.DI/TII, 3.PRRI, 4.PKI, 5.Permesta, 6.APRA), pemberontakan yang berupaya memecahkan persatuan dan kesatuan pada periode 1950-1959 ditunjukan dengan nomor",
+    "pertanyaan": "Indonesia adalah negara yang menganut kedaulatan rakyat. Dalam pelaksanaannya, rakyat memberikan mandat kepada lembaga-lembaga negara untuk menjalankan pemerintahan. Berdasarkan UUD NRI 1945, manakah pernyataan berikut yang benar mengenai pelaksanaan kedaulatan di Indonesia saat ini?",
     "pilihan": [
-      "1, 2 dan 3",
-      "2, 4 dan 5",
-      "2, 4 dan 6",
-      "1, 3 dan 5"
+      "Presiden dan Wakil Presiden dipilih langsung oleh rakyat melalui pemilihan umum.",
+      "MPR merupakan lembaga tertinggi negara yang memegang kedaulatan sepenuhnya.",
+      "Kedaulatan berada di tangan rakyat dan dilaksanakan menurut Undang-Undang Dasar.",
+      "DPR memiliki kekuasaan mutlak untuk membuat undang-undang tanpa campur tangan Presiden."
     ],
     "jawaban": 2
   },
   {
     "id": 33,
-    "pertanyaan": "Sebuah sistem demokrasi yang seluruh keputusan dan pemikiran dalam pemerintahan negara berpusat kepada pemimpin negara disebut dengan demokrasi.....",
+    "pertanyaan": "Siska adalah seorang pelajar kelas 9 yang aktif di media sosial. Suatu hari, ia melihat berita yang menyudutkan salah satu kelompok suku di Indonesia. Siska merasa berita tersebut tidak benar. Sebagai warga negara yang memahami nilai persatuan, tindakan apa yang sebaiknya Siska lakukan?",
     "pilihan": [
-      "Parlement",
-      "Terpimpin",
-      "Liberal",
-      "Pancasila"
-    ],
-    "jawaban": 1
-  },
-  {
-    "id": 34,
-    "pertanyaan": "Kemerdekaan yang dicapai bukan semata-mata hasil jerih payah perjuangan bangsa Indonesia, melainkan atas kuasa Tuhan Yang Maha Esa. Pernyataan tersebut merupakan makna Pembukaan UUD 1945 alinea …..",
-    "pilihan": [
-      "Pertama",
-      "Kedua",
-      "Ketiga",
-      "Keempat"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 35,
-    "pertanyaan": "Sikap positif terhadap pokok-pokok pikiran pembukaan UUD 1945 di lingkungan bangsa dan negara (1.Individualisme, 2.Bangga Indonesia, 3.Kepentingan bangsa, 4.Bahasa Indonesia) yaitu nomor",
-    "pilihan": [
-      "1, 2 dan 3",
-      "1, 2 dan 4",
-      "1, 3 dan 4",
-      "2, 3 dan 4"
+      "Mengabaikannya saja karena merasa itu bukan urusannya sebagai seorang pelajar.",
+      "Melakukan verifikasi fakta (fact-checking) sebelum membagikan atau mengomentari berita tersebut.",
+      "Ikut menyebarkan berita tersebut agar teman-temannya juga tahu dan waspada.",
+      "Melaporkan konten tersebut kepada pihak penyedia platform media sosial sebagai konten provokatif."
     ],
     "jawaban": 3
   },
   {
-    "id": 36,
-    "pertanyaan": "\"Atas berkat rahmat Allah Yang Maha Kuasa dan dengan didorongkan oleh keinginan luhur, supaya berkehidupan kebangsaan yang bebas, maka rakyat Indonesia menyatakan dengan ini kemerdekaannya\" merupakan alinea...",
+    "id": 34,
+    "pertanyaan": "Pembangunan ekonomi nasional harus berlandaskan pada prinsip demokrasi ekonomi sebagaimana diatur dalam Pasal 33 UUD NRI 1945. Manakah dari fenomena berikut yang mencerminkan penerapan prinsip tersebut?",
     "pilihan": [
-      "I",
-      "II",
-      "III",
-      "IV"
+      "Persaingan pasar bebas tanpa adanya intervensi pemerintah sama sekali.",
+      "Pemanfaatan kekayaan alam Indonesia untuk sebesar-besarnya kemakmuran rakyat.",
+      "Pengembangan koperasi sebagai soko guru perekonomian yang mengutamakan kesejahteraan anggota.",
+      "Penguasaan sumber daya alam yang vital bagi orang banyak oleh pihak swasta asing secara penuh."
     ],
-    "jawaban": 2
+    "jawaban": 1
+  },
+  {
+    "id": 35,
+    "pertanyaan": "Pasal 27 ayat (3) UUD NRI Tahun 1945 menyatakan bahwa setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara. Bagi seorang siswa kelas 9, aksi nyata bela negara dapat diwujudkan melalui...",
+    "pilihan": [
+      "Belajar dengan tekun dan mengukir prestasi yang mengharumkan nama sekolah",
+      "Bekerja paruh waktu untuk membantu ekonomi keluarga",
+      "Ikut serta dalam demonstrasi menuntut kebijakan pemerintah",
+      "Mengikuti wajib militer bagi seluruh pemuda di lingkungan desa"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 36,
+    "pertanyaan": "Hubungan antara Pembukaan UUD NRI Tahun 1945 dengan Proklamasi Kemerdekaan adalah...",
+    "pilihan": [
+      "Proklamasi dibuat setelah UUD disahkan oleh PPKI",
+      "Pembukaan UUD merupakan penjelasan terperinci dari cita-cita Proklamasi",
+      "Keduanya tidak memiliki keterkaitan hukum sama sekali",
+      "Pembukaan UUD adalah lampiran yang tidak wajib ada dalam Proklamasi"
+    ],
+    "jawaban": 1
   },
   {
     "id": 37,
-    "pertanyaan": "Istilah kedaulatan yang berakar dari kata Arab daulah merujuk pada makna fundamental mengenai...",
+    "pertanyaan": "Salah satu tantangan penerapan Pancasila di era globalisasi adalah masuknya paham radikalisme. Cara terbaik untuk menangkalnya bagi generasi muda adalah...",
     "pilihan": [
-      "Otoritas tertinggi yang tidak dapat diganggu gugat",
-      "Kewenangan yang sepenuhnya berada di tangan rakyat",
-      "Kekuasaan yang melekat pada lembaga kenegaraan",
-      "Wewenang dengan tingkat hierarki paling rendah"
+      "Memperkuat literasi dan pemahaman nilai-nilai luhur Pancasila",
+      "Menghapus pelajaran sejarah agar tidak terpaku pada masa lalu",
+      "Mengikuti semua tren luar negeri agar terlihat modern",
+      "Menutup diri dari segala informasi luar negeri"
     ],
     "jawaban": 0
   },
   {
     "id": 38,
-    "pertanyaan": "Berdasarkan UUD NRI Tahun 1945 setelah amandemen, bentuk kedaulatan yang berlaku di Indonesia dapat disimpulkan melalui pernyataan (1.Kedaulatan di tangan rakyat, 2.Presiden tertinggi, 3.DPR tertinggi, 4.MPR lembaga tertinggi)",
+    "pertanyaan": "Dalam sebuah rapat OSIS, terjadi perbedaan pendapat yang cukup tajam mengenai lokasi studi tur. Tindakan yang mencerminkan penerapan sila keempat Pancasila adalah...",
     "pilihan": [
-      "1 saja",
-      "1 dan 2",
-      "2 dan 4",
-      "3 dan 4"
+      "Membatalkan acara studi tur karena tidak ada kesepakatan yang instan",
+      "Mengambil keputusan berdasarkan keinginan ketua OSIS agar rapat cepat selesai",
+      "Memaksa anggota lain untuk menyetujui pendapat mayoritas tanpa diskusi",
+      "Melakukan musyawarah untuk mencapai mufakat dengan menghargai pendapat orang lain"
     ],
-    "jawaban": 0
+    "jawaban": 3
   },
   {
     "id": 39,
-    "pertanyaan": "Berdasarkan UUD NRI Tahun 1945, prinsip kedaulatan yang berlaku di Indonesia ditunjukkan oleh pernyataan (1.Pemilu bebas adil, 2.MPR kedaulatan mutlak, 3.Sesuai ketentuan UUD, 4.Presiden tanpa pengawasan)",
+    "pertanyaan": "Budi mendapatkan informasi di media sosial bahwa ada pembagian bantuan gratis, namun ternyata informasi tersebut palsu (hoaks). Sebagai siswa yang berjiwa Pancasila, sikap Budi seharusnya...",
     "pilihan": [
-      "1 dan 3",
-      "2 dan 4",
-      "1 dan 4",
-      "3 dan 4"
+      "Marah-marah di kolom komentar pengirim",
+      "Mengabaikan saja karena tidak merasa rugi",
+      "Langsung menyebarkannya agar orang lain tahu",
+      "Memeriksa kebenaran informasi sebelum membagikannya"
     ],
-    "jawaban": 0
+    "jawaban": 3
   },
   {
     "id": 40,
-    "pertanyaan": "Berdasarkan UUD NRI Tahun 1945 setelah amandemen, bentuk kedaulatan yang dianut Indonesia ditunjukkan oleh (1.Mekanisme konstitusi, 2.MPR tertinggi, 3.Checks and balances, 4.Presiden kekuasaan penuh)",
+    "pertanyaan": "Sebagai warga negara yang baik, kita wajib mematuhi aturan lalu lintas saat berkendara. Kewajiban ini bertujuan untuk...",
     "pilihan": [
-      "1 dan 3",
-      "1 dan 2",
-      "2 dan 4",
-      "3 dan 4"
-    ],
-    "jawaban": 0
-  },
-  {
-    "id": 41,
-    "pertanyaan": "Kasus pemilu 'penghadangan, pemaksaan, atau teror kepada pemilih agar memilih atau tidak memilih calon tertentu' merupakan pelanggaran asas...",
-    "pilihan": [
-      "Langsung",
-      "Umum",
-      "Bebas",
-      "Rahasia"
+      "Menunjukkan bahwa kita orang yang kaya",
+      "Menghindari denda dari polisi saja",
+      "Menjamin keselamatan dan ketertiban bersama",
+      "Mengikuti tren gaya hidup modern"
     ],
     "jawaban": 2
   },
   {
-    "id": 42,
-    "pertanyaan": "Cerita polisi menilang istrinya sendiri menunjukkan bahwa …. …..",
+    "id": 41,
+    "pertanyaan": "Pancasila dikatakan sebagai 'Meja Statis' dan 'Leitstar Dinamis'. Apa maksud dari Pancasila sebagai Leitstar Dinamis?",
     "pilihan": [
-      "hukum tanpa pandang bulu.",
-      "keputusan hukum yang tidak manusiawi.",
-      "hukum itu bebas dan tetapi tidak mandiri.",
-      "hukum itu tidak adil karena telah menindak istri sendiri"
+      "Pancasila menjadi bintang penuntun yang mampu mengarahkan bangsa mengikuti perkembangan zaman",
+      "Pancasila harus diganti jika zaman sudah berubah",
+      "Pancasila hanya berlaku saat masa kemerdekaan",
+      "Pancasila tidak dapat diubah selamanya"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 42,
+    "pertanyaan": "Sebuah desa di wilayah perbatasan mengalami konflik horizontal terkait pemanfaatan sumber mata air. Kelompok mayoritas merasa lebih berhak, sementara kelompok minoritas terpinggirkan. Jika dikaitkan dengan kedudukan Pancasila sebagai dasar negara, tindakan apa yang paling mencerminkan penyelesaian berdasarkan nilai kerakyatan dan keadilan sosial?",
+    "pilihan": [
+      "Mengadakan musyawarah desa yang melibatkan seluruh pemangku kepentingan untuk menyusun regulasi pembagian air secara proporsional dan adil.",
+      "Menyerahkan sepenuhnya keputusan kepada kepala desa sebagai otoritas tertinggi untuk menghindari perdebatan panjang.",
+      "Membagi air berdasarkan luas lahan yang dimiliki masing-masing warga tanpa melihat latar belakang kelompok.",
+      "Meminta bantuan militer untuk mengamankan lokasi mata air agar tidak terjadi konflik fisik antar warga."
     ],
     "jawaban": 0
   },
   {
     "id": 43,
-    "pertanyaan": "Prinsip yang menunjukkan persatuan dalam keberagaman suku, agama, ras dan antar golongan ditunjukkan pada nomor (1.Supremasi Hukum, 2.Proklamasi, 3.Nasionalisme, 4.Bhineka tunggal Ika)",
+    "pertanyaan": "Seorang anggota DPR mengusulkan perubahan undang-undang yang dianggap membatasi kebebasan berpendapat. Masyarakat kemudian melakukan aksi protes secara damai. Fenomena ini menunjukkan bekerjanya prinsip check and balances. Apa esensi dari prinsip ini dalam sistem demokrasi kita?",
     "pilihan": [
-      "1",
-      "2",
-      "3",
-      "4"
-    ],
-    "jawaban": 3
-  },
-  {
-    "id": 44,
-    "pertanyaan": "Sebuah bentuk usaha untuk meningkatkan perdamaian antar suku, pemeluk agama, serta golongan sosial lainnya melalui dialog menggunakan prinsip …..",
-    "pilihan": [
-      "Kebersamaan, kesetaraan, toleransi, dan saling menghormati.",
-      "Kesetaraan, kesejajaran, kedaerahan keadilan, dan mufakat.",
-      "Musyawarah mufakat, keadilan, kesukuan dan kemandirian",
-      "Kepercayaan, kedamaian, toleransi, kesukuan dan kesetaraan"
+      "Menjamin agar tidak ada satu lembaga negara yang memiliki kekuasaan mutlak melalui saling mengawasi antarlembaga dan kontrol publik.",
+      "Mengharuskan lembaga yudikatif untuk selalu tunduk pada keputusan lembaga legislatif.",
+      "Memberikan hak kepada rakyat untuk mengganti pemerintahan kapan saja tanpa mekanisme pemilihan umum.",
+      "Memastikan bahwa setiap kebijakan presiden harus disetujui oleh seluruh rakyat melalui referendum."
     ],
     "jawaban": 0
   },
   {
-    "id": 45,
-    "pertanyaan": "Suatu kondisi dalam masyarakat yang terdapat perbedaan-perbedaan dalam berbagai bidang merupakan pengertian dari …. …..",
+    "id": 44,
+    "pertanyaan": "Desa Sukamaju memiliki tradisi lumbung padi kolektif untuk membantu warga saat paceklik. Di tengah modernisasi, pemuda desa mulai mendigitalisasi sistem manajemen lumbung tersebut agar tetap relevan. Tindakan pemuda tersebut merupakan contoh dari...",
     "pilihan": [
-      "Keseragaman",
-      "Keragaman",
-      "Kesamaan",
-      "Kebersamaan"
+      "Dominasi budaya global terhadap budaya lokal",
+      "Penolakan terhadap budaya modern demi tradisi",
+      "Asimilasi budaya total yang menghilangkan nilai asli",
+      "Adaptasi kearifan lokal terhadap perkembangan zaman"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 45,
+    "pertanyaan": "Banyak kuliner tradisional Indonesia yang kini disajikan dengan kemasan modern (packaging) menarik agar bisa diekspor. Hal ini penting dalam masyarakat global karena...",
+    "pilihan": [
+      "Agar rasa makanan tradisional berubah menjadi rasa barat",
+      "Meningkatkan daya saing dan daya tarik produk lokal",
+      "Menghilangkan nilai sakral dari makanan tersebut",
+      "Membuktikan bahwa budaya lokal sudah ketinggalan zaman"
     ],
     "jawaban": 1
   },
   {
     "id": 46,
-    "pertanyaan": "Terciptanya harmoni antara supermarket dan pasar tradisional menunjukkan harmoni dibidang....",
+    "pertanyaan": "Seorang konten kreator membuat video pendek tentang cara memainkan Angklung dengan lagu-lagu populer dunia. Strategi ini efektif untuk melestarikan budaya karena...",
     "pilihan": [
-      "Sosial",
-      "Budaya",
-      "Ekonomi",
-      "Hukum"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 47,
-    "pertanyaan": "<img src='https://i.ibb.co.com/vCJ8JvDY/pkn47.jpg' alt='Infografis Upaya Penyelesaian Masalah'>\nBerdasarkan infografis diatas, upaya penyelesaian masalah secara preventif artinya,…",
-    "pilihan": [
-      "Tindak lanjut",
-      "Mencegah terjadinya masalah",
-      "Mengatasi setelah terjadinya masalah",
-      "Penanggulangan akibat terjadinya masalah"
-    ],
-    "jawaban": 1
-  },
-  {
-    "id": 48,
-    "pertanyaan": "<img src='https://i.ibb.co.com/d4Jh4YwL/pkn48.jpg' alt='Gambar Dampak Negatif Konflik'>\nDampak negatif yang ditimbulkan dari konflik diatas adalah….",
-    "pilihan": [
-      "Hubungan antar anggota kelompak semakin kuat",
-      "Menguatnya nilai – nilai dan norma sosial yang ada",
-      "Kehancuran harta benda dan korban manusia",
-      "Perubahan kepribadian anak yang semakin rusak"
+      "Menjadikan Angklung sebagai produk industri barat",
+      "Memaksa orang luar negeri untuk belajar bahasa Sunda",
+      "Mengganti fungsi Angklung sebagai alat musik ritual",
+      "Menarik minat generasi muda global melalui media sosial"
     ],
     "jawaban": 3
   },
   {
-    "id": 49,
-    "pertanyaan": "<img src='https://i.ibb.co.com/S4kkCp6y/pkn49.jpg' alt='Gambar Pengukuhan Paskibraka'>\nCuplikan informasi tersebut merupakan perwujudan bela negara melalui ….",
+    "id": 47,
+    "pertanyaan": "Wayang Kulit telah ditetapkan UNESCO sebagai Masterpiece of Oral and Intangible Heritage of Humanity. Sebagai warga negara, sikap kita terhadap pengakuan dunia ini adalah...",
     "pilihan": [
-      "pengabdian sesuai profesi",
-      "pelatihan dasar kemiliteran",
-      "pendidikan kewarganegaraan",
-      "pengabdian sebagai prajurit TNI"
+      "Menjual seluruh koleksi wayang ke luar negeri demi keuntungan",
+      "Melarang orang asing menonton pertunjukan wayang",
+      "Merasa cukup karena sudah diakui tanpa perlu mempelajarinya",
+      "Mempelajari dan memperkenalkan filosofi wayang kepada teman"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 48,
+    "pertanyaan": "Dalam masyarakat global yang serba cepat, kearifan lokal seperti 'Alon-alon Waton Kelakon' sering dianggap penghambat kemajuan. Padahal, nilai asli filosofi ini mengajarkan...",
+    "pilihan": [
+      "Menolak deadline pekerjaan karena bertentangan dengan adat",
+      "Ketelitian dan prinsip kehati-hatian dalam bertindak",
+      "Bekerja sesuka hati tanpa target yang jelas",
+      "Malas-malasan dalam bekerja agar tidak Lelah"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 49,
+    "pertanyaan": "Sekelompok remaja di Bali membuat festival musik yang memadukan EDM (Electronic Dance Music) dengan gamelan Bali. Hal ini merupakan bentuk...",
+    "pilihan": [
+      "Pencemaran nilai-nilai seni murni",
+      "Kreativitas dalam melakukan hibridasi budaya",
+      "Upaya menghancurkan alat musik tradisional",
+      "Ketidakmampuan remaja memainkan gamelan secara murni"
     ],
     "jawaban": 1
   },
   {
     "id": 50,
-    "pertanyaan": "Manfaat yang diperoleh sebuah negara jika warga negaranya memiliki kesadaran bela negara yang tinggi, yaitu ….",
+    "pertanyaan": "Upacara Kasada di Gunung Bromo menarik ribuan turis mancanegara. Dampak positif globalisasi pariwisata terhadap kearifan lokal ini adalah...",
     "pilihan": [
-      "negara dapat memiliki kekuatan militer yang kuat",
-      "negara dapat berdiri kokoh tanpa bantuan dari negara lain",
-      "keutuhan dan pertahanan negara akan sulit digoyahkan",
-      "menjadikan warga negara memiliki rasa nasionalisme berlebihan"
+      "Masyarakat suku Tengger terpaksa mengubah keyakinannya",
+      "Menghilangkan kekhusyukan ritual karena terlalu banyak kamera",
+      "Meningkatkan kesadaran dunia akan keunikan budaya Indonesia",
+      "Gunung Bromo menjadi milik organisasi internasional"
     ],
     "jawaban": 2
   }
