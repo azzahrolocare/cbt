@@ -87,6 +87,17 @@
         .avatar-circle { width: 40px; height: 40px; background: #ffffff33; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #ffffff66; }
         .nav-right-area { display: flex; align-items: center; gap: 12px; }
         .subject-area { text-align: right; border-right: 1px solid #ffffff44; padding-right: 12px; }
+        .timer-header { 
+            background: rgba(0,0,0,0.2); 
+            padding: 5px 10px; 
+            border-radius: 8px; 
+            font-family: monospace; 
+            font-weight: bold; 
+            font-size: 18px;
+            min-width: 80px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
         #btn-menu-nomor { background: #04BF62; color: white; border: 1px solid #ffffff44; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
         #btn-menu-nomor:hover { background: #3EC381; border-color: white; }
         
@@ -211,6 +222,8 @@
             <div id="val-kelas" class="data-value">-</div>
             <div class="data-label">Mata Pelajaran</div>
             <div id="val-mapel" class="data-value">-</div>
+            <div class="data-label">Waktu Pengerjaan</div>
+            <div id="val-durasi" class="data-value" style="color:#d32f2f;">- Menit</div>
         </div>
         <button class="btn-start" onclick="mulaiUjianSekarang()">MULAI MENGERJAKAN</button>
         <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee;">
@@ -266,6 +279,7 @@
         </div>
     </div>
     <div class="nav-right-area">
+        <div id="timer-utama" class="timer-header">00:00:00</div>
         <div class="subject-area">
             <div style="font-size:10px; opacity:0.8;">MATA PELAJARAN</div>
             <div id="display-mapel" style="font-weight:800; font-size:14px; letter-spacing:1px;">INFORMATIKA</div>
@@ -330,9 +344,11 @@
     let dataSoal = []; 
     let jawabanUser = JSON.parse(localStorage.getItem('drafJawaban')) || {}; 
     let indexSekarang = 0;
-    let timeLeft = 60; 
+    let timeLeft = 60; // Waktu tunggu tombol kirim (detik)
+    let totalUjianSeconds = 0; // Detik durasi pengerjaan ujian
     let timerRunning = false;
     let timerInterval;
+    let countdownInterval;
     let currentZoom = 1.0;
 
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
@@ -344,8 +360,14 @@
             window.location.href = 'login.html';
             return;
         }
+        
+        // Ambil durasi dari localStorage yang diatur admin
+        let durasiSet = localStorage.getItem('durasiUjian') || 60;
+        totalUjianSeconds = parseInt(durasiSet) * 60;
+        
         document.getElementById('val-nama').innerText = userData.nama.toUpperCase();
         document.getElementById('val-kelas').innerText = "KELAS " + userData.kelas;
+        document.getElementById('val-durasi').innerText = durasiSet + " Menit";
         
         if(userData.mapel) {
             document.getElementById('val-mapel').innerText = userData.mapel;
@@ -357,27 +379,50 @@
         document.getElementById('user-initial').innerText = userData.nama[0].toUpperCase();
     };
 
+    function startTimerUtama() {
+        countdownInterval = setInterval(() => {
+            if (totalUjianSeconds <= 0) {
+                clearInterval(countdownInterval);
+                alert("Waktu ujian telah habis!");
+                kirimJawabanOtomatis();
+            } else {
+                totalUjianSeconds--;
+                updateTampilanTimerUtama();
+            }
+        }, 1000);
+    }
+
+    function updateTampilanTimerUtama() {
+        const h = Math.floor(totalUjianSeconds / 3600);
+        const m = Math.floor((totalUjianSeconds % 3600) / 60);
+        const s = totalUjianSeconds % 60;
+        document.getElementById('timer-utama').innerText = 
+            `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+        
+        // Warnai merah jika sisa 5 menit
+        if (totalUjianSeconds <= 300) {
+            document.getElementById('timer-utama').style.color = '#ffeb3b';
+            document.getElementById('timer-utama').style.background = '#d32f2f';
+        }
+    }
+
     // Fungsi untuk mencegah navigasi "Back" dari sistem/browser
     function trapBackButton() {
-        // Tambahkan state palsu ke history stack
         window.history.pushState(null, null, window.location.href);
         window.onpopstate = function() {
             const sedangUjian = document.getElementById('main-wrapper').style.display === 'block';
             const sudahSelesai = document.getElementById('hasil-akhir').style.display === 'flex';
 
             if (sedangUjian && !sudahSelesai) {
-                // Dorong kembali state palsu jika user klik tombol kembali
                 window.history.pushState(null, null, window.location.href);
-                // Tampilkan modal fullscreen sebagai peringatan
                 document.getElementById('modalPaksaFullscreen').style.display = 'flex';
-                // Coba kembalikan fullscreen otomatis (beberapa browser membolehkan)
                 requestFullscreen();
             }
         };
     }
 
     function mulaiUjianSekarang() {
-        trapBackButton(); // Aktifkan penjebak tombol back saat ujian mulai
+        trapBackButton(); 
         requestFullscreen();
         document.getElementById('halaman-validasi').style.display = 'none';
         document.querySelector('.header-ujian').style.display = 'flex';
@@ -385,6 +430,7 @@
         document.getElementById('footer-nav').style.display = 'flex';
         document.getElementById('zoom-buttons').style.display = 'flex';
         muatSoal();
+        startTimerUtama();
     }
 
     function requestFullscreen() {
@@ -439,7 +485,6 @@
         renderNav();
     }
 
-    // FUNGSI ZOOM
     function zoomAction(delta) {
         currentZoom = Math.min(Math.max(0.5, currentZoom + delta), 2.0);
         const container = document.getElementById('zoom-container');
@@ -531,11 +576,20 @@
         }
     }
 
+    function kirimJawabanOtomatis() {
+        // Digunakan jika waktu habis
+        kirimJawaban();
+    }
+
     async function kirimJawaban() {
         const btn = document.getElementById('btnKirimFinal');
         const userData = JSON.parse(sessionStorage.getItem('userCBT'));
-        btn.innerHTML = 'MENGIRIM <span class="moving-dots"></span>';
-        btn.disabled = true;
+        if(btn) {
+            btn.innerHTML = 'MENGIRIM <span class="moving-dots"></span>';
+            btn.disabled = true;
+        }
+
+        clearInterval(countdownInterval); // Stop timer utama
 
         let benar = 0; 
         let detailJawaban = [];
@@ -555,15 +609,17 @@
             document.getElementById('hasil-akhir').style.display = 'flex';
             document.getElementById('footer-nav').style.display = 'none';
             document.getElementById('zoom-buttons').style.display = 'none';
+            document.getElementById('timer-utama').style.display = 'none';
             document.getElementById('benar-tampil').innerText = benar;
             document.getElementById('total-tampil').innerText = dataSoal.length;
             localStorage.removeItem('drafJawaban'); 
-            // Setelah selesai, reset onpopstate agar user bisa kembali secara normal
             window.onpopstate = null;
         } catch (e) {
             alert("Terjadi masalah saat mengirim. Periksa koneksi internet Anda.");
-            btn.innerHTML = 'COBA LAGI';
-            btn.disabled = false;
+            if(btn) {
+                btn.innerHTML = 'COBA LAGI';
+                btn.disabled = false;
+            }
         }
     }
 
@@ -585,7 +641,6 @@
         window.location.href = 'login.html'; 
     }
 
-    // EVENT KEYBOARD UNTUK NAVIGASI DAN ZOOM
     document.addEventListener('keydown', function(event) {
         const sedangUjian = document.getElementById('main-wrapper').style.display === 'block' && 
                             document.getElementById('hasil-akhir').style.display !== 'flex';
@@ -596,12 +651,6 @@
                     navigasi(-1);
                     break;
                 case "ArrowRight":
-                    if (indexSekarang === dataSoal.length - 1) {
-                        cekKelengkapan();
-                    } else {
-                        navigasi(1);
-                    }
-                    break;
                 case "Enter":
                     if (indexSekarang === dataSoal.length - 1) {
                         cekKelengkapan();
@@ -609,7 +658,6 @@
                         navigasi(1);
                     }
                     break;
-                // Fitur Zoom Keyboard
                 case "+":
                 case "=":
                     zoomAction(0.1);
