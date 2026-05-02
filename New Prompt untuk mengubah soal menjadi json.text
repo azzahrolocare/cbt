@@ -1,0 +1,13 @@
+perintah saya mutlak, salin semua soal tanpa terkecuali tidak boleh dipotong teksnya jika ada file gambar maka buatkan kode gambar html di bawah pertanyaan beri kode <img src='URL' class='img-post'> <br> nanti saya edit url gambarnya Buatkan soal tersebut menjadi file json seperti contoh pada
+kode dibawah
+ 
+[
+  {
+   "id": 1,
+   "pertanyaan": "Data berasal dari bahasa Latin, yaitu
+'datum' yang berarti sesuatu yang diberikan. Dalam bentuk jamak, istilah ini
+menjadi...",
+   "pilihan": ["Data", "Dataset",
+"Database", "Datun"],
+   "jawaban": 0
+  },
