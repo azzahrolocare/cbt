@@ -223,7 +223,7 @@
             <div class="data-label">Mata Pelajaran</div>
             <div id="val-mapel" class="data-value">-</div>
             <div class="data-label">Waktu Pengerjaan</div>
-            <div id="val-durasi" class="data-value" style="color:#d32f2f;">- Menit</div>
+            <div id="val-durasi" class="data-value" style="color:#d32f2f;">Memuat...</div>
         </div>
         <button class="btn-start" onclick="mulaiUjianSekarang()">MULAI MENGERJAKAN</button>
         <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee;">
@@ -361,13 +361,25 @@
             return;
         }
         
-        // Ambil durasi dari localStorage yang diatur admin
-        let durasiSet = localStorage.getItem('durasiUjian') || 60;
-        totalUjianSeconds = parseInt(durasiSet) * 60;
+        // --- AMBIL DURASI DARI GOOGLE SCRIPT SECARA OTOMATIS ---
+        fetch(`${SCRIPT_URL}?action=getDurasi`)
+        .then(response => response.text())
+        .then(menit => {
+            let durasiSet = menit || 60; // Jika server kosong, default 60 menit
+            totalUjianSeconds = parseInt(durasiSet) * 60;
+            
+            // Update tampilan di halaman validasi
+            document.getElementById('val-durasi').innerText = durasiSet + " Menit";
+            console.log("Durasi berhasil disinkronkan: " + durasiSet + " Menit");
+        })
+        .catch(err => {
+            console.error("Gagal ambil durasi dari server, menggunakan default 60 menit.");
+            totalUjianSeconds = 60 * 60;
+            document.getElementById('val-durasi').innerText = "60 Menit";
+        });
         
         document.getElementById('val-nama').innerText = userData.nama.toUpperCase();
         document.getElementById('val-kelas').innerText = "KELAS " + userData.kelas;
-        document.getElementById('val-durasi').innerText = durasiSet + " Menit";
         
         if(userData.mapel) {
             document.getElementById('val-mapel').innerText = userData.mapel;
