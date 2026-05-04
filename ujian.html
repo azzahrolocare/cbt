@@ -218,7 +218,6 @@
 </head>
 <body>
 
-<!-- HALAMAN VALIDASI DATA -->
 <div id="halaman-validasi">
     <div class="header-validasi-content">
         <span class="material-icons-round" style="font-size: 50px;">fact_check</span>
@@ -247,7 +246,6 @@
     </div>
 </div>
 
-<!-- MODAL PERINGATAN SOAL KOSONG -->
 <div id="modalPeringatan" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #d32f2f;">
         <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">report_problem</span></div>
@@ -258,7 +256,6 @@
     </div>
 </div>
 
-<!-- MODAL PERINGATAN FULLSCREEN -->
 <div id="modalPaksaFullscreen" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #d32f2f;">
         <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">fullscreen_exit</span></div>
@@ -268,7 +265,6 @@
     </div>
 </div>
 
-<!-- MODAL KONFIRMASI KIRIM -->
 <div id="modalConfirm" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #f9a825;">
         <div style="color:#f9a825;"><span class="material-icons-round" style="font-size:60px;">info_outline</span></div>
@@ -282,7 +278,6 @@
     </div>
 </div>
 
-<!-- INTERFACE UJIAN -->
 <div class="header-ujian">
     <div class="identity-area">
         <div class="avatar-circle" id="user-initial">-</div>
@@ -316,7 +311,6 @@
             <div id="konten-soal">Memuat soal...</div>
         </div>
 
-        <!-- HASIL AKHIR -->
         <div id="hasil-akhir">
             <span class="material-icons-round" style="font-size:80px; color:#2e7d32;">check_circle</span>
             <h2 style="margin: 15px 0;">UJIAN SELESAI</h2>
@@ -338,7 +332,6 @@
     </div>
 </div>
 
-<!-- NAVIGASI BAWAH FIXED -->
 <div class="fixed-footer-nav" id="footer-nav">
     <div class="btn-group">
         <button class="btn btn-back" onclick="navigasi(-1)">
@@ -353,7 +346,6 @@
     </div>
 </div>
 
-<!-- ZOOM CONTROLS -->
 <div class="zoom-controls" id="zoom-buttons" style="display: none;">
     <button class="btn-zoom btn-zoom-in" onclick="zoomAction(0.1)" title="Zoom In (Keyboard +)">+</button>
     <button class="btn-zoom btn-zoom-out" onclick="zoomAction(-0.1)" title="Zoom Out (Keyboard -)">-</button>
@@ -679,9 +671,13 @@
         if (sedangUjian) {
             switch(event.key) {
                 case "ArrowLeft":
+                case "ArrowUp": // Navigasi ke soal sebelumnya dengan tombol Atas Remote IFP
+                case "PageUp":  // Beberapa remote IFP menggunakan PageUp untuk tombol Atas
                     navigasi(-1);
                     break;
                 case "ArrowRight":
+                case "ArrowDown": // Navigasi ke soal berikutnya dengan tombol Bawah Remote IFP
+                case "PageDown":  // Beberapa remote IFP menggunakan PageDown untuk tombol Bawah
                 case "Enter":
                     if (indexSekarang === dataSoal.length - 1) {
                         cekKelengkapan();
