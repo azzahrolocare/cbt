@@ -191,9 +191,17 @@
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
         const ADMIN_TOKEN = 'cbtaz';
 
+        // FUNGSI FULL SCREEN SATU KALI KLIK
+        document.addEventListener('click', function() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.log(`Error attempting to enable full-screen mode: ${err.message}`);
+                });
+            }
+        }, { once: false }); // Biar tiap klik memastikan tetap fullscreen jika keluar
+
         async function loadMapel() {
             try {
-                // UPDATE: Mengambil data dari URL GitHub yang Anda berikan
                 const res = await fetch('https://azzahrolocare.github.io/cbt/mata-pelajaran.json');
                 const data = await res.json();
                 const selectMapel = document.getElementById('mapel');
