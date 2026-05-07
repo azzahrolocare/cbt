@@ -39,7 +39,7 @@
             pointer-events: none;
         }
 
-        /* --- HALAMAN VALIDASI DATA (EFEK NEON LOGIN) --- */
+        /* --- HALAMAN VALIDASI DATA --- */
         #halaman-validasi {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -118,7 +118,6 @@
             padding: 20px 0; position: relative; z-index: 5;
         }
 
-        /* --- LEMBAR SOAL DENGAN EFEK NEON --- */
         .container { 
             position: relative;
             max-width: 800px; 
@@ -134,7 +133,6 @@
             overflow: hidden;
         }
 
-        /* Garis Neon Bergerak di atas Lembar Soal */
         .container::before {
             content: "";
             position: absolute;
@@ -166,11 +164,23 @@
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; justify-content: center; align-items: center; z-index: 9000; backdrop-filter: blur(5px); }
         .modal-box { background: var(--dark-bg); padding: 30px; border-radius: 20px; width: 85%; max-width: 400px; text-align: center; border: 1px solid var(--neon-pink); color: white; }
 
-        /* --- NAVIGASI NOMOR --- */
+        /* --- NAVIGASI NOMOR (GRID 5 KOLOM) --- */
         .menu-nomor-content { display: none; position: fixed; top: 85px; right: 20px; background: var(--dark-bg); width: 280px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); padding: 20px; z-index: 1000; border: 1px solid var(--neon-cyan); }
         .menu-nomor-content.show { display: block; animation: fadeIn 0.3s; }
-        .nomor-navigasi { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
-        .kotak-nomor { width: 42px; height: 42px; border: 1px solid rgba(255,255,255,0.2); text-align: center; line-height: 42px; cursor: pointer; border-radius: 8px; font-weight: 600; background: rgba(255,255,255,0.05); color: white; }
+        
+        .nomor-navigasi { 
+            display: grid; 
+            grid-template-columns: repeat(5, 1fr); /* 5 Soal per baris */
+            gap: 10px; 
+            justify-items: center; 
+        }
+
+        .kotak-nomor { 
+            width: 42px; height: 42px; border: 1px solid rgba(255,255,255,0.2); 
+            text-align: center; line-height: 42px; cursor: pointer; border-radius: 8px; 
+            font-weight: 600; background: rgba(255,255,255,0.05); color: white;
+            display: flex; align-items: center; justify-content: center; gap: 2px;
+        }
         .kotak-nomor.sudah { background: var(--neon-cyan) !important; color: #1c1c1c !important; border-color: var(--neon-cyan); box-shadow: 0 0 10px rgba(69, 243, 255, 0.5); }
         .kotak-nomor.aktif { border: 2px solid var(--neon-pink); transform: scale(1.1); box-shadow: 0 0 15px var(--neon-pink); }
 
@@ -186,6 +196,21 @@
         .btn-zoom { width: 45px; height: 45px; border-radius: 10px; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); background: var(--dark-bg); font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* Style untuk partikel klik */
+        .click-particle {
+            position: fixed;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 99999;
+            animation: clickPop 0.6s ease-out forwards;
+        }
+        @keyframes clickPop {
+            0% { transform: translate(0, 0) scale(1); opacity: 1; }
+            100% { transform: translate(var(--mx), var(--my)) scale(0); opacity: 0; }
+        }
     </style>
 </head>
 <body>
@@ -267,7 +292,9 @@
 </div>
 
 <div id="menu-nomor" class="menu-nomor-content">
-    <p style="font-weight:800; font-size:12px; margin-bottom:15px; color:var(--neon-cyan); text-transform:uppercase;">Navigasi Soal</p>
+    <p style="font-weight:800; font-size:12px; margin-bottom:15px; color:var(--neon-cyan); text-transform:uppercase; display:flex; align-items:center; gap:8px;">
+        <i class="fa-solid fa-list-check"></i> Navigasi Soal
+    </p>
     <div class="nomor-navigasi" id="navigasiNomor"></div>
 </div>
 
@@ -351,6 +378,30 @@
         requestAnimationFrame(animateBG);
     }
     initBG(); animateBG();
+
+    // Fungsi untuk membuat partikel saat klik
+    document.addEventListener('click', (e) => {
+        const colors = ['#45f3ff', '#ff2770', '#ffffff'];
+        for (let i = 0; i < 8; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('click-particle');
+            document.body.appendChild(particle);
+            
+            const size = Math.random() * 4 + 2;
+            const destinationX = (Math.random() - 0.5) * 100;
+            const destinationY = (Math.random() - 0.5) * 100;
+            
+            particle.style.left = `${e.clientX}px`;
+            particle.style.top = `${e.clientY}px`;
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+            particle.style.setProperty('--mx', `${destinationX}px`);
+            particle.style.setProperty('--my', `${destinationY}px`);
+            
+            setTimeout(() => particle.remove(), 600);
+        }
+    });
 
     window.onload = function() {
         const userData = JSON.parse(sessionStorage.getItem('userCBT'));
@@ -439,7 +490,8 @@
         dataSoal.forEach((_, i) => {
             let cls = (i === indexSekarang) ? 'aktif' : ''; 
             if (jawabanUser[i] !== undefined) cls += ' sudah';
-            html += `<div class="kotak-nomor ${cls}" onclick="keNomor(${i})">${i+1}</div>`;
+            // Menambahkan icon list kecil di depan nomor
+            html += `<div class="kotak-nomor ${cls}" onclick="keNomor(${i})"><i class="fa-solid fa-list" style="font-size:8px; opacity:0.5;"></i>${i+1}</div>`;
         });
         document.getElementById('navigasiNomor').innerHTML = html;
         document.getElementById('btnNext').style.display = indexSekarang === dataSoal.length - 1 ? 'none' : 'flex';
