@@ -30,12 +30,12 @@
             --dark-bg: #222327;
         }
 
-        /* --- BACKGROUND PARTICLES CANVAS --- */
+        /* --- BACKGROUND & CLICK PARTICLES CANVAS --- */
         #bgCanvas {
-            position: absolute;
+            position: fixed;
             top: 0; left: 0;
             width: 100%; height: 100%;
-            z-index: 9999; /* DINAIKKAN AGAR EFEK DI ATAS SEMUA ELEMEN */
+            z-index: 99999; /* Layer paling atas untuk partikel */
             pointer-events: none;
         }
 
@@ -280,7 +280,7 @@
         </div>
         <div id="timer-utama" class="timer-header">00:00:00</div>
         <button id="btn-menu-nomor" class="click-particle-trigger" onclick="toggleMenuNomor()" style="background:none; border:1px solid var(--neon-cyan); color:var(--neon-cyan); width:38px; height:38px; border-radius:8px; cursor:pointer; display:flex; align-items:center; justify-content:center;">
-            <i class="fa-solid fa-grid-view"></i>
+            <span class="material-icons-round">grid_view</span>
         </button>
     </div>
 </div>
@@ -364,9 +364,9 @@
             this.x = x;
             this.y = y;
             this.size = Math.random() * 4 + 1;
-            this.speedX = (Math.random() - 0.5) * 1.5;
-            this.speedY = (Math.random() - 0.5) * 1.5;
-            this.color = Math.random() > 0.5 ? 'rgba(69, 243, 255, 0.8)' : 'rgba(255, 39, 112, 0.8)';
+            this.speedX = (Math.random() - 0.5) * 2;
+            this.speedY = (Math.random() - 0.5) * 2;
+            this.color = Math.random() > 0.5 ? 'rgba(69, 243, 255, 0.9)' : 'rgba(255, 39, 112, 0.9)';
             this.life = 100;
         }
         update() {
@@ -385,12 +385,12 @@
     }
 
     function spawnClickParticles(e) {
-        for (let i = 0; i < 25; i++) {
+        for (let i = 0; i < 30; i++) {
             clickParticles.push(new ClickParticle(e.clientX, e.clientY));
         }
     }
 
-    document.addEventListener('click', (e) => {
+    document.addEventListener('mousedown', (e) => {
         spawnClickParticles(e);
     });
 
@@ -479,7 +479,7 @@
                 <p style="font-weight:800; color:var(--neon-cyan); font-size:14px; margin-bottom:15px; letter-spacing:1px;">SOAL NOMOR ${i+1}</p>
                 <p style="font-size:18px; line-height:1.6; margin-bottom:25px; color: #fff;">${s.pertanyaan}</p>
                 ${s.pilihan.map((p, idx) => `
-                    <label class="pilihan-label click-particle-trigger">
+                    <label class="pilihan-label">
                         <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(${i},${idx})"> 
                         <span style="margin-left:15px; font-size:16px;">${p}</span>
                     </label>
@@ -502,7 +502,7 @@
         dataSoal.forEach((_, i) => {
             let cls = (i === indexSekarang) ? 'aktif' : ''; 
             if (jawabanUser[i] !== undefined) cls += ' sudah';
-            html += `<div class="kotak-nomor click-particle-trigger ${cls}" onclick="keNomor(${i})">${i+1}</div>`;
+            html += `<div class="kotak-nomor ${cls}" onclick="keNomor(${i})">${i+1}</div>`;
         });
         document.getElementById('navigasiNomor').innerHTML = html;
         document.getElementById('btnNext').style.display = indexSekarang === dataSoal.length - 1 ? 'none' : 'flex';
