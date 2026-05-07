@@ -139,18 +139,47 @@
             padding: 20px 0; position: relative; z-index: 5;
         }
 
+        /* --- STYLES UNTUK NEON BORDER LEMBAR SOAL --- */
+        .container-neon-box {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            width: 92%;
+            background: var(--dark-bg);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 25px 45px rgba(0,0,0,0.4);
+        }
+
+        .container-neon-box::before {
+            content: '';
+            position: absolute;
+            width: 1000px;
+            height: 1000px;
+            background: conic-gradient(transparent 0deg, var(--neon-cyan) 40deg, transparent 40.1deg, transparent 90deg, var(--neon-pink) 130deg, transparent 130.1deg, transparent 180deg, var(--neon-cyan) 220deg, transparent 220.1deg, transparent 270deg, var(--neon-pink) 310deg, transparent 310.1deg);
+            animation: rotate_neon 4s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes rotate_neon {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
         .container { 
             position: relative;
-            max-width: 800px; 
-            margin: 0 auto; 
+            width: calc(100% - 6px); /* Memberi ruang untuk garis neon */
+            height: calc(100% - 6px);
+            margin: 3px;
             padding: 40px; 
-            width: 92%; 
-            background: rgba(255, 255, 255, 0.05);
+            background: #1c1f25;
             backdrop-filter: blur(15px);
             -webkit-backdrop-filter: blur(15px);
-            border-radius: 20px; 
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 25px 45px rgba(0,0,0,0.4);
+            border-radius: 18px; 
+            z-index: 2;
             overflow: hidden;
         }
 
@@ -256,7 +285,6 @@
     </div>
 </div>
 
-<!-- PROGRESS BAR -->
 <div class="progress-container" id="prog-cont">
     <div id="progress-bar"></div>
 </div>
@@ -320,23 +348,25 @@
 </div>
 
 <div class="container-wrapper" id="main-wrapper">
-    <div class="container" id="zoom-container">
-        <div id="konten-ujian">
-            <div id="konten-soal">Memuat soal...</div>
-        </div>
-
-        <div id="hasil-akhir" style="display:none; text-align:center; padding:20px 0;">
-            <i class="fa-solid fa-circle-check fa-5x" style="color:var(--neon-cyan);"></i>
-            <h2 style="margin:20px 0; color: white;">UJIAN SELESAI</h2>
-            <div style="background:rgba(255,255,255,0.05); padding:25px; border-radius:15px; border:2px dashed var(--neon-cyan);">
-                <p style="font-size:12px; color:#888; margin-bottom:10px;">JUMLAH PEROLEHAN BENAR</p>
-                <div style="display:flex; align-items:baseline; justify-content:center; gap:10px;">
-                    <span id="benar-tampil" style="font-size:70px; font-weight:900; color:var(--neon-cyan);">0</span>
-                    <span style="font-size:24px; color:#555;">/</span>
-                    <span id="total-tampil" style="font-size:40px; font-weight:800; color:var(--neon-pink);">0</span>
-                </div>
+    <div class="container-neon-box" id="zoom-container">
+        <div class="container">
+            <div id="konten-ujian">
+                <div id="konten-soal">Memuat soal...</div>
             </div>
-            <button class="btn-start" style="margin-top:30px; max-width:250px; margin-inline:auto;" onclick="kembaliKeLogin()">KEMBALI KE LOGIN</button>
+
+            <div id="hasil-akhir" style="display:none; text-align:center; padding:20px 0;">
+                <i class="fa-solid fa-circle-check fa-5x" style="color:var(--neon-cyan);"></i>
+                <h2 style="margin:20px 0; color: white;">UJIAN SELESAI</h2>
+                <div style="background:rgba(255,255,255,0.05); padding:25px; border-radius:15px; border:2px dashed var(--neon-cyan);">
+                    <p style="font-size:12px; color:#888; margin-bottom:10px;">JUMLAH PEROLEHAN BENAR</p>
+                    <div style="display:flex; align-items:baseline; justify-content:center; gap:10px;">
+                        <span id="benar-tampil" style="font-size:70px; font-weight:900; color:var(--neon-cyan);">0</span>
+                        <span style="font-size:24px; color:#555;">/</span>
+                        <span id="total-tampil" style="font-size:40px; font-weight:800; color:var(--neon-pink);">0</span>
+                    </div>
+                </div>
+                <button class="btn-start" style="margin-top:30px; max-width:250px; margin-inline:auto;" onclick="kembaliKeLogin()">KEMBALI KE LOGIN</button>
+            </div>
         </div>
     </div>
 </div>
