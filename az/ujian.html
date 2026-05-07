@@ -283,10 +283,23 @@
     async function muatSoal() { 
         try { 
             const userData = JSON.parse(sessionStorage.getItem('userCBT'));
-            const res = await fetch(BASE_URL + 'mapel/' + userData.fileSoal); 
+            let urlSoal = userData.fileSoal;
+
+            // LOGIKA GABUNGAN: Menghindari duplikasi URL
+            if (urlSoal && !urlSoal.startsWith('http')) {
+                urlSoal = BASE_URL + 'mapel/' + urlSoal;
+            }
+
+            console.log("Memuat soal dari:", urlSoal);
+            const res = await fetch(urlSoal); 
+            if (!res.ok) throw new Error("Gagal memuat file");
+            
             dataSoal = await res.json(); 
             renderUjian(); 
-        } catch (e) { alert("Gagal memuat soal. Hubungi admin."); } 
+        } catch (e) { 
+            console.error(e);
+            alert("Gagal memuat soal. Periksa koneksi atau file di folder /mapel/"); 
+        } 
     }
 
     function renderUjian() {
