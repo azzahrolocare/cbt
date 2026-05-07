@@ -112,6 +112,8 @@
             color: var(--neon-cyan); border: 1px solid var(--neon-cyan);
         }
 
+        .subject-area { text-align: right; border-right: 1px solid rgba(255,255,255,0.2); padding-right: 12px; }
+
         .container-wrapper {
             margin-top: 75px; height: calc(100vh - 145px); 
             overflow-y: auto; display: none; scroll-behavior: smooth;
@@ -164,25 +166,34 @@
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; justify-content: center; align-items: center; z-index: 9000; backdrop-filter: blur(5px); }
         .modal-box { background: var(--dark-bg); padding: 30px; border-radius: 20px; width: 85%; max-width: 400px; text-align: center; border: 1px solid var(--neon-pink); color: white; }
 
-        /* --- NAVIGASI NOMOR (GRID 5 KOLOM) --- */
-        .menu-nomor-content { display: none; position: fixed; top: 85px; right: 20px; background: var(--dark-bg); width: 280px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); padding: 20px; z-index: 1000; border: 1px solid var(--neon-cyan); }
+        /* --- NAVIGASI NOMOR --- */
+        .menu-nomor-content { 
+            display: none; position: fixed; top: 85px; right: 20px; background: var(--dark-bg); 
+            width: 260px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); 
+            padding: 20px; z-index: 1000; border: 1px solid var(--neon-cyan); 
+        }
         .menu-nomor-content.show { display: block; animation: fadeIn 0.3s; }
         
         .nomor-navigasi { 
             display: grid; 
-            grid-template-columns: repeat(5, 1fr); /* 5 Soal per baris */
-            gap: 10px; 
-            justify-items: center; 
+            grid-template-columns: repeat(5, 1fr); /* UBAH JADI 5 SOAL PER BARIS */
+            gap: 8px; 
+            justify-content: center; 
         }
 
         .kotak-nomor { 
-            width: 42px; height: 42px; border: 1px solid rgba(255,255,255,0.2); 
-            text-align: center; line-height: 42px; cursor: pointer; border-radius: 8px; 
-            font-weight: 600; background: rgba(255,255,255,0.05); color: white;
-            display: flex; align-items: center; justify-content: center; gap: 2px;
+            width: 40px; height: 40px; border: 1px solid rgba(255,255,255,0.2); 
+            text-align: center; line-height: 40px; cursor: pointer; border-radius: 8px; 
+            font-weight: 600; background: rgba(255,255,255,0.05); color: white; font-size: 13px;
+            transition: 0.3s;
         }
+        /* NOMOR GANJIL WARNA CYAN */
+        .kotak-nomor:nth-child(odd) { border-color: rgba(69, 243, 255, 0.4); color: var(--neon-cyan); }
+        /* NOMOR GENAP WARNA PINK */
+        .kotak-nomor:nth-child(even) { border-color: rgba(255, 39, 112, 0.4); color: var(--neon-pink); }
+        
         .kotak-nomor.sudah { background: var(--neon-cyan) !important; color: #1c1c1c !important; border-color: var(--neon-cyan); box-shadow: 0 0 10px rgba(69, 243, 255, 0.5); }
-        .kotak-nomor.aktif { border: 2px solid var(--neon-pink); transform: scale(1.1); box-shadow: 0 0 15px var(--neon-pink); }
+        .kotak-nomor.aktif { border: 2px solid white !important; transform: scale(1.1); box-shadow: 0 0 15px rgba(255,255,255,0.4); }
 
         /* --- FOOTER NAV --- */
         .fixed-footer-nav { position: fixed; bottom: 0; left: 0; width: 100%; height: 70px; background: var(--dark-bg); display: none; justify-content: center; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); z-index: 100; }
@@ -196,21 +207,6 @@
         .btn-zoom { width: 45px; height: 45px; border-radius: 10px; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); background: var(--dark-bg); font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
-
-        /* Style untuk partikel klik */
-        .click-particle {
-            position: fixed;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            pointer-events: none;
-            z-index: 99999;
-            animation: clickPop 0.6s ease-out forwards;
-        }
-        @keyframes clickPop {
-            0% { transform: translate(0, 0) scale(1); opacity: 1; }
-            100% { transform: translate(var(--mx), var(--my)) scale(0); opacity: 0; }
-        }
     </style>
 </head>
 <body>
@@ -232,7 +228,7 @@
                 <div class="data-label">Durasi Ujian</div>
                 <div id="val-durasi" class="data-value" style="color:var(--neon-pink);">Memuat...</div>
             </div>
-            <button class="btn-start" onclick="mulaiUjianSekarang()">MULAI SEKARANG</button>
+            <button class="btn-start click-particle-trigger" onclick="mulaiUjianSekarang()">MULAI SEKARANG</button>
             <p onclick="history.back()" style="color:var(--neon-pink); font-size:11px; cursor:pointer; font-weight:bold; margin-top:15px; text-decoration: underline;">KEMBALI KE LOGIN</p>
         </div>
     </div>
@@ -243,7 +239,7 @@
         <i class="fa-solid fa-triangle-exclamation fa-4x" style="color:var(--neon-pink);"></i>
         <h3 style="margin:15px 0; color:var(--neon-pink);">PERINGATAN!</h3>
         <p style="font-size:14px;">Dilarang keluar dari mode layar penuh selama ujian berlangsung. Pelanggaran ini akan dicatat oleh sistem.</p>
-        <button onclick="kembaliKeFullscreen()" class="btn-start" style="margin-top:20px; background:var(--neon-pink); color:white;">KEMBALI KE UJIAN</button>
+        <button onclick="kembaliKeFullscreen()" class="btn-start click-particle-trigger" style="margin-top:20px; background:var(--neon-pink); color:white;">KEMBALI KE UJIAN</button>
     </div>
 </div>
 
@@ -255,7 +251,7 @@
         <div id="timer-box" style="font-size:28px; font-weight:900; color:var(--neon-pink); margin:15px 0; font-family:monospace;">01:00</div>
         <div style="display:flex; gap:10px;">
             <button onclick="tutupModal()" style="flex:1; background:#444; border:none; color:white; border-radius:8px; cursor:pointer;">BATAL</button>
-            <button id="btnKirimFinal" disabled style="flex:1; background:#555; border:none; color:#888; border-radius:8px; cursor:not-allowed;">KIRIM</button>
+            <button id="btnKirimFinal" class="click-particle-trigger" disabled style="flex:1; background:#555; border:none; color:#888; border-radius:8px; cursor:not-allowed;">KIRIM</button>
         </div>
     </div>
 </div>
@@ -266,7 +262,7 @@
         <h3 style="color: var(--neon-pink); margin-top: 15px;">Belum Selesai!</h3>
         <p>Ada soal yang belum dijawab:</p>
         <div id="daftar-kosong" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:15px 0;"></div>
-        <button onclick="tutupPeringatan()" class="btn-start">PERIKSA KEMBALI</button>
+        <button onclick="tutupPeringatan()" class="btn-start click-particle-trigger">PERIKSA KEMBALI</button>
     </div>
 </div>
 
@@ -285,16 +281,14 @@
             <div id="display-mapel" style="font-weight:800; font-size:13px; color:#fff; letter-spacing:0.5px;">...</div>
         </div>
         <div id="timer-utama" class="timer-header">00:00:00</div>
-        <button id="btn-menu-nomor" onclick="toggleMenuNomor()" style="background:none; border:1px solid var(--neon-cyan); color:var(--neon-cyan); width:38px; height:38px; border-radius:8px; cursor:pointer;">
+        <button id="btn-menu-nomor" class="click-particle-trigger" onclick="toggleMenuNomor()" style="background:none; border:1px solid var(--neon-cyan); color:var(--neon-cyan); width:38px; height:38px; border-radius:8px; cursor:pointer;">
             <i class="fa-solid fa-grid-view"></i>
         </button>
     </div>
 </div>
 
 <div id="menu-nomor" class="menu-nomor-content">
-    <p style="font-weight:800; font-size:12px; margin-bottom:15px; color:var(--neon-cyan); text-transform:uppercase; display:flex; align-items:center; gap:8px;">
-        <i class="fa-solid fa-list-check"></i> Navigasi Soal
-    </p>
+    <p style="font-weight:800; font-size:12px; margin-bottom:15px; color:var(--neon-cyan); text-transform:uppercase;">Navigasi Soal</p>
     <div class="nomor-navigasi" id="navigasiNomor"></div>
 </div>
 
@@ -315,22 +309,22 @@
                     <span id="total-tampil" style="font-size:40px; font-weight:800; color:var(--neon-pink);">0</span>
                 </div>
             </div>
-            <button class="btn-start" style="margin-top:30px; max-width:250px; margin-inline:auto;" onclick="kembaliKeLogin()">KEMBALI KE LOGIN</button>
+            <button class="btn-start click-particle-trigger" style="margin-top:30px; max-width:250px; margin-inline:auto;" onclick="kembaliKeLogin()">KEMBALI KE LOGIN</button>
         </div>
     </div>
 </div>
 
 <div class="fixed-footer-nav" id="footer-nav">
     <div class="btn-group">
-        <button class="btn btn-back" onclick="navigasi(-1)"><i class="fa-solid fa-chevron-left"></i> SEBELUMNYA</button>
-        <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">SELANJUTNYA <i class="fa-solid fa-chevron-right"></i></button>
-        <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <i class="fa-solid fa-check-double"></i></button>
+        <button class="btn btn-back click-particle-trigger" onclick="navigasi(-1)"><i class="fa-solid fa-chevron-left"></i> SEBELUMNYA</button>
+        <button class="btn btn-next click-particle-trigger" id="btnNext" onclick="navigasi(1)">SELANJUTNYA <i class="fa-solid fa-chevron-right"></i></button>
+        <button class="btn btn-finish click-particle-trigger" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <i class="fa-solid fa-check-double"></i></button>
     </div>
 </div>
 
 <div class="zoom-controls" id="zoom-buttons" style="display:none;">
-    <button class="btn-zoom" onclick="zoomAction(0.1)">+</button>
-    <button class="btn-zoom" onclick="zoomAction(-0.1)">-</button>
+    <button class="btn-zoom click-particle-trigger" onclick="zoomAction(0.1)">+</button>
+    <button class="btn-zoom click-particle-trigger" onclick="zoomAction(-0.1)">-</button>
 </div>
 
 <script>
@@ -345,10 +339,11 @@
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
     const BASE_URL = 'https://azzahrolocare.github.io/cbt/';
 
-    // --- Efek Partikel Latar Belakang ---
+    // --- Efek Partikel Latar Belakang & Klik ---
     const canvas = document.getElementById('bgCanvas');
     const ctx = canvas.getContext('2d');
     let particlesArray = [];
+    let clickParticles = [];
 
     function setCanvasSize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
     window.addEventListener('resize', setCanvasSize);
@@ -358,50 +353,73 @@
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
             this.size = Math.random() * 2;
-            this.speedX = (Math.random() - 0.5) * 0.5;
-            this.speedY = (Math.random() - 0.5) * 0.5;
-            this.color = Math.random() > 0.5 ? 'rgba(69, 243, 255, 0.3)' : 'rgba(255, 39, 112, 0.2)';
+            this.speedX = (Math.random() - 0.5) * 0.3;
+            this.speedY = (Math.random() - 0.5) * 0.3;
+            this.color = Math.random() > 0.5 ? 'rgba(69, 243, 255, 0.2)' : 'rgba(255, 39, 112, 0.1)';
         }
         update() { this.x += this.speedX; this.y += this.speedY; }
         draw() { ctx.fillStyle = this.color; ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); }
     }
 
+    class ClickParticle {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+            this.size = Math.random() * 4 + 1;
+            this.speedX = (Math.random() - 0.5) * 1.5; // PELAN
+            this.speedY = (Math.random() - 0.5) * 1.5; // PELAN
+            this.color = Math.random() > 0.5 ? 'rgba(69, 243, 255, 0.8)' : 'rgba(255, 39, 112, 0.8)';
+            this.life = 100;
+        }
+        update() {
+            this.x += this.speedX;
+            this.y += this.speedY;
+            this.life -= 1.5;
+        }
+        draw() {
+            ctx.fillStyle = this.color;
+            ctx.globalAlpha = this.life / 100;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.globalAlpha = 1;
+        }
+    }
+
+    function spawnClickParticles(e) {
+        for (let i = 0; i < 25; i++) { // BANYAK
+            clickParticles.push(new ClickParticle(e.clientX, e.clientY));
+        }
+    }
+
+    document.addEventListener('click', (e) => {
+        if (e.target.closest('.click-particle-trigger') || e.target.closest('button') || e.target.closest('.kotak-nomor')) {
+            spawnClickParticles(e);
+        }
+    });
+
     function initBG() {
         setCanvasSize();
         particlesArray = [];
-        for(let i=0; i<100; i++) particlesArray.push(new BackgroundParticle());
+        for(let i=0; i<80; i++) particlesArray.push(new BackgroundParticle());
     }
 
     function animateBG() {
         ctx.clearRect(0,0,canvas.width, canvas.height);
+        
         particlesArray.forEach(p => { p.update(); p.draw(); });
+        
+        for (let i = 0; i < clickParticles.length; i++) {
+            clickParticles[i].update();
+            clickParticles[i].draw();
+            if (clickParticles[i].life <= 0) {
+                clickParticles.splice(i, 1);
+                i--;
+            }
+        }
         requestAnimationFrame(animateBG);
     }
     initBG(); animateBG();
-
-    // Fungsi untuk membuat partikel saat klik
-    document.addEventListener('click', (e) => {
-        const colors = ['#45f3ff', '#ff2770', '#ffffff'];
-        for (let i = 0; i < 8; i++) {
-            const particle = document.createElement('div');
-            particle.classList.add('click-particle');
-            document.body.appendChild(particle);
-            
-            const size = Math.random() * 4 + 2;
-            const destinationX = (Math.random() - 0.5) * 100;
-            const destinationY = (Math.random() - 0.5) * 100;
-            
-            particle.style.left = `${e.clientX}px`;
-            particle.style.top = `${e.clientY}px`;
-            particle.style.width = `${size}px`;
-            particle.style.height = `${size}px`;
-            particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-            particle.style.setProperty('--mx', `${destinationX}px`);
-            particle.style.setProperty('--my', `${destinationY}px`);
-            
-            setTimeout(() => particle.remove(), 600);
-        }
-    });
 
     window.onload = function() {
         const userData = JSON.parse(sessionStorage.getItem('userCBT'));
@@ -467,7 +485,7 @@
                 <p style="font-weight:800; color:var(--neon-cyan); font-size:14px; margin-bottom:15px; letter-spacing:1px;">SOAL NOMOR ${i+1}</p>
                 <p style="font-size:18px; line-height:1.6; margin-bottom:25px; color: #fff;">${s.pertanyaan}</p>
                 ${s.pilihan.map((p, idx) => `
-                    <label class="pilihan-label">
+                    <label class="pilihan-label click-particle-trigger">
                         <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(${i},${idx})"> 
                         <span style="margin-left:15px; font-size:16px;">${p}</span>
                     </label>
@@ -490,8 +508,7 @@
         dataSoal.forEach((_, i) => {
             let cls = (i === indexSekarang) ? 'aktif' : ''; 
             if (jawabanUser[i] !== undefined) cls += ' sudah';
-            // Menambahkan icon list kecil di depan nomor
-            html += `<div class="kotak-nomor ${cls}" onclick="keNomor(${i})"><i class="fa-solid fa-list" style="font-size:8px; opacity:0.5;"></i>${i+1}</div>`;
+            html += `<div class="kotak-nomor click-particle-trigger ${cls}" onclick="keNomor(${i})">${i+1}</div>`;
         });
         document.getElementById('navigasiNomor').innerHTML = html;
         document.getElementById('btnNext').style.display = indexSekarang === dataSoal.length - 1 ? 'none' : 'flex';
