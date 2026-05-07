@@ -111,7 +111,18 @@
             background: var(--dark-bg); color: white; padding: 0 20px; 
             position: fixed; top: 0; width: 100%; height: 75px; 
             display: none; justify-content: space-between; align-items: center; 
-            z-index: 100; border-bottom: 2px solid var(--neon-cyan);
+            z-index: 100; border-bottom: 2px solid rgba(255,255,255,0.1);
+        }
+
+        /* PROGRESS BAR NEON */
+        .progress-container {
+            position: fixed; top: 73px; left: 0; width: 100%; height: 3px;
+            background: rgba(255,255,255,0.05); z-index: 101; display: none;
+        }
+        #progress-bar {
+            height: 100%; width: 0%; background: var(--neon-cyan);
+            box-shadow: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .timer-header { 
@@ -143,19 +154,6 @@
             overflow: hidden;
         }
 
-        .container::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 2px;
-            background: linear-gradient(90deg, transparent, var(--neon-cyan), var(--neon-pink), transparent);
-            animation: moveNeonSoal 4s linear infinite;
-        }
-
-        @keyframes moveNeonSoal {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
         /* ANIMASI PERGESERAN HALUS */
         @keyframes slideIn {
             from { opacity: 0; transform: translateX(30px); }
@@ -171,13 +169,21 @@
             background: rgba(255, 255, 255, 0.03); 
             padding: 18px; margin: 15px 0; 
             border: 1px solid rgba(255, 255, 255, 0.08); 
-            border-radius: 12px; cursor: pointer; transition: 0.3s;
+            border-radius: 12px; cursor: pointer; transition: all 0.3s ease;
         }
         .pilihan-label:hover { 
             background: rgba(69, 243, 255, 0.08); 
             border-color: var(--neon-cyan);
-            box-shadow: 0 0 15px rgba(69, 243, 255, 0.1);
         }
+
+        /* EFEK GLOW SAAT TERPILIH */
+        .pilihan-label.selected {
+            background: rgba(69, 243, 255, 0.15);
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 20px rgba(69, 243, 255, 0.2), inset 0 0 10px rgba(69, 243, 255, 0.1);
+            transform: scale(1.01);
+        }
+
         .pilihan-label input[type="radio"] { accent-color: var(--neon-cyan); transform: scale(1.4); }
 
         /* --- MODAL SYSTEM --- */
@@ -248,6 +254,11 @@
             <p onclick="history.back()" style="color:var(--neon-pink); font-size:11px; cursor:pointer; font-weight:bold; margin-top:15px; text-decoration: underline;">KEMBALI KE LOGIN</p>
         </div>
     </div>
+</div>
+
+<!-- PROGRESS BAR -->
+<div class="progress-container" id="prog-cont">
+    <div id="progress-bar"></div>
 </div>
 
 <div id="modalPaksaFullscreen" class="modal-overlay">
@@ -408,7 +419,6 @@
         }
     }
 
-    // LOGIKA KLIK DIMANA SAJA UNTUK MENUTUP MENU & EFEK PARTIKEL
     document.addEventListener('mousedown', (e) => {
         spawnClickParticles(e);
         const menuNomor = document.getElementById('menu-nomor');
@@ -475,6 +485,7 @@
         requestFullscreen();
         document.getElementById('halaman-validasi').style.display = 'none';
         document.querySelector('.header-ujian').style.display = 'flex';
+        document.getElementById('prog-cont').style.display = 'block';
         document.getElementById('main-wrapper').style.display = 'block';
         document.getElementById('footer-nav').style.display = 'flex';
         document.getElementById('zoom-buttons').style.display = 'flex';
@@ -507,8 +518,8 @@
                     <p style="font-weight:800; color:var(--neon-cyan); font-size:14px; margin-bottom:15px; letter-spacing:1px;">SOAL NOMOR ${i+1}</p>
                     <p style="font-size:18px; line-height:1.6; margin-bottom:25px; color: #fff;">${s.pertanyaan}</p>
                     ${s.pilihan.map((p, idx) => `
-                        <label class="pilihan-label">
-                            <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(${i},${idx})"> 
+                        <label class="pilihan-label ${jawabanUser[i]==idx?'selected':''}">
+                            <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(event, ${i},${idx})"> 
                             <span style="margin-left:15px; font-size:16px;">${p}</span>
                         </label>
                     `).join('')}
@@ -518,20 +529,34 @@
         const containerSoal = document.getElementById('konten-soal');
         containerSoal.innerHTML = html; 
         
-        // Memaksa trigger animasi ulang dengan menghapus dan menambah class jika perlu
         const element = containerSoal.querySelector('.soal-card');
         element.style.animation = 'none';
-        element.offsetHeight; /* trigger reflow */
+        element.offsetHeight; 
         element.style.animation = null;
 
         document.getElementById('main-wrapper').scrollTop = 0;
+        updateProgressBar();
         renderNav();
     }
 
-    function pilih(s, p) { 
+    function pilih(event, s, p) { 
+        // Animasi feedback klik
+        const labels = event.currentTarget.closest('.soal-card').querySelectorAll('.pilihan-label');
+        labels.forEach(l => l.classList.remove('selected'));
+        event.currentTarget.parentElement.classList.add('selected');
+
         jawabanUser[s] = p; 
         localStorage.setItem('drafJawaban', JSON.stringify(jawabanUser)); 
+        updateProgressBar();
         renderNav(); 
+    }
+
+    function updateProgressBar() {
+        const totalSoal = dataSoal.length;
+        if(totalSoal === 0) return;
+        const dijawab = Object.keys(jawabanUser).length;
+        const persentase = (dijawab / totalSoal) * 100;
+        document.getElementById('progress-bar').style.width = persentase + "%";
     }
 
     function renderNav() {
@@ -565,7 +590,6 @@
     function navigasi(n) { let target = indexSekarang + n; if(target >= 0 && target < dataSoal.length){ indexSekarang = target; renderUjian(); } }
     function keNomor(i) { indexSekarang = i; renderUjian(); document.getElementById('menu-nomor').classList.remove('show'); }
     
-    // UBAH FUNGSI TOGGLE AGAR TIDAK TERPICU KLIK BODY
     function toggleMenuNomor(e) { 
         e.stopPropagation();
         document.getElementById('menu-nomor').classList.toggle('show'); 
@@ -628,6 +652,7 @@
             document.getElementById('hasil-akhir').style.display = 'block';
             document.getElementById('footer-nav').style.display = 'none';
             document.getElementById('timer-utama').style.display = 'none';
+            document.getElementById('prog-cont').style.display = 'none';
             document.getElementById('benar-tampil').innerText = benar;
             document.getElementById('total-tampil').innerText = dataSoal.length;
             localStorage.removeItem('drafJawaban');
