@@ -1,0 +1,607 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Okara kalamon etalekteghi bi' ghu-ongghu sanyatana sala, tape oreng se meyarsa'aghi ampon ngarte sebab ampon kappra ekoca'aghi neng ren-aren, esambhat...",
+    "pilihan": [
+      "Rora bhasa",
+      "Kerata bhasa",
+      "Parebhasan",
+      "Bhangsalan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Settong oca' se nombuwaghi maksod otaba karep, manabi etalekteghi oca' ghella' akor sareng se e kekarep aghandu' ghuru swara, e sambhat...",
+    "pilihan": [
+      "Rora bhasa",
+      "Kerata bhasa",
+      "Parebhasan",
+      "Bhangsalan"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Okara se eyangghit sareng para seppo, semacem oca' parsemmon, se marlowaghi arte. Dhineng esse otaba artena badha seaghandhu' baburughan becce' badha jughan se nodduwaghi kabada'an, e sambhat",
+    "pilihan": [
+      "Bhangsalan",
+      "Kerata bhasa",
+      "Parebhasan",
+      "Rora bhasa"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Settong bharang se esaba' e settong kennengan otaba partengkan, menangka tatengnger otaba tanda bharang se esaba' otaba partengkan paneka bada ma'nana, esambhat...",
+    "pilihan": [
+      "Ebharat",
+      "Oca' Saroja",
+      "Saloka",
+      "Parlambang"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Oca' camporan se ca'-oca'na settong sareng settongnga pada artena tor aghandhu' ghuru. Oca' paneka bannya' eghuna'aghi dalam sastra madhura sebab aghandu' okara kakanlen se epeyarsa endha, esambhat...",
+    "pilihan": [
+      "Ebharat",
+      "Oca' Saroja",
+      "Saloka",
+      "Parlambang"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Kadhiponapa cara nyoppre bhudaja/keseneyan madhura tetep badha to e kalebun marghasarena?",
+    "pilihan": [
+      "Ngangodadhan madhura dhuli ajhar budhaja/ keseneyan Madhura",
+      "Ngangodadhan madhura ta' osa ngejebhi budhaja Madhura",
+      "Ngangodadhan madhura pada ajhar budhaja/ kesenneyan ghapaneka manabi bada se ngajak",
+      "Ngangodadhan madhura passra dha' para seppo se pada lebur"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Kadhiponapa manabi budhaja tatakrama madhura ta' eyajharraghi ka mored?",
+    "pilihan": [
+      "Ta' aponapa sabab mored bisa ajhar dhibi' e compo'na",
+      "Parlo tetep eyajherraghi sae e sakolaan kong-langkong epo'-compo'",
+      "Ta' osa sebab tatakrama bada dhibi'",
+      "Cokop oreng seppo e compo' sareng ghuru e sakolaan se ngalampa'aghi"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Aponapa sebab topeng dhalang se badha e madhura aher-aher panek ma' katengal sajan obus. Pasers kodhuna se merte/ meyara kaseneyan madhura ghapaneka kantos dhaddiya keseneyan se aghuna mongghu da' margasarena otaba dha' nagarana...",
+    "pilihan": [
+      "Sadhaja marghasare Madhura",
+      "Sadhaja marghasare madhura asareng pamarentana",
+      "Pamarentaan se badha e madhura",
+      "Oreng se lebur da' topeng dhalang"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Sastra madhura bannya' macemmepon, sala settongnga engghi paneka laghu kreasi madura. Ponapa se emaksod kalaban laghu madura ghapaneka?",
+    "pilihan": [
+      "Laghu se bede e Madhura",
+      "Laghu se eyangghit reng Madhura",
+      "Laghu se enghunaaghi bhasa Madhura",
+      "Laghu se elaghuwaghi bi' oreng madhura"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Oreng madhura ka'alok menangka oreng se senneng alako berra'. Kadhiponapa kapprana oreng madhura ka'angghuy maelang rassa bhusen dalem lako berra'?",
+    "pilihan": [
+      "Alaghuwaghi laghu madura",
+      "Lan-jhalanan",
+      "So-ngaso",
+      "Ngenom jamu."
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 11,
+    "pertanyaan": "E dhalem tembang macapat bada bateggha tembhang, sala settong bateggha tembang macapat engghi paneka aesse bhak-tebbaghan, akadhi macemma tembhang..",
+    "pilihan": [
+      "Balabak",
+      "Giriso",
+      "Pucung",
+      "Maghattro"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Sala settong tembhang macapat se aghandhu' arte popossa daun accem kalaban parsemmon da' dat-ngodadhan, engghi paneka...",
+    "pilihan": [
+      "Kasmaran",
+      "Mejhil",
+      "Pucung",
+      "Senom"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Sala settong macemma tembhang macapat, engghi paneka Dhurma. Tembhang paneka sae emaos dalam kabada'an...",
+    "pilihan": [
+      "Seddhi",
+      "Senneng",
+      "Lebur",
+      "Gumbhira"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Jhuduwaghi asmana tembhang tor se ngangghit e baba paneka!\nSenom - Sunan Kalijaga\nArtate - Sunan Bonang\nKasmaran - Sunan Muria\nPucung - Sunan Giri",
+    "pilihan": [
+      "Senom",
+      "Artate",
+      "Kasmaran",
+      "Pucung"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Menorot asallepon tembhang macapat, tembhang kasmaran eyangghit sareng...",
+    "pilihan": [
+      "Sunan kalijaga",
+      "Sunan muria",
+      "Sunan bonang",
+      "Sunan giri"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 16,
+    "pertanyaan": "E sa'at ghuru molang, ca kancana sampeyan abak enger. Katona kellas kalerresan ta' maso' amargha anglo. Sampeyan kodhuna...",
+    "pilihan": [
+      "Mator ka ghuru jha' kelas ce' engerra",
+      "Makonan pangurus kellas se laen ka'angghuy maserep kancana se enger",
+      "Kaula aera' da' ca- kanca epakon serep",
+      "Entar ka-kanca se hoso' akandha sopaja serep"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 17,
+    "pertanyaan": "E kampongnga sampeyan ampo bada kalakowan gutong rojhung, sampeyan menangka bargha kampong ghapaneka, kodhuna...",
+    "pilihan": [
+      "Majar oreng kaanghuy makkelle",
+      "Ta' entar acampo ka bargha se elalakon",
+      "Entar sakeng lat-matellat",
+      "Entar asareng sakanca'an alalakon ghutong rojhung"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Manabi kancana sampeyan epadhu edhalem kellas, sampeyan kodhuna..",
+    "pilihan": [
+      "Ta' ngejabhi amargha banne orosanna",
+      "Alapor ka ghuru BP",
+      "Alapor ka wali kelas",
+      "Ngajak kanca alanglang se apadhu"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Sampeyan makkele ramana eonjheng tatanghana asalameddhan, sampeyan kodhuna...",
+    "pilihan": [
+      "Sampeyan perak amargha eyangka'e dha'ar",
+      "Ta' poron, amargha todus ka oreng laen sepada kaonjhengan",
+      "Hadir ngestowaghi parentana rama",
+      "Hadir tape nyare bharang."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Manabi ebhuna sampeyan makonan ka pasar ka'angghuy abalanjha, tantona sampeyan...",
+    "pilihan": [
+      "Ta' poron amargha ta oneng ka gha- arghana bharang",
+      "Poron tape nyambi bhareng",
+      "Poron tape nyambi catheddhan",
+      "Ta' poron , amargha banne kalakowanna ana'"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 21,
+    "pertanyaan": "Alaghuwaghi tembhang macapat madura kodhu aghunaaghi...",
+    "pilihan": [
+      "Bhasa madura",
+      "Bhasa jhaba",
+      "Bhasa indonesia",
+      "Bhasa arab"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 22,
+    "pertanyaan": "Tembhang macapat madura tamaso'...",
+    "pilihan": [
+      "Music pentatonic",
+      "Music diantonik",
+      "Music diakronik",
+      "Music sirkronik"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 23,
+    "pertanyaan": "Jhuduwaghi arte tembhang macapat ebaba paneka..\nA. Maskumambang - C. Talebat sossa, ngerres\nB. Senom - D. Popossa daun accem\nC. Artate - A. Lemmes, mamanes\nD. Salanget - B. Pajhat kanthe",
+    "pilihan": [
+      "A – B",
+      "D – B",
+      "A – C",
+      "C - A"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 24,
+    "pertanyaan": "E dhalem tembhang macapat bada bateggha tembhang. Sala settong bateggha tembhang macapat engghi paneka aesse bhak- tebhaghan, akadhi macemma tembhang...",
+    "pilihan": [
+      "Balabak",
+      "Giriso",
+      "Pucung",
+      "Magatro"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 25,
+    "pertanyaan": "Bharis otaba bhiri, se aghandhu' settong okara otaba satengnga okara se etandhai koma, esebbut...",
+    "pilihan": [
+      "Paddha",
+      "Gattra",
+      "Bait",
+      "Bhiri"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 26,
+    "pertanyaan": "Pangghibat se positif engghi ka'dinto , manossa epaghampang ka'angghuy nyare bhar-kabhar se eyanggep malarat, eyantarana kabhar bhab kasehadhan, pandidighan, budhaja, tor politik bisa eyakses kalaban sae ghumantong kasokanna epon.\nOkara e attas tamaso' dha...",
+    "pilihan": [
+      "Definisi umum",
+      "Definisi bagiyan",
+      "Deskripsi umum",
+      "Deskripsi manfaat."
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 27,
+    "pertanyaan": "Centang peleyan bhender otaba sala dalem tabel e baba paneka kalaban ngakorraghi sareng pernyataan se bada!\n1. Definisi umum aropaaghi bhirji’anna objek se etalekteghi\n2. Macemma struktur dalem teks laporan hasel observasi bada 3 macem\n3. Objek se etalekteghi kodhu aropaaghi objek se matapencot",
+    "pilihan": [
+      "Sala, Bhender, Bhender",
+      "Bhender, Sala, Sala",
+      "Sala, Sala, Bhender",
+      "Bhender, Bhender, Bhender"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 28,
+    "pertanyaan": "Ponapa'an biyasana se etalekteghi kaangghuy abadhi teks laporan hasel observasi...",
+    "pilihan": [
+      "Keban sareng tombuwan",
+      "Kennengan",
+      "Kadhaddhiyan alam",
+      "Manossa"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 29,
+    "pertanyaan": "Se tamaso' da' struktur teks hasel laporan hasel observasi...",
+    "pilihan": [
+      "Definisi esse, deskripsi umum, deskripsi bagiyan",
+      "Definisi umum, deskripsi bagiyan, deskripsi manfaat",
+      "Deskripsi bagiyan, definisi umum, deskripsi manfaat",
+      "Salam pamokka', esse, panotop"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 30,
+    "pertanyaan": "Struktur teks laporan hasel observasi se aesse manfaat otaba ghuna dari panalekteghan, engghi paneka...",
+    "pilihan": [
+      "Definisi umum",
+      "Deskripsi bagiyan",
+      "Deskripsi manfaat",
+      "Pamokka'"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 31,
+    "pertanyaan": "Drama secaretana mellasaghi, esambhat drama...",
+    "pilihan": [
+      "Tragedi",
+      "Komedi",
+      "Tragekomedi",
+      "Opera"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 32,
+    "pertanyaan": "Drama se mellassaghi tape bada locona, esambhat...",
+    "pilihan": [
+      "Komedi",
+      "Tragekomedi",
+      "Opera",
+      "Tablo"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 33,
+    "pertanyaan": "Drama se catorra enyanyeaghi tor etoro'e musik, esambhat...",
+    "pilihan": [
+      "Melodrama",
+      "Komedi",
+      "Opera",
+      "Tablo"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 34,
+    "pertanyaan": "Drama se ekamaen aktor e pangghung, namong bisa etangale ghambharra, sebab oreng se amaen ampon erekam ngangguy film pas eseyarraghi neng televisi, esambhat drama....",
+    "pilihan": [
+      "Drama panggung",
+      "Drama radio",
+      "Drama wayang",
+      "Drama televisi"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 35,
+    "pertanyaan": "Sadhaja se amaen drama aghunaaghi boneka, esambhat drama..",
+    "pilihan": [
+      "Drama film",
+      "Drama boneka",
+      "Drama tradisional",
+      "Drama modern"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 36,
+    "pertanyaan": "Naskah se nyaretaaghi dari kadhaddhiyan paleng awal kantos kadhaddiyan se dhi-budhi, esambhat...",
+    "pilihan": [
+      "Alur maju ( linier )",
+      "Alur mundur ( flashback )",
+      "Alur campuran",
+      "Alur tetep"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 37,
+    "pertanyaan": "Ongrodhanna careta se nyaretaaghi kadhaddiyanna careta se emolae dari panotobbha careta biasana aesse nasebbha tokoh di-budina, pas abhalik nyaretaaghi kadhaddiyan se mamolan otaba se kadhaddiyan se paleng ngada' se esambhat...",
+    "pilihan": [
+      "Alur maju ( linier )",
+      "Alur mundur ( flashback )",
+      "Alur campuran",
+      "Alur maju-mundur"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 38,
+    "pertanyaan": "Catorra oreng se prappa'na amaen drama, esambhat...",
+    "pilihan": [
+      "Dialog.",
+      "Anotasi",
+      "Amanat",
+      "Tema"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 39,
+    "pertanyaan": "Menangka pessen se aghandhu' dalem careta se badhi epadapa' da' sadhaja oreng se nengghu, esambhat...",
+    "pilihan": [
+      "Babak/ adegan",
+      "Tema",
+      "Amanat",
+      "Dialog"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 40,
+    "pertanyaan": "Bhen- sabbhan careta bada babaghanna, bhan-sabbhan bhabhaghan aesse bagiyan careta se manabi bagiyan careta epapolong bhakal daddhi careta se buto. Bagiyan careta paneka esambhat...",
+    "pilihan": [
+      "Amanat",
+      "Tema",
+      "Perwatakan",
+      "Adegan"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 41,
+    "pertanyaan": "Teks pidato se eserrat kalaban tojhuwan apareng pangaonengan, kantos oreng se meyarsa'aghi oneng bhab kasebbut, asambhat pidato...",
+    "pilihan": [
+      "Pidato persuasif",
+      "Pidato informatif",
+      "Pidato rekreatif",
+      "Pidato aksi"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 42,
+    "pertanyaan": "Teks pidato se eyatorraghi kalaban tojhuwan ka'angghuy maghuli atena oreng se merrengaghi pidato, sopaja oreng ghella' kasokan alampa'aghi pa-ponapa se ekakarep essena pidato, esambhat pidato...",
+    "pilihan": [
+      "Pidato Rekreatif",
+      "Pidato Informatif",
+      "Pidato aksi",
+      "Pidato persuasif"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 43,
+    "pertanyaan": "Teks pidato se eyatorraghi kalaban tojhuwan ngajak oreng laen sopaja alampa'aghi essena pidato, esambhat pidato...",
+    "pilihan": [
+      "Pidato persuasif",
+      "Pidato rekreatif",
+      "Pidato aksi",
+      "Pidato informatif"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 44,
+    "pertanyaan": "Teks pidato se ejharba'aghi sareng oreng sengagunge kakobasa'an ka'angguy aremiyaghi settong lalampa'an, esambhat pidato...",
+    "pilihan": [
+      "Pidato pengarahan",
+      "Pidato pembukaan",
+      "Pidato laporan",
+      "Pidato paresmian"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 45,
+    "pertanyaan": "Teks pidato se essena madapa' pa-ponapa se ampon elampa'aghi esambhat pidato...",
+    "pilihan": [
+      "Pidato peresmian",
+      "Pidato pertanggungjawaban",
+      "Pidato pengarahan",
+      "Pidato sambutan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 46,
+    "pertanyaan": "Pewara asalla dari bhasa...",
+    "pilihan": [
+      "Jaba",
+      "Madura",
+      "Yunani",
+      "Inggris"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 47,
+    "pertanyaan": "Oreng se kalakowanna aberri' tao ka oreng laen e bakto bada papangghiyan, esambhat...",
+    "pilihan": [
+      "Tokoh",
+      "Pidato",
+      "Pewara",
+      "Aktor"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 48,
+    "pertanyaan": "Badha sapona macem teks pranata cara adhasar bakto/kabada'an?",
+    "pilihan": [
+      "Settong",
+      "Dhuwa'",
+      "Tello'",
+      "Empa'"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 49,
+    "pertanyaan": "E dhalem teks pranata cara daddhi 3 bagiyan engghi paneka...",
+    "pilihan": [
+      "Salam pamokka'",
+      "Okara pangormadhan",
+      "Okara panyokkor",
+      "Sadajha lerres"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 50,
+    "pertanyaan": "Bagiyan se aropa'aghi jhajharba'an se otama, kaprana aropa rentengnga acara se badhi emaos pranata cara, esambhat...",
+    "pilihan": [
+      "Parenteng lampa",
+      "Pangkasan lampa",
+      "Salam pamokka'",
+      "Salam panotop"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 51,
+    "pertanyaan": "Oreng otaba keban se daddi panglakona careta, esambhat...",
+    "pilihan": [
+      "Alur",
+      "Tokoh",
+      "Latar",
+      "Setting"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 52,
+    "pertanyaan": "Bakto sareng kennengan naleka bada kadaddhiyan e dhalem careta, esambhat...",
+    "pilihan": [
+      "Alur",
+      "Tokoh",
+      "Latar",
+      "Pakakas"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 53,
+    "pertanyaan": "Hal se akor sareng kapenteran, babatek , sareng samacemma, esambhat...",
+    "pilihan": [
+      "Fisiologis",
+      "Sosiologis",
+      "Psikologis",
+      "Kronologis"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 54,
+    "pertanyaan": "E baba paneka se tamaso' da' ka gunana laporan kegiatan engghi paneka...",
+    "pilihan": [
+      "Sopaja eyalem sareng kapala",
+      "Nombuwaghi rasa tanggung jawab da' ponapa se elampa'aghi",
+      "Sopaja ngaolle obang tamba'an ka'angghuy aba' dhibi'",
+      "Ka'angghuy manae' pangkat ka se langkong tengghi"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 55,
+    "pertanyaan": "Kabhar/berta ongghu-onggu nyata badhana, se ekaolle dari panalekteghan, pamareksa'an, jughan parjhalanan.\nOkara eattas paneka tamaso' da' katerrangan...",
+    "pilihan": [
+      "Laporan kegiatan",
+      "Berta se ekabharraghi sareng wartawan",
+      "Kabher se bada neng sorat kabar",
+      "Kabher se ongghu-ongghu badana"
+    ],
+    "jawaban": 0
+  }
+]
