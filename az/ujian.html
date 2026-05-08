@@ -690,6 +690,31 @@
     }
 
     function kembaliKeLogin() { sessionStorage.clear(); window.location.href = 'login.html'; }
+
+    // --- FUNGSI NAVIGASI REMOTE / KEYBOARD ---
+    document.addEventListener('keydown', (e) => {
+        // Hanya aktif jika sedang dalam mode ujian (main-wrapper tampil)
+        if (document.getElementById('main-wrapper').style.display === 'block') {
+            const wrapper = document.getElementById('main-wrapper');
+            const scrollAmount = 100; // Jarak scroll dalam pixel
+
+            switch(e.key) {
+                case 'ArrowRight':
+                    navigasi(1);
+                    break;
+                case 'ArrowLeft':
+                    navigasi(-1);
+                    break;
+                case 'ArrowUp':
+                    wrapper.scrollBy({ top: -scrollAmount, behavior: 'smooth' });
+                    break;
+                case 'ArrowDown':
+                    wrapper.scrollBy({ top: scrollAmount, behavior: 'smooth' });
+                    break;
+            }
+        }
+    });
+
     document.addEventListener('contextmenu', e => e.preventDefault());
 </script>
 </body>
