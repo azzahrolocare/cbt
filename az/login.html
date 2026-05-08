@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link Manifest dari Repositori -->
+    
+    <!-- PWA Meta Tags -->
     <link rel="manifest" href="https://azzahrolocare.github.io/cbt/manifest.json">
     <meta name="theme-color" content="#0CA458">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" href="https://azzahrolocare.github.io/cbt/icon.png">
+
     <title>Login - CBT SMP Azzahro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-        /* PROTEKSI: Mencegah seleksi teks melalui CSS */
+        /* CSS UNTUK MENCEGAH COPY/SELECT */
         body {
-            -webkit-user-select: none; /* Safari */
-            -ms-user-select: none;     /* IE 10 dan Edge */
+            -webkit-user-select: none; /* Chrome, Safari, Opera */
+            -moz-user-select: none;    /* Firefox */
+            -ms-user-select: none;     /* IE/Edge */
             user-select: none;         /* Standar */
         }
 
@@ -101,9 +107,11 @@
             font-size: 0.9em; transition: 0.4s; z-index: 11;
         }
 
-        /* Membolehkan kursor di input teks tapi tetap mematikan seleksi luar */
+        /* Mengizinkan seleksi di input agar user masih bisa mengetik/menghapus */
         .inputBox input {
             -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
             user-select: text;
         }
 
@@ -140,7 +148,7 @@
         @keyframes sparkleSideways { 0% { transform: translate(0, 0) scale(1); opacity: 1; } 100% { transform: translate(var(--x), var(--y)) scale(0); opacity: 0; } }
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;"> <!-- Inline anti-right click -->
 
     <canvas id="bgCanvas"></canvas>
 
@@ -167,7 +175,7 @@
                 <h2><i class="fa-solid fa-user-shield"></i> LOGIN SISWA</h2>
                 
                 <div class="inputBox">
-                    <input type="text" id="nama" required onfocus="spawnSparkles(this)" placeholder="NAMA LENGKAP">
+                    <input type="text" id="nama" required onfocus="spawnSparkles(this)" placeholder="NAMA LENGKAP" autocomplete="off">
                     <i class="fa-solid fa-user icon-main"></i>
                 </div>
 
@@ -201,29 +209,51 @@
         </div>
     </div>
 
-    <!-- Script WS.js dari repositori -->
-    <script src="https://azzahrolocare.github.io/cbt/ws.js"></script>
-
     <script>
-        /* PROTEKSI: Fungsi Anti-Copy, Anti-Paste, Anti-Cut, dan Klik Kanan */
-        document.addEventListener('contextmenu', e => e.preventDefault()); // Matikan Klik Kanan
+        // 1. REGISTRASI SERVICE WORKER (PWA)
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('https://azzahrolocare.github.io/cbt/sw.js')
+                    .then(reg => console.log('Service Worker Registered'))
+                    .catch(err => console.log('Service Worker Failed', err));
+            });
+        }
+
+        // 2. FUNGSI ANTI COPY, PASTE, DAN KLIK KANAN
+        document.addEventListener('contextmenu', event => event.preventDefault()); 
         
-        const disableCopy = (e) => {
+        document.addEventListener('copy', (e) => {
             e.preventDefault();
             return false;
+        });
+
+        document.addEventListener('cut', (e) => {
+            e.preventDefault();
+            return false;
+        });
+
+        document.addEventListener('paste', (e) => {
+            e.preventDefault();
+            return false;
+        });
+
+        // Mencegah Inspect Element (Ctrl+Shift+I, F12)
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
         };
-        document.addEventListener('copy', disableCopy);
-        document.addEventListener('cut', disableCopy);
-        document.addEventListener('paste', disableCopy);
 
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
         const ADMIN_TOKEN = 'cbtaz';
 
-        // FUNGSI FULL SCREEN SATU KALI KLIK
+        // 3. FUNGSI FULL SCREEN
         document.addEventListener('click', function() {
             if (!document.fullscreenElement) {
                 document.documentElement.requestFullscreen().catch(err => {
-                    console.log(`Error attempting to enable full-screen mode: ${err.message}`);
+                    console.log(`Error: ${err.message}`);
                 });
             }
         }, { once: false });
@@ -291,7 +321,7 @@
             }
         }
 
-        /* LOGIC ANIMASI BACKGROUND */
+        // 4. ANIMASI BACKGROUND
         const canvas = document.getElementById('bgCanvas');
         const ctx = canvas.getContext('2d');
         let particlesArray = [];
@@ -314,6 +344,7 @@
 
         function initBG() {
             setCanvasSize();
+            particlesArray = [];
             for(let i=0; i<100; i++) particlesArray.push(new BackgroundParticle());
         }
 
