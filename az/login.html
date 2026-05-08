@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.json">
+    <!-- Link Manifest dari Repositori -->
+    <link rel="manifest" href="https://azzahrolocare.github.io/cbt/manifest.json">
     <meta name="theme-color" content="#0CA458">
     <title>Login - CBT SMP Azzahro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        /* PROTEKSI: Mencegah seleksi teks melalui CSS */
+        body {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none;     /* IE 10 dan Edge */
+            user-select: none;         /* Standar */
+        }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
@@ -91,6 +99,12 @@
             width: 100%; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.2);
             outline: none; padding: 10px 15px 10px 40px; border-radius: 6px; color: #fff;
             font-size: 0.9em; transition: 0.4s; z-index: 11;
+        }
+
+        /* Membolehkan kursor di input teks tapi tetap mematikan seleksi luar */
+        .inputBox input {
+            -webkit-user-select: text;
+            user-select: text;
         }
 
         .inputBox select option { background: #222; color: #fff; }
@@ -187,7 +201,21 @@
         </div>
     </div>
 
+    <!-- Script WS.js dari repositori -->
+    <script src="https://azzahrolocare.github.io/cbt/ws.js"></script>
+
     <script>
+        /* PROTEKSI: Fungsi Anti-Copy, Anti-Paste, Anti-Cut, dan Klik Kanan */
+        document.addEventListener('contextmenu', e => e.preventDefault()); // Matikan Klik Kanan
+        
+        const disableCopy = (e) => {
+            e.preventDefault();
+            return false;
+        };
+        document.addEventListener('copy', disableCopy);
+        document.addEventListener('cut', disableCopy);
+        document.addEventListener('paste', disableCopy);
+
         const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
         const ADMIN_TOKEN = 'cbtaz';
 
@@ -198,7 +226,7 @@
                     console.log(`Error attempting to enable full-screen mode: ${err.message}`);
                 });
             }
-        }, { once: false }); // Biar tiap klik memastikan tetap fullscreen jika keluar
+        }, { once: false });
 
         async function loadMapel() {
             try {
@@ -211,7 +239,7 @@
                     opt.textContent = m.nama;
                     selectMapel.appendChild(opt);
                 });
-            } catch (e) { console.log("Gagal memuat mata-pelajaran.json dari server."); }
+            } catch (e) { console.log("Gagal memuat mata-pelajaran.json."); }
         }
         window.addEventListener('DOMContentLoaded', loadMapel);
 
@@ -263,6 +291,7 @@
             }
         }
 
+        /* LOGIC ANIMASI BACKGROUND */
         const canvas = document.getElementById('bgCanvas');
         const ctx = canvas.getContext('2d');
         let particlesArray = [];
