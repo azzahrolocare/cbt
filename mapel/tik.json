@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Alamat web www.wordpress.com termasuk contoh dari ....",
+    "pilihan": ["social networking sites", "collaborative project", "blog", "content communities"],
+    "jawaban": 2
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Social networking site merupakan suatu layanan berbasis web yang memungkinkan pengguna dapat membangun hubungan sosial melalui dunia maya. Di bawah ini yang bukan termasuk dari social networking sites adalah .... HOTS",
+    "pilihan": ["LinkedIn", "Facebook", "Wikipedia", "Instagram"],
+    "jawaban": 2
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Sumber berita tidak jelas sehingga menimbulkan kecemasan, kebencian, dan permusuhan termasuk ciri dari ....",
+    "pilihan": ["berita hoaks", "cyberbullying", "kejahatan internet", "cyberstalking"],
+    "jawaban": 0
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Berbagi gambar pribadi tanpa izin merupakan salah satu praktik ....",
+    "pilihan": ["cyberbullying", "cyberterrorism", "hacking", "cyberstalking"],
+    "jawaban": 0
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Arti bullying, yaitu ....",
+    "pilihan": [
+      "kelakuan seseorang untuk menghormati kita",
+      "cara melakukan kegiatan bermanfaat",
+      "tindakan yang dilakukan untuk kepentingan bersama",
+      "perilaku agresif disengaja yang menggunakan ketidakseimbangan kekuasaan atau kekuatan"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Hal-hal di bawah ini yang tidak termasuk bullying yaitu ....",
+    "pilihan": ["mengintimidasi teman", "mengejek teman dengan kata-kata yang tidak pantas", "menyayangi teman", "memukul teman"],
+    "jawaban": 2
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Menggunakan identitas palsu untuk menyerang seseorang termasuk contoh dari ....",
+    "pilihan": ["cyberbullying", "bullying", "hoaks", "peretas"],
+    "jawaban": 0
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Berikut yang akan didapatkan oleh pelaku bullying yaitu ....",
+    "pilihan": ["disayang teman", "dijauhi teman", "dihormati teman", "banyak teman"],
+    "jawaban": 1
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Selain dendam, jika kita mem-bully teman maka ia akan ....",
+    "pilihan": ["sakit hati", "senang", "bahagia", "gembira"],
+    "jawaban": 0
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Cyberbullying merupakan perilaku berulang untuk ....",
+    "pilihan": ["mengagumi", "menakuti", "menghormati", "menghargai"],
+    "jawaban": 1
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Dunia virtual, mereplikasikan lingkungan 3D, di mana user bisa muncul dalam bentuk avatar-avatar yang diinginkan serta berinteraksi dengan orang lain selayaknya di dunia nyata. Media yang dimaksud adalah ....",
+    "pilihan": ["Game Online", "Twitter", "Goggle+", "Linkedin"],
+    "jawaban": 0
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Berikut ini yang bukan termasuk tipe media content communities adalah ....",
+    "pilihan": ["teks", "foto", "presentasi", "blog"],
+    "jawaban": 3
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Suatu media online yang para penggunanya dapat berpartisipasi dengan mudah, berbagi, dan menciptakan isi yang meliputi website, blog, forum, wiki, dan dunia virtual dinamakan ....",
+    "pilihan": ["viral marketing", "aplikasi messenger", "media sosial", "jejaring sosial"],
+    "jawaban": 2
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Cara menghadapi komentar negatif dengan bijak di media sosial adalah ....",
+    "pilihan": ["memberikan ancaman", "merespons dengan positif", "mencaci maki", "memperkeruh situasi"],
+    "jawaban": 1
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Di bawah ini tanda seseorang yang terkena bullying adalah ....",
+    "pilihan": ["percaya diri tinggi", "bersikap angkuh", "berpikir kritis", "kehilangan percaya diri"],
+    "jawaban": 3
+  }
+]
