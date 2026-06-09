@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "1. Apa yang dimaksud dengan karya fiksi? <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Karya yang berisi data dan fakta nyata",
+      "Karya yang berdasarkan hasil penelitian ilmiah",
+      "Karya yang merupakan hasil imajinasi pengarang",
+      "Karya yang berisi laporan peristiwa"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 2,
+    "pertanyaan": "2. Berikut yang termasuk karya fiksi adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Biografi",
+      "Cerpen",
+      "Laporan penelitian",
+      "Artikel ilmiah"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 3,
+    "pertanyaan": "3. Tokoh dalam sebuah cerita fiksi adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Tempat terjadinya peristiwa",
+      "Orang yang menciptakan cerita",
+      "Pelaku yang menjalankan peristiwa dalam cerita",
+      "Pesan yang ingin disampaikan penulis"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 4,
+    "pertanyaan": "4. Amanat dalam karya fiksi adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Alur cerita yang digunakan penulis",
+      "Latar tempat dan waktu cerita",
+      "Konflik yang dialami tokoh",
+      "Pesan atau pelajaran yang ingin disampaikan kepada pembaca"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 5,
+    "pertanyaan": "5. Urutan peristiwa dalam sebuah cerita disebut... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Tema",
+      "Alur",
+      "Tokoh",
+      "Sudut pandang"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 6,
+    "pertanyaan": "6. Apa yang dimaksud dengan puisi? <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Karangan yang berisi cerita panjang",
+      "Karya sastra yang mengungkapkan pikiran dan perasaan dengan bahasa yang indah dan padat",
+      "Tulisan yang berisi petunjuk penggunaan barang",
+      "Cerita rakyat yang diwariskan secara turun-temurun"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 7,
+    "pertanyaan": "7. Perhatikan larik berikut!<br>\"Angin berbisik di antara dedaunan\"<br>Majas yang digunakan pada larik tersebut adalah .... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Hiperbola",
+      "Metafora",
+      "Personifikasi",
+      "Simile"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 8,
+    "pertanyaan": "8. Tema dalam sebuah puisi adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Cara penyair membacakan puisi",
+      "Pesan yang ingin disampaikan penyair",
+      "Gagasan pokok atau pokok permasalahan yang dibahas dalam puisi",
+      "Jumlah bait dalam puisi"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 9,
+    "pertanyaan": "9. Amanat dalam puisi adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Judul puisi",
+      "Pesan atau nasihat yang ingin disampaikan penyair kepada pembaca",
+      "Jumlah baris dalam setiap bait",
+      "Irama yang digunakan dalam puisi"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 10,
+    "pertanyaan": "10. Perhatikan penggalan puisi berikut!<br>\"Mentari pagi menyapa bumi,<br>Membangunkan harapan dalam hati.\"<br>Suasana yang tergambar dalam penggalan puisi tersebut adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Sedih",
+      "Menyeramkan",
+      "Gembira dan penuh semangat",
+      "Marah"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 11,
+    "pertanyaan": "11. Apa yang dimaksud dengan pidato? <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Kegiatan berdiskusi dalam kelompok",
+      "Penyampaian gagasan atau informasi kepada khalayak secara lisan",
+      "Kegiatan menulis laporan hasil pengamatan",
+      "Percakapan antara dua orang atau lebih"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 12,
+    "pertanyaan": "12. Bagian pidato yang berisi salam pembuka, ucapan syukur, dan penghormatan disebut.... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Isi pidato",
+      "Penutup pidato",
+      "Pembukaan pidato",
+      "Kesimpulan pidato"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 13,
+    "pertanyaan": "13. Tujuan utama pidato persuasif adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Menghibur pendengar",
+      "Menceritakan pengalaman pribadi",
+      "Mempengaruhi atau mengajak pendengar melakukan sesuatu",
+      "Menjelaskan langkah-langkah suatu kegiatan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 14,
+    "pertanyaan": "14. Kalimat yang tepat digunakan sebagai penutup pidato adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Selamat pagi dan salam sejahtera untuk kita semua.",
+      "Pada kesempatan ini saya akan menjelaskan pentingnya menjaga kebersihan.",
+      "Demikian pidato yang dapat saya sampaikan, mohon maaf atas segala kekurangan.",
+      "Hadirin yang saya hormati, marilah kita panjatkan puji syukur ke hadirat Tuhan Yang Maha Esa."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 15,
+    "pertanyaan": "15. Saat berpidato, penggunaan bahasa yang baik seharusnya <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Sulit dipahami agar terlihat pintar",
+      "Mengandung banyak kata asing",
+      "Jelas, sopan, dan mudah dipahami pendengar",
+      "Menggunakan bahasa gaul sebanyak mungkin"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 16,
+    "pertanyaan": "16. Unsur intrinsik yang menjadi dasar cerita dan mengandung gagasan utama disebut .... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Amanat",
+      "Tema",
+      "Alur",
+      "Tokoh"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 17,
+    "pertanyaan": "17. Pelaku yang berperan dalam suatu cerita fiksi disebut.... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Latar",
+      "Alur",
+      "Tokoh",
+      "Sudut pandang"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 18,
+    "pertanyaan": "18. Urutan peristiwa dalam sebuah cerita disebut.... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Alur",
+      "Tema",
+      "Amanat",
+      "Latar"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 19,
+    "pertanyaan": "19. Keterangan mengenai waktu, tempat, dan suasana terjadinya peristiwa dalam cerita disebut .... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Tokoh",
+      "Alur",
+      "Amanat",
+      "Latar"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 20,
+    "pertanyaan": "20. Perhatikan kutipan berikut!<br>\"Kejujuran akan membawa kebaikan bagi diri sendiri maupun orang lain.\"<br>Kutipan tersebut menunjukkan unsur intrinsik berupa .... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Tema",
+      "Amanat",
+      "Latar",
+      "Alur"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 21,
+    "pertanyaan": "21. Puisi adalah karya sastra yang mengungkapkan pikiran dan perasaan penyair dengan bahasa yang <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Panjang dan bertele-tele",
+      "Baku dan kaku",
+      "Indah, padat, dan bermakna",
+      "Sama seperti bahasa sehari-hari"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 22,
+    "pertanyaan": "22. Kumpulan beberapa baris dalam puisi disebut <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Paragraf",
+      "Kalimat",
+      "Bait",
+      "Tema"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 23,
+    "pertanyaan": "23. Orang yang menciptakan puisi disebut <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Pembaca",
+      "Penyair",
+      "Pengarang drama",
+      "Editor"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 24,
+    "pertanyaan": "24. Salah satu ciri puisi adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Menggunakan bahasa yang padat dan penuh makna",
+      "Selalu terdiri atas banyak paragraf",
+      "Berisi dialog antartokoh",
+      "Memiliki alur yang panjang dan kompleks"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 25,
+    "pertanyaan": "25. Perhatikan kutipan puisi berikut!<br>\"Mentari pagi bersinar cerah,<br>Menyambut hari penuh gairah.\"<br>Kutipan tersebut menunjukkan suasana <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Sedih",
+      "Marah",
+      "Takut",
+      "Gembira dan semangat"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 26,
+    "pertanyaan": "26. Metode pidato yang dilakukan dengan membaca naskah yang telah dipersiapkan sebelumnya disebut metode <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Impromptu",
+      "Ekstemporan",
+      "Manuskrip",
+      "Memoriter"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 27,
+    "pertanyaan": "27. Metode pidato yang dilakukan secara spontan tanpa persiapan terlebih dahulu disebut metode <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Impromptu",
+      "Manuskrip",
+      "Memoriter",
+      "Ekstemporan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 28,
+    "pertanyaan": "28. Metode pidato dengan cara menghafalkan seluruh isi pidato disebut metode <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Impromptu",
+      "Manuskrip",
+      "Memoriter",
+      "Ekstemporan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 29,
+    "pertanyaan": "29. Metode pidato yang menggunakan kerangka atau garis besar materi tanpa membaca naskah secara lengkap disebut metode .... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Ekstemporan",
+      "Manuskrip",
+      "Memoriter",
+      "Impromptu"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 30,
+    "pertanyaan": "30. Metode pidato yang dianggap paling fleksibel karena pembicara hanya berpedoman pada poin-poin penting adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Manuskrip",
+      "Memoriter",
+      "Ekstemporan",
+      "Impromptu"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 31,
+    "pertanyaan": "31. Konflik dalam cerita adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Pesan yang disampaikan pengarang",
+      "Peristiwa yang menimbulkan pertentangan atau masalah",
+      "Tempat terjadinya cerita",
+      "Tokoh dalam cerita"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 32,
+    "pertanyaan": "32. Cerita yang panjang dan terdiri atas banyak bab disebut .... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Cerpen",
+      "Puisi",
+      "Novel",
+      "Pantun"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 33,
+    "pertanyaan": "33. Cerita pendek biasanya memiliki <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Banyak tokoh dan konflik yang rumit",
+      "Satu konflik utama dan alur yang sederhana",
+      "Lebih dari 100 halaman",
+      "Banyak tema sekaligus"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 34,
+    "pertanyaan": "34. Tokoh yang membantu tokoh utama dalam cerita disebut <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Tokoh pembantu",
+      "Tokoh antagonis",
+      "Tokoh utama",
+      "Tokoh protagonis"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 35,
+    "pertanyaan": "35. Alur yang dimulai dari masa lalu kemudian menuju masa kini disebut <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Alur maju",
+      "Alur mundur",
+      "Alur campuran",
+      "Alur maju-mundur"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 36,
+    "pertanyaan": "36. Berikut yang termasuk unsur ekstrinsik karya fiksi adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Tokoh",
+      "Alur",
+      "Latar belakang kehidupan pengarang",
+      "Amanat"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 37,
+    "pertanyaan": "37. Watak tokoh dapat diketahui melalui hal-hal berikut, kecuali <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Dialog tokoh",
+      "Tindakan tokoh",
+      "Penjelasan pengarang",
+      "Warna sampul buku"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 38,
+    "pertanyaan": "38. Cerita yang mengandung pelajaran moral biasanya terdapat pada unsur <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Amanat",
+      "Latar",
+      "Alur",
+      "Tema"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 39,
+    "pertanyaan": "39. Sudut pandang \"dia\" atau \"ia\" termasuk <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Orang pertama",
+      "Orang kedua",
+      "Orang ketiga",
+      "Orang keempat"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 40,
+    "pertanyaan": "40. Tema persahabatan berarti cerita membahas tentang <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Perjuangan mencapai cita-cita",
+      "Hubungan pertemanan antar tokoh",
+      "Kehidupan keluarga",
+      "Keindahan alam"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 41,
+    "pertanyaan": "41. Sebelum berpidato, hal pertama yang harus dilakukan adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Menentukan tujuan pidato",
+      "Menyusun penutup pidato",
+      "Menyiapkan hadiah",
+      "Menentukan tempat duduk audiens"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 42,
+    "pertanyaan": "42. Isi pidato harus disampaikan dengan <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Jelas dan sistematis",
+      "Cepat agar segera selesai",
+      "Menghafal setiap kata",
+      "Menggunakan bahasa asing"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 43,
+    "pertanyaan": "43. Orang yang mendengarkan pidato disebut .... <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Narator",
+      "Audiens",
+      "Moderator",
+      "Editor"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 44,
+    "pertanyaan": "44. Salah satu fungsi pidato adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Menyampaikan informasi kepada masyarakat",
+      "Menjual barang dagangan",
+      "Membuat laporan keuangan",
+      "Menulis berita"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 45,
+    "pertanyaan": "45. Kalimat persuasif dalam pidato ditandai dengan kata <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Karena",
+      "Tetapi",
+      "Marilah",
+      "Sedangkan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 46,
+    "pertanyaan": "46. Sikap yang baik saat berpidato adalah <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Menunduk terus-menerus",
+      "Berbicara terlalu pelan",
+      "Menjaga kontak mata dengan audiens",
+      "Membelakangi audiens"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 47,
+    "pertanyaan": "47. Bagian pidato yang berisi rangkuman pokok-pokok pembahasan disebut <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Salam pembuka",
+      "Isi pidato",
+      "Kesimpulan",
+      "Penghormatan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 48,
+    "pertanyaan": "48. Pidato yang bertujuan memberikan pengetahuan kepada pendengar disebut pidato <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Informatif",
+      "Persuasif",
+      "Rekreatif",
+      "Argumentatif"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 49,
+    "pertanyaan": "49. Penggunaan intonasi yang tepat saat berpidato bertujuan untuk <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Membuat pidato lebih menarik dan mudah dipahami",
+      "Mempercepat pidato",
+      "Mengurangi isi pidato",
+      "Menggantikan bahasa tubuh"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 50,
+    "pertanyaan": "50. Setelah selesai berpidato, pembicara biasanya mengucapkan <br> <img src='URL' class='img-post'> <br>",
+    "pilihan": [
+      "Salam pembuka",
+      "Ucapan terima kasih",
+      "Perkenalan diri",
+      "Latar belakang masalah"
+    ],
+    "jawaban": 1
+  }
+]
