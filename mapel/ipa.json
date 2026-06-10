@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Semua organisme yang mampu membuat atau menyintesis makanannya sendiri disebut organisme…..",
+    "gambar": null,
+    "pilihan": [
+      "Autotrof",
+      "Heterotrof",
+      "Autolisis",
+      "Autofagi"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Perhatikan gambar berikut ! Satuan makhluk hidup dalam gambar disebut..",
+    "gambar": "https://i.ibb.co/wZXfZtXf/image.jpg",
+    "pilihan": [
+      "Populasi",
+      "Komunitas",
+      "Ekosistem",
+      "Individu"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Berikut tumbuhan hijau yang membutuhkan sinar matahari banyak yaitu…",
+    "gambar": null,
+    "pilihan": [
+      "Rumput",
+      "Kaktus",
+      "Anggrek",
+      "Paku"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Sekelompok singa dan sekelompok harimau tutul saling memperebutkan kawanan rusa di padang rumput. Interaksi yang terjadi antara singa dan harimau tutul tersebut adalah….",
+    "gambar": null,
+    "pilihan": [
+      "Predasi",
+      "Kompetisi",
+      "Simbiosis",
+      "Antibiosis"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Urutan peristiwa makan dan dimakan dalam suatu ekosistem yang membetuk garis lurus adalah….",
+    "gambar": null,
+    "pilihan": [
+      "Arus energi",
+      "Rantai makanan",
+      "Piramida makanan",
+      "Jaring - jaring makanan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Perhatiakan gambar berikut. Interaksi antar makhluk hidup dalam gambar tersebut adalah…",
+    "gambar": "https://i.ibb.co/PnjhcXX/image.jpg",
+    "pilihan": [
+      "Mutualisme",
+      "Komensalisme",
+      "Predasi",
+      "Parasitisme"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Salah satu upaya manusia untuk menjaga keseimbangan lingkungan adalah….",
+    "gambar": null,
+    "pilihan": [
+      "Membuka lahan pertanian",
+      "Melindungi hewan langka",
+      "Meningkatkan devisa negara",
+      "Mencegah penggunaan air tanah"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Berikut termasuk ekosistem buatan adalah….",
+    "gambar": null,
+    "pilihan": [
+      "https://i.ibb.co/z00vWtt/image.jpg",
+      "https://i.ibb.co/chHwmy4g/image.jpg",
+      "https://i.ibb.co/1fxbH0F6/image.jpg",
+      "https://i.ibb.co/DDc2D0tM/image.jpg"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Berikut ini adalah Contoh simbiosi komensalisme, Kecuali…",
+    "gambar": null,
+    "pilihan": [
+      "Ikan remora dengan ikan hiu",
+      "Bunga anggrek dengan tanaman inang",
+      "Ikan badut dan tanaman nemo laut",
+      "Benalu dengan pohon inang"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Gambar diatas adalah salah satu daur biogeokimia yang berupa siklus….",
+    "gambar": "https://i.ibb.co/SXPPCbzj/image.jpg",
+    "pilihan": [
+      "Fosfor",
+      "Air",
+      "Karbon dan oksigen",
+      "Nitrogen"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Berdasarkan gambar di atas, nama planet yang berada pada urutan no 3 dari matahari adalah….",
+    "gambar": "https://i.ibb.co/YF4MHH6F/image.jpg",
+    "pilihan": [
+      "Bumi",
+      "Mars",
+      "Yupiter",
+      "Saturnus"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Apa nama planet yang berada di titik terjauh dari matahari…",
+    "gambar": "https://i.ibb.co/YF4MHH6F/image.jpg",
+    "pilihan": [
+      "Merkurius",
+      "Neptunus",
+      "Pluto",
+      "Uranus"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Satelit alami yang dimiliki oleh bumi adalah…",
+    "gambar": null,
+    "pilihan": [
+      "Titan",
+      "Ganymede",
+      "Bulan",
+      "Io"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Satelit buatan yang dimiliki Indonesia adalah….",
+    "gambar": null,
+    "pilihan": [
+      "Satelit palapa",
+      "Satelit Geodesi",
+      "Satelit Navigasi",
+      "Satelit low Earth orbit"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Planet manakah yang dikenal sebagai 'Planet Merah' dalam tata surya kita?",
+    "gambar": null,
+    "pilihan": [
+      "Yupiter",
+      "Mars",
+      "Saturnus",
+      "Uranus"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 16,
+    "pertanyaan": "Benda langit apa yang terletak di antara orbit planet Mars dan Jupiter?",
+    "gambar": null,
+    "pilihan": [
+      "Sabuk kuiper",
+      "Cincin saturnus",
+      "Awan Oort",
+      "Sabuk asteroid"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Planet manakah yang memiliki waktu rotasi paling cepat di tata surya?",
+    "gambar": null,
+    "pilihan": [
+      "Yupiter",
+      "Bumi",
+      "Saturnus",
+      "Uranus"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Mengapa Venus menjadi planet terpanas di tata surya, padahal Merkurius lebih dekat ke Matahari?",
+    "gambar": null,
+    "pilihan": [
+      "Karena atmosfer Venus sangat tebal dan kaya akan karbon dioksida",
+      "Karena Venus tidak memiliki satelit alami untuk mendinginkannya",
+      "Karena Venus memiliki banyak gunung berapi yang aktif",
+      "Karena Venus bergerak lebih lambat dalam mengorbit Matahari"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Benda langit yang sering disebut 'bintang jatuh' ketika terbakar saat memasuki atmosfer Bumi adalah…",
+    "gambar": null,
+    "pilihan": [
+      "Meteor",
+      "Meteorit",
+      "Asteroid",
+      "Komet"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Planet manakah yang memiliki sistem cincin paling besar, indah, dan paling terlihat jelas dari Bumi?.",
+    "gambar": null,
+    "pilihan": [
+      "Saturnus",
+      "Uranus",
+      "Neptunus",
+      "Yupiter"
+    ],
+    "jawaban": 0
+  }
+]
