@@ -96,6 +96,7 @@
             gap: 8px;
         }
         .btn-start:hover { background: #098a4a; transform: translateY(-2px); }
+        .btn-start:disabled { background: #ccc !important; color: #666 !important; cursor: not-allowed !important; transform: none !important; }
 
         /* --- CSS INTERFACE UJIAN --- */
         .header-ujian { background: #0CA458; color: white; padding: 0 15px; position: fixed; top: 0; width: 100%; height: 70px; display: none; justify-content: space-between; align-items: center; z-index: 100; box-sizing: border-box; box-shadow: 0 3px 12px rgba(0,0,0,0.2); }
@@ -254,7 +255,7 @@
             <div class="data-label">Waktu Pengerjaan</div>
             <div id="val-durasi" class="data-value" style="color:#d32f2f;">Memuat...</div>
         </div>
-        <button class="btn-start" onclick="mulaiUjianSekarang()">MULAI MENGERJAKAN</button>
+        <button id="btn-mulai-ujian" class="btn-start" disabled>MEMUAT WAKTU...</button>
         <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee;">
             <p onclick="history.back()" style="color:#d32f2f; font-size:11px; cursor:pointer; font-weight:bold; margin:0;">
                 Data Salah? <span style="text-decoration:underline;">Kembali ke Login</span>
@@ -399,11 +400,23 @@
             // Update tampilan di halaman validasi
             document.getElementById('val-durasi').innerText = durasiSet + " Menit";
             console.log("Durasi berhasil disinkronkan: " + durasiSet + " Menit");
+            
+            // Aktifkan kembali tombol mulai pengerjaan setelah waktu selesai dimuat
+            const btnMulai = document.getElementById('btn-mulai-ujian');
+            btnMulai.disabled = false;
+            btnMulai.innerText = "MULAI MENGERJAKAN";
+            btnMulai.setAttribute("onclick", "mulaiUjianSekarang()");
         })
         .catch(err => {
             console.error("Gagal ambil durasi dari server, menggunakan default 60 menit.");
             totalUjianSeconds = 60 * 60;
             document.getElementById('val-durasi').innerText = "60 Menit";
+            
+            // Aktifkan tombol sebagai fallback jika server gagal merespon
+            const btnMulai = document.getElementById('btn-mulai-ujian');
+            btnMulai.disabled = false;
+            btnMulai.innerText = "MULAI MENGERJAKAN";
+            btnMulai.setAttribute("onclick", "mulaiUjianSekarang()");
         });
         
         document.getElementById('val-nama').innerText = userData.nama.toUpperCase();
