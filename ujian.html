@@ -28,20 +28,20 @@
 
         .img-post { max-width: 100%; height: auto; display: block; }
 
-        /* Style Tambahan untuk Gambar Otomatis dari JSON */
+        /* --- STYLE TAMBAHAN UNTUK DETEKSI GAMBAR OTOMATIS --- */
         .img-soal-otomatis {
             display: block;
             max-width: 100%;
             height: auto;
-            margin: 10px 0;
+            margin: 12px 0;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
         .pertanyaan-area .img-soal-otomatis {
-            max-width: 500px; /* Ukuran sedang untuk pertanyaan */
+            max-width: 450px; /* Ukuran sedang untuk gambar di pertanyaan */
         }
-        .pilihan-area .img-soal-otomatis {
-            max-width: 350px; /* Ukuran sedang untuk pilihan jawaban */
+        .pilihan-konten .img-soal-otomatis {
+            max-width: 280px; /* Ukuran sedang/proporsional untuk gambar di pilihan jawaban */
         }
 
         /* --- HALAMAN VALIDASI DATA --- */
@@ -507,49 +507,45 @@
         } catch (e) { alert("Gagal memuat file soal"); } 
     }
 
-    // Fungsi Pembantu untuk Memeriksa Apakah Teks Adalah URL Gambar
-    function formatKontenSoal(teks, tipe) {
-        if (typeof teks !== 'string') return teks;
+    // FUNGSI UTAMA BARU: Mendeteksi & memisahkan URL Gambar secara pintar jika bercampur teks
+    function formatKontenSistem(teks) {
+        if (!teks || typeof teks !== 'string') return teks;
         
-        // Bersihkan spasi di awal/akhir
-        const str = teks.trim();
+        // Pola Regex untuk mendeteksi URL Web Gambar umum maupun Google Drive terenkripsi
+        const regexUrl = /(https?:\/\/[^\s]+(?:\.(?:jpe?g|png|gif|webp|svg)|drive\.google\.com[^\s]+|ibb\.co[^\s]+))/gi;
         
-        // Regex untuk memeriksa format URL gambar umum atau link drive/web gambar
-        const isImageUrl = str.match(/\.(jpeg|jpg|gif|png|webp|svg)($|\?)/i) || 
-                           str.startsWith('http://') && str.includes('/images/') || 
-                           str.startsWith('https://') && (str.includes('drive.google.com/uc') || str.includes('bp.blogspot.com') || str.includes('github'));
-        
-        if (isImageUrl) {
-            return `<img src="${str}" class="img-soal-otomatis" alt="Gambar ${tipe}">`;
+        if (regexUrl.test(teks)) {
+            // Ubah link menjadi tag img beneran, sisanya dibiarkan menjadi teks biasa di sebelahnya/bawahnya
+            return teks.replace(regexUrl, function(url) {
+                return `<img src="${url}" class="img-soal-otomatis" alt="Gambar Soal">`;
+            });
         }
-        return str;
+        return teks;
     }
 
     function renderUjian() {
         let html = '';
         dataSoal.forEach((s, i) => {
-            // Memproses pertanyaan jika berisi link gambar
-            let kontenPertanyaan = formatKontenSoal(s.pertanyaan, 'Pertanyaan');
-            
+            // Memproses pertanyaan dengan fungsi detektor gambar
+            let kontenPertanyaanClean = formatKontenSistem(s.pertanyaan);
+
             html += `<div class="soal-card ${i === indexSekarang ? 'active' : ''}">
                 <p style="font-weight:800; color:#0CA458; font-size:14px; margin-bottom:10px;">SOAL NOMOR ${i+1}</p>
-                <div class="pertanyaan-area" style="font-size:18px; line-height:1.6; margin-top:0; margin-bottom: 20px;">
-                    ${kontenPertanyaan}
+                <div class="pertanyaan-area" style="font-size:18px; line-height:1.6; margin-top:0; margin-bottom:20px;">
+                    ${kontenPertanyaanClean}
                 </div>
-                <div class="pilihan-area">
-                    ${s.pilihan.map((p, idx) => {
-                        // Memproses pilihan jawaban jika berisi link gambar
-                        let kontenPilihan = formatKontenSoal(p, 'Pilihan');
-                        return `
-                            <label class="pilihan-label">
-                                <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(${i},${idx})"> 
-                                <div style="margin-left:12px; font-size:16px; width: 100%;">
-                                    ${kontenPilihan}
-                                </div>
-                            </label>
-                        `;
-                    }).join('')}
-                </div>
+                ${s.pilihan.map((p, idx) => {
+                    // Memproses setiap pilihan jawaban dengan fungsi detektor gambar
+                    let kontenPilihanClean = formatKontenSistem(p);
+                    return `
+                        <label class="pilihan-label">
+                            <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(${i},${idx})"> 
+                            <div class="pilihan-konten" style="margin-left:12px; font-size:16px; width:100%;">
+                                ${kontenPilihanClean}
+                            </div>
+                        </label>
+                    `;
+                }).join('')}
             </div>`;
         });
         document.getElementById('konten-soal').innerHTML = html; 
