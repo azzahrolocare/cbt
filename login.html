@@ -242,7 +242,8 @@
                 return showNotif("Token Salah! Gunakan token terbaru dari pengawas.");
             }
             
-            const cekRes = await fetch(`${SCRIPT_URL}?action=checkStatus&nama=${encodeURIComponent(nama)}&kelas=${kelas}&t=${new Date().getTime()}`);
+            // PERUBAHAN DISINI: Menyertakan parameter &mapel agar di-check secara spesifik di Code.gs
+            const cekRes = await fetch(`${SCRIPT_URL}?action=checkStatus&nama=${encodeURIComponent(nama)}&kelas=${kelas}&mapel=${encodeURIComponent(mapelNama)}&t=${new Date().getTime()}`);
             const status = await cekRes.text(); 
             
             if (status === "SUDAH_ADA") {
@@ -250,7 +251,7 @@
                 btn.innerHTML = 'MASUK';
                 namaSelect.selectedIndex = 0;
                 tokenInputElem.value = "";
-                return showNotif("Nama tersebut sudah mengerjakan ujian!");
+                return showNotif("Anda sudah mengerjakan ujian mata pelajaran ini!");
             }
             
             sessionStorage.setItem('Screen1.Has Permission', 'true');
