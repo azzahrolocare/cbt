@@ -2,10 +2,10 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#0F5132">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <title>Ujian - CBT SMP Azzahroo</title>
     <link rel="manifest" href="manifest.json">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
@@ -20,6 +20,9 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+            /* Memastikan area background body memenuhi layar penuh gadget */
+            padding-top: env(safe-area-inset-top, 0px);
+            box-sizing: border-box;
         }
 
         /* Menghilangkan scrollbar di Chrome, Safari dan Opera */
@@ -55,7 +58,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: flex-start; 
-            padding-top: 5vh; /* Padding diperkecil agar lebih naik */
+            padding-top: calc(5vh + env(safe-area-inset-top, 0px)); /* Menyesuaikan Notch di halaman validasi */
             z-index: 5000;
             box-sizing: border-box;
         }
@@ -100,7 +103,22 @@
         .btn-start:disabled { background: #ccc !important; color: #666 !important; cursor: not-allowed !important; transform: none !important; }
 
         /* --- CSS INTERFACE UJIAN --- */
-        .header-ujian { background: #0F5132; color: white; padding: 0 15px; position: fixed; top: 0; width: 100%; height: 70px; display: none; justify-content: space-between; align-items: center; z-index: 100; box-sizing: border-box; box-shadow: 0 3px 12px rgba(0,0,0,0.2); }
+        .header-ujian { 
+            background: #0F5132; 
+            color: white; 
+            padding: 0 15px; 
+            padding-top: env(safe-area-inset-top, 0px); /* Tambahan agar konten tidak tertutup bar notifikasi/notch */
+            position: fixed; 
+            top: 0; 
+            width: 100%; 
+            height: calc(70px + env(safe-area-inset-top, 0px)); /* Tinggi dinamis mengikuti area aman device */
+            display: none; 
+            justify-content: space-between; 
+            align-items: center; 
+            z-index: 100; 
+            box-sizing: border-box; 
+            box-shadow: 0 3px 12px rgba(0,0,0,0.2); 
+        }
         .identity-area { display: flex; align-items: center; gap: 10px; }
         .avatar-circle { width: 40px; height: 40px; background: #ffffff33; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #ffffff66; }
         .nav-right-area { display: flex; align-items: center; gap: 12px; }
@@ -119,13 +137,27 @@
         #btn-menu-nomor { background: #04BF62; color: white; border: 1px solid #ffffff44; border-radius: 10px; width: 42px; height: 42px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
         #btn-menu-nomor:hover { background: #3EC381; border-color: white; }
         
-        .menu-nomor-content { display: none; position: fixed; top: 75px; right: 15px; background: white; width: 280px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); padding: 20px; z-index: 1000; max-height: 70vh; overflow-y: auto; border: 1px solid #ddd; }
+        .menu-nomor-content { 
+            display: none; 
+            position: fixed; 
+            top: calc(75px + env(safe-area-inset-top, 0px)); /* Menyesuaikan posisi dropdown dengan tinggi header baru */
+            right: 15px; 
+            background: white; 
+            width: 280px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+            padding: 20px; 
+            z-index: 1000; 
+            max-height: 70vh; 
+            overflow-y: auto; 
+            border: 1px solid #ddd; 
+        }
         .menu-nomor-content.show { display: block; animation: fadeIn 0.2s; }
 
         /* Container & Zoom Logic */
         .container-wrapper {
-            margin-top: 70px;
-            height: calc(100vh - 140px); /* Membagi ruang dengan header dan footer nav */
+            margin-top: calc(70px + env(safe-area-inset-top, 0px)); /* Menyesuaikan jarak atas container agar pas di bawah header */
+            height: calc(100vh - (140px + env(safe-area-inset-top, 0px) + env(safe-area-inset-bottom, 0px))); /* Membagi sisa ruang secara presisi */
             overflow: auto;
             display: none;
             scrollbar-width: none; /* Firefox */
@@ -165,14 +197,16 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 65px;
+            height: calc(65px + env(safe-area-inset-bottom, 0px)); /* Akurasi tinggi untuk dagu layar hp modern amoled/iOS */
+            padding-bottom: env(safe-area-inset-bottom, 0px);
             background: white;
             display: none;
             justify-content: space-around;
             align-items: center;
             box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
             z-index: 100;
-            padding: 0 15px;
+            padding-left: 15px;
+            padding-right: 15px;
             box-sizing: border-box;
         }
 
@@ -210,7 +244,7 @@
         /* Tombol Zoom Melayang Custom */
         .zoom-controls {
             position: fixed;
-            bottom: 80px; /* Di atas navbar bawah */
+            bottom: calc(80px + env(safe-area-inset-bottom, 0px)); /* Di atas navbar bawah yang dinamis */
             right: 20px;
             z-index: 9999;
             display: flex;
