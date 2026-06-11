@@ -10,7 +10,6 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f0f2f5; display: flex; flex-direction: column; min-height: 100vh; }
         .top-banner { background: #0F5132; height: 250px; width: 100%; display: flex; justify-content: center; align-items: center; color: white; position: absolute; top: 0; z-index: 1; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
         .header-content { display: flex; align-items: center; gap: 15px; margin-bottom: 50px; }
-        /* Tambahan: kursor pointer untuk logo */
         .logo-puspendik { width: 70px; height: auto; cursor: pointer; transition: transform 0.2s; }
         .logo-puspendik:active { transform: scale(0.9); }
         
@@ -26,14 +25,12 @@
         .field-icon { width: 45px; display: flex; justify-content: center; color: #0F5132; opacity: 0.7; }
         input, select { border: none; outline: none; width: 100%; padding: 14px 10px 14px 0; font-size: 15px; background: transparent; }
         
-        /* Style tambahan untuk toggle password */
         .toggle-password { cursor: pointer; padding: 0 15px; display: flex; align-items: center; color: #0F5132; opacity: 0.7; transition: 0.3s; }
         .toggle-password:hover { opacity: 1; }
 
         .btn-login { background: #0F5132; color: white; width: 100%; border: none; padding: 15px; border-radius: 10px; font-weight: 800; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; min-height: 50px; }
         .btn-login:hover { background: #0d124a; transform: translateY(-2px); }
         
-        /* EFEK LOADING DOT: Kalimat diam, titik bergerak ke depan */
         .dots::after { 
             content: ''; 
             display: inline-block;
@@ -88,11 +85,9 @@
                 <span class="field-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
                 
                 <select id="kelas">
-                <option value="" disabled hidden>PILIH KELAS</option>
-                <!-- Menambahkan atribut disabled agar tidak bisa diklik -->
+                <option value="" disabled selected hidden>PILIH KELAS</option>
                 <option value="VII">KELAS VII</option>
                 <option value="VIII">KELAS VIII</option>
-                <!-- Hanya Kelas IX yang aktif -->
                 <option value="IX">KELAS IX</option>
                 </select>
             </div>
@@ -110,9 +105,7 @@
         <div class="input-group">
             <div class="field-container">
                 <span class="field-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span>
-                <!-- Input diubah ke tipe password agar jadi bintang -->
                 <input type="password" id="tokenInput" placeholder="TOKEN UJIAN" autocomplete="off" autocorrect="off">
-                <!-- Tombol mata untuk toggle -->
                 <div class="toggle-password" onclick="toggleTokenVisibility()">
                     <svg id="eyeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
@@ -127,25 +120,21 @@
 </div>
 <script>
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
-    const ADMIN_TOKEN = 'cbtaz'; // Token khusus admin
+    const ADMIN_TOKEN = 'cbtaz'; 
     
-    // Fungsi untuk Melihat/Sembunyikan Token
     function toggleTokenVisibility() {
         const tokenInput = document.getElementById('tokenInput');
         const eyeIcon = document.getElementById('eyeIcon');
         
         if (tokenInput.type === 'password') {
             tokenInput.type = 'text';
-            // Ubah icon ke mata coret (hide) saat mode teks
             eyeIcon.innerHTML = '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>';
         } else {
             tokenInput.type = 'password';
-            // Kembalikan ke icon mata biasa
             eyeIcon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>';
         }
     }
 
-    // Pemicu Enter untuk Tombol Masuk
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
             event.preventDefault();
@@ -153,7 +142,6 @@
         }
     });
 
-    // Fungsi Fullscreen
     function toggleFullScreen() {
         if (!document.fullscreenElement) {
             document.documentElement.requestFullscreen().catch(err => {
@@ -166,7 +154,6 @@
         }
     }
 
-    // LOGIKA LOAD MATA PELAJARAN DARI JSON
     async function loadMapel() {
         try {
             const res = await fetch('mata-pelajaran.json');
@@ -187,7 +174,6 @@
     
     async function validasiLogin() {
         const btn = document.getElementById('btnLogin');
-        // Proteksi agar tidak double klik saat proses
         if(btn.disabled) return;
 
         const namaInput = document.getElementById('nama');
@@ -202,16 +188,13 @@
 
         if(!nama || !kelas || !tokenInput || !mapelFile) return showNotif("Lengkapi data login!");
 
-        //Tombol masuk warna biru tua
         btn.disabled = true; 
         btn.innerHTML = 'MASUK<span class="dots"></span>';
         
         try {
-            // Ambil token aktif dari server
             const resToken = await fetch(`${SCRIPT_URL}?action=getToken&t=${new Date().getTime()}`);
             const dataToken = await resToken.json();
             
-            // Logika baru: Cek jika input sesuai token aktif ATAU sesuai token rahasia admin
             const isTokenValid = (tokenInput === dataToken.token_aktif) || (tokenInput === ADMIN_TOKEN);
 
             if(!isTokenValid) {
@@ -221,7 +204,8 @@
                 return showNotif("Token Salah! Gunakan token terbaru dari pengawas.");
             }
             
-            const cekRes = await fetch(`${SCRIPT_URL}?action=checkStatus&nama=${nama}&kelas=${kelas}&t=${new Date().getTime()}`);
+            // Mengirim parameter mapel tambahan ke backend Apps Script untuk dicek
+            const cekRes = await fetch(`${SCRIPT_URL}?action=checkStatus&nama=${nama}&kelas=${kelas}&mapel=${encodeURIComponent(mapelNama)}&t=${new Date().getTime()}`);
             const status = await cekRes.text(); 
             
             if (status === "SUDAH_ADA") {
@@ -229,7 +213,7 @@
                 btn.innerHTML = 'MASUK';
                 namaInput.value = "";
                 tokenInputElem.value = "";
-                return showNotif("Nama tersebut sudah mengerjakan ujian!");
+                return showNotif("Anda sudah mengerjakan ujian untuk mata pelajaran ini!");
             }
             
             sessionStorage.setItem('Screen1.Has Permission', 'true');
