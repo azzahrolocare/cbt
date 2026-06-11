@@ -4,8 +4,8 @@
   "description": "Aplikasi Ujian Online SMP & SMK Azzahro",
   "start_url": "login.html",
   "display": "standalone",
-  "background_color": "#0CA458",
-  "theme_color": "#0CA458",
+  "background_color": "#0F5132",
+  "theme_color": "#0F5132",
   "orientation": "any",
   "icons": [
     {
