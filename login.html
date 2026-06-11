@@ -22,6 +22,11 @@
             display: flex; 
             flex-direction: column; 
             min-height: 100vh; 
+            /* Mematikan seleksi teks pada halaman */
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
         
         /* Ditambahkan padding-top aman dan box-sizing agar banner menutup sempurna hingga ke atas layar */
@@ -95,6 +100,14 @@
         .field-icon { width: 45px; display: flex; justify-content: center; color: #0F5132; opacity: 0.7; }
         input, select { border: none; outline: none; width: 100%; padding: 14px 10px 14px 0; font-size: 15px; background: transparent; }
         
+        /* Mengizinkan input token tetap bisa menerima fokus ketikan meskipun halaman diproteksi */
+        input#tokenInput {
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+
         .toggle-password { cursor: pointer; padding: 0 15px; display: flex; align-items: center; color: #0F5132; opacity: 0.7; transition: 0.3s; }
         .toggle-password:hover { opacity: 1; }
 
@@ -370,6 +383,11 @@
         document.documentElement.requestFullscreen().catch(e => console.log(e));
     }
   }, { once: true });
+
+  // PROTEKSI TAMBAHAN: Mematikan Fitur Copy, Cut, dan Paste
+  document.addEventListener('copy', (e) => e.preventDefault());
+  document.addEventListener('cut', (e) => e.preventDefault());
+  document.addEventListener('paste', (e) => e.preventDefault());
 </script>
 </body>
 </html>
