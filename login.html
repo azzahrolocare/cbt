@@ -9,7 +9,7 @@
     <link rel="manifest" href="manifest.json">
     <title>Login - CBT Azzahro</title>
     <style>
-        /* PERBAIKAN: Mengatur dasar html ke warna hijau agar tidak ada celah hitam saat full screen */
+        /* Mengatur dasar html ke warna hijau agar tidak ada celah hitam saat full screen */
         html { 
             background-color: #0F5132; 
             height: 100%;
@@ -24,7 +24,7 @@
             min-height: 100vh; 
         }
         
-        /* PERBAIKAN: Ditambahkan padding-top aman dan box-sizing agar banner menutup sempurna hingga ke atas layar */
+        /* Ditambahkan padding-top aman dan box-sizing agar banner menutup sempurna hingga ke atas layar */
         .top-banner { 
             background: #0F5132; 
             height: 250px; 
@@ -41,15 +41,17 @@
             box-sizing: border-box;
         }
         
-        /* PERBAIKAN LOGO & TEKS TENGAH: Mengatur layout horizontal agar presisi */
+        /* PERBAIKAN RESPONSIVE LAPTOP & HP: Menggunakan center dengan gap agar logo tidak terlalu jauh di laptop */
         .header-content { 
             display: flex; 
             align-items: center; 
-            justify-content: space-between; /* Membuat logo kiri dan kanan menyebar, teks di tengah */
-            width: 90%; 
-            max-width: 450px; /* Membatasi lebar area header agar pas dengan ukuran box card di bawahnya */
-            padding: 0 10px;
+            justify-content: center; /* Mengunci komponen agar tetap berkumpul di tengah */
+            gap: 15px; /* Memberikan jarak ideal yang konsisten baik di HP maupun Laptop */
+            width: 100%; 
+            max-width: 500px; 
+            padding: 0 20px;
             margin-bottom: 20px;
+            box-sizing: border-box;
         }
         
         .logo-puspendik { 
@@ -61,24 +63,25 @@
         }
         .logo-puspendik:active { transform: scale(0.9); }
         
-        /* PERBAIKAN: Wadah teks dibuat flex: 1 agar mengisi ruang kosong dan berpusat di tengah */
+        /* PERBAIKAN: Teks diatur sedemikian rupa agar tidak memakan space terlalu lebar di laptop */
         .header-text {
-            flex: 1;
             text-align: center;
-            padding: 0 10px;
+            flex-shrink: 1;
         }
         
         .header-text h1 { 
             margin: 0; 
-            font-size: 24px; /* Sedikit disesuaikan agar pas di layar handphone */
+            font-size: 24px; 
             letter-spacing: 1.5px; 
             font-weight: 900; 
             line-height: 1.2;
+            white-space: nowrap; /* Mencegah tulisan CBT AZ-ZAHRO patah menjadi dua baris */
         }
         .header-text p { 
             margin: 5px 0 0 0; 
             font-size: 13px; 
             opacity: 0.8; 
+            white-space: nowrap; /* Mencegah tulisan sub-header patah baris */
         }
         
         /* Disesuaikan margin atasnya sedikit agar posisi card tetap seimbang */
@@ -135,8 +138,8 @@
     <div class="header-content">
         <img src="https://github.com/masrahmat-id/absensi-barcode-online-smp-smk-azzahro/raw/main/logo-smp-azzahro.png" class="logo-puspendik" onclick="toggleFullScreen()" title="Klik untuk Fullscreen">
         <div class="header-text">
-            <h1>AZ-ZAHRO</h1>
-            <p>Ujian Berbasis Komputer</p>
+            <h1>CBT AZ-ZAHRO</h1>
+            <p>Asesmen Berbasis Komputer</p>
         </div>
         <img src="https://github.com/masrahmat-id/absensi-barcode-online-smp-smk-azzahro/raw/main/logo-smk-azzahro.png" class="logo-puspendik" onclick="toggleFullScreen()" title="Klik untuk Fullscreen">
     </div>
