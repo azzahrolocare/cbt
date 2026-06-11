@@ -8,7 +8,7 @@
   { "nama": "Ilmu Pengetahuan Alam", "file": "https://azzahrolocare.github.io/cbt/mapel/ipa.json" },
   { "nama": "Pendidikan Jasmani Olahraga dan Kesehatan", "file": "https://azzahrolocare.github.io/cbt/mapel/penjaskes.json" },
   { "nama": "Ilmu Pengetahuan Sosial", "file": "https://azzahrolocare.github.io/cbt/mapel/ips.json" },
-  { "nama": "Informatika", "file": "https://azzahrolocare.github.io/cbt/mapel/tik1.json" },
+  { "nama": "Informatika", "file": "https://azzahrolocare.github.io/cbt/mapel/informatika.json" },
   { "nama": "Bahasa Daerah Madura", "file": "https://azzahrolocare.github.io/cbt/mapel/bahasa_madura.json" },
   { "nama": "Baca Tulis Al-Qur'an", "file": "https://azzahrolocare.github.io/cbt/mapel/btq.json" }
 ]
