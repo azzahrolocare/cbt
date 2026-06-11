@@ -41,12 +41,45 @@
             box-sizing: border-box;
         }
         
-        .header-content { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
-        .logo-puspendik { width: 70px; height: auto; cursor: pointer; transition: transform 0.2s; }
+        /* PERBAIKAN LOGO & TEKS TENGAH: Mengatur layout horizontal agar presisi */
+        .header-content { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between; /* Membuat logo kiri dan kanan menyebar, teks di tengah */
+            width: 90%; 
+            max-width: 450px; /* Membatasi lebar area header agar pas dengan ukuran box card di bawahnya */
+            padding: 0 10px;
+            margin-bottom: 20px;
+        }
+        
+        .logo-puspendik { 
+            width: 65px; 
+            height: auto; 
+            cursor: pointer; 
+            transition: transform 0.2s; 
+            flex-shrink: 0; /* Mencegah logo gepeng atau mengecil di layar HP */
+        }
         .logo-puspendik:active { transform: scale(0.9); }
         
-        .header-text h1 { margin: 0; font-size: 26px; letter-spacing: 2px; font-weight: 900; }
-        .header-text p { margin: 0; font-size: 14px; opacity: 0.8; text-align: center; }
+        /* PERBAIKAN: Wadah teks dibuat flex: 1 agar mengisi ruang kosong dan berpusat di tengah */
+        .header-text {
+            flex: 1;
+            text-align: center;
+            padding: 0 10px;
+        }
+        
+        .header-text h1 { 
+            margin: 0; 
+            font-size: 24px; /* Sedikit disesuaikan agar pas di layar handphone */
+            letter-spacing: 1.5px; 
+            font-weight: 900; 
+            line-height: 1.2;
+        }
+        .header-text p { 
+            margin: 5px 0 0 0; 
+            font-size: 13px; 
+            opacity: 0.8; 
+        }
         
         /* Disesuaikan margin atasnya sedikit agar posisi card tetap seimbang */
         .container { position: relative; z-index: 2; margin-top: 180px; width: 90%; max-width: 400px; background: white; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); align-self: center; overflow: hidden; }
@@ -101,7 +134,10 @@
 <div class="top-banner">
     <div class="header-content">
         <img src="https://github.com/masrahmat-id/absensi-barcode-online-smp-smk-azzahro/raw/main/logo-smp-azzahro.png" class="logo-puspendik" onclick="toggleFullScreen()" title="Klik untuk Fullscreen">
-        <div class="header-text"><h1>CBT AZ-ZAHRO</h1><p>Asesmen Berbasis Komputer</p></div>
+        <div class="header-text">
+            <h1>CBT AZ-ZAHRO</h1>
+            <p>Asesmen Berbasis Komputer</p>
+        </div>
         <img src="https://github.com/masrahmat-id/absensi-barcode-online-smp-smk-azzahro/raw/main/logo-smk-azzahro.png" class="logo-puspendik" onclick="toggleFullScreen()" title="Klik untuk Fullscreen">
     </div>
 </div>
