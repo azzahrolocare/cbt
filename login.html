@@ -74,21 +74,27 @@
     <div class="login-content">
         <h2>Selamat Datang</h2>
         <p class="subtitle">Silakan login untuk memulai ujian.</p>
+        
         <div class="input-group">
             <div class="field-container">
                 <span class="field-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></span>
-                <input type="text" id="nama" placeholder="NAMA LENGKAP" autocomplete="off" autocorrect="off" autocapitalize="characters">
+                <select id="nama" disabled>
+                    <option value="" disabled selected hidden>PILIH KELAS TERLEBIH DAHULU</option>
+                </select>
             </div>
         </div>
+
         <div class="input-group">
             <div class="field-container">
                 <span class="field-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span>
-                
-                <select id="kelas">
-                <option value="" disabled selected hidden>PILIH KELAS</option>
-                <option value="VII">KELAS VII</option>
-                <option value="VIII">KELAS VIII</option>
-                <option value="IX">KELAS IX</option>
+                <select id="kelas" onchange="getNamaSiswa(this.value)">
+                    <option value="" disabled selected hidden>PILIH KELAS</option>
+                    <option value="VII">KELAS VII</option>
+                    <option value="VIII">KELAS VIII</option>
+                    <option value="IX">KELAS IX</option>
+                    <option value="X">KELAS X</option>
+                    <option value="XI">KELAS XI</option>
+                    <option value="XII">KELAS XII</option>
                 </select>
             </div>
         </div>
@@ -120,6 +126,8 @@
 </div>
 <script>
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
+    // URL Web App data siswa yang baru diberikan
+    const SISWA_URL = 'https://script.google.com/macros/s/AKfycbz3vYiQLbsJFsT1JPyY7pcc2b0GZp2CPoefoYOmthQ0rr5j3sjFQsg50CDxlAyapz3j/exec';
     const ADMIN_TOKEN = 'cbtaz'; 
     
     function toggleTokenVisibility() {
@@ -169,6 +177,36 @@
     }
     window.addEventListener('DOMContentLoaded', loadMapel);
 
+    // FUNGSI BARU: Mengambil Nama Siswa Otomatis Berdasarkan Kelas yang Dipilih
+    async function getNamaSiswa(kelasTerpilih) {
+        const namaSelect = document.getElementById('nama');
+        namaSelect.disabled = true;
+        namaSelect.innerHTML = '<option value="" disabled selected hidden>MEMUAT NAMA SISWA...</option>';
+        
+        try {
+            const response = await fetch(`${SISWA_URL}?action=getSiswa&kelas=${kelasTerpilih}&t=${new Date().getTime()}`);
+            const daftarSiswa = await response.json();
+            
+            namaSelect.innerHTML = '<option value="" disabled selected hidden>PILIH NAMA ANDA</option>';
+            
+            if (daftarSiswa && daftarSiswa.length > 0) {
+                daftarSiswa.forEach(nama => {
+                    let opt = document.createElement('option');
+                    opt.value = nama.toUpperCase();
+                    opt.textContent = nama.toUpperCase();
+                    namaSelect.appendChild(opt);
+                });
+                namaSelect.disabled = false;
+            } else {
+                namaSelect.innerHTML = '<option value="" disabled selected hidden>TIDAK ADA DATA SISWA</option>';
+            }
+        } catch (error) {
+            console.error(error);
+            namaSelect.innerHTML = '<option value="" disabled selected hidden>GAGAL MEMUAT DATA SISWA</option>';
+            showNotif("Gagal mengambil data siswa. Silakan periksa koneksi internet.");
+        }
+    }
+
     function showNotif(msg) { document.getElementById('modalMessage').innerText = msg; document.getElementById('customModal').style.display = 'flex'; }
     function closeModal() { document.getElementById('customModal').style.display = 'none'; }
     
@@ -176,14 +214,14 @@
         const btn = document.getElementById('btnLogin');
         if(btn.disabled) return;
 
-        const namaInput = document.getElementById('nama');
+        const namaSelect = document.getElementById('nama');
         const tokenInputElem = document.getElementById('tokenInput');
         const kelas = document.getElementById('kelas').value;
         const mapelSelect = document.getElementById('mapel');
         const mapelFile = mapelSelect.value;
         const mapelNama = mapelSelect.options[mapelSelect.selectedIndex] ? mapelSelect.options[mapelSelect.selectedIndex].text : "";
 
-        const nama = namaInput.value.trim().toUpperCase();
+        const nama = namaSelect.value;
         const tokenInput = tokenInputElem.value.trim();
 
         if(!nama || !kelas || !tokenInput || !mapelFile) return showNotif("Lengkapi data login!");
@@ -204,16 +242,15 @@
                 return showNotif("Token Salah! Gunakan token terbaru dari pengawas.");
             }
             
-            // Mengirim parameter mapel tambahan ke backend Apps Script untuk dicek
-            const cekRes = await fetch(`${SCRIPT_URL}?action=checkStatus&nama=${nama}&kelas=${kelas}&mapel=${encodeURIComponent(mapelNama)}&t=${new Date().getTime()}`);
+            const cekRes = await fetch(`${SCRIPT_URL}?action=checkStatus&nama=${encodeURIComponent(nama)}&kelas=${kelas}&t=${new Date().getTime()}`);
             const status = await cekRes.text(); 
             
             if (status === "SUDAH_ADA") {
                 btn.disabled = false; 
                 btn.innerHTML = 'MASUK';
-                namaInput.value = "";
+                namaSelect.selectedIndex = 0;
                 tokenInputElem.value = "";
-                return showNotif("Anda sudah mengerjakan ujian untuk mata pelajaran ini!");
+                return showNotif("Nama tersebut sudah mengerjakan ujian!");
             }
             
             sessionStorage.setItem('Screen1.Has Permission', 'true');
@@ -225,7 +262,7 @@
                 isAuth: true 
             }));
 
-            namaInput.value = "";
+            namaSelect.selectedIndex = 0;
             tokenInputElem.value = "";
 
             window.location.href = 'ujian.html';
