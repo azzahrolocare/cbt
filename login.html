@@ -2,22 +2,54 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="theme-color" content="#0F5132">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="manifest" href="manifest.json">
     <title>Login - CBT Azzahro</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f0f2f5; display: flex; flex-direction: column; min-height: 100vh; }
-        .top-banner { background: #0F5132; height: 250px; width: 100%; display: flex; justify-content: center; align-items: center; color: white; position: absolute; top: 0; z-index: 1; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-        .header-content { display: flex; align-items: center; gap: 15px; margin-bottom: 50px; }
+        /* PERBAIKAN: Mengatur dasar html ke warna hijau agar tidak ada celah hitam saat full screen */
+        html { 
+            background-color: #0F5132; 
+            height: 100%;
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            background-color: #f0f2f5; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+        }
+        
+        /* PERBAIKAN: Ditambahkan padding-top aman dan box-sizing agar banner menutup sempurna hingga ke atas layar */
+        .top-banner { 
+            background: #0F5132; 
+            height: 250px; 
+            padding-top: env(safe-area-inset-top, 0px);
+            width: 100%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            color: white; 
+            position: absolute; 
+            top: 0; 
+            z-index: 1; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+            box-sizing: border-box;
+        }
+        
+        .header-content { display: flex; align-items: center; gap: 15px; margin-bottom: 20px; }
         .logo-puspendik { width: 70px; height: auto; cursor: pointer; transition: transform 0.2s; }
         .logo-puspendik:active { transform: scale(0.9); }
         
         .header-text h1 { margin: 0; font-size: 26px; letter-spacing: 2px; font-weight: 900; }
         .header-text p { margin: 0; font-size: 14px; opacity: 0.8; text-align: center; }
-        .container { position: relative; z-index: 2; margin-top: 150px; width: 90%; max-width: 400px; background: white; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); align-self: center; overflow: hidden; }
+        
+        /* Disesuaikan margin atasnya sedikit agar posisi card tetap seimbang */
+        .container { position: relative; z-index: 2; margin-top: 180px; width: 90%; max-width: 400px; background: white; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); align-self: center; overflow: hidden; }
         .login-content { padding: 40px 30px; }
         .login-content h2 { margin-top: 0; color: #0F5132; font-size: 22px; text-align: center; font-weight: 800; }
         .subtitle { color: #666; font-size: 13px; text-align: center; margin-bottom: 30px; }
@@ -129,7 +161,6 @@
 </div>
 <script>
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
-    // URL Web App data siswa yang baru diberikan
     const SISWA_URL = 'https://script.google.com/macros/s/AKfycbz3vYiQLbsJFsT1JPyY7pcc2b0GZp2CPoefoYOmthQ0rr5j3sjFQsg50CDxlAyapz3j/exec';
     const ADMIN_TOKEN = 'cbtaz'; 
     
@@ -180,7 +211,6 @@
     }
     window.addEventListener('DOMContentLoaded', loadMapel);
 
-    // FUNGSI BARU: Mengambil Nama Siswa Otomatis Berdasarkan Kelas yang Dipilih
     async function getNamaSiswa(kelasTerpilih) {
         const namaSelect = document.getElementById('nama');
         namaSelect.disabled = true;
@@ -245,7 +275,6 @@
                 return showNotif("Token Salah! Gunakan token terbaru dari pengawas.");
             }
             
-            // PERUBAHAN DISINI: Menyertakan parameter &mapel agar di-check secara spesifik di Code.gs
             const cekRes = await fetch(`${SCRIPT_URL}?action=checkStatus&nama=${encodeURIComponent(nama)}&kelas=${kelas}&mapel=${encodeURIComponent(mapelNama)}&t=${new Date().getTime()}`);
             const status = await cekRes.text(); 
             
