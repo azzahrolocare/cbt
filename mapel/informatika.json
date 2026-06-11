@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Perangkat keras jaringan komputer yang berfungsi untuk mengirimkan dan menentukan rute pengiriman paket data adalah",
+    "pilihan": ["hub", "switch", "router", "modem"],
+    "jawaban": 2
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Konsep jaringan message block diusulkan oleh",
+    "pilihan": ["Paul Baran", "Vinton Cerf", "Larry Roberts", "Donald Davies"],
+    "jawaban": 0
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Jenis topologi di mana cara pemasangan melibatkan penghubung setiap perangkat dalam lingkaran menggunakan kabel adalah topologi",
+    "pilihan": ["Bus", "Ring", "Star", "Mesh"],
+    "jawaban": 1
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Jenis tranmisi dimana sinyal ditransmisikan hanya pada satu arah saja disebut..",
+    "pilihan": ["Simplex", "Half duplex", "Full duplex", "Paralel"],
+    "jawaban": 0
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Lapisan OSI yeng berperan dalam pembagian data menjadi paket-paket kecil dan memberikan nomor urut pada setiap paket merupakan lapisan",
+    "pilihan": ["Application", "Session", "Transport", "Data link"],
+    "jawaban": 2
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Lapisan dalam model OSI yang memiliki tanggung jawab untuk menangani pengalamatan fisik serta kontrol akses media adalah layer",
+    "pilihan": ["Physical", "Transport", "Data link", "Applicalion"],
+    "jawaban": 2
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Diketahui sebuah topologi star di gabungkan dengan topologi mesh. Namun, apabila topologi star digabungkan dengan topologi star akan menjadi topologi",
+    "pilihan": ["Mesh", "Bus", "Star", "Hyybrid"],
+    "jawaban": 2
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Cara terbaik yang digunakan router untuk meneruskan paket diantara hop ke tujuan nya pada metode transmisi data paket switching menggunakan",
+    "pilihan": ["Jenis komputer", "Alamat IP", "Tipe data yang dikirimkan", "Nomer seri perangkat"],
+    "jawaban": 1
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Diketahui terjadi masalah dalam pengiriman data, yaitu salah satu bit data mengalami corrupted. Untuk mendeteksi bit mana yang mengalami corrupted maka digunakan metode",
+    "pilihan": ["Parity check", "Checksum", "CRC", "Forward error correction"],
+    "jawaban": 0
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Sebuah warung internet A memiliki kendala, yaitu jika ada komputer yeng eror, keseluruhan jaringan juga ikut eror. Dari masalah tersebut, dapat disimpulkan warung internet A menggunakan topologi ...",
+    "pilihan": ["Ring", "Bus", "Star", "Mesh"],
+    "jawaban": 0
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Konsep internet dikembangkan oleh",
+    "pilihan": ["Robert metcalfe", "Vinto cerf", "Leonard kleinrock", "Tim berners-Lee"],
+    "jawaban": 0
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Sistem time shering pertama kali diperkenalkan memiliki terminal yang terdiri atas",
+    "pilihan": ["Mouse dan keyboard", "Touchpad dan monitor", "Monitor dan mouse", "Keyboard dan monitor"],
+    "jawaban": 3
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Setiap komputer yang terhubung kejaringan komputer memiliki alamat unik yang disebut",
+    "pilihan": ["IP address", "DNS", "WWW", "TCP/IP"],
+    "jawaban": 0
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Di modul TCP/IP perangkat jaringan switch dari bridge bekerja pada lapisan",
+    "pilihan": ["Physical", "Network access", "Internet", "Transpot"],
+    "jawaban": 1
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Lapisan dalam TCP/IP yang memiliki tugas untuk melakukan addressing dan routing adalah Layar",
+    "pilihan": ["Network access", "Internet", "Transport", "Application"],
+    "jawaban": 1
+  },
+  {
+    "id": 16,
+    "pertanyaan": "Suatu sekolah tidak perlu membeli dua puluh printer untuk setiap komputer yang ada, tetapi cukup membeli satu atau dua printer untuk digunakan secara bersama sama. Hal tersebut merupakan salah satu manfaat jaringan komputer, yaitu",
+    "pilihan": ["Media komunikasi", "Pembagian sumber daya", "Efisiensi sumber daya", "Pengembangan dan pemeliharaan"],
+    "jawaban": 2
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Konversi data digital ke data analog bisa dilakukan dengan beberapa cara, yaitu ..",
+    "pilihan": ["amplitude shift keying", "pulse code modulation", "frequency shift keying", "quadrature amplitude modulation"],
+    "jawaban": 0
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Pesangan layer dan protokol pada lapisan OSI layer berikut yang tepat adalah",
+    "pilihan": ["Application layer: UDP", "Presentation layer: SSL", "Transport layer: TCP", "Session: FTP"],
+    "jawaban": 1
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Berikut informasi yang terdapat pada struktur paket data dibagian header",
+    "pilihan": ["Source address", "Destination address", "End of packet flog", "Protocol information"],
+    "jawaban": 0
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Berikut merupakan kelebihan paket switching, kecuali",
+    "pilihan": ["Pengiriman data dapat dilakukan dengan kecepatan tinggi", "Sulit digunakan untuk pengiriman data yang cepat dan kualitas yang tingggi", "Dalam satu jaringan yang sama dapat digunakan oleh banyak user", "Router dapat melakukan pengiriman ulang (rerouting) paket jika terjadi kegagalan"],
+    "jawaban": 1
+  },
+  {
+    "id": 21,
+    "pertanyaan": "Berikut contoh bentuk perubahan akibat adanya jaringan komputer yang paling tepat adalah",
+    "pilihan": ["Manusia lebih sering berinteraksi secara langgung", "Aktivitas membaca buku fisik makin meningkat", "Kemampuan berpikir komputasional berkembang", "Memungkinkannya penggunaan satu printah untuk banyak komputer"],
+    "jawaban": 3
+  },
+  {
+    "id": 22,
+    "pertanyaan": "Layer pada OSI model yang berungsi untuk mendefisinikan bagaimana sebuah koneksi dapat dibuat, dikelola, dan dikembangkan adalah layer",
+    "pilihan": ["Application", "Presentation", "Session", "Transport"],
+    "jawaban": 2
+  },
+  {
+    "id": 23,
+    "pertanyaan": "Pernyataan brikut yang dapat mengenai topologi jaringan adalah",
+    "pilihan": ["Topologi gus cocok untuk jaringan antar kota", "Topologi mesh sering disebut dengan topologi cincin", "Topologi tree memiliki sistem yang hierarki dan memiliki banyak switch", "Pemasangan topologi hybrid terbilang rumit"],
+    "jawaban": 2
+  },
+  {
+    "id": 24,
+    "pertanyaan": "Kejadian besar pada masa perkembangan jaringan komputer tahun 1990-an adalah",
+    "pilihan": ["NSFNET menjadi jaringan utama", "Munculnya jaringan telenet", "Lahirnya jaringan telepon", "Dikembangannya protokol NCP"],
+    "jawaban": 0
+  },
+  {
+    "id": 25,
+    "pertanyaan": "Berikut yang termasuk ke dalam upper layer dalam OSI layer adalah",
+    "pilihan": ["Application layer", "Network layer", "Session layer", "Presentation layer"],
+    "jawaban": 0
+  },
+  {
+    "id": 26,
+    "pertanyaan": "Bagian pertama dari paket yang berisi informasi kontrol penting, seperti alamat sumber dan tujuan adalah ...",
+    "pilihan": ["Header", "Payload", "Trailer", "Deklarasi"],
+    "jawaban": 0
+  },
+  {
+    "id": 27,
+    "pertanyaan": "Tujuan pemberian bit parity pada pengiriman data adalah",
+    "pilihan": ["Navigasi arah paket bit data dikirimkan", "Identifikasi jenis data yang dikirim", "Memaskitan bit data tidak berubah sampai kepenerima", "Pencegahan duplikasi bit data yang diterima penerima"],
+    "jawaban": 2
+  },
+  {
+    "id": 28,
+    "pertanyaan": "Berikut ini yang termasuk kekurangan parityy check, kecuali ...",
+    "pilihan": ["Kurang andal dalam perbaikan eror", "Kemungkinan kesalahan 50%", "Belum dapat mengatur file besar", "Sulit dalam melakukan pengecekan"],
+    "jawaban": 2
+  },
+  {
+    "id": 29,
+    "pertanyaan": "Terdapat dua karakteristik terpenting yang dimiliki oleh isyarat sinyal analog, yaitu",
+    "pilihan": ["Keadaan 0 dan 1", "Waktu dan kecepatan", "Gelombaang dan pulsa", "Frekuensi dan amplitudo"],
+    "jawaban": 3
+  },
+  {
+    "id": 30,
+    "pertanyaan": "Metode pendeteksian kesalahan yang sering digunakan dalam komunikasi data berkecepatan tinggi seperti jangingan komputer adalah",
+    "pilihan": ["Parity check", "Checksum", "Cyclic redundancy check", "Forward error correction"],
+    "jawaban": 2
+  }
+]
