@@ -1,127 +1,222 @@
 [
   {
     "id": 1,
-    "pertanyaan": "Semua organisme yang mampu membuat atau menyintesis makanannya sendiri disebut organisme…..",
-    "pilihan": ["Autotrof", "Heterotrof", "Autolisis", "Autofagi"],
-    "jawaban": 0
-  },
-  {
-    "id": 2,
-    "pertanyaan": "Perhatikan gambar berikut ! https://i.ibb.co.com/DDc2D0tM/image.jpg Satuan makhluk hidup dalam gambar disebut..",
-    "pilihan": ["Populasi", "Komunitas", "Ekosistem", "Individu"],
-    "jawaban": 0
-  },
-  {
-    "id": 3,
-    "pertanyaan": "Berikut tumbuhan hijau yang membutuhkan sinar matahari banyak yaitu…",
-    "pilihan": ["Rumput", "Kaktus", "Anggrek", "Paku"],
-    "jawaban": 0
-  },
-  {
-    "id": 4,
-    "pertanyaan": "Sekelompok singa dan sekelompok harimau tutul saling memperebutkan kawanan rusa di padang rumput. Interaksi yang terjadi antara singa dan harimau tutul tersebut adalah….",
-    "pilihan": ["Predasi", "Kompetisi", "Simbiosis", "Antibiosis"],
-    "jawaban": 1
-  },
-  {
-    "id": 5,
-    "pertanyaan": "Urutan peristiwa makan dan dimakan dalam suatu ekosistem yang membetuk garis lurus adalah….",
-    "pilihan": ["Arus energi", "Rantai makanan", "Piramida makanan", "Jaring - jaring makanan"],
-    "jawaban": 1
-  },
-  {
-    "id": 6,
-    "pertanyaan": "Perhatiakan gambar berikut. https://i.ibb.co.com/SXPPCbzj/image.jpg Interaksi antar makhluk hidup dalam gambar tersebut adalah…",
-    "pilihan": ["Mutualisme", "Komensalisme", "Predasi", "Parasitisme"],
-    "jawaban": 1
-  },
-  {
-    "id": 7,
-    "pertanyaan": "Salah satu upaya manusia untuk menjaga keseimbangan lingkungan adalah….",
-    "pilihan": ["Membuka lahan pertanian", "Melindungi hewan langka", "Meningkatkan devisa negara", "Mencegah penggunaan air tanah"],
-    "jawaban": 1
-  },
-  {
-    "id": 8,
-    "pertanyaan": "Berikut termasuk ekosistem buatan adalah….(d)",
-    "pilihan": ["https://i.ibb.co.com/C3pZRRq3/image.jpg Gambar 1 (Gurun)", "https://i.ibb.co.com/1fxbH0F6/image.jpg Gambar 2 (Sawah)", "https://i.ibb.co.com/nvmc7dd/image.jpg Gambar 3 (Hutan)", "https://i.ibb.co.com/wZXfZtXf/image.jpg Gambar 4 (Keramba Jaring Apung)"],
-    "jawaban": 1
-  },
-  {
-    "id": 9,
-    "pertanyaan": "Berikut ini adalah Contoh simbiosi komensalisme, Kecuali…",
-    "pilihan": ["Ikan remora dengan ikan hiu", "Bunga anggrek dengan tanaman inang", "Ikan badut dan tanaman nemo laut", "Benalu dengan pohon inang"],
-    "jawaban": 3
-  },
-  {
-    "id": 10,
-    "pertanyaan": "https://i.ibb.co.com/v4Ghtc0w/image.jpg Gambar diatas adalah salah satu daur biogeokimia yang berupa siklus….",
-    "pilihan": ["Fosfor", "Air", "Karbon dan oksigen", "Nitrogen"],
-    "jawaban": 1
-  },
-  {
-    "id": 11,
-    "pertanyaan": "https://i.ibb.co.com/DSS2Pjj/image.jpg Berdasarkan gambar di atas, nama planet yang berada pada urutan no 3 dari matahari adalah….",
-    "pilihan": ["Bumi", "Mars", "Yupiter", "Saturnus"],
-    "jawaban": 0
-  },
-  {
-    "id": 12,
-    "pertanyaan": "Apa nama planet yang berada di titik terjauh dari matahari…",
-    "pilihan": ["Merkurius", "Neptunus", "Pluto", "Uranus"],
-    "jawaban": 1
-  },
-  {
-    "id": 13,
-    "pertanyaan": "Satelit alami yang dimiliki oleh bumi adalah…",
-    "pilihan": ["Titan", "Ganymede", "Bulan", "Io"],
+    "pertanyaan": "Dibawah ini yang bukan sifat-sifat logam adalah.....",
+    "pilihan": [
+      "Dapat di tempa",
+      "Mengkilap",
+      "Rapuh",
+      "Dapat menghantarkan listrik"
+    ],
     "jawaban": 2
   },
   {
-    "id": 14,
-    "pertanyaan": "Satelit buatan yang dimiliki Indonesia adalah….",
-    "pilihan": ["Satelit palapa", "Satelit Geodesi", "Satelit Navigasi", "Satelit low Earth orbit"],
-    "jawaban": 0
-  },
-  {
-    "id": 15,
-    "pertanyaan": "Planet manakah yang dikenal sebagai 'Planet Merah' dalam tata surya kita?",
-    "pilihan": ["Yupiter", "Mars", "Saturnus", "Uranus"],
-    "jawaban": 1
-  },
-  {
-    "id": 16,
-    "pertanyaan": "Benda langit apa yang terletak di antara orbit planet Mars dan Jupiter?",
-    "pilihan": ["Sabuk kuiper", "Cincin saturnus", "Awan Oort", "Sabuk asteroid"],
-    "jawaban": 3
-  },
-  {
-    "id": 17,
-    "pertanyaan": "Planet manakah yang memiliki waktu rotasi paling cepat di tata surya?",
-    "pilihan": ["Yupiter", "Bumi", "Saturnus", "Uranus"],
-    "jawaban": 0
-  },
-  {
-    "id": 18,
-    "pertanyaan": "Mengapa Venus menjadi planet terpanas di tata surya, padahal Merkurius lebih dekat ke Matahari?",
+    "id": 2,
+    "pertanyaan": "Berikut termasuk kelompok unsur logam adalah.....",
     "pilihan": [
-      "Karena atmosfer Venus sangat tebal dan kaya akan karbon dioksida",
-      "Karena Venus tidak memiliki satelit alami untuk mendinginkannya",
-      "Karena Venus memiliki banyak gunung berapi yang aktif",
-      "Karena Venus bergerak lebih lambat dalam mengorbit Matahari"
+      "Raksa, besi, dan emas",
+      "Karbon, oksigen, dan emas",
+      "Nitrogen, besi dan alumunium",
+      "Oksigen, reksa dan arsen"
     ],
     "jawaban": 0
   },
   {
-    "id": 19,
-    "pertanyaan": "Benda langit yang sering disebut 'bintang jatuh' ketika terbakar saat memasuki atmosfer Bumi adalah…",
-    "pilihan": ["Meteor", "Meteorit", "Asteroid", "Komet"],
+    "id": 3,
+    "pertanyaan": "Jika logam natrium dicampur dengan gas klorin akan membentuk garam dapur (NaCl), sifat garam dapur tersebut berbeda dengan sifat unsur pembentuknya. Materi seperti ini disebut....",
+    "pilihan": [
+      "Senyawa",
+      "Unsur",
+      "Larutan",
+      "Campuran heterogen"
+    ],
     "jawaban": 0
   },
   {
-    "id": 20,
-    "pertanyaan": "Planet manakah yang memiliki sistem cincin paling besar, indah, dan paling terlihat jelas dari Bumi?.",
-    "pilihan": ["Saturnus", "Uranus", "Neptunus", "Yupiter"],
+    "id": 4,
+    "pertanyaan": "Bagian terkecil dari unsur adalah...",
+    "pilihan": [
+      "Atom",
+      "Unsur",
+      "Materi",
+      "Molekul"
+    ],
     "jawaban": 0
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Di bawah ini berturut-turut lambang unsur emas, besi, dan karbon adalah....",
+    "pilihan": [
+      "C, Fe dan Au",
+      "Au, Fe, dan C",
+      "Fe, Au dan C",
+      "Au, C dan Fe"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Gabungan beberapa zat dengan perbandingan tidak tetap tanpa melalui reaksi kimia disebut.....",
+    "pilihan": [
+      "Unsur",
+      "Larutan",
+      "Senyawa",
+      "Campuran"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Kopi yang larut kedalam air semula larut, tetapi setelah didiamkan beberapa saat akan terbentuk endapan kopi. Berdasarkan hal tersebut dapat disimpulkan bahwa....",
+    "pilihan": [
+      "Air kopi termasuk larutan",
+      "Air kopi termasuk senyawa",
+      "Air kopi termasuk campuran homogen",
+      "Air kopi termasuk campuran heterogen"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Perhatikan data campuran berikut! 1) Larutan air garam 2) Campuran pasir dan kerikil 3) Air teh 4) Kecap Dari data di atas, yang merupakan campuran homogen ditunjukkan oleh nomor....",
+    "pilihan": [
+      "1,2 dan 3",
+      "1,2 dan 4",
+      "1,3 dan 4",
+      "2,3 dan 4"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Arang banyak di gunakan dalam proses penjernikah air. Penggunaan arang ini bertujuan untuk....",
+    "pilihan": [
+      "Menghilangkan kotoran",
+      "Menghilangkan bau klor atau kaporit",
+      "Membunuh kuman",
+      "Mempercepat penjernihan air"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Molekul air ditujukan pada rumus kimia berikut...",
+    "pilihan": [
+      "NaCl",
+      "H2O",
+      "H2SO4",
+      "H3PO4"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Berdasarkan materi penyusun, lapisan kerak bumi yang merupakan tempat makhluk hidup berkembang biak disebut lapisan..",
+    "pilihan": [
+      "Atas",
+      "Bawah",
+      "Tengah",
+      "Batuan induk"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Benua-benua di permukaan bumi terus bergerak sampai saat ini. Fenomena yang membuktikan pergerakan tersebut adalah...",
+    "pilihan": [
+      "Pematang tengah samudra makin lebar",
+      "Perbedaan lamanya waktu siang dan malam di berbagai negara",
+      "Pergeseran magma yang keluar dari gunung api",
+      "Kawasan kutub makin luas"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Lapisan penyusun bumi yang berada dibawah kerak benua adalah...",
+    "pilihan": [
+      "Kerak bumi",
+      "Mantel bumi",
+      "Inti luar",
+      "Inti dala"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Lapisan paling dalam penyusun bumi adalah....",
+    "pilihan": [
+      "Kerak bumi",
+      "Mantel bumi",
+      "Inti luar",
+      "Inti dalam"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Lapisan bumi yang memiliki ketebalan 2.900km adalah....",
+    "pilihan": [
+      "Mantel bumi",
+      "Kerak bumi",
+      "Inti luar",
+      "Inti dalam"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 16,
+    "pertanyaan": "Lapisan selimut bumi terdiri dari 3 lapisan yaitu......",
+    "pilihan": [
+      "Litosfer, astenosfer, mesosfer",
+      "Anmosfer, stratosfer, litosfer",
+      "Astenosfer, mesosfer, atmosfer",
+      "Lisosfer, stratosfer, astenosfer"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Meskipun letaknya paling dalam, inti bumi memiliki kegunaan sebagai berikut, kecuali.....",
+    "pilihan": [
+      "Menghasilkan gaya gravitasi",
+      "Menghasilkan gaya magnetik",
+      "Penyebab terjadinya erupsi gunung berapi.",
+      "Menghasilkan batuan panas"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Dampak fisik yang ditimbulkan oleh gempa bumi sebagai berikut. Kecuali....",
+    "pilihan": [
+      "Bangunan banyak yang hancur",
+      "Menimbulkan kemiskinan",
+      "Jatuh korban jiwa",
+      "Banjir karena rusaknya tanggul"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Wilayah indonesia sering dilanda gempa bumi yang disusul dengan bencana tsunami. Hal ini disebabkan oleh.....",
+    "pilihan": [
+      "Di antara dua benua",
+      "Tempat bertemunya tiga lempeng kulit bumi",
+      "Di antara dua samudra",
+      "Hutan di indonesia gundul"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Suhu rata-rata lava saat gunung meletus adalah.....°C",
+    "pilihan": [
+      "800-900",
+      "900-1000",
+      "800-1200",
+      "900-1200"
+    ],
+    "jawaban": 2
   }
 ]
