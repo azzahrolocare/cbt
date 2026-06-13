@@ -1,182 +1,442 @@
 [
   {
     "id": 1,
-    "pertanyaan": "Perangkat keras jaringan komputer yang berfungsi untuk mengirimkan dan menentukan rute pengiriman paket data adalah",
-    "pilihan": ["hub", "switch", "router", "modem"],
-    "jawaban": 2
+    "pertanyaan": "Microsoft Excel dikembangkan oleh",
+    "pilihan": [
+      "Adam Osborne",
+      "Mark Zuckerberg",
+      "Prof. Niklaus Wirth",
+      "Douglas Klunder"
+    ],
+    "jawaban": 3
   },
   {
     "id": 2,
-    "pertanyaan": "Konsep jaringan message block diusulkan oleh",
-    "pilihan": ["Paul Baran", "Vinton Cerf", "Larry Roberts", "Donald Davies"],
-    "jawaban": 0
-  },
-  {
-    "id": 3,
-    "pertanyaan": "Jenis topologi di mana cara pemasangan melibatkan penghubung setiap perangkat dalam lingkaran menggunakan kabel adalah topologi",
-    "pilihan": ["Bus", "Ring", "Star", "Mesh"],
+    "pertanyaan": "Microsoft Excel merupakan program aplikasi ....",
+    "pilihan": [
+      "Wordprosesor",
+      "Spreadsheet",
+      "Animasi",
+      "Presentasi"
+    ],
     "jawaban": 1
   },
   {
+    "id": 3,
+    "pertanyaan": "Fitur dari Microsoft Excel yang berfungsi sebagai tranformasi data, yaitu",
+    "pilihan": [
+      "Insert",
+      "Design",
+      "Power Query",
+      "Formulas"
+    ],
+    "jawaban": 2
+  },
+  {
     "id": 4,
-    "pertanyaan": "Jenis tranmisi dimana sinyal ditransmisikan hanya pada satu arah saja disebut..",
-    "pilihan": ["Simplex", "Half duplex", "Full duplex", "Paralel"],
+    "pertanyaan": "Data diolah menjadi",
+    "pilihan": [
+      "informasi",
+      "input",
+      "output",
+      "novel"
+    ],
     "jawaban": 0
   },
   {
     "id": 5,
-    "pertanyaan": "Lapisan OSI yeng berperan dalam pembagian data menjadi paket-paket kecil dan memberikan nomor urut pada setiap paket merupakan lapisan",
-    "pilihan": ["Application", "Session", "Transport", "Data link"],
-    "jawaban": 2
+    "pertanyaan": "Dalam karya ilmiah, fakta dikumpulkan untuk dijadikan data. Data berikutnya diolah sehingga bisa disajikan secara jelas dan tepat. Hal ini dinamakan HOTS",
+    "pilihan": [
+      "deskripsi",
+      "solusi",
+      "inspirasi",
+      "naluri"
+    ],
+    "jawaban": 0
   },
   {
     "id": 6,
-    "pertanyaan": "Lapisan dalam model OSI yang memiliki tanggung jawab untuk menangani pengalamatan fisik serta kontrol akses media adalah layer",
-    "pilihan": ["Physical", "Transport", "Data link", "Applicalion"],
-    "jawaban": 2
-  },
-  {
-    "id": 7,
-    "pertanyaan": "Diketahui sebuah topologi star di gabungkan dengan topologi mesh. Namun, apabila topologi star digabungkan dengan topologi star akan menjadi topologi",
-    "pilihan": ["Mesh", "Bus", "Star", "Hyybrid"],
-    "jawaban": 2
-  },
-  {
-    "id": 8,
-    "pertanyaan": "Cara terbaik yang digunakan router untuk meneruskan paket diantara hop ke tujuan nya pada metode transmisi data paket switching menggunakan",
-    "pilihan": ["Jenis komputer", "Alamat IP", "Tipe data yang dikirimkan", "Nomer seri perangkat"],
+    "pertanyaan": "Pemilahan banyak data sesuai persamaan atau perbedaan yang dikandungnya. Hal ini dinamakan HOTS",
+    "pilihan": [
+      "deskripsi",
+      "klasifikasi",
+      "informasi",
+      "narasi"
+    ],
     "jawaban": 1
   },
   {
-    "id": 9,
-    "pertanyaan": "Diketahui terjadi masalah dalam pengiriman data, yaitu salah satu bit data mengalami corrupted. Untuk mendeteksi bit mana yang mengalami corrupted maka digunakan metode",
-    "pilihan": ["Parity check", "Checksum", "CRC", "Forward error correction"],
+    "id": 7,
+    "pertanyaan": "Fungsi IF digunakan untuk menguji ...",
+    "pilihan": [
+      "kebenaran",
+      "pembagian",
+      "penjumlahan",
+      "pengurangan"
+    ],
     "jawaban": 0
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Data dapat muncul dalam beragam ....",
+    "pilihan": [
+      "makna",
+      "arti",
+      "maksud",
+      "bentuk"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Menurut kamus bahasa Inggris-Indonesia, data berasal dari kata datum artinya ....",
+    "pilihan": [
+      "luas",
+      "fakta",
+      "opini",
+      "dokumen"
+    ],
+    "jawaban": 1
   },
   {
     "id": 10,
-    "pertanyaan": "Sebuah warung internet A memiliki kendala, yaitu jika ada komputer yeng eror, keseluruhan jaringan juga ikut eror. Dari masalah tersebut, dapat disimpulkan warung internet A menggunakan topologi ...",
-    "pilihan": ["Ring", "Bus", "Star", "Mesh"],
-    "jawaban": 0
+    "pertanyaan": "Deskripsi organisasi tentang sesuatu (resources) dan kejadian (transactions) yang terjadi disebut",
+    "pilihan": [
+      "data pasar",
+      "data kasar",
+      "data ekonomi",
+      "data bisnis"
+    ],
+    "jawaban": 3
   },
   {
     "id": 11,
-    "pertanyaan": "Konsep internet dikembangkan oleh",
-    "pilihan": ["Robert metcalfe", "Vinto cerf", "Leonard kleinrock", "Tim berners-Lee"],
+    "pertanyaan": "Ukuran atau satuan penyimpanan data pada komputer menggunakan satuan",
+    "pilihan": [
+      "byte",
+      "km",
+      "ml",
+      "kg"
+    ],
     "jawaban": 0
   },
   {
     "id": 12,
-    "pertanyaan": "Sistem time shering pertama kali diperkenalkan memiliki terminal yang terdiri atas",
-    "pilihan": ["Mouse dan keyboard", "Touchpad dan monitor", "Monitor dan mouse", "Keyboard dan monitor"],
-    "jawaban": 3
-  },
-  {
-    "id": 13,
-    "pertanyaan": "Setiap komputer yang terhubung kejaringan komputer memiliki alamat unik yang disebut",
-    "pilihan": ["IP address", "DNS", "WWW", "TCP/IP"],
+    "pertanyaan": "Bit merupakan singkatan dari",
+    "pilihan": [
+      "binary digit",
+      "binary techno",
+      "binary tube",
+      "binary target"
+    ],
     "jawaban": 0
   },
   {
+    "id": 13,
+    "pertanyaan": "Bit biasanya digunakan untuk menyebutkan",
+    "pilihan": [
+      "kapasitas penyimpanan",
+      "kecepatan putaran harddisk",
+      "kecepatan data",
+      "volume data"
+    ],
+    "jawaban": 2
+  },
+  {
     "id": 14,
-    "pertanyaan": "Di modul TCP/IP perangkat jaringan switch dari bridge bekerja pada lapisan",
-    "pilihan": ["Physical", "Network access", "Internet", "Transpot"],
+    "pertanyaan": "Byte digunakan untuk menyebutkan",
+    "pilihan": [
+      "kecepatan data",
+      "kapasitas penyimpanan",
+      "kecepatan harddisk",
+      "ukuran data"
+    ],
     "jawaban": 1
   },
   {
     "id": 15,
-    "pertanyaan": "Lapisan dalam TCP/IP yang memiliki tugas untuk melakukan addressing dan routing adalah Layar",
-    "pilihan": ["Network access", "Internet", "Transport", "Application"],
-    "jawaban": 1
+    "pertanyaan": "Proses menulis, menguji, memperbaiki, dan memelihara kode yang membangun suatu program komputer disebut",
+    "pilihan": [
+      "maintenance",
+      "uji sistem",
+      "rancangan",
+      "pemrograman"
+    ],
+    "jawaban": 3
   },
   {
     "id": 16,
-    "pertanyaan": "Suatu sekolah tidak perlu membeli dua puluh printer untuk setiap komputer yang ada, tetapi cukup membeli satu atau dua printer untuk digunakan secara bersama sama. Hal tersebut merupakan salah satu manfaat jaringan komputer, yaitu",
-    "pilihan": ["Media komunikasi", "Pembagian sumber daya", "Efisiensi sumber daya", "Pengembangan dan pemeliharaan"],
-    "jawaban": 2
-  },
-  {
-    "id": 17,
-    "pertanyaan": "Konversi data digital ke data analog bisa dilakukan dengan beberapa cara, yaitu ..",
-    "pilihan": ["amplitude shift keying", "pulse code modulation", "frequency shift keying", "quadrature amplitude modulation"],
+    "pertanyaan": "Kode-kode dalam program komputer ditulis dalam ...",
+    "pilihan": [
+      "bahasa pemrograman",
+      "bahasa resmi",
+      "bahasa sehari-hari",
+      "bahasa Indonesia"
+    ],
     "jawaban": 0
   },
   {
+    "id": 17,
+    "pertanyaan": "Dunia pemrogram sangat erat hubungannya dengan dunia ....",
+    "pilihan": [
+      "perangkat keras",
+      "sistem komputer",
+      "perangkat lunak",
+      "pengguna komputer"
+    ],
+    "jawaban": 2
+  },
+  {
     "id": 18,
-    "pertanyaan": "Pesangan layer dan protokol pada lapisan OSI layer berikut yang tepat adalah",
-    "pilihan": ["Application layer: UDP", "Presentation layer: SSL", "Transport layer: TCP", "Session: FTP"],
-    "jawaban": 1
+    "pertanyaan": "Langkah pertama belajar pemrograman adalah",
+    "pilihan": [
+      "memahami algoritma",
+      "memahami flowchart",
+      "memahami pseudocode",
+      "menentukan bahasa pemrogramannya"
+    ],
+    "jawaban": 0
   },
   {
     "id": 19,
-    "pertanyaan": "Berikut informasi yang terdapat pada struktur paket data dibagian header",
-    "pilihan": ["Source address", "Destination address", "End of packet flog", "Protocol information"],
+    "pertanyaan": "Algoritma mempunyai lima ciri penting menurut",
+    "pilihan": [
+      "Donald E. Knuth",
+      "Boolea",
+      "Bill Gates",
+      "Larry Elison"
+    ],
     "jawaban": 0
   },
   {
     "id": 20,
-    "pertanyaan": "Berikut merupakan kelebihan paket switching, kecuali",
-    "pilihan": ["Pengiriman data dapat dilakukan dengan kecepatan tinggi", "Sulit digunakan untuk pengiriman data yang cepat dan kualitas yang tingggi", "Dalam satu jaringan yang sama dapat digunakan oleh banyak user", "Router dapat melakukan pengiriman ulang (rerouting) paket jika terjadi kegagalan"],
-    "jawaban": 1
+    "pertanyaan": "Penggambaran secara grafik dari langkah-langkah dan urutan prosedur dari suatu program disebut",
+    "pilihan": [
+      "flowchart",
+      "notasi algoritma",
+      "deskriptif algoritma",
+      "mind mapping"
+    ],
+    "jawaban": 0
   },
   {
     "id": 21,
-    "pertanyaan": "Berikut contoh bentuk perubahan akibat adanya jaringan komputer yang paling tepat adalah",
-    "pilihan": ["Manusia lebih sering berinteraksi secara langgung", "Aktivitas membaca buku fisik makin meningkat", "Kemampuan berpikir komputasional berkembang", "Memungkinkannya penggunaan satu printah untuk banyak komputer"],
-    "jawaban": 3
+    "pertanyaan": "Suatu media online yang para peng-gunanya dapat berpartisipasi dengan mudah, berbagi, dan menciptakan isi yang meliputi website, blog, forum, wiki, dan dunia virtual dinamakan",
+    "pilihan": [
+      "viral marketing",
+      "aplikasi messenger",
+      "media sosial",
+      "jejaring sosial"
+    ],
+    "jawaban": 2
   },
   {
     "id": 22,
-    "pertanyaan": "Layer pada OSI model yang berungsi untuk mendefisinikan bagaimana sebuah koneksi dapat dibuat, dikelola, dan dikembangkan adalah layer",
-    "pilihan": ["Application", "Presentation", "Session", "Transport"],
-    "jawaban": 2
+    "pertanyaan": "Layanan penyimpanan awan yang digunakan menyimpan dan berbagi file secara online adalah",
+    "pilihan": [
+      "Gmail",
+      "Google Drive",
+      "Google Meet",
+      "Yahoo"
+    ],
+    "jawaban": 1
   },
   {
     "id": 23,
-    "pertanyaan": "Pernyataan brikut yang dapat mengenai topologi jaringan adalah",
-    "pilihan": ["Topologi gus cocok untuk jaringan antar kota", "Topologi mesh sering disebut dengan topologi cincin", "Topologi tree memiliki sistem yang hierarki dan memiliki banyak switch", "Pemasangan topologi hybrid terbilang rumit"],
-    "jawaban": 2
+    "pertanyaan": "Berikut yang bukan contoh platform media sosial adalah",
+    "pilihan": [
+      "LinkedIn",
+      "WhatsApp",
+      "Instagram",
+      "sharing file"
+    ],
+    "jawaban": 3
   },
   {
     "id": 24,
-    "pertanyaan": "Kejadian besar pada masa perkembangan jaringan komputer tahun 1990-an adalah",
-    "pilihan": ["NSFNET menjadi jaringan utama", "Munculnya jaringan telenet", "Lahirnya jaringan telepon", "Dikembangannya protokol NCP"],
-    "jawaban": 0
+    "pertanyaan": "Salah satu keuntungan yang diperoleh dari penggunaan TIK dalam bidang politik, yaitu ....",
+    "pilihan": [
+      "mencegah tindakan konsumtif",
+      "membuka peluang bisnis baru",
+      "mencegah penyebaran virus",
+      "mendorong tumbuhnya demokrasi"
+    ],
+    "jawaban": 3
   },
   {
     "id": 25,
-    "pertanyaan": "Berikut yang termasuk ke dalam upper layer dalam OSI layer adalah",
-    "pilihan": ["Application layer", "Network layer", "Session layer", "Presentation layer"],
-    "jawaban": 0
+    "pertanyaan": "Suatu media yang menggunakan suara atau bunyi untuk menyampaikan pesan disebut....",
+    "pilihan": [
+      "e-library",
+      "e-government",
+      "media massa",
+      "media audio"
+    ],
+    "jawaban": 3
   },
   {
     "id": 26,
-    "pertanyaan": "Bagian pertama dari paket yang berisi informasi kontrol penting, seperti alamat sumber dan tujuan adalah ...",
-    "pilihan": ["Header", "Payload", "Trailer", "Deklarasi"],
-    "jawaban": 0
+    "pertanyaan": "Sebuah web berbaris pelayanan yang memungkinkan penggunanya untuk membuat profil, melihat daftar pengguna yang tersedia, mengundang atau menerima teman untuk bergabung dalam situs tersebut. Web itu adalah HOTS",
+    "pilihan": [
+      "aplikasi messenger",
+      "jejaring sosial",
+      "media sosial",
+      "virtual marketing"
+    ],
+    "jawaban": 1
   },
   {
     "id": 27,
-    "pertanyaan": "Tujuan pemberian bit parity pada pengiriman data adalah",
-    "pilihan": ["Navigasi arah paket bit data dikirimkan", "Identifikasi jenis data yang dikirim", "Memaskitan bit data tidak berubah sampai kepenerima", "Pencegahan duplikasi bit data yang diterima penerima"],
+    "pertanyaan": "Jaringan komputer sangat luas yang menghubungkan komputer-komputer di seluruh dunia dinamakan",
+    "pilihan": [
+      "telepon",
+      "beregu",
+      "internet",
+      "radio"
+    ],
     "jawaban": 2
   },
   {
     "id": 28,
-    "pertanyaan": "Berikut ini yang termasuk kekurangan parityy check, kecuali ...",
-    "pilihan": ["Kurang andal dalam perbaikan eror", "Kemungkinan kesalahan 50%", "Belum dapat mengatur file besar", "Sulit dalam melakukan pengecekan"],
+    "pertanyaan": "Contoh teknologi transportasi modern adalah ....",
+    "pilihan": [
+      "bemo",
+      "truk",
+      "mobil hybrid",
+      "bus"
+    ],
     "jawaban": 2
   },
   {
     "id": 29,
-    "pertanyaan": "Terdapat dua karakteristik terpenting yang dimiliki oleh isyarat sinyal analog, yaitu",
-    "pilihan": ["Keadaan 0 dan 1", "Waktu dan kecepatan", "Gelombaang dan pulsa", "Frekuensi dan amplitudo"],
+    "pertanyaan": "Berikut bukan dampak positif e-commerce dan e-business ialah",
+    "pilihan": [
+      "melebarkan jangkauan",
+      "memperpendek waktu produksi",
+      "meningkatkan value chain",
+      "memangkas jarak belajar"
+    ],
     "jawaban": 3
   },
   {
     "id": 30,
-    "pertanyaan": "Metode pendeteksian kesalahan yang sering digunakan dalam komunikasi data berkecepatan tinggi seperti jangingan komputer adalah",
-    "pilihan": ["Parity check", "Checksum", "Cyclic redundancy check", "Forward error correction"],
+    "pertanyaan": "Berikut yang bukan cara memasarkan media sosial dan jejaring sosial, yaitu ....",
+    "pilihan": [
+      "memperbanyak teman",
+      "membuat konten yang unik",
+      "menentukan sasaran pasar",
+      "memasang iklan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 31,
+    "pertanyaan": "Berikut bukan keuntungan hasil yang diperoleh dari penggunaan TIK dalam bidang pertanian, yaitu",
+    "pilihan": [
+      "meningkatkan hasil pertanian",
+      "meningkatkan kemampuan petani dalam bercocok tanam",
+      "mencegah penyebaran virus melalui e-mail",
+      "meningkatkan pemahaman petani tentang hama"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 32,
+    "pertanyaan": "Dalam dunia pendidikan, TIK telah mendatangkan manfaat bagi kemajuan pendidikan di Indonesia, yaitu",
+    "pilihan": [
+      "memperluas lapangan kerja",
+      "pelayanan kesehatan jarak jauh",
+      "pembelajaran jarak jauh",
+      "mendorong tumbuhnya proses demokrasi"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 33,
+    "pertanyaan": "Berikut bukan dampak negatif yang ditimbulkan dari informatika, yaitu ....",
+    "pilihan": [
+      "menunjang pertanian",
+      "mempermudah penyebaran karya pornografi",
+      "mempermudah masuknya budaya asing yang negatif",
+      "mendorong munculnya kejahatan jenis baru"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 34,
+    "pertanyaan": "Berikut bukan contoh kejahatan baru yang muncul setelah adanya internet, yaitu",
+    "pilihan": [
+      "penyebaran virus komputer",
+      "mendorong tindakan konsumtif",
+      "pencurian nomor kartu kredit",
+      "pencurian informasi rahasia"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 35,
+    "pertanyaan": "Berikut ini yang termasuk konsep kewargaan digital adalah",
+    "pilihan": [
+      "bersikap egois",
+      "tidak peduli keadaan orang lain",
+      "pandai dalam kelas",
+      "menggunakan internet dengan aman"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 36,
+    "pertanyaan": "Platform media sosial yang sangat populer untuk berbagi video pendek adalah ....",
+    "pilihan": [
+      "TikTok",
+      "Microsoft Word",
+      "Google Maps",
+      "Adobe Photoshop"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 37,
+    "pertanyaan": "Aplikasi yang biasa kita gunakan untuk mencari informasi di internet dengan mengetik kata kunci adalah ....",
+    "pilihan": [
+      "Kalkulator",
+      "Mesin pencari (Search Engine)",
+      "Media player",
+      "Game offline"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 38,
+    "pertanyaan": "Tombol yang ditekan di media sosial untuk menunjukkan bahwa kita menyukai kiriman teman adalah ....",
+    "pilihan": [
+      "Share",
+      "Delete",
+      "Like",
+      "Block"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 39,
+    "pertanyaan": "Ketika mendaftar akun baru di media sosial, kita harus membuat kata kunci rahasia yang disebut ....",
+    "pilihan": [
+      "Username",
+      "Password",
+      "E-mail",
+      "Link"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 40,
+    "pertanyaan": "Kegiatan mengirimkan pesan atau obrolan teks secara langsung melalui internet disebut ....",
+    "pilihan": [
+      "Printing",
+      "Scanning",
+      "Chatting",
+      "Editing"
+    ],
     "jawaban": 2
   }
 ]
