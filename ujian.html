@@ -549,7 +549,7 @@
     async function muatSoal() { 
         try { 
             const userData = JSON.parse(sessionStorage.getItem('userCBT'));
-            const res = await fetch(userData.fileSoal || 'https://azzahrolocare.github.io/cbt/mata-pelajaran.json'); 
+            const res = await fetch(userData.fileSoal || 'https://azzahrolocare.github.io/login/cbt/mapel/soal.json'); 
             dataSoal = await res.json(); 
             renderUjian(); 
         } catch (e) { alert("Gagal memuat file soal"); } 
