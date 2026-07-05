@@ -9,13 +9,13 @@
   "orientation": "any",
   "icons": [
     {
-      "src": "https://github.com/masrahmat-id/absensi-barcode-online-smp-smk-azzahro/raw/main/logo-smp-azzahro.png",
+      "src": "https://raw.githubusercontent.com/azzahrolocare/cbt/main/icon-cbt.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://github.com/masrahmat-id/absensi-barcode-online-smp-smk-azzahro/raw/main/logo-smp-azzahro.png",
+      "src": "https://raw.githubusercontent.com/azzahrolocare/cbt/main/icon-cbt.png",
       "sizes": "512x512",
       "type": "image/png"
     }
