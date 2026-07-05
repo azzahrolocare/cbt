@@ -1,4 +1,4 @@
-name: Build Cordova APK (Live Repo Wrapper)
+name: Build Cordova APK (Direct Link Wrapper)
 
 on:
   push:
@@ -18,13 +18,13 @@ jobs:
       - name: Set up NodeJS
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
-      - name: Set up JDK 11
+      - name: Set up JDK 17 (Fix SDK & Gradle Error)
         uses: actions/setup-java@v4
         with:
           distribution: 'zulu'
-          java-version: '11'
+          java-version: '17'
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
@@ -38,17 +38,16 @@ jobs:
           cordova create cbt-live-app id.web.azzahro.cbt "CBT Az-Zahro"
           cd cbt-live-app
 
-          # 2. Setup config.xml agar target utamanya langsung ke URL GitHub Pages / Custom Domain Anda
-          # Sehingga APK akan selalu membaca file HTML dari internet, bukan dari internal handphone
+          # 2. Setup config.xml langsung mengarah ke link login utama
           cat << 'EOF' > config.xml
           <?xml version='1.0' encoding='utf-8'?>
           <widget id="id.web.azzahro.cbt" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
               <name>SmartGrader Az-Zahro</name>
-              <description>Aplikasi CBT Az-Zahro Live Wrapper</description>
+              <description>Aplikasi CBT Az-Zahro Direct Link Wrapper</description>
               <author email="admin@azzahro.web.id" href="https://azzahro.web.id">Rahmattullah</author>
               
-              <!-- PENTING: Mengarah ke domain utama, sehingga file index.html di repo GitHub yang akan dibaca pertama kali -->
-              <content src="https://azzahro.web.id/cbt/" />
+              <!-- Langsung mengunci ke link login utama sesuai instruksi -->
+              <content src="https://azzahro.web.id/cbt/login" />
               
               <!-- Izinkan akses penuh ke domain dan seluruh jalurnya -->
               <access origin="https://azzahro.web.id/*" />
@@ -61,7 +60,7 @@ jobs:
           </widget>
           EOF
 
-          # 3. Buat file dummy internal agar build tidak error (tidak akan terpakai karena ditimpa content src di atas)
+          # 3. Buat file dummy internal agar build tidak error
           cat << 'EOF' > www/index.html
           <!DOCTYPE html><html><head><meta charset="utf-8"></head><body>Loading...</body></html>
           EOF
