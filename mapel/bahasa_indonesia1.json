@@ -1,552 +1,552 @@
 [
   {
     "id": 1,
-    "pertanyaan": "Perhatikan ciri-ciri teks di bawah ini!<br>(1) Menggambarkan atau melukiskan suatu benda, tempat, atau suasana tertentu<br>(2) Tidak menimbulkan salah pengertian<br>(3) Bertujuan agar pembaca seolah-olah melihat, mendengar, atau merasakan sendiri objek yang dideskripsikan<br>(4) Menarik untuk dibaca<br>(5) Menjelaskan ciri-ciri objek seperti warna, ukuran, bentuk, dan keadaan suatu objek secara terperinci<br><br>Berdasarkan perincian di atas, yang termasuk ciri-ciri teks deskripsi adalah ….",
+    "pertanyaan": "1. Teks laporan hasil observasi adalah teks yang berisi ....",
     "pilihan": [
-      "(1), (2), dan (3)",
-      "(2), (3), dan (4)",
-      "(1), (3), dan (5)",
-      "(2) dan (4)"
+      "cerita pengalaman seseorang",
+      "hasil pengamatan terhadap suatu objek secara sistematis",
+      "pendapat seseorang mengenai suatu masalah",
+      "langkah-langkah melakukan suatu kegiatan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 2,
+    "pertanyaan": "2. Tujuan utama teks laporan hasil observasi adalah ....",
+    "pilihan": [
+      "menghibur pembaca",
+      "menceritakan pengalaman penulis",
+      "memberikan informasi berdasarkan hasil pengamatan",
+      "mengajak pembaca membeli suatu produk"
     ],
     "jawaban": 2
   },
   {
-    "id": 2,
-    "pertanyaan": "Teks deskripsi memiliki struktur. Berikut struktur teks deskripsi yang tepat adalah ….",
-    "pilihan": [
-      "Identifikasi, deskripsi bagian, simpulan",
-      "Ide pokok, deskripsi bagian, simpulan",
-      "Deskripsi utama, deskripsi bagian, deskripsi spasial",
-      "Pernyataan utama, identifikasi, penutup"
-    ],
-    "jawaban": 0
-  },
-  {
     "id": 3,
-    "pertanyaan": "Perhatikan gambar berikut!<br><img src='https://i.ibb.co.com/zV6Yrqsz/bindo3.png' class='img-post'> <br>Bagian surat diatas dinamakan....",
+    "pertanyaan": "3. Salah satu ciri teks laporan hasil observasi adalah ....",
     "pilihan": [
-      "Kop surat",
-      "Perihal",
-      "Lampiran",
-      "Salam pembuka"
+      "bersifat imajinatif",
+      "berdasarkan fakta",
+      "menggunakan alur cerita",
+      "berisi konflik antartokoh"
     ],
-    "jawaban": 0
+    "jawaban": 1
   },
   {
     "id": 4,
-    "pertanyaan": "Ciri bahasa yang paling menonjol pada surat dinas adalah ...",
+    "pertanyaan": "4. Objek yang dapat diamati dalam teks laporan hasil observasi adalah ....",
     "pilihan": [
-      "Baku, formal, dan efektif",
-      "Puitis dan Panjang",
-      "Menggunakan bahasa gaul",
-      "Santai dan akrab"
+      "hewan, tumbuhan, lingkungan, dan benda",
+      "tokoh dalam cerita fiksi saja",
+      "pengalaman pribadi",
+      "cita-cita seseorang"
     ],
     "jawaban": 0
   },
   {
     "id": 5,
-    "pertanyaan": "Cermati puisi rakyat di bawah ini!<br>Jikalau engkau tidak berilmu<br>Maka hidupmu sesat selalu<br>Struktur yang tepat dari puisi rakyat di atas adalah ….",
+    "pertanyaan": "5. Informasi dalam teks laporan hasil observasi sebaiknya bersifat ....",
     "pilihan": [
-      "Rima akhirnya berpola a-b, terdiri atas sampiran dan isi",
-      "Rima akhirnya berpola a-b, keseluruhannya berupa isi",
-      "Rima akhirnya berpola a-a, terdiri atas syarat dan jawaban",
-      "Rima akhirnya berpola a-b, keseluruhannya brupa jawaban"
+      "subjektif dan emosional",
+      "faktual dan objektif",
+      "rahasia dan pribadi",
+      "imajinatif dan menarik"
     ],
-    "jawaban": 2
+    "jawaban": 1
   },
   {
     "id": 6,
-    "pertanyaan": "Bacalah penggalan pantun berikut dengan seksama!<br>Pulang sekolah lalu makan<br>Nasi habis, perut kenyang<br>Lapang hati, ringan tangan<br>…….<br>Kalimat atau larik yang tepat untuk melengkapi pantun tersebut adalah …",
+    "pertanyaan": "6. Struktur umum teks laporan hasil observasi adalah ....",
     "pilihan": [
-      "Itu tandanya tidak menantang",
-      "Jangan selalu memberi barang",
-      "Tidak ada yang akan hilang",
-      "Pasti engkau di sayang orang"
+      "orientasi – komplikasi – resolusi",
+      "pernyataan umum – deskripsi bagian – deskripsi manfaat",
+      "tesis – argumentasi – penegasan ulang",
+      "tujuan – alat – langkah-langkah"
     ],
-    "jawaban": 3
+    "jawaban": 1
   },
   {
     "id": 7,
-    "pertanyaan": "Struktur teks cerita fantasi yang benar, ialah …",
+    "pertanyaan": "7. Bagian pernyataan umum dalam teks LHO berisi ....",
     "pilihan": [
-      "Identifikasi – Orientasi – Resolusi",
-      "Orientasi - Resolusi – Klimaks",
-      "Komplikasi – Klimaks – Resolusi",
-      "Orientasi – Komplikasi – Resolusi"
+      "kesimpulan pribadi penulis",
+      "pengenalan atau klasifikasi umum objek",
+      "langkah-langkah pengamatan",
+      "pendapat pembaca"
     ],
-    "jawaban": 3
+    "jawaban": 1
   },
   {
     "id": 8,
-    "pertanyaan": "Perhatikan prosedur berikut!<br>(1) Cuci strawberry atau buah lain hingga bersih, kemudian buang tangkainya<br>(2) Potong buah berbentuk dadu sebesar ujung kelingking<br>(3) Campur semua bahan dan hancurkan buah dengan blender<br>(4) Masukkan adonan sorbet ke dalam wadah tertutup<br>(5) Simpan dalam freezer atau lemari pembeku minimal satu jam<br>(6) Setelah dingin dan beku, sajikan dengan taburan buah cincang, kismis atau taburan lain sesuai selera<br><br>Jenis teks prosedur tersebut adalah….",
+    "pertanyaan": "8. Bagian deskripsi bagian berisi ....",
     "pilihan": [
-      "Melakukan",
-      "Menggunakan",
-      "Membuat",
-      "Memandu"
+      "rincian ciri-ciri atau bagian objek yang diamati",
+      "ajakan kepada pembaca",
+      "konflik yang dialami tokoh",
+      "pendapat penulis mengenai objek"
     ],
-    "jawaban": 2
+    "jawaban": 0
   },
   {
     "id": 9,
-    "pertanyaan": "Perhatikan gambar berikut!<br><img src='https://i.ibb.co.com/zH4McJSN/bindo9.jpg' class='img-post'> <br>Pada gambar di atas menginformasikan tentang….",
+    "pertanyaan": "9. Bacalah paragraf berikut!\n\nKucing merupakan hewan mamalia yang banyak dipelihara manusia. Hewan ini termasuk kelompok karnivora dan memiliki tubuh yang ditutupi bulu.\n\nParagraf tersebut merupakan bagian ....",
     "pilihan": [
-      "Jarak ideal makan",
-      "Jangan makan lebih dari jam 22.00",
-      "Tip waktu makan ideal",
-      "Makan 30 menit setelah bangun tidur"
+      "deskripsi manfaat",
+      "deskripsi bagian",
+      "pernyataan umum",
+      "penutup"
     ],
     "jawaban": 2
   },
   {
     "id": 10,
-    "pertanyaan": "Perhatikan kalimat berikut!<br>(1) Makanlah makanan utama sebanyak tiga kali sehari!<br>(2) Hindari makanan cepat saji!<br>(3) Tenang, jangan menyerah dahulu!<br>(4) Duduklah dengan tegak di kursi!<br><br>kalimat larangan yang benar adalah….",
+    "pertanyaan": "10. Bacalah paragraf berikut!\n\nKucing memiliki empat kaki dengan cakar yang tajam. Matanya dapat melihat dengan baik dalam keadaan minim cahaya. Selain itu, kucing memiliki kumis yang berfungsi membantu mengenali keadaan di sekitarnya.\n\nParagraf tersebut termasuk ....",
     "pilihan": [
-      "1 dan 3",
-      "1 dan 2",
-      "2 dan 3",
-      "3 dan 4"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 11,
-    "pertanyaan": "Bacalah teks di bawah ini untuk menjawab soal no 11 dan 12<br>\"Padi merupakan salah satu tanaman pangan utama di Indonesia. Tanaman ini tumbuh subur di daerah yang memiliki iklim tropis dengan curah hujan yang cukup. Padi menjadi bahan baku beras, yang merupakan makanan pokok sebagian besar masyarakat Indonesia.\"<br><br>Ciri-ciri teks laporan hasil observasi yang terdapat dalam kutipan di atas adalah …",
-    "pilihan": [
-      "Mengandung cerita pengalaman pribadi",
-      "Menyajikan informasi apa adanya berdasarkan fakta",
-      "Mengandung dialog antar tokoh",
-      "Menggunakan bahasa kiasan untuk menarik perhatian"
+      "pernyataan umum",
+      "deskripsi bagian",
+      "orientasi",
+      "argumentasi"
     ],
     "jawaban": 1
   },
   {
-    "id": 12,
-    "pertanyaan": "Struktur teks laporan hasil observasi pada kutipan di atas terdapat pada bagian …",
+    "id": 11,
+    "pertanyaan": "11. Bacalah teks berikut!\n\nPohon Mangga\nPohon mangga merupakan tanaman buah yang banyak ditemukan di daerah tropis. Pohon ini dapat tumbuh hingga beberapa meter. Daunnya berwarna hijau dan berbentuk lonjong. Buah mangga memiliki rasa yang manis atau asam, tergantung jenisnya.\n\nInformasi yang sesuai dengan teks tersebut adalah ....",
     "pilihan": [
-      "Identifikasi",
-      "Klasifikasi",
-      "Deskripsi bagian",
-      "Penutup"
+      "Pohon mangga hanya dapat tumbuh di daerah dingin.",
+      "Daun pohon mangga berwarna merah.",
+      "Buah mangga dapat memiliki rasa manis atau asam.",
+      "Pohon mangga tidak menghasilkan buah."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 12,
+    "pertanyaan": "12. Berdasarkan teks pada soal nomor 11, objek yang diamati adalah ....",
+    "pilihan": [
+      "buah tropis",
+      "pohon mangga",
+      "daun hijau",
+      "daerah tropis"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 13,
+    "pertanyaan": "13. Bacalah paragraf berikut!\n\nBurung adalah hewan vertebrata yang memiliki bulu dan sayap. Sebagian besar burung dapat terbang. Burung berkembang biak dengan cara bertelur.\n\nPernyataan yang sesuai dengan paragraf tersebut adalah ....",
+    "pilihan": [
+      "Semua burung tidak dapat terbang.",
+      "Burung berkembang biak dengan melahirkan.",
+      "Burung memiliki bulu dan sayap.",
+      "Burung tidak termasuk hewan vertebrata."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 14,
+    "pertanyaan": "14. Berdasarkan paragraf pada soal nomor 13, informasi tentang cara berkembang biak burung adalah ....",
+    "pilihan": [
+      "bertelur",
+      "melahirkan",
+      "membelah diri",
+      "bertunas"
     ],
     "jawaban": 0
   },
   {
-    "id": 13,
-    "pertanyaan": "Berikut yang bukan termasuk ciri-ciri poster adalah ...",
-    "pilihan": [
-      "memuat gambar yang menarik",
-      "informasinya jelas dan padat",
-      "dapat dilihat dari jarak jauh",
-      "menggunakan bahan mahal"
-    ],
-    "jawaban": 3
-  },
-  {
-    "id": 14,
-    "pertanyaan": "Struktur artikel ilmiah populer yang benar adalah...",
-    "pilihan": [
-      "Pendahuluan – Metode – Hasil",
-      "Abstrak – Kajian Teori – Kesimpulan",
-      "Rumusan Masalah – Pembahasan – Penutup",
-      "Pembuka – Isi – Penutup"
-    ],
-    "jawaban": 3
-  },
-  {
     "id": 15,
-    "pertanyaan": "Perhatikan gambar dibawah ini !<br><img src='https://i.ibb.co.com/wNXJ5Rd3/bindo15.jpg' class='img-post'> <br>Berdasarkan gambar diatas susunan kalimat iklan yang tepat adalah ...",
+    "pertanyaan": "15. Bacalah teks berikut!\n\nPerpustakaan Sekolah\nPerpustakaan sekolah merupakan tempat yang menyediakan berbagai sumber bacaan bagi siswa. Di dalamnya terdapat buku pelajaran, buku cerita, ensiklopedia, dan majalah. Perpustakaan juga dilengkapi meja dan kursi untuk membaca.\n\nIde pokok teks tersebut adalah ....",
     "pilihan": [
-      "mau minuman sehat? Tentu saja Yakult !",
-      "Yakult minuman tiap hari",
-      "Jangan lupa minum yakult.",
-      "Yakutl adalah minuman sehat"
+      "jenis-jenis majalah",
+      "fungsi dan isi perpustakaan sekolah",
+      "meja dan kursi di perpustakaan",
+      "buku cerita untuk siswa"
     ],
     "jawaban": 1
   },
   {
     "id": 16,
-    "pertanyaan": "Kerendahan Hati (Taufik Ismail)<br>Kalau engkau tak mampu menjadi beringin<br>Yang tegak di puncak bukit<br>Jadilah belukar, tetapi belukar yang baik,<br>Yang tumbuh di tepi danau<br>Kalau kamu tak sanggup menjadi belukar,<br>Jadilah saja rumput, tetapi rumput yang<br>Memperkuat tanggul pinggiran jalan<br>Kalau engkau tak mampu menjadi jalan raya<br>Jadilah saja jalan kecil,<br>Tetapi jalan setapak yang<br>Membawa orang ke mata air<br>Tidaklah semua menjadi kapten<br>Tentu harus ada awak kapalnya….<br>Bukan besar kecilnya tugas yang menjadikan tinggi<br>Rendahnya nilai dirimu<br>Jadilah saja dirimu….<br>Sebaik-baiknya dari dirimu sendiri<br><br>Puisi tersebut dituliskan dengan tujuan….",
+    "pertanyaan": "16. Kalimat berikut yang merupakan fakta adalah ....",
     "pilihan": [
-      "Untuk mengajak seseorang agar selalu bersikap rendah hati dan tidak sombong.",
-      "Untuk mengajak seseorang agar selalu bersikap rendah hati dan sombong",
-      "Untuk mengajak seseorang agar selalu bersikap rendah diri dan tidak sombong.",
-      "Untuk mengajak seseorang agar selalu bersikap rendah diri dan sombong"
+      "Bunga mawar adalah bunga yang paling cantik.",
+      "Menurut saya, bunga melati sangat menarik.",
+      "Mawar memiliki duri pada batangnya.",
+      "Mawar sebaiknya menjadi bunga nasional."
     ],
-    "jawaban": 0
+    "jawaban": 2
   },
   {
     "id": 17,
-    "pertanyaan": "Bacalah penggalan puisi berikut!<br>Ini dari kami bertiga<br>Pita hitam pada karangan bunga<br>Sebab kami ikut berduka<br>Bagi kakak yang ditembak mati<br>Siang tadi<br>Suasana yang terkandung dalam puisi tersebut adalah ....",
+    "pertanyaan": "17. Kalimat berikut yang merupakan opini adalah ....",
     "pilihan": [
-      "Marah",
-      "Bingung",
-      "Sedih",
-      "Gembira"
+      "Kelinci memiliki dua telinga panjang.",
+      "Kelinci termasuk hewan mamalia.",
+      "Kelinci adalah hewan yang paling lucu.",
+      "Kelinci memiliki empat kaki."
     ],
     "jawaban": 2
   },
   {
     "id": 18,
-    "pertanyaan": "Buku yang memuat kumpulan puisi, baik dari seorang penyair atau beberapa penyair, pernyataan tersebut merupakan pengertian dari....",
+    "pertanyaan": "18. Bacalah paragraf berikut!\n\nIkan memiliki insang yang digunakan untuk mengambil oksigen dari air. Tubuh ikan umumnya ditutupi sisik. Menurut sebagian orang, ikan merupakan hewan yang sangat indah.\n\nKalimat opini dalam paragraf tersebut adalah ....",
     "pilihan": [
-      "Memahami puisi",
-      "Antologi puisi",
-      "Apresiasi Puisi",
-      "Penilaian puisi"
+      "Ikan memiliki insang.",
+      "Insang digunakan untuk mengambil oksigen.",
+      "Tubuh ikan ditutupi sisik.",
+      "Ikan merupakan hewan yang sangat indah."
     ],
-    "jawaban": 1
+    "jawaban": 3
   },
   {
     "id": 19,
-    "pertanyaan": "Kata dalam menulis sebuah puisi disebut dengan istilah ....",
+    "pertanyaan": "19. Kalimat yang paling tepat digunakan dalam teks LHO adalah ....",
     "pilihan": [
-      "Tipografi",
-      "Diksi",
-      "Imaji",
-      "Majas"
+      "Bunga itu sangat cantik sekali menurut saya.",
+      "Pohon kelapa memiliki batang yang tinggi dan tidak bercabang.",
+      "Saya sangat menyukai pohon kelapa.",
+      "Menurut saya, pohon kelapa sangat menarik."
     ],
     "jawaban": 1
   },
   {
     "id": 20,
-    "pertanyaan": "Bacalah teks kutipan pidato berikut! <br>Betapa sulitnya seorang pecandu rokok untuk menghentikan kebiasaan merokoknya. Seberapa mahalpun harga rokok tidak dapat menghentikan mereka. Misalnya, di Malaysia, harga rokok dapat setara dengan lima persen pendapatan buruh kasar. Di Shanghai, Cina, petani dan perokok menghabiskan uang untuk membeli rokok lebih banyak daripada yang dipakai untuk membeli gandum, daging, dan buah-buahan sebagai kebutuhan utama mereka. Oleh sebab itu, hentikan merokok sebelum candu rokok melekat pada diri Anda.<br><br>Kalimat di atas yang menunjukkan ajakan adalah ...",
+    "pertanyaan": "20. Pernyataan yang tepat tentang fakta adalah ....",
     "pilihan": [
-      "Betapa sulitnya seorang pecandu rokok untuk menghentikan kebiasaan merokoknya.",
-      "Hentikan merokok, sebelum candu rokok melekat pada diri Anda.",
-      "Berapapun mahalnya harga rokok tidak dapat menghentikan mereka untuk merokok.",
-      "Di Cina perokok menghabiskan uang untuk membeli rokok lebih banyak daripada yang dipakai untuk membeli gandum."
+      "dapat dibuktikan kebenarannya",
+      "selalu berdasarkan perasaan",
+      "merupakan pendapat pribadi",
+      "tidak membutuhkan bukti"
     ],
-    "jawaban": 1
+    "jawaban": 0
   },
   {
     "id": 21,
-    "pertanyaan": "Pendapat secara lisan adalah pengertian dari teks . . .",
+    "pertanyaan": "21. Kalimat definisi yang tepat adalah ....",
     "pilihan": [
-      "Pidato persuasif",
-      "Cerpen",
-      "Tanggapan",
-      "Eksplanasi"
+      "Kucing itu memiliki bulu yang lembut.",
+      "Kucing merupakan hewan mamalia yang banyak dipelihara manusia.",
+      "Kucing berlari dengan cepat.",
+      "Kucing tersebut sangat lucu."
     ],
-    "jawaban": 0
+    "jawaban": 1
   },
   {
     "id": 22,
-    "pertanyaan": "Dengan ini sambutan yang bisa kami sampaikan. Mohon maaf jika ada kesalahan baik yang telah kami sengaja. Kami sampaikan selamat jalan kepada Bapak Doni Sibarani. Semoga kita semua selalu dalam lindungan Tuhan. Amiin . . .<br>Kutipan teks diatas merupakan bagian dari . . .",
+    "pertanyaan": "22. Kalimat deskripsi yang tepat adalah ....",
     "pilihan": [
-      "Isi",
-      "Penutup",
-      "Pendahuluan",
-      "Salam pembuka"
+      "Mangga merupakan tanaman buah.",
+      "Mangga termasuk tumbuhan berbiji.",
+      "Daun mangga berbentuk lonjong dan berwarna hijau.",
+      "Mangga memiliki banyak jenis."
     ],
-    "jawaban": 1
+    "jawaban": 2
   },
   {
     "id": 23,
-    "pertanyaan": "Bacalah kutipan pidato berikut!<br>Saya mengucapkan selamat dan terima kasih atas kehadiran teman-teman menghadiri kegiatan pameran buku dalam rangka menyambut adik-adik kita siswa kelas 7 yang baru.<br>[...]<br>Apabila dalam penyelenggaraan kegiatan ini banyak kekurangan, panitia memohon maaf.<br><br>Kalimat yang tepat untuk melengkapi isi teks pidato tersebut adalah",
+    "pertanyaan": "23. Kata yang sering digunakan dalam kalimat definisi adalah ....",
     "pilihan": [
-      "Akhirnya kami atas nama panitia mengucapkan selamat mengunjungi pameran buku ini.",
-      "Puji syukur senantiasa kita panjatkan ke hadirat Tuhan yang telah memberikan kesehatan sehingga bisa menyelenggarakan kegiatan ini.",
-      "Demikian sambutan dari saya selaku Ketua Panitia semoga pameran buku ini bermanfaat",
-      "Pameran buku ini merupakan agenda tahunan OSIS dalam rangka memotivasi para siswa agar gemar membaca."
-    ],
-    "jawaban": 3
-  },
-  {
-    "id": 24,
-    "pertanyaan": "Coba bacalah puisi di bawah ini!<br>Alamku ini,<br>Awan bergerak,<br>seiring waktuku yang kerontang,<br>angin berdiri menepi,<br>sejenak beri kesejukan,<br>kuda berlari terkikik,<br>tinggal jejak kaki,<br>di antara rumputan misteri,<br>alamku ini memang begini,<br>dapat dipastikan perubahan yang terhenti.<br><br>Apakah makna kias dari “kering kerontang” yang terdapat bait puisi di atas?",
-    "pilihan": [
-      "Penyesalan",
-      "Kesunyian",
-      "keputusasaan",
-      "penderitaan"
-    ],
-    "jawaban": 3
-  },
-  {
-    "id": 25,
-    "pertanyaan": "Pada kesempatan kali ini, marilah kita panjatkan puji syukur kehadirat Tuhan yang Maha Esa karena hanya Tuhan yang telah memberi rahmad dan hidayah-Nya semua sehingga kita bias berjumpa pada siang hari ini.<br>Selain ucapan rasa syukur, ucapan diatas merupakan . . .",
-    "pilihan": [
-      "Puji – pujian untuk Tuhan",
-      "Tujuan pidato",
-      "Undangan kepada setiap orang",
-      "Terima kasih kepada tuan rumah"
+      "adalah dan merupakan",
+      "tetapi dan namun",
+      "kemudian dan setelah itu",
+      "karena dan sehingga"
     ],
     "jawaban": 0
   },
   {
-    "id": 26,
-    "pertanyaan": "Dalam teks deskripsi, penggunaan majas seperti metafora dan personifikasi berfungsi untuk…",
+    "id": 24,
+    "pertanyaan": "24. Bacalah kalimat berikut!\n\nKomodo merupakan reptil besar yang hidup di beberapa pulau di Indonesia.\n\nKalimat tersebut termasuk ....",
     "pilihan": [
-      "Memperjelas langkah-langkah prosedural",
-      "Memberikan gambaran imajinatif yang lebih hidup terhadap objek",
-      "Menyampaikan argumen penuli secara persuasive",
-      "Menyusun alur cerita yang menarik"
+      "kalimat perintah",
+      "kalimat definisi",
+      "kalimat tanya",
+      "kalimat ajakan"
     ],
     "jawaban": 1
   },
   {
-    "id": 27,
-    "pertanyaan": "Grojogan Sewu adalah adalah salah satu objek wisata air terjun alami di Tawangmangu, Karanganyar, Jawa Tengah. Dari pintu masuk, kita harus menuruni seribuan anak tangga untuk menuju air terjun. Saat perjalanan menuruni tangga, kita disuguhkan pemandangan yang cukup asri. Banyak monyet yang bergelantungan di dahan pohon. Ada juga yang duduk atau berlarian di sekitar anak tangga.<br><br>Isi dalam paragraf deskripsi di atas adalah…",
+    "id": 25,
+    "pertanyaan": "25. Bacalah kalimat berikut!\n\nTubuh komodo ditutupi sisik kasar dan memiliki empat kaki yang kuat.\n\nKalimat tersebut termasuk ....",
     "pilihan": [
-      "Gambaran air terjun Grojogan Sewu",
-      "Gambaran objek wisata Jawa Tengah",
-      "Gambaran wahana di Grojogan Sewu",
-      "Gambaran perjalanan menuju Grojogan Sewu"
+      "kalimat definisi",
+      "kalimat deskripsi",
+      "kalimat opini",
+      "kalimat ajakan"
     ],
-    "jawaban": 3
+    "jawaban": 1
+  },
+  {
+    "id": 26,
+    "pertanyaan": "26. Kata berikut yang merupakan kata baku adalah ....",
+    "pilihan": [
+      "aktifitas",
+      "resiko",
+      "aktivitas",
+      "ijin"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 27,
+    "pertanyaan": "27. Kata baku yang tepat untuk melengkapi kalimat berikut adalah .... \n\nPara siswa melakukan ... terhadap tanaman di lingkungan sekolah.",
+    "pilihan": [
+      "observasi",
+      "obsevasi",
+      "observase",
+      "observasie"
+    ],
+    "jawaban": 0
   },
   {
     "id": 28,
-    "pertanyaan": "Memasuki bibir Pantai Senggigi kita akan disambut pantai yang lembut dan udara yang segar. Angin lembut terasa mengelus kulit. Garis Pantai Senggigi yang panjang dengan gradasi warna pasir putih dan hitam membuat keindahan pantai ini semakin menarik. Ombak yang tenang di pantai ini membuat rasa tentram semakin lengkap.<br><br>Objek yang digambarkan dalam penggalan teks deskripsi di atas adalah …",
+    "pertanyaan": "28. Kata habitat dalam teks laporan hasil observasi berarti ....",
     "pilihan": [
-      "Ombak pantai",
-      "Pantai Senggigi",
-      "Pantai Parangtritis",
-      "Angin pantai"
+      "makanan hewan",
+      "tempat hidup suatu makhluk hidup",
+      "cara berkembang biak",
+      "jenis makanan"
     ],
     "jawaban": 1
   },
   {
     "id": 29,
-    "pertanyaan": "Berikut yang termasuk kata khusus adalah…",
+    "pertanyaan": "29. Bacalah kalimat berikut!\n\nTumbuhan melakukan fotosintesis untuk menghasilkan makanan.\n\nKata untuk dalam kalimat tersebut berfungsi sebagai ....",
     "pilihan": [
-      "Warna",
-      "Bentuk",
-      "Gaya",
-      "Putih"
+      "kata benda",
+      "konjungsi yang menyatakan tujuan",
+      "kata sifat",
+      "kata kerja"
     ],
-    "jawaban": 3
+    "jawaban": 1
   },
   {
     "id": 30,
-    "pertanyaan": "Ibuku adalah orang yang sangat baik.<br>Kalimat perincian yang sesuai dengan kalimat di atas adalah…",
+    "pertanyaan": "30. Bacalah kalimat berikut!\n\nBurung memiliki sayap, sedangkan ikan memiliki sirip.\n\nKonjungsi sedangkan menunjukkan hubungan ....",
     "pilihan": [
-      "Beliau rajin bekerja",
-      "Beliau agak galak",
-      "Beliau suka menolong orang",
-      "Beliau kadang malas memasak"
+      "sebab",
+      "tujuan",
+      "perbandingan/pertentangan",
+      "akibat"
     ],
     "jawaban": 2
   },
   {
     "id": 31,
-    "pertanyaan": "Perhatikan teks berikut!<br>“Cara Membuat Teh Manis Hangat:<br>Pertama, siapkan gelas, teh celup, gula, dan air panas...”<br>Bagian yang menunjukkan tujuan teks tersebut adalah …",
+    "pertanyaan": "31. Bacalah teks berikut!\n\nPohon Kelapa\nPohon kelapa banyak ditemukan di daerah pantai. Tumbuhan ini memiliki batang yang tinggi dan tidak bercabang. Daunnya panjang dan berbentuk seperti bulu. Buah kelapa dapat dimanfaatkan untuk berbagai keperluan.\n\nPernyataan yang tepat berdasarkan teks adalah ....",
     "pilihan": [
-      "Siapkan gelas dan teh celup",
-      "Cara Membuat Teh Manis Hangat",
-      "Tambahkan gula secukupnya",
-      "Aduk hingga merata"
+      "Pohon kelapa memiliki banyak cabang.",
+      "Pohon kelapa banyak ditemukan di daerah pantai.",
+      "Daun pohon kelapa berbentuk bulat.",
+      "Buah kelapa tidak dapat dimanfaatkan."
     ],
     "jawaban": 1
   },
   {
     "id": 32,
-    "pertanyaan": "Kalimat berikut yang merupakan kalimat imperatif adalah …",
+    "pertanyaan": "32. Berdasarkan teks pada soal nomor 31, manfaat buah kelapa adalah ....",
     "pilihan": [
-      "Air direbus hingga mendidih",
-      "Air itu sudah mendidih",
-      "Rebus air hingga mendidih",
-      "Air sedang direbus"
+      "tidak dapat digunakan",
+      "dapat dimanfaatkan untuk berbagai keperluan",
+      "hanya digunakan sebagai hiasan",
+      "hanya digunakan sebagai makanan burung"
     ],
-    "jawaban": 2
+    "jawaban": 1
   },
   {
     "id": 33,
-    "pertanyaan": "Urutan langkah yang tepat dalam membuat mie instan adalah …",
+    "pertanyaan": "33. Bacalah teks berikut!\n\nLebah\nLebah merupakan serangga yang hidup berkelompok dalam sebuah koloni. Lebah memiliki dua pasang sayap dan tubuh yang terbagi menjadi beberapa bagian. Serangga ini menghasilkan madu yang dapat dimanfaatkan manusia.\n\nInformasi utama paragraf tersebut adalah ....",
     "pilihan": [
-      "Masukkan mie – rebus air – tiriskan",
-      "Rebus air – masukkan mie – tiriskan",
-      "Tiriskan mie – rebus air – masukkan mie",
-      "Masukkan mie – tiriskan – rebus air"
+      "lebah hanya hidup sendiri",
+      "ciri dan manfaat lebah",
+      "manusia memelihara semua jenis lebah",
+      "semua serangga menghasilkan madu"
     ],
     "jawaban": 1
   },
   {
     "id": 34,
-    "pertanyaan": "Apa yang dimaksud dengan teks rekonstruksi fakta?",
+    "pertanyaan": "34. Berdasarkan teks pada soal nomor 33, manfaat lebah bagi manusia adalah ....",
     "pilihan": [
-      "Teks yang berisi pengalaman pribadi tanpa bukti",
-      "Teks yang membangun ulang kejadian faktual secara kronologis",
-      "Teks berita harian tanpa urutan waktu",
-      "Teks deskripsi tentang alam"
+      "menghasilkan madu",
+      "menghasilkan susu",
+      "menghasilkan telur",
+      "menghasilkan kayu"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 35,
+    "pertanyaan": "35. Bacalah teks berikut!\n\nHutan Mangrove\nHutan mangrove merupakan ekosistem yang tumbuh di wilayah pesisir. Tumbuhan mangrove memiliki akar yang dapat membantu menahan abrasi. Selain itu, hutan mangrove menjadi tempat hidup berbagai jenis hewan.\n\nManfaat hutan mangrove berdasarkan teks adalah ....",
+    "pilihan": [
+      "menyebabkan abrasi",
+      "membantu menahan abrasi",
+      "menghilangkan semua hewan",
+      "membuat pantai menjadi gersang"
     ],
     "jawaban": 1
   },
   {
-    "id": 35,
-    "pertanyaan": "Bagian struktur teks rekonstruksi yang berisi pengenalan peristiwa disebut...",
-    "pilihan": [
-      "Rekonstruksi peristiwa",
-      "Reorientasi",
-      "Orientasi",
-      "Evaluasi"
-    ],
-    "jawaban": 2
-  },
-  {
     "id": 36,
-    "pertanyaan": "Kalimat \"Kebakaran kemungkinan disebabkan korsleting listrik\" dalam teks rekon adalah...",
+    "pertanyaan": "36. Bacalah paragraf berikut!\n\nSampah organik berasal dari bahan-bahan yang mudah terurai, seperti daun, sisa makanan, dan kulit buah. Sampah jenis ini dapat diolah menjadi kompos. Pengolahan sampah organik dapat mengurangi jumlah sampah yang dibuang ke tempat pembuangan akhir.\n\nSimpulan yang tepat adalah ....",
     "pilihan": [
-      "Fakta",
-      "Opini",
-      "Data",
-      "Asumsi"
+      "Sampah organik tidak dapat dimanfaatkan.",
+      "Sampah organik dapat diolah menjadi kompos dan membantu mengurangi sampah.",
+      "Semua sampah berasal dari daun.",
+      "Sampah organik harus dibakar."
     ],
     "jawaban": 1
   },
   {
     "id": 37,
-    "pertanyaan": "Kalimat berikut yang termasuk penanda kebahasaan teks prosedur adalah…",
+    "pertanyaan": "37. Bacalah paragraf berikut!\n\nTerumbu karang merupakan ekosistem laut yang menjadi tempat hidup berbagai organisme. Terumbu karang juga berperan melindungi pantai dari gelombang besar. Keberadaan terumbu karang sangat penting bagi kehidupan laut.\n\nSimpulan yang tepat adalah ....",
     "pilihan": [
-      "Sebaiknya kita rajin membaca buku.",
-      "Gunakan sendok untuk mengaduk adonan.",
-      "Kemarin saya pergi ke rumah nenek.",
-      "Menurut saya, olahraga sangat bermanfaat."
+      "Terumbu karang hanya berguna bagi manusia.",
+      "Terumbu karang merupakan ekosistem penting bagi kehidupan laut dan perlindungan pantai.",
+      "Terumbu karang hanya ditemukan di sungai.",
+      "Terumbu karang tidak memiliki manfaat."
     ],
     "jawaban": 1
   },
   {
     "id": 38,
-    "pertanyaan": "Perhatikan ciri-ciri berikut!<br>(1) Menggunakan konjungsi kronologis<br>(2) Menyampaikan pengalaman pribadi<br>(3) Memuat tujuan yang ingin dicapai<br>(4) Menggunakan kata sifat untuk menggambarkan benda<br><br>Yang merupakan ciri teks prosedur ditunjukkan oleh nomor…",
+    "pertanyaan": "38. Bacalah teks berikut!\n\nKupu-kupu mengalami metamorfosis sempurna. Tahap kehidupannya dimulai dari telur, kemudian menjadi larva atau ulat, pupa, dan akhirnya menjadi kupu-kupu dewasa.\n\nUrutan metamorfosis kupu-kupu yang benar adalah ....",
     "pilihan": [
-      "1 dan 2",
-      "1 dan 3",
-      "2 dan 4",
-      "3 dan 4"
+      "telur – pupa – ulat – kupu-kupu",
+      "telur – ulat – pupa – kupu-kupu",
+      "ulat – telur – pupa – kupu-kupu",
+      "pupa – telur – ulat – kupu-kupu"
     ],
     "jawaban": 1
   },
   {
     "id": 39,
-    "pertanyaan": "Perhatikan bagian teks prosedur berikut:<br>“Tuangkan adonan ke dalam loyang yang sudah diolesi mentega. Panggang selama 30 menit.<br>Bagian tersebut dapat diidentifikasi sebagai…",
+    "pertanyaan": "39. Berdasarkan teks pada soal nomor 38, tahap setelah larva adalah ....",
     "pilihan": [
-      "Tujuan teks prosedur",
-      "Bahan yang diperlukan",
-      "Langkah pelaksanaan",
-      "Penutup teks"
+      "telur",
+      "kupu-kupu dewasa",
+      "pupa",
+      "sayap"
     ],
     "jawaban": 2
   },
   {
     "id": 40,
-    "pertanyaan": "Perhatikan kutipan eks prosedur berikut:<br>Cara menyalakan computer :<br>1. Tekan tombol power pada CPU, lalu tunggu beberapa saat.<br>2. Jika layar monitor masih gelap, periksa kabel listrik monitor.<br>3. Setelah computer menyala, masukkan password untuk masuk ke system.<br><br>Fungsi konjungsi “jika” pada langkah ke-2 adalah…",
+    "pertanyaan": "40. Bacalah paragraf berikut!\n\nAir merupakan salah satu sumber daya alam yang sangat penting bagi kehidupan. Manusia membutuhkan air untuk minum, memasak, mandi, dan berbagai kegiatan lainnya. Tumbuhan dan hewan juga membutuhkan air untuk bertahan hidup.\n\nGagasan utama paragraf tersebut adalah ....",
     "pilihan": [
-      "Menghubungkan dua tindakan yang berlangsung bersamaan.",
-      "Menunjukkan urutan peristiwa terjadi.",
-      "Menyatakan tujuan dari tindakan yang dilakukan.",
-      "Menunjukkan syarat yang harus dipenuhi sebelum melakukan tindakan."
+      "manusia menggunakan air untuk mandi",
+      "air merupakan sumber daya penting bagi kehidupan",
+      "tumbuhan membutuhkan air",
+      "hewan membutuhkan air"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 41,
+    "pertanyaan": "41. Bacalah teks berikut!\n\nPadi\nPadi adalah tanaman pangan yang banyak dibudidayakan di Indonesia. Tanaman ini memiliki batang beruas dan daun yang panjang. Setelah berbunga, padi menghasilkan bulir yang kemudian dapat diolah menjadi beras.\n\nPernyataan yang tidak sesuai dengan teks adalah ....",
+    "pilihan": [
+      "Padi merupakan tanaman pangan.",
+      "Padi banyak dibudidayakan di Indonesia.",
+      "Padi memiliki daun yang panjang.",
+      "Padi menghasilkan buah yang langsung dapat dimakan."
     ],
     "jawaban": 3
   },
   {
-    "id": 41,
-    "pertanyaan": "Perhatikan kutipan eks prosedur berikut:<br>Cara membuat surat elektronik (email) :<br>1. Buka aplikasi email.<br>2. Pilih menu tulis pesan baru.<br>3. Ketik alamat tujuan, isi subjek, dan tulis pesan.<br>4. Klik tombol kirim<br><br>Jika kata “ klik” ingin diganti agar sesuai dengan kaidah kebahasaan bahasa Indonesia, kosakata yang paling tepat adalah…",
-    "pilihan": [
-      "Ketuk",
-      "Sentuh",
-      "Tekan",
-      "Pencet"
-    ],
-    "jawaban": 2
-  },
-  {
     "id": 42,
-    "pertanyaan": "Struktur utama teks eksplanasi yang benar adalah …",
+    "pertanyaan": "42. Bacalah paragraf berikut!\n\nKaktus merupakan tumbuhan yang mampu hidup di lingkungan kering. Batangnya tebal dan dapat menyimpan air. Daun kaktus mengalami perubahan bentuk menjadi duri yang berfungsi mengurangi penguapan.\n\nAlasan kaktus mampu hidup di lingkungan kering adalah ....",
     "pilihan": [
-      "Orientasi – komplikasi – resolusi",
-      "Pernyataan umum – deretan penjelas – interpretasi",
-      "Pendahuluan – isi – penutup",
-      "Tesis – argumen – penegasan ulang"
+      "memiliki daun yang lebar",
+      "batangnya dapat menyimpan air",
+      "memiliki banyak bunga",
+      "hidup di dalam air"
     ],
     "jawaban": 1
   },
   {
     "id": 43,
-    "pertanyaan": "Perhatikan kutipan berikut!<br>“Gempa bumi terjadi karena pergeseran lempeng bumi yang saling bertabrakan.” Kutipan tersebut merupakan bagian …",
+    "pertanyaan": "43. Bacalah teks berikut!\n\nPanda\nPanda merupakan mamalia yang berasal dari Tiongkok. Hewan ini memiliki tubuh besar dengan bulu berwarna hitam dan putih. Panda dikenal sebagai hewan yang banyak memakan bambu.\n\nPernyataan yang sesuai adalah ....",
     "pilihan": [
-      "Interpretasi",
-      "Pernyataan umum",
-      "Penutup",
-      "Argumentasi"
+      "Panda berasal dari Indonesia.",
+      "Panda memiliki bulu berwarna merah.",
+      "Panda banyak memakan bambu.",
+      "Panda termasuk jenis ikan."
     ],
-    "jawaban": 1
+    "jawaban": 2
   },
   {
     "id": 44,
-    "pertanyaan": "Ciri kebahasaan teks eksplanasi adalah menggunakan …",
+    "pertanyaan": "44. Bacalah teks berikut!\n\nKelelawar\nKelelawar merupakan mamalia yang aktif pada malam hari. Hewan ini memiliki sayap berupa selaput kulit yang membentang di antara jari-jari kakinya. Kelelawar menggunakan kemampuan ekolokasi untuk membantu menemukan arah.\n\nInformasi yang terdapat dalam teks tersebut adalah ....",
     "pilihan": [
-      "Kalimat perintah",
-      "Kata kiasan",
-      "Konjungsi kausalitas",
-      "Argumentasi"
+      "Kelelawar aktif pada siang hari.",
+      "Kelelawar tidak memiliki sayap.",
+      "Kelelawar menggunakan ekolokasi untuk membantu menemukan arah.",
+      "Kelelawar merupakan jenis burung."
     ],
     "jawaban": 2
   },
   {
     "id": 45,
-    "pertanyaan": "Perhatikan pernyataan berikut!<br>“Banjir terjadi akibat curah hujan tinggi dan buruknya sistem drainase.”<br>Kalimat tersebut dalam pidato termasuk bagian …",
+    "pertanyaan": "45. Berdasarkan teks pada soal nomor 44, ciri khusus kelelawar adalah ....",
     "pilihan": [
-      "Salam pembuka",
-      "Penjelasan (eksplanasi)",
-      "Ajakan",
-      "Penutup"
+      "memiliki sisik",
+      "menggunakan ekolokasi",
+      "memiliki insang",
+      "hidup di air"
     ],
     "jawaban": 1
   },
   {
     "id": 46,
-    "pertanyaan": "Perhatikan ciri berikut!<br>1. Singkat<br>2. Informatif<br>3. Visual menarik<br>4. Bahasa baku dan sangat lengkap<br><br>Ciri poster eksplanasi yang tepat adalah …",
+    "pertanyaan": "46. Kalimat berikut yang paling tepat menjadi bagian awal teks laporan hasil observasi adalah ....",
     "pilihan": [
-      "1, 2, dan 3",
-      "1, 2, dan 4",
-      "2 dan 4",
-      "3 dan 4"
-    ],
-    "jawaban": 0
-  },
-  {
-    "id": 47,
-    "pertanyaan": "Bagian teks laporan hasil percobaan yang berisi paparan mengenai alasan atau latar belakang dilakukannya sebuah pengujian disebut...",
-    "pilihan": [
-      "Langkah-langkah",
-      "Hasil pengamatan",
-      "Tujuan",
-      "Simpulan"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 48,
-    "pertanyaan": "Perhatikan kutipan teks berikut!<br>\"Masukkan satu sendok teh garam ke dalam gelas berisi air, kemudian aduk secara perlahan hingga larut.\"<br>Kutipan di atas merupakan bagian dari struktur...",
-    "pilihan": [
-      "Alat dan bahan",
-      "Langkah-langkah",
-      "Kajian teori",
-      "Hasil"
+      "Saya sangat senang melihat bunga itu.",
+      "Bunga mawar merupakan tanaman hias yang banyak dibudidayakan karena keindahan bunganya.",
+      "Kemarin saya membeli bunga mawar.",
+      "Menurut saya, mawar adalah bunga tercantik."
     ],
     "jawaban": 1
   },
   {
-    "id": 49,
-    "pertanyaan": "Ciri kebahasaan yang menonjol dalam teks laporan hasil percobaan adalah penggunaan kata kerja imperatif. Manakah di bawah ini yang termasuk kata kerja imperatif?",
+    "id": 47,
+    "pertanyaan": "47. Urutan kalimat berikut agar menjadi paragraf LHO yang padu adalah .... \n\n(1) Daunnya berbentuk lebar dan berwarna hijau. \n(2) Pisang merupakan tanaman yang banyak tumbuh di daerah tropis. \n(3) Buahnya tersusun dalam satu tandan. \n(4) Tanaman pisang memiliki batang semu.",
     "pilihan": [
-      "Mengamati",
-      "Larutkan",
-      "Berwarna",
-      "Percobaan"
+      "1–2–3–4",
+      "2–4–1–3",
+      "3–1–4–2",
+      "4–2–3–1"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 48,
+    "pertanyaan": "48. Kalimat yang tidak sesuai dengan karakteristik teks laporan hasil observasi adalah ....",
+    "pilihan": [
+      "Burung memiliki dua sayap.",
+      "Pohon jati dapat tumbuh menjadi pohon yang besar.",
+      "Menurut saya, burung itu sangat lucu dan menggemaskan.",
+      "Ikan bernapas menggunakan insang."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 49,
+    "pertanyaan": "49. Bacalah paragraf berikut!\n\nMawar merupakan tanaman berbunga yang banyak dibudidayakan sebagai tanaman hias. Bunga mawar memiliki berbagai warna, seperti merah, putih, merah muda, dan kuning. Batangnya memiliki duri yang berfungsi sebagai perlindungan.\n\nJudul yang paling tepat untuk paragraf tersebut adalah ....",
+    "pilihan": [
+      "Tanaman di Sekolah",
+      "Bunga Mawar",
+      "Bunga Berwarna-warni",
+      "Cara Menanam Mawar"
     ],
     "jawaban": 1
   },
   {
     "id": 50,
-    "pertanyaan": "Ciri kebahasaan yang menonjol dalam teks laporan hasil percobaan adalah penggunaan kata kerja imperatif. Manakah di bawah ini yang termasuk kata kerja imperatif?",
+    "pertanyaan": "50. Bacalah teks berikut!\n\nPohon Jati\nPohon jati merupakan salah satu jenis pohon yang banyak dimanfaatkan kayunya. Pohon ini dapat tumbuh tinggi dan memiliki batang yang besar. Kayu jati dikenal kuat dan tahan lama sehingga sering digunakan untuk membuat berbagai jenis perabot dan bangunan.\n\nSimpulan yang paling tepat berdasarkan teks tersebut adalah ....",
     "pilihan": [
-      "Mengamati",
-      "Larutkan",
-      "Berwarna",
-      "Percobaan"
+      "Pohon jati hanya digunakan sebagai tanaman hias.",
+      "Kayu jati tidak memiliki manfaat bagi manusia.",
+      "Pohon jati merupakan tanaman yang kayunya banyak dimanfaatkan karena kuat dan tahan lama.",
+      "Pohon jati hanya dapat tumbuh di dalam ruangan."
     ],
-    "jawaban": 1
+    "jawaban": 2
   }
 ]
