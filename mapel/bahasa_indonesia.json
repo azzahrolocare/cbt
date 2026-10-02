@@ -1,551 +1,551 @@
 [
   {
     "id": 1,
-    "pertanyaan": "Apa yang dimaksud dengan karya fiksi?",
+    "pertanyaan": "Bacalah teks berikut!\n\nPantai Papuma memiliki pasir putih yang lembut. Air lautnya berwarna biru jernih dan dihiasi ombak yang bergulung perlahan. Di sekitar pantai terdapat batu-batu besar yang membuat pemandangan semakin indah.\n\nObjek yang dideskripsikan dalam teks tersebut adalah ....",
     "pilihan": [
-      "Karya yang berisi data dan fakta nyata",
-      "Karya yang berdasarkan hasil penelitian ilmiah",
-      "Karya yang merupakan hasil imajinasi pengarang",
-      "Karya yang berisi laporan peristiwa"
+      "A. batu-batu besar",
+      "B. ombak laut",
+      "C. Pantai Papuma",
+      "D. pasir putih"
     ],
     "jawaban": 2
   },
   {
     "id": 2,
-    "pertanyaan": "Berikut yang termasuk karya fiksi adalah",
+    "pertanyaan": "Tujuan utama teks deskripsi adalah ....",
     "pilihan": [
-      "Biografi",
-      "Cerpen",
-      "Laporan penelitian",
-      "Artikel ilmiah"
+      "A. menceritakan suatu peristiwa secara berurutan",
+      "B. menggambarkan suatu objek secara jelas kepada pembaca",
+      "C. menjelaskan langkah-langkah melakukan sesuatu",
+      "D. menyampaikan pendapat tentang suatu masalah"
     ],
     "jawaban": 1
   },
   {
     "id": 3,
-    "pertanyaan": "Tokoh dalam sebuah cerita fiksi adalah",
+    "pertanyaan": "Bacalah paragraf berikut!\n\nPerpustakaan sekolahku sangat nyaman. Ruangannya luas dan bersih. Rak-rak buku tersusun rapi di sepanjang dinding. Di sudut ruangan terdapat beberapa meja dan kursi yang dapat digunakan siswa untuk membaca.\n\nKalimat yang menunjukkan kesan penglihatan adalah ....",
     "pilihan": [
-      "Tempat terjadinya peristiwa",
-      "Orang yang menciptakan cerita",
-      "Pelaku yang menjalankan peristiwa dalam cerita",
-      "Pesan yang ingin disampaikan penulis"
+      "A. Perpustakaan sekolahku sangat nyaman.",
+      "B. Ruangannya luas dan bersih.",
+      "C. Perpustakaan digunakan siswa.",
+      "D. Siswa membaca buku di perpustakaan."
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Bacalah teks berikut!\n\nKucingku bernama Milo. Bulunya berwarna putih dengan sedikit corak abu-abu di bagian ekor. Matanya bulat berwarna hijau. Milo sangat lincah dan senang bermain dengan bola kecil.\n\nBagian yang menunjukkan ciri fisik Milo adalah ....",
+    "pilihan": [
+      "A. Milo sangat lincah.",
+      "B. Milo senang bermain.",
+      "C. Bulunya berwarna putih dengan corak abu-abu.",
+      "D. Milo bermain dengan bola kecil."
     ],
     "jawaban": 2
   },
   {
-    "id": 4,
-    "pertanyaan": "Amanat dalam karya fiksi adalah",
-    "pilihan": [
-      "Alur cerita yang digunakan penulis",
-      "Latar tempat dan waktu cerita",
-      "Konflik yang dialami tokoh",
-      "Pesan atau pelajaran yang ingin disampaikan kepada pembaca"
-    ],
-    "jawaban": 3
-  },
-  {
     "id": 5,
-    "pertanyaan": "Urutan peristiwa dalam sebuah cerita disebut...",
+    "pertanyaan": "Struktur teks deskripsi yang tepat adalah ....",
     "pilihan": [
-      "Tema",
-      "Alur",
-      "Tokoh",
-      "Sudut pandang"
+      "A. orientasi – komplikasi – resolusi",
+      "B. identifikasi – deskripsi bagian",
+      "C. tesis – argumentasi – penegasan ulang",
+      "D. tujuan – bahan – langkah-langkah"
     ],
     "jawaban": 1
   },
   {
     "id": 6,
-    "pertanyaan": "Apa yang dimaksud dengan puisi?",
+    "pertanyaan": "Bacalah teks berikut!\n\nTaman sekolahku terletak di depan ruang guru. Taman itu dipenuhi bunga warna-warni. Ada bunga mawar, melati, dan bougenville. Udara di sekitar taman terasa sejuk karena banyak pohon rindang.\n\nKalimat yang menggambarkan indra penciuman adalah ....",
     "pilihan": [
-      "Karangan yang berisi cerita panjang",
-      "Karya sastra yang mengungkapkan pikiran dan perasaan dengan bahasa yang indah dan padat",
-      "Tulisan yang berisi petunjuk penggunaan barang",
-      "Cerita rakyat yang diwariskan secara turun-temurun"
+      "A. Taman terletak di depan ruang guru.",
+      "B. Taman dipenuhi bunga warna-warni.",
+      "C. Ada bunga mawar, melati, dan bougenville.",
+      "D. Udara di sekitar taman terasa sejuk."
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Kata yang paling tepat untuk melengkapi kalimat berikut adalah ....\n\nAir terjun itu memiliki suara air yang sangat ....",
+    "pilihan": [
+      "A. harum",
+      "B. gemuruh",
+      "C. manis",
+      "D. terang"
     ],
     "jawaban": 1
   },
   {
-    "id": 7,
-    "pertanyaan": "Perhatikan larik berikut!\n\"Angin berbisik di antara dedaunan\"\nMajas yang digunakan pada larik tersebut adalah ....",
-    "pilihan": [
-      "Hiperbola",
-      "Metafora",
-      "Personifikasi",
-      "Simile"
-    ],
-    "jawaban": 2
-  },
-  {
     "id": 8,
-    "pertanyaan": "Tema dalam sebuah puisi adalah",
+    "pertanyaan": "Bacalah teks berikut!\n\nRumah nenekku berada di sebuah desa yang tenang. Halamannya luas dan ditumbuhi berbagai tanaman. Di bagian depan terdapat pohon mangga yang sangat rindang. Ketika sore tiba, halaman rumah terasa sejuk dan nyaman.\n\nKesan yang paling kuat dalam teks tersebut adalah ....",
     "pilihan": [
-      "Cara penyair membacakan puisi",
-      "Pesan yang ingin disampaikan penyair",
-      "Gagasan pokok atau pokok permasalahan yang dibahas dalam puisi",
-      "Jumlah bait dalam puisi"
+      "A. ramai dan bising",
+      "B. panas dan gersang",
+      "C. tenang dan nyaman",
+      "D. sempit dan gelap"
     ],
     "jawaban": 2
   },
   {
     "id": 9,
-    "pertanyaan": "Amanat dalam puisi adalah",
+    "pertanyaan": "Kalimat berikut yang merupakan kalimat deskripsi adalah ....",
     "pilihan": [
-      "Judul puisi",
-      "Pesan atau nasihat yang ingin disampaikan penyair kepada pembaca",
-      "Jumlah baris dalam setiap bait",
-      "Irama yang digunakan dalam puisi"
+      "A. Saya pergi ke museum kemarin.",
+      "B. Museum itu memiliki dinding putih dengan jendela-jendela besar.",
+      "C. Museum dibuka pukul delapan pagi.",
+      "D. Kami akan mengunjungi museum besok."
     ],
     "jawaban": 1
   },
   {
     "id": 10,
-    "pertanyaan": "Perhatikan penggalan puisi berikut!\n\"Mentari pagi menyapa bumi,\nMembangunkan harapan dalam hati.\"\nSuasana yang tergambar dalam penggalan puisi tersebut adalah",
+    "pertanyaan": "Bacalah teks berikut!\n\nDanau itu tampak memesona. Permukaan airnya tenang seperti kaca. Pepohonan hijau tumbuh di tepi danau. Ketika matahari mulai terbenam, warna jingga memantul di permukaan air.\n\nKata memesona pada teks tersebut memiliki makna ....",
     "pilihan": [
-      "Sedih",
-      "Menyeramkan",
-      "Gembira dan penuh semangat",
-      "Marah"
+      "A. menakutkan",
+      "B. sangat indah dan menarik",
+      "C. sangat luas",
+      "D. sangat ramai"
     ],
-    "jawaban": 2
+    "jawaban": 1
   },
   {
     "id": 11,
-    "pertanyaan": "Apa yang dimaksud dengan pidato?",
+    "pertanyaan": "Konjungsi adalah kata yang berfungsi untuk ....",
     "pilihan": [
-      "Kegiatan berdiskusi dalam kelompok",
-      "Penyampaian gagasan atau informasi kepada khalayak secara lisan",
-      "Kegiatan menulis laporan hasil pengamatan",
-      "Percakapan antara dua orang atau lebih"
+      "A. menyebutkan nama seseorang",
+      "B. menghubungkan kata, frasa, klausa, atau kalimat",
+      "C. menjelaskan arti sebuah kata",
+      "D. menunjukkan tempat suatu benda"
     ],
     "jawaban": 1
   },
   {
     "id": 12,
-    "pertanyaan": "Bagian pidato yang berisi salam pembuka, ucapan syukur, dan penghormatan disebut....",
+    "pertanyaan": "Perhatikan kalimat berikut!\n\nHalaman rumah itu luas ... dipenuhi tanaman hijau.\n\nKonjungsi yang tepat adalah ....",
     "pilihan": [
-      "Isi pidato",
-      "Penutup pidato",
-      "Pembukaan pidato",
-      "Kesimpulan pidato"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 13,
-    "pertanyaan": "Tujuan utama pidato persuasif adalah",
-    "pilihan": [
-      "Menghibur pendengar",
-      "Menceritakan pengalaman pribadi",
-      "Mempengaruhi atau mengajak pendengar melakukan sesuatu",
-      "Menjelaskan langkah-langkah suatu kegiatan"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 14,
-    "pertanyaan": "Kalimat yang tepat digunakan sebagai penutup pidato adalah",
-    "pilihan": [
-      "Selamat pagi dan salam sejahtera untuk kita semua.",
-      "Pada kesempatan ini saya akan menjelaskan pentingnya menjaga kebersihan.",
-      "Demikian pidato yang dapat saya sampaikan, mohon maaf atas segala kekurangan.",
-      "Hadirin yang saya hormati, marilah kita panjatkan puji syukur ke hadirat Tuhan Yang Maha Esa."
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 15,
-    "pertanyaan": "Saat berpidato, penggunaan bahasa yang baik seharusnya",
-    "pilihan": [
-      "Sulit dipahami agar terlihat pintar",
-      "Mengandung banyak kata asing",
-      "Jelas, sopan, dan mudah dipahami pendengar",
-      "Menggunakan bahasa gaul sebanyak mungkin"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 16,
-    "pertanyaan": "Unsur intrinsik yang menjadi dasar cerita dan mengandung gagasan utama disebut ....",
-    "pilihan": [
-      "Amanat",
-      "Tema",
-      "Alur",
-      "Tokoh"
+      "A. tetapi",
+      "B. dan",
+      "C. karena",
+      "D. sehingga"
     ],
     "jawaban": 1
   },
   {
-    "id": 17,
-    "pertanyaan": "Pelaku yang berperan dalam suatu cerita fiksi disebut....",
+    "id": 13,
+    "pertanyaan": "Bacalah kalimat berikut!\n\nPantai itu indah, ... banyak wisatawan datang berkunjung.\n\nKonjungsi yang tepat untuk melengkapi kalimat tersebut adalah ....",
     "pilihan": [
-      "Latar",
-      "Alur",
-      "Tokoh",
-      "Sudut pandang"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 18,
-    "pertanyaan": "Urutan peristiwa dalam sebuah cerita disebut....",
-    "pilihan": [
-      "Alur",
-      "Tema",
-      "Amanat",
-      "Latar"
+      "A. sehingga",
+      "B. tetapi",
+      "C. atau",
+      "D. sedangkan"
     ],
     "jawaban": 0
   },
   {
-    "id": 19,
-    "pertanyaan": "Keterangan mengenai waktu, tempat, dan suasana terjadinya peristiwa dalam cerita disebut ....",
+    "id": 14,
+    "pertanyaan": "Bacalah paragraf berikut!\n\nTaman kota itu sangat bersih. Banyak tempat sampah tersedia di berbagai sudut. Petugas kebersihan juga bekerja setiap pagi. ..., taman tersebut tetap terlihat terawat.\n\nKonjungsi yang tepat untuk melengkapi paragraf tersebut adalah ....",
     "pilihan": [
-      "Tokoh",
-      "Alur",
-      "Amanat",
-      "Latar"
+      "A. Namun",
+      "B. Karena",
+      "C. Sehingga",
+      "D. Atau"
     ],
-    "jawaban": 3
+    "jawaban": 0
   },
   {
-    "id": 20,
-    "pertanyaan": "Perhatikan kutipan berikut!\n\"Kejujuran akan membawa kebaikan bagi diri sendiri maupun orang lain.\"\nKutipan tersebut menunjukkan unsur intrinsik berupa ....",
+    "id": 15,
+    "pertanyaan": "Kalimat yang menggunakan konjungsi pertentangan adalah ....",
     "pilihan": [
-      "Tema",
-      "Amanat",
-      "Latar",
-      "Alur"
+      "A. Rumah itu besar dan nyaman.",
+      "B. Rumah itu besar tetapi halamannya sempit.",
+      "C. Rumah itu besar sehingga terlihat megah.",
+      "D. Rumah itu besar karena baru direnovasi."
     ],
     "jawaban": 1
   },
   {
-    "id": 21,
-    "pertanyaan": "Puisi adalah karya sastra yang mengungkapkan pikiran dan perasaan penyair dengan bahasa yang",
+    "id": 16,
+    "pertanyaan": "Kalimat yang menggunakan konjungsi sebab adalah ....",
     "pilihan": [
-      "Panjang dan bertele-tele",
-      "Baku dan kaku",
-      "Indah, padat, dan bermakna",
-      "Sama seperti bahasa sehari-hari"
+      "A. Pantai itu indah dan bersih.",
+      "B. Pantai itu ramai tetapi tetap nyaman.",
+      "C. Pantai itu sepi karena letaknya jauh dari kota.",
+      "D. Pantai itu bersih sehingga wisatawan senang."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Kalimat berikut yang menggunakan konjungsi sehingga dengan tepat adalah ....",
+    "pilihan": [
+      "A. Udara sangat panas sehingga kami mencari tempat berteduh.",
+      "B. Udara sangat panas tetapi kami mencari tempat berteduh.",
+      "C. Udara sangat panas dan kami mencari tempat berteduh.",
+      "D. Udara sangat panas atau kami mencari tempat berteduh."
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Bacalah kalimat berikut!\n\nKebun itu tidak terlalu luas, ... memiliki banyak jenis tanaman.\n\nKonjungsi yang tepat adalah ....",
+    "pilihan": [
+      "A. sehingga",
+      "B. karena",
+      "C. tetapi",
+      "D. dan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Konjungsi kemudian digunakan untuk menunjukkan hubungan ....",
+    "pilihan": [
+      "A. pertentangan",
+      "B. urutan waktu",
+      "C. sebab-akibat",
+      "D. pilihan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Bacalah paragraf berikut!\n\nRumah adat itu memiliki bentuk yang unik. Atapnya tinggi dan melengkung. Dindingnya dihiasi ukiran tradisional. ..., rumah tersebut menjadi salah satu bangunan yang menarik perhatian wisatawan.\n\nKonjungsi yang paling tepat adalah ....",
+    "pilihan": [
+      "A. Oleh karena itu",
+      "B. Tetapi",
+      "C. Atau",
+      "D. Sedangkan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 21,
+    "pertanyaan": "Kata “leuweung” dalam bahasa Sunda memiliki arti ....",
+    "pilihan": [
+      "A. sungai",
+      "B. gunung",
+      "C. hutan",
+      "D. pantai"
     ],
     "jawaban": 2
   },
   {
     "id": 22,
-    "pertanyaan": "Kumpulan beberapa baris dalam puisi disebut",
+    "pertanyaan": "Kata “omah” dalam bahasa Jawa berarti ....",
     "pilihan": [
-      "Paragraf",
-      "Kalimat",
-      "Bait",
-      "Tema"
+      "A. rumah",
+      "B. jalan",
+      "C. sekolah",
+      "D. taman"
     ],
-    "jawaban": 2
+    "jawaban": 0
   },
   {
     "id": 23,
-    "pertanyaan": "Orang yang menciptakan puisi disebut",
+    "pertanyaan": "Kata “adem” dalam bahasa Jawa sering digunakan untuk menggambarkan keadaan yang ....",
     "pilihan": [
-      "Pembaca",
-      "Penyair",
-      "Pengarang drama",
-      "Editor"
+      "A. panas",
+      "B. sejuk",
+      "C. ramai",
+      "D. kotor"
     ],
     "jawaban": 1
   },
   {
     "id": 24,
-    "pertanyaan": "Salah satu ciri puisi adalah",
+    "pertanyaan": "Perhatikan kalimat berikut!\n\nUdara di pegunungan terasa adem, sehingga kami merasa nyaman.\n\nMakna kata adem dalam kalimat tersebut adalah ....",
     "pilihan": [
-      "Menggunakan bahasa yang padat dan penuh makna",
-      "Selalu terdiri atas banyak paragraf",
-      "Berisi dialog antartokoh",
-      "Memiliki alur yang panjang dan kompleks"
+      "A. sejuk",
+      "B. panas",
+      "C. lembap",
+      "D. kering"
     ],
     "jawaban": 0
   },
   {
     "id": 25,
-    "pertanyaan": "Perhatikan kutipan puisi berikut!\n\"Mentari pagi bersinar cerah,\nMenyambut hari penuh gairah.\"\nKutipan tersebut menunjukkan suasana",
+    "pertanyaan": "Kata bahasa asing yang berarti indah atau cantik adalah ....",
     "pilihan": [
-      "Sedih",
-      "Marah",
-      "Takut",
-      "Gembira dan semangat"
-    ],
-    "jawaban": 3
-  },
-  {
-    "id": 26,
-    "pertanyaan": "Metode pidato yang dilakukan dengan membaca naskah yang telah dipersiapkan sebelumnya disebut metode",
-    "pilihan": [
-      "Impromptu",
-      "Ekstemporan",
-      "Manuskrip",
-      "Memoriter"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 27,
-    "pertanyaan": "Metode pidato yang dilakukan secara spontan tanpa persiapan terlebih dahulu disebut metode",
-    "pilihan": [
-      "Impromptu",
-      "Manuskrip",
-      "Memoriter",
-      "Ekstemporan"
+      "A. beautiful",
+      "B. dirty",
+      "C. narrow",
+      "D. dark"
     ],
     "jawaban": 0
   },
   {
-    "id": 28,
-    "pertanyaan": "Metode pidato dengan cara menghafalkan seluruh isi pidato disebut metode",
+    "id": 26,
+    "pertanyaan": "Kata “clean” dalam bahasa Inggris berarti ....",
     "pilihan": [
-      "Impromptu",
-      "Manuskrip",
-      "Memoriter",
-      "Ekstemporan"
+      "A. luas",
+      "B. bersih",
+      "C. tinggi",
+      "D. ramai"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 27,
+    "pertanyaan": "Bacalah kalimat berikut!\n\nPemandangan dari atas bukit sangat beautiful.\n\nMakna kata beautiful adalah ....",
+    "pilihan": [
+      "A. gelap",
+      "B. indah",
+      "C. tinggi",
+      "D. jauh"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 28,
+    "pertanyaan": "Kata “green” pada deskripsi berikut berarti ....\n\nThe garden is green and beautiful.",
+    "pilihan": [
+      "A. merah",
+      "B. biru",
+      "C. hijau",
+      "D. kuning"
     ],
     "jawaban": 2
   },
   {
     "id": 29,
-    "pertanyaan": "Metode pidato yang menggunakan kerangka atau garis besar materi tanpa membaca naskah secara lengkap disebut metode ....",
+    "pertanyaan": "Kata “resik” dalam bahasa Jawa memiliki makna ....",
     "pilihan": [
-      "Ekstemporan",
-      "Manuskrip",
-      "Memoriter",
-      "Impromptu"
+      "A. bersih",
+      "B. besar",
+      "C. indah",
+      "D. ramai"
     ],
     "jawaban": 0
   },
   {
     "id": 30,
-    "pertanyaan": "Metode pidato yang dianggap paling fleksibel karena pembicara hanya berpedoman pada poin-poin penting adalah",
+    "pertanyaan": "Penggunaan kosakata bahasa daerah dalam teks deskripsi sebaiknya ....",
     "pilihan": [
-      "Manuskrip",
-      "Memoriter",
-      "Ekstemporan",
-      "Impromptu"
-    ],
-    "jawaban": 2
-  },
-  {
-    "id": 31,
-    "pertanyaan": "Konflik dalam cerita adalah",
-    "pilihan": [
-      "Pesan yang disampaikan pengarang",
-      "Peristiwa yang menimbulkan pertentangan atau masalah",
-      "Tempat terjadinya cerita",
-      "Tokoh dalam cerita"
+      "A. digunakan sebanyak-banyaknya tanpa penjelasan",
+      "B. digunakan sesuai konteks dan dapat diberi arti agar mudah dipahami",
+      "C. menggantikan seluruh kosakata bahasa Indonesia",
+      "D. digunakan hanya pada judul teks"
     ],
     "jawaban": 1
   },
   {
-    "id": 32,
-    "pertanyaan": "Cerita yang panjang dan terdiri atas banyak bab disebut ....",
+    "id": 31,
+    "pertanyaan": "Kohesi dalam sebuah teks berkaitan dengan ....",
     "pilihan": [
-      "Cerpen",
-      "Puisi",
-      "Novel",
-      "Pantun"
+      "A. keterkaitan bentuk bahasa antarkalimat",
+      "B. panjang pendeknya sebuah teks",
+      "C. jumlah paragraf dalam teks",
+      "D. banyaknya kata asing"
     ],
-    "jawaban": 2
+    "jawaban": 0
+  },
+  {
+    "id": 32,
+    "pertanyaan": "Koherensi dalam teks berarti ....",
+    "pilihan": [
+      "A. penggunaan huruf kapital",
+      "B. keterkaitan makna antargagasan sehingga teks menjadi logis",
+      "C. penggunaan tanda baca",
+      "D. pengulangan kata dalam kalimat"
+    ],
+    "jawaban": 1
   },
   {
     "id": 33,
-    "pertanyaan": "Cerita pendek biasanya memiliki",
+    "pertanyaan": "Perhatikan kalimat berikut!\n\nTaman itu sangat indah. Taman itu memiliki banyak bunga.\n\nPengulangan frasa taman itu berfungsi membangun ....",
     "pilihan": [
-      "Banyak tokoh dan konflik yang rumit",
-      "Satu konflik utama dan alur yang sederhana",
-      "Lebih dari 100 halaman",
-      "Banyak tema sekaligus"
+      "A. konflik",
+      "B. kohesi",
+      "C. argumentasi",
+      "D. orientasi"
     ],
     "jawaban": 1
   },
   {
     "id": 34,
-    "pertanyaan": "Tokoh yang membantu tokoh utama dalam cerita disebut",
+    "pertanyaan": "Kalimat berikut yang memiliki hubungan koheren adalah ....",
     "pilihan": [
-      "Tokoh pembantu",
-      "Tokoh antagonis",
-      "Tokoh utama",
-      "Tokoh protagonis"
-    ],
-    "jawaban": 0
-  },
-  {
-    "id": 35,
-    "pertanyaan": "Alur yang dimulai dari masa lalu kemudian menuju masa kini disebut",
-    "pilihan": [
-      "Alur maju",
-      "Alur mundur",
-      "Alur campuran",
-      "Alur maju-mundur"
+      "A. Rumah itu besar. Karena sepatu saya berwarna hitam.",
+      "B. Rumah itu besar. Rumah itu memiliki lima kamar tidur.",
+      "C. Rumah itu besar. Kemarin hujan turun sangat deras.",
+      "D. Rumah itu besar. Buku itu berada di dalam tas."
     ],
     "jawaban": 1
   },
   {
-    "id": 36,
-    "pertanyaan": "Berikut yang termasuk unsur ekstrinsik karya fiksi adalah",
+    "id": 35,
+    "pertanyaan": "Bacalah paragraf berikut!\n\nPantai Watu Ulo sangat indah. Pantai tersebut memiliki pasir yang lembut. Di sepanjang pantai, wisatawan dapat melihat batu-batu besar. Pemandangan ini membuat banyak orang tertarik berkunjung.\n\nKata ini pada kalimat terakhir mengacu pada ....",
     "pilihan": [
-      "Tokoh",
-      "Alur",
-      "Latar belakang kehidupan pengarang",
-      "Amanat"
+      "A. wisatawan",
+      "B. batu-batu besar",
+      "C. Pantai Watu Ulo",
+      "D. pemandangan pantai tersebut"
     ],
-    "jawaban": 2
+    "jawaban": 3
+  },
+  {
+    "id": 36,
+    "pertanyaan": "Perhatikan kalimat berikut!\n\nRina memiliki taman kecil di depan rumah. Di sana, ia menanam berbagai macam bunga.\n\nKata di sana mengacu pada ....",
+    "pilihan": [
+      "A. rumah Rina",
+      "B. taman kecil",
+      "C. berbagai macam bunga",
+      "D. Rina"
+    ],
+    "jawaban": 1
   },
   {
     "id": 37,
-    "pertanyaan": "Watak tokoh dapat diketahui melalui hal-hal berikut, kecuali",
+    "pertanyaan": "Kata yang dapat digunakan untuk menjaga kohesi antarkalimat adalah ....",
     "pilihan": [
-      "Dialog tokoh",
-      "Tindakan tokoh",
-      "Penjelasan pengarang",
-      "Warna sampul buku"
+      "A. kemudian",
+      "B. tersebut",
+      "C. karena",
+      "D. semua benar"
     ],
     "jawaban": 3
   },
   {
     "id": 38,
-    "pertanyaan": "Cerita yang mengandung pelajaran moral biasanya terdapat pada unsur",
+    "pertanyaan": "Bacalah paragraf berikut!\n\nMuseum itu memiliki koleksi benda-benda bersejarah. Koleksi tersebut disimpan dalam lemari kaca. Setiap benda diberi keterangan agar pengunjung dapat mengetahui sejarahnya.\n\nPenggunaan kata koleksi tersebut berfungsi untuk ....",
     "pilihan": [
-      "Amanat",
-      "Latar",
-      "Alur",
-      "Tema"
+      "A. mengganti topik pembicaraan",
+      "B. menjaga keterkaitan antarkalimat",
+      "C. menghilangkan informasi",
+      "D. menunjukkan pertentangan"
     ],
-    "jawaban": 0
+    "jawaban": 1
   },
   {
     "id": 39,
-    "pertanyaan": "Sudut pandang \"dia\" atau \"ia\" termasuk",
+    "pertanyaan": "Susunan kalimat berikut agar menjadi paragraf yang koheren adalah ....\n\n(1) Airnya sangat jernih dan berwarna kebiruan.(2) Di sekitar kolam terdapat pepohonan yang rindang.(3) Kolam itu berada di tengah taman.(4) Suasana di tempat tersebut terasa sejuk.\n\nUrutan yang tepat adalah ....",
     "pilihan": [
-      "Orang pertama",
-      "Orang kedua",
-      "Orang ketiga",
-      "Orang keempat"
+      "A. 1–2–3–4",
+      "B. 2–3–4–1",
+      "C. 3–1–2–4",
+      "D. 4–1–3–2"
     ],
     "jawaban": 2
   },
   {
     "id": 40,
-    "pertanyaan": "Tema persahabatan berarti cerita membahas tentang",
+    "pertanyaan": "Perhatikan kalimat berikut!\n\nSekolah itu memiliki halaman yang luas. Selain itu, terdapat taman kecil di samping gedung.\n\nKonjungsi selain itu berfungsi untuk ....",
     "pilihan": [
-      "Perjuangan mencapai cita-cita",
-      "Hubungan pertemanan antar tokoh",
-      "Kehidupan keluarga",
-      "Keindahan alam"
+      "A. menunjukkan pertentangan",
+      "B. menambahkan informasi",
+      "C. menunjukkan sebab",
+      "D. menunjukkan akibat"
     ],
     "jawaban": 1
   },
   {
     "id": 41,
-    "pertanyaan": "Sebelum berpidato, hal pertama yang harus dilakukan adalah",
+    "pertanyaan": "Perhatikan informasi dalam infografik berikut!\n\nTAMAN SEKOLAHKU🌳 10 pohon🌷 25 tanaman bunga🪑 8 bangku🗑️ 4 tempat sampah💧 2 keran air\n<img src='URL' class='img-post'> <br>\nBerdasarkan infografik tersebut, jumlah tanaman bunga adalah ....",
     "pilihan": [
-      "Menentukan tujuan pidato",
-      "Menyusun penutup pidato",
-      "Menyiapkan hadiah",
-      "Menentukan tempat duduk audiens"
-    ],
-    "jawaban": 0
-  },
-  {
-    "id": 42,
-    "pertanyaan": "Isi pidato harus disampaikan dengan",
-    "pilihan": [
-      "Jelas dan sistematis",
-      "Cepat agar segera selesai",
-      "Menghafal setiap kata",
-      "Menggunakan bahasa asing"
-    ],
-    "jawaban": 0
-  },
-  {
-    "id": 43,
-    "pertanyaan": "Orang yang mendengarkan pidato disebut ....",
-    "pilihan": [
-      "Narator",
-      "Audiens",
-      "Moderator",
-      "Editor"
+      "A. 10",
+      "B. 25",
+      "C. 8",
+      "D. 4"
     ],
     "jawaban": 1
   },
   {
-    "id": 44,
-    "pertanyaan": "Salah satu fungsi pidato adalah",
+    "id": 42,
+    "pertanyaan": "Berdasarkan infografik pada soal nomor 41, pernyataan yang tepat adalah ....",
     "pilihan": [
-      "Menyampaikan informasi kepada masyarakat",
-      "Menjual barang dagangan",
-      "Membuat laporan keuangan",
-      "Menulis berita"
+      "A. Jumlah bangku lebih banyak daripada tanaman bunga.",
+      "B. Jumlah pohon lebih banyak daripada tempat sampah.",
+      "C. Jumlah keran air lebih banyak daripada pohon.",
+      "D. Jumlah tempat sampah lebih banyak daripada bangku."
     ],
-    "jawaban": 0
+    "jawaban": 1
+  },
+  {
+    "id": 43,
+    "pertanyaan": "Perhatikan infografik berikut!\n\nCIRI-CIRI KUCING🐱 Berbulu lembut👀 Mata tajam🐾 Memiliki empat kaki🐟 Suka makan ikan🎾 Senang bermain\n<img src='URL' class='img-post'> <br>\nInformasi yang termasuk deskripsi fisik adalah ....",
+    "pilihan": [
+      "A. suka makan ikan",
+      "B. senang bermain",
+      "C. berbulu lembut",
+      "D. suka bermain"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 44,
+    "pertanyaan": "Perhatikan infografik berikut!\n\nPANTAI INDAH🌊 Air laut: biru jernih🏖️ Pasir: putih dan lembut🌴 Pohon: kelapa☀️ Suasana: cerah🌬️ Udara: sejuk\n<img src='URL' class='img-post'> <br>\nBerdasarkan infografik tersebut, kalimat deskripsi yang tepat adalah ....",
+    "pilihan": [
+      "A. Pantai itu memiliki pasir hitam dan kasar.",
+      "B. Pantai itu memiliki air laut biru jernih dan pasir putih yang lembut.",
+      "C. Pantai itu sangat ramai karena banyak kendaraan.",
+      "D. Pantai itu berada di tengah kota."
+    ],
+    "jawaban": 1
   },
   {
     "id": 45,
-    "pertanyaan": "Kalimat persuasif dalam pidato ditandai dengan kata",
+    "pertanyaan": "Perhatikan data visual berikut!\n\nRUANG KELAS📚 30 buku🪑 20 kursi🖥️ 1 komputer🪴 5 tanaman🗑️ 2 tempat sampah\n<img src='URL' class='img-post'> <br>\nBerdasarkan data tersebut, benda yang jumlahnya paling banyak adalah ....",
     "pilihan": [
-      "Karena",
-      "Tetapi",
-      "Marilah",
-      "Sedangkan"
+      "A. kursi",
+      "B. tanaman",
+      "C. buku",
+      "D. tempat sampah"
     ],
     "jawaban": 2
   },
   {
     "id": 46,
-    "pertanyaan": "Sikap yang baik saat berpidato adalah",
+    "pertanyaan": "Perhatikan infografik berikut!\n\nTAMAN BUNGAMawar 🌹 : 15 tanamanMelati 🌼 : 10 tanamanAnggrek 🌸 : 8 tanamanTulip 🌷 : 12 tanaman\n<img src='URL' class='img-post'> <br>\nJenis bunga yang jumlahnya paling sedikit adalah ....",
     "pilihan": [
-      "Menunduk terus-menerus",
-      "Berbicara terlalu pelan",
-      "Menjaga kontak mata dengan audiens",
-      "Membelakangi audiens"
+      "A. mawar",
+      "B. melati",
+      "C. anggrek",
+      "D. tulip"
     ],
     "jawaban": 2
   },
   {
     "id": 47,
-    "pertanyaan": "Bagian pidato yang berisi rangkuman pokok-pokok pembahasan disebut",
+    "pertanyaan": "Berdasarkan infografik pada soal nomor 46, kalimat deskripsi yang tepat adalah ....",
     "pilihan": [
-      "Salam pembuka",
-      "Isi pidato",
-      "Kesimpulan",
-      "Penghormatan"
+      "A. Anggrek merupakan bunga yang jumlahnya paling banyak.",
+      "B. Mawar merupakan bunga yang jumlahnya paling banyak.",
+      "C. Melati lebih banyak daripada mawar.",
+      "D. Tulip lebih sedikit daripada anggrek."
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 48,
+    "pertanyaan": "Perhatikan informasi visual berikut!\n\nPERPUSTAKAAN SEKOLAH📖 Koleksi buku: 1.500🪑 Meja baca: 15💺 Kursi: 40🪟 Jendela: 8🌱 Tanaman: 6\n<img src='URL' class='img-post'> <br>\nKalimat yang sesuai dengan informasi tersebut adalah ....",
+    "pilihan": [
+      "A. Perpustakaan memiliki 1.500 meja baca.",
+      "B. Perpustakaan memiliki 40 jendela.",
+      "C. Perpustakaan memiliki 15 meja baca dan 40 kursi.",
+      "D. Perpustakaan memiliki 6.000 buku."
     ],
     "jawaban": 2
   },
   {
-    "id": 48,
-    "pertanyaan": "Pidato yang bertujuan memberikan pengetahuan kepada pendengar disebut pidato",
-    "pilihan": [
-      "Informatif",
-      "Persuasif",
-      "Rekreatif",
-      "Argumentatif"
-    ],
-    "jawaban": 0
-  },
-  {
     "id": 49,
-    "pertanyaan": "Penggunaan intonasi yang tepat saat berpidato bertujuan untuk",
+    "pertanyaan": "Perhatikan infografik berikut!\n\nGUNUNG BROMO🏔️ Bentuk: kerucut🌫️ Udara: dingin🌄 Pemandangan: indah🌿 Lingkungan: hijau📍 Lokasi: Jawa Timur\n<img src='URL' class='img-post'> <br>\nKalimat yang paling sesuai untuk mendeskripsikan informasi tersebut adalah ....",
     "pilihan": [
-      "Membuat pidato lebih menarik dan mudah dipahami",
-      "Mempercepat pidato",
-      "Mengurangi isi pidato",
-      "Menggantikan bahasa tubuh"
+      "A. Gunung Bromo berbentuk kerucut dengan udara yang dingin dan pemandangan yang indah.",
+      "B. Gunung Bromo berbentuk persegi dan udaranya panas.",
+      "C. Gunung Bromo terletak di luar Indonesia.",
+      "D. Gunung Bromo tidak memiliki lingkungan hijau."
     ],
     "jawaban": 0
   },
   {
     "id": 50,
-    "pertanyaan": "Setelah selesai berpidato, pembicara biasanya mengucapkan",
+    "pertanyaan": "Perhatikan infografik berikut!\n\nKEBERSIHAN SEKOLAH🗑️ Tempat sampah organik: 6🗑️ Tempat sampah anorganik: 6🧹 Sapu: 10🪣 Ember: 4🧤 Sarung tangan: 8\n<img src='URL' class='img-post'> <br>\nKesimpulan yang tepat berdasarkan infografik tersebut adalah ....",
     "pilihan": [
-      "Salam pembuka",
-      "Ucapan terima kasih",
-      "Perkenalan diri",
-      "Latar belakang masalah"
+      "A. Jumlah ember paling banyak.",
+      "B. Jumlah sapu paling banyak.",
+      "C. Jumlah tempat sampah lebih sedikit daripada ember.",
+      "D. Jumlah sarung tangan lebih banyak daripada sapu."
     ],
     "jawaban": 1
   }
