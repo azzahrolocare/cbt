@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0F5132">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Generator Soal | CBT Az-Zahro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Library untuk membaca file .docx -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+    <style>
+        /* Mengatur dasar html ke warna hijau tua khas CBT Az-Zahro (#0F5132) */
+        html { 
+            background-color: #0F5132; 
+            height: 100%;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            background-color: #f0f2f5; 
+            display: flex; 
+            flex-direction: column; 
+            min-height: 100vh; 
+            overflow-x: hidden;
+        }
+
+        /* Top Banner persis seperti login.html */
+        .top-banner { 
+            background: #0F5132; 
+            height: 240px; 
+            padding-top: env(safe-area-inset-top, 0px);
+            width: 100%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            color: white; 
+            position: absolute; 
+            top: 0; 
+            left: 0;
+            z-index: 1; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+            box-sizing: border-box;
+        }
+
+        .header-content { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            gap: 15px; 
+            width: 100%; 
+            max-width: 540px; 
+            padding: 0 20px;
+            margin-bottom: 35px;
+            box-sizing: border-box;
+        }
+
+        .logo-instansi { 
+            width: 60px; 
+            height: auto; 
+            cursor: pointer; 
+            transition: transform 0.2s; 
+            flex-shrink: 0; 
+        }
+        @media (min-width: 640px) {
+            .logo-instansi {
+                width: 65px;
+            }
+        }
+        .logo-instansi:active { transform: scale(0.92); }
+
+        .header-text {
+            text-align: center;
+            flex-shrink: 1;
+        }
+
+        .header-text h1 { 
+            margin: 0; 
+            font-size: 22px; 
+            letter-spacing: 1.5px; 
+            font-weight: 900; 
+            line-height: 1.2;
+            white-space: nowrap;
+        }
+        @media (min-width: 640px) {
+            .header-text h1 {
+                font-size: 25px;
+            }
+        }
+
+        .header-text p { 
+            margin: 5px 0 0 0; 
+            font-size: 12px; 
+            opacity: 0.85; 
+            white-space: nowrap;
+        }
+        @media (min-width: 640px) {
+            .header-text p {
+                font-size: 13px;
+            }
+        }
+
+        /* Main Card Container mengambang di atas top-banner */
+        .main-container { 
+            position: relative; 
+            z-index: 2; 
+            margin-top: 165px; 
+            margin-bottom: 30px;
+            width: 94%; 
+            max-width: 1050px; 
+            background: white; 
+            border-radius: 15px; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15); 
+            align-self: center; 
+            overflow: hidden; 
+        }
+
+        .card-body {
+            padding: 24px 18px;
+        }
+        @media (min-width: 640px) {
+            .card-body {
+                padding: 32px 30px;
+            }
+        }
+
+        /* Gaya Field Container persis seperti login.html */
+        .field-container { 
+            display: flex; 
+            align-items: center; 
+            border: 1.5px solid #dee2e6; 
+            border-radius: 10px; 
+            background: #fff; 
+            transition: 0.3s; 
+        }
+        .field-container:focus-within { 
+            border-color: #3EC381; 
+        }
+        .field-icon { 
+            width: 44px; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            color: #0F5132; 
+            opacity: 0.75; 
+            flex-shrink: 0;
+        }
+
+        /* Tombol Utama khas login.html */
+        .btn-azzahro { 
+            background: #0F5132; 
+            color: white; 
+            border: none; 
+            border-radius: 10px; 
+            font-weight: 800; 
+            cursor: pointer; 
+            transition: 0.3s; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            min-height: 50px; 
+        }
+        .btn-azzahro:hover:not(:disabled) { 
+            background: #0b3d25; 
+            transform: translateY(-2px); 
+        }
+        .btn-azzahro:disabled {
+            opacity: 0.75;
+            cursor: not-allowed;
+        }
+
+        .card-footer { 
+            background-color: #f8f9fa; 
+            padding: 18px 20px; 
+            text-align: center; 
+            font-size: 11px; 
+            color: #999; 
+            border-top: 1px solid #eee; 
+        }
+
+        /* Editor Height Responsif HP & Laptop */
+        .editor-box {
+            height: 280px;
+        }
+        @media (min-width: 1024px) {
+            .editor-box {
+                height: 390px;
+            }
+        }
+
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        .dark-scrollbar::-webkit-scrollbar-thumb { background: #334155; }
+
+        .img-post { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 8px; 
+            margin-top: 10px; 
+            border: 1px solid #e2e8f0;
+        }
+
+        .upload-active {
+            border-color: #3EC381 !important;
+            background-color: #f0fdf4 !important;
+        }
+
+        #fileInput { display: none; }
+
+        /* Loading Dots Animation persis seperti login.html */
+        .dots::after { 
+            content: ''; 
+            display: inline-block;
+            width: 20px;
+            text-align: left;
+            animation: loading-dots 1.5s infinite; 
+        }
+        @keyframes loading-dots { 
+            0% { content: ''; } 
+            25% { content: '.'; } 
+            50% { content: '..'; } 
+            75% { content: '...'; } 
+            100% { content: ''; } 
+        }
+
+        /* Modal Overlay persis seperti login.html */
+        .modal-overlay { 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0,0,0,0.7); 
+            display: none; 
+            justify-content: center; 
+            align-items: center; 
+            z-index: 1000; 
+            backdrop-filter: blur(5px); 
+            padding: 16px;
+        }
+        .modal-box { 
+            background: white; 
+            padding: 30px 25px; 
+            border-radius: 15px; 
+            max-width: 360px; 
+            width: 100%; 
+            text-align: center; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+        }
+        .icon-circle-error { 
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            margin: 0 auto 16px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            border: 3px solid #c62828; 
+            color: #c62828; 
+        }
+        .icon-circle-success { 
+            width: 60px; 
+            height: 60px; 
+            border-radius: 50%; 
+            margin: 0 auto 16px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            border: 3px solid #0F5132; 
+            color: #0F5132; 
+        }
+        .cross-mark { position: relative; width: 28px; height: 28px; }
+        .cross-mark::before, .cross-mark::after { content: ''; position: absolute; top: 12px; left: 0; width: 28px; height: 4px; background: currentColor; border-radius: 2px; }
+        .cross-mark::before { transform: rotate(45deg); } 
+        .cross-mark::after { transform: rotate(-45deg); }
+    </style>
+</head>
+<body>
+
+    <!-- Modal Notifikasi (Gaya login.html) -->
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-box">
+            <div id="modalIconWrapper" class="icon-circle-error">
+                <div class="cross-mark"></div>
+            </div>
+            <h3 id="modalTitle" style="margin: 0 0 8px 0; color: #0F5132; font-size: 19px; font-weight: 800;">Pemberitahuan</h3>
+            <p id="modalMessage" style="margin: 0 0 22px 0; color: #555; font-size: 13.5px; line-height: 1.5;"></p>
+            <button onclick="closeModal()" style="background:#0F5132; color:white; border:none; padding:11px 30px; border-radius:8px; font-weight:700; font-size:13px; cursor:pointer; letter-spacing:0.5px;">OKE</button>
+        </div>
+    </div>
+
+    <!-- Modal Input Nama File Sebelum Simpan JSON -->
+    <div id="saveModal" class="modal-overlay">
+        <div class="modal-box" style="max-width: 400px; text-align: left;">
+            <div class="flex items-center justify-between mb-3">
+                <h3 style="margin: 0; color: #0F5132; font-size: 18px; font-weight: 800;">Simpan File Soal JSON</h3>
+                <button onclick="closeSaveModal()" class="text-slate-400 hover:text-slate-600 p-1">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <p style="margin: 0 0 16px 0; color: #666; font-size: 13px; line-height: 1.4;">Masukkan nama file JSON sesuai mata pelajaran untuk diunggah ke sistem CBT.</p>
+            
+            <div class="mb-5">
+                <label for="fileNameInput" class="block text-xs font-bold text-slate-700 mb-1.5 uppercase tracking-wider">Nama File</label>
+                <div class="field-container overflow-hidden">
+                    <span class="field-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                    </span>
+                    <input type="text" id="fileNameInput" class="w-full py-3 pr-2 text-sm text-slate-800 outline-none bg-transparent" placeholder="contoh: pas-matematika-ix" onkeydown="if(event.key === 'Enter') confirmDownloadJson()">
+                    <span class="px-3 py-3 text-xs font-mono font-bold text-slate-500 bg-slate-100 border-l border-slate-200">.json</span>
+                </div>
+            </div>
+
+            <div class="flex justify-end gap-2">
+                <button onclick="closeSaveModal()" class="px-4 py-2.5 text-xs font-bold text-slate-600 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors">BATAL</button>
+                <button onclick="confirmDownloadJson()" class="px-5 py-2.5 text-xs font-bold text-white rounded-lg transition-colors" style="background: #0F5132;">UNDUH FILE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Banner persis seperti login.html (Logo SMP & SMK di Kiri-Kanan) -->
+    <div class="top-banner">
+        <div class="header-content">
+            <img src="logo-smp-azzahro.png" onerror="this.onerror=null; this.src='https://github.com/masrahmat-id/absensi-barcode-online-smp-smk-azzahro/raw/main/logo-smp-azzahro.png';" class="logo-instansi" onclick="toggleFullScreen()" title="Klik untuk Fullscreen" alt="Logo SMP Az-Zahro">
+            <div class="header-text">
+                <h1>AZ-ZAHRO</h1>
+                <p>Generator Bank Soal CBT</p>
+            </div>
+            <img src="logo-smk-azzahro.png" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/masrahmat-id/presensi-smp-smk-azzahro/main/logo-smk-azzahro.png';" class="logo-instansi" onclick="toggleFullScreen()" title="Klik untuk Fullscreen" alt="Logo SMK Az-Zahro">
+        </div>
+    </div>
+
+    <!-- Main Container Card -->
+    <div class="main-container">
+        <div class="card-body">
+            
+            <!-- Judul & Subjudul di dalam Card (Gaya login.html) -->
+            <div class="text-center mb-6">
+                <h2 style="margin: 0; color: #0F5132; font-size: 21px; font-weight: 800;">Konverter Soal ke JSON</h2>
+                <p style="margin: 4px 0 0 0; color: #666; font-size: 13px;">Unggah dokumen soal (.docx / .txt) atau tempel teks soal untuk dikonversi otomatis.</p>
+            </div>
+
+            <!-- Baris Kontrol: Pengaturan API Key & Unggah Dokumen -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 mb-5">
+                
+                <!-- Kolom Input API Key (Gaya Field Container login.html) -->
+                <div>
+                    <div class="flex items-center justify-between mb-1 px-1">
+                        <span class="text-[11px] font-bold uppercase tracking-wider" style="color: #0F5132;">Gemini API Key</span>
+                        <span id="apiKeyBadge" class="text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200">Belum Diisi</span>
+                    </div>
+                    <div class="field-container">
+                        <span class="field-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                        </span>
+                        <input type="password" id="apiKeyInput" placeholder="TEMPEL GEMINI API KEY (AIza...)" autocomplete="off" class="w-full py-3 pr-2 text-xs sm:text-sm outline-none bg-transparent text-slate-700">
+                        <button type="button" onclick="toggleApiKeyVisibility()" class="px-2.5 text-[#0F5132] opacity-70 hover:opacity-100" title="Tampilkan / Sembunyikan">
+                            <svg id="eyeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </button>
+                        <button type="button" onclick="saveApiKey()" class="mr-1.5 px-3 py-1.5 rounded-lg text-[11px] font-bold text-white transition-colors" style="background: #0F5132;">SIMPAN</button>
+                    </div>
+                </div>
+
+                <!-- Kolom Unggah File Dokumen (Gaya Field Container login.html) -->
+                <div>
+                    <div class="flex items-center justify-between mb-1 px-1">
+                        <span class="text-[11px] font-bold uppercase tracking-wider" style="color: #0F5132;">File Dokumen Soal</span>
+                        <span class="text-[10px] text-slate-400 font-semibold">.DOCX / .TXT / .MD</span>
+                    </div>
+                    <div id="dropZone" class="field-container pr-1.5">
+                        <span class="field-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                        </span>
+                        <span id="fileNameDisplay" class="w-full py-3 pr-2 text-xs sm:text-sm text-slate-500 truncate select-none">Pilih atau seret file soal...</span>
+                        <label for="fileInput" class="cursor-pointer px-3 py-1.5 rounded-lg text-[11px] font-bold text-white whitespace-nowrap transition-colors" style="background: #0F5132;">
+                            PILIH FILE
+                        </label>
+                        <input type="file" id="fileInput" accept=".txt,.md,.docx" onchange="handleFileUpload(event)">
+                        <button type="button" onclick="clearInput()" class="ml-1 px-2.5 py-1.5 rounded-lg text-[11px] font-bold text-red-600 bg-red-50 hover:bg-red-100 whitespace-nowrap transition-colors">
+                            RESET
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner Status Inline (Opsional untuk info cepat) -->
+            <div id="inlineStatus" class="hidden mb-4 px-4 py-2.5 rounded-xl text-xs font-bold text-center border"></div>
+
+            <!-- Halaman 1: Input Naskah Soal -->
+            <div id="step1Section" class="flex flex-col">
+                <div class="flex items-center justify-between mb-1.5 px-1">
+                    <span class="text-xs font-extrabold uppercase tracking-wider" style="color: #0F5132;">1. Naskah Soal</span>
+                    <span class="text-[11px] text-slate-400">Ketik / Tempel / Unggah</span>
+                </div>
+                <div class="border-[1.5px] border-[#dee2e6] focus-within:border-[#3EC381] rounded-xl overflow-hidden bg-white transition-colors">
+                    <textarea id="inputText" class="editor-box w-full p-4 text-xs sm:text-sm focus:outline-none resize-none leading-relaxed custom-scrollbar placeholder-slate-300 text-slate-800" placeholder="Tempel soal beserta opsi (A, B, C, D) dan kunci jawaban di sini..."></textarea>
+                </div>
+
+                <!-- Tombol Proses Utama -->
+                <div class="mt-6 flex justify-center">
+                    <button id="convertBtn" onclick="handleConversion()" class="btn-azzahro w-full md:w-auto md:min-w-[340px] px-8 text-sm sm:text-base flex items-center justify-center">
+                        <span id="btnText">PROSES KE JSON</span>
+                        <span id="loadingDots" class="hidden dots"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Halaman 2: Output JSON (Tersembunyi sampai konversi selesai) -->
+            <div id="step2Section" class="hidden flex-col">
+                <div class="flex items-center justify-between mb-1.5 px-1">
+                    <span class="text-xs font-extrabold uppercase tracking-wider" style="color: #0F5132;">2. Hasil Format JSON</span>
+                    <button type="button" onclick="backToStep1()" class="text-[11px] font-bold text-[#0F5132] hover:underline flex items-center gap-1">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                        <span>Kembali ke Naskah</span>
+                    </button>
+                </div>
+                <div class="border-[1.5px] border-slate-800 rounded-xl overflow-hidden bg-slate-900">
+                    <pre id="outputText" class="editor-box w-full p-4 text-xs text-emerald-400 overflow-auto font-mono custom-scrollbar dark-scrollbar leading-relaxed">[]</pre>
+                </div>
+
+                <!-- Tombol Simpan JSON & Salin di Halaman 2 -->
+                <div class="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3">
+                    <button type="button" onclick="downloadJson()" id="downloadBtn" class="btn-azzahro w-full sm:w-auto sm:min-w-[220px] px-6 text-xs sm:text-sm flex items-center justify-center gap-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        <span>Simpan JSON</span>
+                    </button>
+                    <button type="button" onclick="copyOutput()" id="copyBtn" class="w-full sm:w-auto sm:min-w-[160px] min-h-[50px] px-6 rounded-[10px] bg-slate-200 hover:bg-slate-300 text-slate-800 text-xs sm:text-sm font-extrabold uppercase tracking-wider transition-colors flex items-center justify-center gap-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                        <span id="copyBtnText">Salin Kode</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Card Footer persis seperti login.html -->
+        <div class="card-footer">
+            &copy; 2026 SMP &amp; SMK Az-Zahro - CBT Application System
+        </div>
+    </div>
+
+    <script>
+        const defaultApiKey = ""; 
+        const STORAGE_KEY = "gemini_quiz_converter_api_key";
+        let pendingJsonContent = "";
+        let uploadedBaseFileName = "";
+        let inlineTimeout = null;
+
+        // Fullscreen toggle saat klik logo (sama seperti login.html)
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(err => {
+                    console.log(`Fullscreen info: ${err.message}`);
+                });
+            } else if (document.exitFullscreen) {
+                document.exitFullscreen();
+            }
+        }
+
+        // Inisialisasi API Key dari localStorage
+        function initApiKey() {
+            const savedKey = localStorage.getItem(STORAGE_KEY) || "";
+            const input = document.getElementById('apiKeyInput');
+            if (savedKey) {
+                input.value = savedKey;
+            }
+            updateApiKeyBadge(Boolean(savedKey || defaultApiKey));
+        }
+
+        function getActiveApiKey() {
+            const savedKey = localStorage.getItem(STORAGE_KEY);
+            return (savedKey && savedKey.trim()) ? savedKey.trim() : defaultApiKey;
+        }
+
+        function updateApiKeyBadge(hasKey) {
+            const badge = document.getElementById('apiKeyBadge');
+            if (hasKey) {
+                badge.textContent = "Tersimpan";
+                badge.className = "text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-50 text-[#0F5132] border border-emerald-200";
+            } else {
+                badge.textContent = "Belum Diisi";
+                badge.className = "text-[10px] font-bold px-2 py-0.5 rounded bg-amber-50 text-amber-700 border border-amber-200";
+            }
+        }
+
+        function toggleApiKeyVisibility() {
+            const input = document.getElementById('apiKeyInput');
+            const eyeIcon = document.getElementById('eyeIcon');
+            if (input.type === 'password') {
+                input.type = 'text';
+                eyeIcon.innerHTML = '<path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line>';
+            } else {
+                input.type = 'password';
+                eyeIcon.innerHTML = '<path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>';
+            }
+        }
+
+        function saveApiKey() {
+            const val = document.getElementById('apiKeyInput').value.trim();
+            if (!val) {
+                localStorage.removeItem(STORAGE_KEY);
+                updateApiKeyBadge(Boolean(defaultApiKey));
+                showInlineStatus("API Key dihapus dari penyimpanan browser.", "error");
+                return;
+            }
+            localStorage.setItem(STORAGE_KEY, val);
+            updateApiKeyBadge(true);
+            showInlineStatus("Gemini API Key berhasil disimpan di browser!", "success");
+        }
+
+        initApiKey();
+
+        // Modal Notifikasi gaya login.html
+        function showNotif(msg, type = "error", title = null) {
+            const modal = document.getElementById('customModal');
+            const iconWrapper = document.getElementById('modalIconWrapper');
+            const titleEl = document.getElementById('modalTitle');
+            const msgEl = document.getElementById('modalMessage');
+
+            if (type === "success") {
+                iconWrapper.className = "icon-circle-success";
+                iconWrapper.innerHTML = '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+                titleEl.textContent = title || "Berhasil";
+            } else {
+                iconWrapper.className = "icon-circle-error";
+                iconWrapper.innerHTML = '<div class="cross-mark"></div>';
+                titleEl.textContent = title || "Perhatian";
+            }
+
+            msgEl.innerText = msg;
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('customModal').style.display = 'none';
+        }
+
+        function showInlineStatus(msg, type) {
+            const el = document.getElementById('inlineStatus');
+            if (inlineTimeout) clearTimeout(inlineTimeout);
+            el.textContent = msg;
+            el.className = `mb-4 px-4 py-2.5 rounded-xl text-xs font-bold text-center border ${
+                type === 'error' 
+                ? 'bg-red-50 text-red-700 border-red-200' 
+                : 'bg-emerald-50 text-[#0F5132] border-emerald-200'
+            }`;
+            el.classList.remove('hidden');
+            inlineTimeout = setTimeout(() => el.classList.add('hidden'), 4500);
+        }
+
+        // Drag & Drop File Upload
+        const dropZone = document.getElementById('dropZone');
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, e => {
+                e.preventDefault();
+                e.stopPropagation();
+            }, false);
+        });
+
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => dropZone.classList.add('upload-active'), false);
+        });
+
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, () => dropZone.classList.remove('upload-active'), false);
+        });
+
+        dropZone.addEventListener('drop', e => {
+            const files = e.dataTransfer.files;
+            if (files.length > 0) processFile(files[0]);
+        }, false);
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (file) processFile(file);
+        }
+
+        function processFile(file) {
+            const fileNameDisplay = document.getElementById('fileNameDisplay');
+            const fileParts = file.name.split('.');
+            const fileExtension = fileParts.pop().toLowerCase();
+            uploadedBaseFileName = fileParts.join('.');
+
+            fileNameDisplay.textContent = file.name;
+            fileNameDisplay.classList.remove('text-slate-500');
+            fileNameDisplay.classList.add('text-slate-800', 'font-semibold');
+            
+            if (fileExtension === 'docx') {
+                readDocx(file);
+            } else {
+                readPlainText(file);
+            }
+        }
+
+        function readPlainText(file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('inputText').value = e.target.result;
+                showInlineStatus("File teks berhasil dimuat ke editor!", "success");
+            };
+            reader.readAsText(file);
+        }
+
+        function readDocx(file) {
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const arrayBuffer = e.target.result;
+                mammoth.extractRawText({ arrayBuffer: arrayBuffer })
+                    .then(result => {
+                        document.getElementById('inputText').value = result.value;
+                        showInlineStatus("File Word (.docx) berhasil dimuat ke editor!", "success");
+                    })
+                    .catch(err => {
+                        console.error(err);
+                        showNotif("Gagal membaca file Word (.docx). Pastikan file tidak rusak.");
+                    });
+            };
+            reader.readAsArrayBuffer(file);
+        }
+
+        async function handleConversion() {
+            const inputText = document.getElementById('inputText').value.trim();
+            const convertBtn = document.getElementById('convertBtn');
+            const btnText = document.getElementById('btnText');
+            const dots = document.getElementById('loadingDots');
+            const outputEl = document.getElementById('outputText');
+
+            if (!inputText) {
+                return showNotif("Lengkapi naskah soal atau unggah file terlebih dahulu!");
+            }
+
+            const activeKey = getActiveApiKey();
+            const isHostedExternally = window.location.protocol.startsWith('http') && !window.location.hostname.includes('googleusercontent') && !window.location.hostname.includes('localhost');
+            if (!activeKey && isHostedExternally) {
+                document.getElementById('apiKeyInput').focus();
+                return showNotif("Masukkan Gemini API Key Anda terlebih dahulu pada kolom pengaturan di atas.");
+            }
+
+            convertBtn.disabled = true;
+            dots.classList.remove('hidden');
+            btnText.textContent = "MEMPROSES";
+            outputEl.textContent = "// AI sedang menganalisis dan menyusun JSON soal...";
+
+            const systemPrompt = `
+                Tugas: Konversi teks ke JSON Array.
+                Struktur: [{ "id": 1, "pertanyaan": "teks", "pilihan": ["A", "B", "C", "D"], "jawaban": 0 }]
+                Aturan Protokol: 
+                1. Salin teks UTUH. Jangan diringkas. 
+                2. Jika ada referensi gambar/visual, sisipkan: <img src='URL' class='img-post'> <br> di bawah teks pertanyaan.
+                3. Indeks jawaban dimulai dari 0 (Contoh: A=0, B=1, C=2, D=3, E=4).
+                Keluaran: Hanya JSON Array tanpa blok markdown.
+            `;
+
+            try {
+                const rawResponse = await callGemini(inputText, systemPrompt);
+                const cleanedResponse = rawResponse.replace(/```json|```/g, "").trim();
+                const parsedJson = JSON.parse(cleanedResponse);
+                outputEl.textContent = JSON.stringify(parsedJson, null, 2);
+                
+                // Pindah tampilan ke Halaman 2 (Hasil JSON + Tombol Simpan & Salin)
+                document.getElementById('step1Section').classList.add('hidden');
+                const step2 = document.getElementById('step2Section');
+                step2.classList.remove('hidden');
+                step2.classList.add('flex');
+
+                showInlineStatus(`Berhasil mengonversi ${parsedJson.length} soal ke format JSON!`, "success");
+            } catch (error) {
+                console.error(error);
+                outputEl.textContent = "// Terjadi kesalahan saat memproses atau memformat JSON.\n// Periksa kembali API Key dan naskah soal Anda.";
+                showNotif("Gagal memproses soal menjadi JSON. Periksa API Key atau koneksi internet Anda.");
+            } finally {
+                convertBtn.disabled = false;
+                dots.classList.add('hidden');
+                btnText.textContent = "PROSES KE JSON";
+            }
+        }
+
+        function backToStep1() {
+            const step2 = document.getElementById('step2Section');
+            step2.classList.add('hidden');
+            step2.classList.remove('flex');
+            document.getElementById('step1Section').classList.remove('hidden');
+        }
+
+        async function callGemini(prompt, systemInstruction) {
+            let retries = 0;
+            const maxRetries = 5;
+            const activeKey = getActiveApiKey();
+            while (retries <= maxRetries) {
+                try {
+                    const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${activeKey}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            contents: [{ parts: [{ text: prompt }] }],
+                            systemInstruction: { parts: [{ text: systemInstruction }] }
+                        })
+                    });
+                    if (!response.ok) {
+                        const errData = await response.json().catch(() => ({}));
+                        throw new Error(errData?.error?.message || `API Error (${response.status})`);
+                    }
+                    const result = await response.json();
+                    return result.candidates?.[0]?.content?.parts?.[0]?.text || "[]";
+                } catch (err) {
+                    if (retries === maxRetries) throw err;
+                    const delay = Math.pow(2, retries) * 1000;
+                    await new Promise(r => setTimeout(r, delay));
+                    retries++;
+                }
+            }
+        }
+
+        function copyOutput() {
+            const text = document.getElementById('outputText').textContent;
+            const tempInput = document.createElement("textarea");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            
+            const btn = document.getElementById('copyBtn');
+            const btnText = document.getElementById('copyBtnText');
+            const originalText = btnText.textContent;
+            btnText.textContent = "TERSALIN!";
+            btn.classList.add("bg-emerald-100", "text-[#0F5132]");
+            setTimeout(() => {
+                btnText.textContent = originalText;
+                btn.classList.remove("bg-emerald-100", "text-[#0F5132]");
+            }, 2000);
+        }
+
+        function downloadJson() {
+            const text = document.getElementById('outputText').textContent.trim();
+
+            if (!text || text === '[]' || text.startsWith('//')) {
+                return showNotif("Tidak ada hasil JSON yang valid untuk disimpan.");
+            }
+
+            try {
+                const parsed = JSON.parse(text);
+                pendingJsonContent = JSON.stringify(parsed, null, 2);
+
+                const modal = document.getElementById('saveModal');
+                const input = document.getElementById('fileNameInput');
+                const timestamp = new Date().toISOString().slice(0, 10);
+                
+                input.value = uploadedBaseFileName ? `${uploadedBaseFileName}` : `soal-cbt-${timestamp}`;
+                
+                modal.style.display = 'flex';
+                setTimeout(() => {
+                    input.focus();
+                    input.select();
+                }, 50);
+            } catch (err) {
+                console.error(err);
+                showNotif("Output bukan format JSON yang valid.");
+            }
+        }
+
+        function closeSaveModal() {
+            document.getElementById('saveModal').style.display = 'none';
+            pendingJsonContent = "";
+        }
+
+        function confirmDownloadJson() {
+            if (!pendingJsonContent) return;
+
+            const input = document.getElementById('fileNameInput');
+            let rawName = input.value.trim();
+
+            if (!rawName) {
+                const timestamp = new Date().toISOString().slice(0, 19).replace(/[:T]/g, "-");
+                rawName = `soal-cbt-${timestamp}`;
+            }
+
+            rawName = rawName.replace(/\.json$/i, "").replace(/[<>:"/\\|?*]+/g, "-");
+            const finalFileName = `${rawName}.json`;
+
+            const blob = new Blob([pendingJsonContent], { type: "application/json;charset=utf-8" });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement("a");
+
+            link.href = url;
+            link.download = finalFileName;
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+
+            closeSaveModal();
+            showNotif(`File "${finalFileName}" berhasil diunduh!`, "success", "File Tersimpan");
+        }
+
+        function clearInput() {
+            document.getElementById('inputText').value = '';
+            document.getElementById('outputText').textContent = '[]';
+            const fileNameDisplay = document.getElementById('fileNameDisplay');
+            fileNameDisplay.textContent = "Pilih atau seret file soal...";
+            fileNameDisplay.classList.remove('text-slate-800', 'font-semibold');
+            fileNameDisplay.classList.add('text-slate-500');
+            document.getElementById('fileInput').value = "";
+            uploadedBaseFileName = "";
+            backToStep1();
+        }
+    </script>
+</body>
+</html>
